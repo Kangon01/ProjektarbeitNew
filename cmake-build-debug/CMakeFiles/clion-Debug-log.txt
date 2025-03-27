@@ -1,0 +1,28 @@
+C:\Users\nschmitz\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/nschmitz/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -G Ninja -S C:\Users\nschmitz\CLionProjects\ProjektarbeitNew -B C:\Users\nschmitz\CLionProjects\ProjektarbeitNew\cmake-build-debug
+-- OpenCV ARCH: x64
+-- OpenCV RUNTIME: vc16
+-- OpenCV STATIC: OFF
+CMake Error at sdks/opencv/build/x64/vc16/lib/OpenCVModules.cmake:70 (message):
+  The imported target "opencv_world" references the file
+
+     "C:/Users/nschmitz/CLionProjects/ProjektarbeitNew/sdks/opencv/build/x64/vc16/bin/opencv_world4110d.dll"
+
+  but this file does not exist.  Possible reasons include:
+
+  * The file was deleted, renamed, or moved to another location.
+
+  * An install or uninstall procedure did not complete successfully.
+
+  * The installation package was faulty and contained
+
+     "C:/Users/nschmitz/CLionProjects/ProjektarbeitNew/sdks/opencv/build/x64/vc16/lib/OpenCVModules.cmake"
+
+  but not all the files it references.
+
+Call Stack (most recent call first):
+  sdks/opencv/build/x64/vc16/lib/OpenCVConfig.cmake:126 (include)
+  sdks/opencv/build/OpenCVConfig.cmake:174 (include)
+  CMakeLists.txt:20 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
