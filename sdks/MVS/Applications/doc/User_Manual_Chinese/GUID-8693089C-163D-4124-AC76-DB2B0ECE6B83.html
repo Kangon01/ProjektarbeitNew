@@ -1,0 +1,549 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="属性树" /><meta name="abstract" content="属性树显示读取到的相机具体属性。" /><meta name="description" content="属性树显示读取到的相机具体属性。" /><meta name="DC.Relation" scheme="URI" content="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83" /><meta name="DC.Language" content="zh-CN" /><title>属性树</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB.html" data-id="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB">相机属性配置</a></span></li><li class="active"><span class="topicref">属性树</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">属性树</h1>
+
+
+<div class="body conbody"><p class="shortdesc">属性树显示读取到的相机具体属性。</p>
+
+        <p class="p">在不连接相机的状态下，属性区为空白；在连接相机的状态下，属性树处可查看当前设备的属性，如下图所示。</p>
+
+        <div class="fig fignone" id="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83__FIG_YSZ_ZKL_FKB">
+            
+            <img class="image" style="display:none;" id="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83__IMAGE_DJY_DQK_1YB" src="GUID-3BA8BE95-2A9A-4EC3-8FAE-2D9ED6742E3E-high.jpg" width="1000" />
+        <div class="fig_caption"><span class="figcap">图 1 相机属性树</span></div></div>
+
+        <ul class="ul" id="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83__UL_WMK_JYM_23B">
+            <li class="li" id="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83__GUID-0254B2C6-F7B9-4782-AAEA-CD8A279E5B0E">
+                <p class="p">单击长按属性树顶部设备名称区域，可拖拽该模块移动位置。移动到其他可用位置时，释放鼠标即可完成位置互换，属性树移动位置如下图所示。</p>
+
+                
+                <div class="fig fignone" id="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83__GUID-680E2F2E-2D33-41BD-B8A8-EB5ACD5BC59B">
+                    
+                    <img class="image" style="display:none;" id="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83__IMAGE_JFP_BPC_LCC" src="GUID-59614318-D78A-4E2A-AE7D-5FC2B016D93C-high.gif" width="2100" />
+                <div class="fig_caption"><span class="figcap">图 2 移动属性树位置</span></div></div>
+
+            </li>
+
+            <li class="li" id="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83__GUID-BF5452F7-5573-48BC-B087-532761C39AB9">
+                <p class="p">客户端可对相机属性树的中英文进行单独切换，默认客户端属性树为英文，可通过点击左上角的<img class="image icon" style="display:none;" id="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83__IMAGE_THP_2LL_FKB" src="GUID-96A0F168-F8FB-4D39-A2DC-C6D83988E3AE-high.png" />实现，此时属性树参数切换为中文，且图标变为<img class="image icon" style="display:none;" id="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83__IMAGE_AVQ_HLL_FKB" src="GUID-CE8C4888-4E31-4FAC-A0BE-2A97A63D99C7-high.png" />。</p>
+
+            </li>
+
+            <li class="li" id="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83__GUID-C642B234-C741-4E27-A678-8B36DE4FFE6D">
+                <p class="p">用户可通过上图上方的搜索输入框快速查找相机参数。</p>
+
+            </li>
+
+            <li class="li" id="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83__GUID-12D16415-013E-473F-BB0C-0BB486EFC9AE">
+                <p class="p">对于频繁使用的参数，可选中该参数右键单击选择<span class="ph uicontrol">添加至收藏夹</span>，则该参数在<span class="keyword parmname">收藏属性</span>下也会显示，方便操作；对于<span class="keyword parmname">收藏属性</span>下的参数，可以通过右键进行<span class="ph uicontrol">移除</span>。</p>
+
+                <div class="note note" id="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83__GUID-2C38DDFE-A12C-44AA-BD21-550A4F2B1B37"><span class="notetitle">说明</span> 
+                    <p class="p"><span class="keyword parmname">收藏属性</span>下显示的参数，是将相机的该参数做了快捷方式，在相机的属性树中还可找到该参数。</p>
+
+                </div>
+
+            </li>
+
+            <li class="li" id="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83__GUID-9FAA9BE1-9250-4D0A-AF56-4114FF6ABFB1">
+                <p class="p">选中相机的具体参数，在属性说明中可以查看关于该参数的含义、节点名称、类型、节点调用代码示例等信息，方便用户二次开发时设置参数。</p>
+
+            </li>
+
+            <li class="li" id="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83__GUID-C4B4FDED-141A-4AD6-B404-D8EB9DEA2A45">
+                <p class="p">用户可通过上图右上角的用户等级切换相机的用户等级，也可通过菜单栏的通用进行设置。用户等级的具体介绍请见<a class="xref" href="GUID-2383E3DD-B04B-41B9-B212-8B58699242B3.html#GUID-A3AA723F-F997-4E4E-B4EB-D693AF25A027__GUID-131F4CAF-EBD0-480E-BFBA-45881AB5C4F0">通用设置</a>章节。</p>
+
+            </li>
+
+        </ul>
+
+        <p class="p">属性树中相机各属性的简要介绍请见下表。</p>
+
+        
+        <div class="note note" id="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83__GUID-D1293ECF-E75D-4E30-9C8C-E755E4523344"><span class="notetitle">说明</span> 
+            <ul class="ul" id="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83__UL_VFF_TBN_23B">
+                <li class="li" id="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83__GUID-5CBC13FF-7478-49BD-91AC-2613F00D9222">
+                    <p class="p">不同型号以及不同固件版本相机支持的属性有所不同，具体视实际情况而定。</p>
+
+                </li>
+
+                <li class="li" id="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83__GUID-0A4DEC42-5250-42B0-9EEF-C06E16E70B59">
+                    <p class="p">有关相机的具体功能，请查看相应型号的相机用户手册。</p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        
+        
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83__TABLE_G14_RG1_CKB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 1 相机属性介绍</span></caption>
+                
+                
+                
+                <thead class="thead" align="left">
+                    <tr>
+                        <th class="entry" valign="top" width="22.522522522522525%" id="d21866e146">
+                            <p class="p">中文名称</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="24.549549549549553%" id="d21866e152">
+                            <p class="p">英文名称</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="52.92792792792793%" id="d21866e158">
+                            <p class="p">说明</p>
+
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody class="tbody">
+                    <tr>
+                        <td class="entry" valign="top" width="22.522522522522525%" headers="d21866e146 ">
+                            <p class="p">设备控制</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="24.549549549549553%" headers="d21866e152 ">
+                            <p class="p">Device Control</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="52.92792792792793%" headers="d21866e158 ">
+                            <p class="p">可查看相机信息、重启相机和修改相机的用户ID</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="22.522522522522525%" headers="d21866e146 ">
+                            <p class="p">图像格式控制</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="24.549549549549553%" headers="d21866e152 ">
+                            <p class="p">Image Format Control</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="52.92792792792793%" headers="d21866e158 ">
+                            <p class="p">可设置相机的像素格式、感兴趣区域、测试图像模式和水印信息等</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="22.522522522522525%" headers="d21866e146 ">
+                            <p class="p">采集控制</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="24.549549549549553%" headers="d21866e152 ">
+                            <p class="p">Acquisition Control</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="52.92792792792793%" headers="d21866e158 ">
+                            <p class="p">可设置相机的采集模式、帧率大小、触发相关参数、曝光时间和HDR等</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="22.522522522522525%" headers="d21866e146 ">
+                            <p class="p">模拟控制</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="24.549549549549553%" headers="d21866e152 ">
+                            <p class="p">Analog Control</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="52.92792792792793%" headers="d21866e158 ">
+                            <p class="p">该属性中可以对相机采集到的图像模拟信号进行调整，包括模拟增益、白平衡、Gamma校正、黑电平、锐度和AOI等</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="22.522522522522525%" headers="d21866e146 ">
+                            <p class="p">色彩校正控制</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="24.549549549549553%" headers="d21866e152 ">
+                            <p class="p">Color Transformation Control</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="52.92792792792793%" headers="d21866e158 ">
+                            <p class="p">可设置彩色相机色彩校正参数，试图向的整体色彩鲜艳活泼生动</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="22.522522522522525%" headers="d21866e146 ">
+                            <p class="p">超级调色盘</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="24.549549549549553%" headers="d21866e152 ">
+                            <p class="p">Super Palette Control</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="52.92792792792793%" headers="d21866e158 ">
+                            <p class="p">可对图像中呈现不同颜色的区域进行色调与饱和度调节</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="22.522522522522525%" headers="d21866e146 ">
+                            <p class="p">显示查找表控制</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="24.549549549549553%" headers="d21866e152 ">
+                            <p class="p">LUT Control</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="52.92792792792793%" headers="d21866e158 ">
+                            <p class="p">相机可根据用户设置的查找表进行灰度映射输出，凸显用户感兴趣的灰度范围</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="22.522522522522525%" headers="d21866e146 ">
+                            <p class="p">轴编码器控制</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="24.549549549549553%" headers="d21866e152 ">
+                            <p class="p">Encoder Control</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="52.92792792792793%" headers="d21866e158 ">
+                            <p class="p">相机可将外部触发的源信号转变成内部所需的信号</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="22.522522522522525%" headers="d21866e146 ">
+                            <p class="p">频率转换控制</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="24.549549549549553%" headers="d21866e152 ">
+                            <p class="p">Frequency Converter Control</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="52.92792792792793%" headers="d21866e158 ">
+                            <p class="p">相机可将外部不同频率的信号转换成内部接受的频率的信号</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="22.522522522522525%" headers="d21866e146 ">
+                            <p class="p">阴影校正</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="24.549549549549553%" headers="d21866e152 ">
+                            <p class="p">Shading Correction</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="52.92792792792793%" headers="d21866e158 ">
+                            <p class="p">可校正相机像素之间的不一致性。</p>
+
+                            
+                            <p class="p">针对部分线阵相机，您可使用<span class="ph uicontrol">平场校正工具</span>。详情见<a class="xref" href="GUID-BCA6CC06-C4DD-4ACB-8A8F-12CECE589975.html#GUID-BCA6CC06-C4DD-4ACB-8A8F-12CECE589975" title="平场校正工具可获取线阵相机明/暗场校正前后的图像，并显示明/暗场校正前后图像的灰度曲线图。目前支持的线阵相机接口类型包括GigE口、Camera Link口和XoFLink光口。">平场校正工具</a>。</p>
+
+                            
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="22.522522522522525%" headers="d21866e146 ">
+                            <p class="p">数字IO控制</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="24.549549549549553%" headers="d21866e152 ">
+                            <p class="p">Digital IO Control</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="52.92792792792793%" headers="d21866e158 ">
+                            <p class="p">可对line0/1/2进行设置和管理</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="22.522522522522525%" headers="d21866e146 ">
+                            <p class="p">动作命令控制</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="24.549549549549553%" headers="d21866e152 ">
+                            <p class="p">Action Control</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="52.92792792792793%" headers="d21866e158 ">
+                            <p class="p">可对相机GigE Vision动作命令相关功能进行设置</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="22.522522522522525%" headers="d21866e146 ">
+                            <p class="p">计数器和定时器控制</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="24.549549549549553%" headers="d21866e152 ">
+                            <p class="p">Counter And Timer Control</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="52.92792792792793%" headers="d21866e158 ">
+                            <p class="p">可对外触发信号进行计数，按照客户逻辑进行曝光控制</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="22.522522522522525%" headers="d21866e146 ">
+                            <p class="p">文件存取控制</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="24.549549549549553%" headers="d21866e152 ">
+                            <p class="p">File Access Control</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="52.92792792792793%" headers="d21866e158 ">
+                            <p class="p">可查看支持文件存取功能相机参数组的信息</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="22.522522522522525%" headers="d21866e146 ">
+                            <p class="p">Sequencer轮询</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="24.549549549549553%" headers="d21866e152 ">
+                            <p class="p">Sequencer Control</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="52.92792792792793%" headers="d21866e158 ">
+                            <p class="p">可对Sequencer轮询相关的参数进行设置</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="22.522522522522525%" headers="d21866e146 ">
+                            <p class="p">事件控制</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="24.549549549549553%" headers="d21866e152 ">
+                            <p class="p">Event Control</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="52.92792792792793%" headers="d21866e158 ">
+                            <p class="p">可对不同的事件类型进行选择和使能</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="22.522522522522525%" headers="d21866e146 ">
+                            <p class="p">数据块控制</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="24.549549549549553%" headers="d21866e152 ">
+                            <p class="p">Chunk Data Control</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="52.92792792792793%" headers="d21866e158 ">
+                            <p class="p">可控制是否开启相机Chunk信息的功能，并设置具体Chunk信息的内容</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="22.522522522522525%" headers="d21866e146 ">
+                            <p class="p">传输层控制</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="24.549549549549553%" headers="d21866e152 ">
+                            <p class="p">Transport Layer Control</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="52.92792792792793%" headers="d21866e158 ">
+                            <p class="p">可对相机的传输协议相关参数进行设置，例如Pause帧、PacketSize、GEV SCPD等</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="22.522522522522525%" headers="d21866e146 ">
+                            <p class="p">传输控制</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="24.549549549549553%" headers="d21866e152 ">
+                            <p class="p">Transfer Control</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="52.92792792792793%" headers="d21866e158 ">
+                            <p class="p">可查看相机的传输源、传输模式和内存队列信息等</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="22.522522522522525%" headers="d21866e146 ">
+                            <p class="p">用户集控制</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="24.549549549549553%" headers="d21866e152 ">
+                            <p class="p">User Set Control</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="52.92792792792793%" headers="d21866e158 ">
+                            <p class="p">可保存或加载参数配置，并设置设备打开时的默认参数配置</p>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+</div>
+
+        
+    </div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

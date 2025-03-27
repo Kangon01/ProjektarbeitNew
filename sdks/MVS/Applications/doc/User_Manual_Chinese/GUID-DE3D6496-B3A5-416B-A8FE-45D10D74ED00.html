@@ -1,0 +1,706 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="description" content="客户端预览红外相机图像时，可对测温区域进行相关配置操作，包括 绘制测温区域 和 相关参数设置 。 客户端预览红外相机图像时可进行测温区域的绘制操作。 设备列表选中红外测温相机并连接。 开启相机预览，关于预览操作具体请见 开启单画面预览 章节和 开启多画面预览 章节。 点击图像预览窗口上方的 ，打开测温区域设置界面，如下图所示。 说明 打开测温区域设置界面后，自动加载相机当前测温相关参数。 图 1 ..." /><meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="测温配置" /><meta name="DC.Relation" scheme="URI" content="GUID-D866AD57-3D2C-4B81-B0B9-8914BFFEB25E.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-DE3D6496-B3A5-416B-A8FE-45D10D74ED00" /><meta name="DC.Language" content="zh-CN" /><title>测温配置</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-D866AD57-3D2C-4B81-B0B9-8914BFFEB25E.html" data-id="GUID-D866AD57-3D2C-4B81-B0B9-8914BFFEB25E">图像数据采集与预览</a></span></li><li class="active"><span class="topicref">测温配置</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body "><div class="nested0" id="GUID-DE3D6496-B3A5-416B-A8FE-45D10D74ED00">
+    <h1 class="title topictitle1">测温配置</h1>
+
+<div class="body conbody">
+<p class="p">客户端预览红外相机图像时，可对测温区域进行相关配置操作，包括<a class="xref" href="GUID-DE3D6496-B3A5-416B-A8FE-45D10D74ED00.html#GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A" title="客户端预览红外相机图像时可进行测温区域的绘制操作。">绘制测温区域</a>和<a class="xref" href="GUID-DE3D6496-B3A5-416B-A8FE-45D10D74ED00.html#GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20" title="测温区域设置界面右侧还可进行测温参数设置、告警设置以及显示设置。">相关参数设置</a>。</p>
+
+</div>
+
+
+<div class="topic task nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A">
+    <h2 class="title topictitle2">绘制测温区域</h2>
+
+
+<div class="body taskbody"><p class="shortdesc">客户端预览红外相机图像时可进行测温区域的绘制操作。</p>
+
+<ol class="ol steps" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__GUID-BC0FDE33-C93A-4749-AD71-A4D203BCB3C2"><li class="li step stepexpand" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__GUID-3082AF8E-378A-4657-8E31-04660F733FDE">
+                <span class="ph cmd">设备列表选中红外测温相机并连接。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__GUID-4CC1CF9F-FE6A-4F5C-9CF2-ED63B2950420">
+                <span class="ph cmd">开启相机预览，关于预览操作具体请见<a class="xref" href="GUID-891CACA9-9195-40E2-8972-20E52967903C.html#GUID-891CACA9-9195-40E2-8972-20E52967903C" title="客户端可对相机进行单画面预览。">开启单画面预览</a>章节和<a class="xref" href="GUID-681B20D7-ED88-42B5-9101-1C2F6AC5E65C.html#GUID-681B20D7-ED88-42B5-9101-1C2F6AC5E65C" title="客户端可同时对多个相机进行多画面预览。">开启多画面预览</a>章节。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__GUID-0AB47754-285B-4225-9897-9546D587E5F3">
+                <span class="ph cmd">点击图像预览窗口上方的<img class="image icon" style="display:none;" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__IMAGE_NKV_RYX_NVB" src="GUID-37CE00C7-5115-475C-B155-14DDB77ADC55-high.png" />，打开测温区域设置界面，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__GUID-061620C3-85AE-4CDF-93FB-C9E37ED7AD9E"><span class="notetitle">说明</span> 
+                        <p class="p">打开测温区域设置界面后，自动加载相机当前测温相关参数。</p>
+
+                    </div>
+
+                    <div class="fig fignone" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__FIG_X1B_SXX_NVB">
+                        
+                        <img class="image" style="display:none;" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__IMAGE_P3M_WXX_NVB" src="GUID-027571CE-95D4-4E83-AF16-90C5466FCDDE-high.jpg" width="1500" />
+                    <div class="fig_caption"><span class="figcap">图 1 测温区域设置</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__GUID-F66D0322-A809-4827-857B-3373E6F0286C">
+                <span class="ph cmd">在测温区域配置界面左上角，单击选择需要绘制的区域类型，如下表所示。可绘制点、多边形、线和圆。</span>
+                <div class="itemgroup info">
+                    
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__TABLE_QTF_5Y1_PVB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 1 测温区域类型</span></caption>
+                            
+                            
+                            
+                            <thead class="thead" align="left">
+                                <tr>
+                                    <th class="entry" valign="top" width="33.33333333333333%" id="d38411e134">
+                                        <p class="p">区域图标</p>
+
+                                    </th>
+
+                                    <th class="entry" valign="top" width="33.33333333333333%" id="d38411e140">
+                                        <p class="p">区域类型</p>
+
+                                    </th>
+
+                                    <th class="entry" valign="top" width="33.33333333333333%" id="d38411e146">
+                                        <p class="p">最多支持添加</p>
+
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody class="tbody">
+                                <tr>
+                                    <td class="entry" valign="top" width="33.33333333333333%" headers="d38411e134 "><img class="image icon" style="display:none;" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__IMAGE_B41_J1B_PVB" src="GUID-A791D7C6-F893-4200-A0D9-8C864AE7D0F7-high.png" /></td>
+
+                                    <td class="entry" valign="top" width="33.33333333333333%" headers="d38411e140 ">
+                                        <p class="p">点</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="33.33333333333333%" headers="d38411e146 ">
+                                        <p class="p">10个</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="33.33333333333333%" headers="d38411e134 "><img class="image icon" style="display:none;" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__IMAGE_KN2_K1B_PVB" src="GUID-1B0334B3-2747-48B6-8493-D212748FAFFE-high.png" /></td>
+
+                                    <td class="entry" valign="top" width="33.33333333333333%" headers="d38411e140 ">
+                                        <p class="p">多边形</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="33.33333333333333%" headers="d38411e146 ">
+                                        <p class="p">10个</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="33.33333333333333%" headers="d38411e134 "><img class="image icon" style="display:none;" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__IMAGE_LFQ_L1B_PVB" src="GUID-DE10A123-475F-4798-8715-E3571D3D285D-high.png" /></td>
+
+                                    <td class="entry" valign="top" width="33.33333333333333%" headers="d38411e140 ">
+                                        <p class="p">线</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="33.33333333333333%" headers="d38411e146 ">
+                                        <p class="p">1个</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="33.33333333333333%" headers="d38411e134 "><img class="image icon" style="display:none;" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__IMAGE_KFV_M1B_PVB" src="GUID-3435051C-3FEA-45E3-8D46-BD187458D998-high.png" /></td>
+
+                                    <td class="entry" valign="top" width="33.33333333333333%" headers="d38411e140 ">
+                                        <p class="p">圆</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="33.33333333333333%" headers="d38411e146 ">
+                                        <p class="p">1个</p>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+</div>
+
+                </div>
+                <div class="itemgroup stepresult">区域列表下方新增一种区域类型，默认名称为：区域编号.区域类型，区域编号按序递增，如下图所示。<div class="fig fignone" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__FIG_ZD5_F2C_4VB">
+                        
+                        <img class="image" style="display:none;" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__IMAGE_AN3_MFC_4VB" src="GUID-63EF415E-C8F0-432E-B206-55EAE86FE953-high.jpg" width="1000" />
+                    <div class="fig_caption"><span class="figcap">图 2 区域列表</span></div></div>
+</div>
+            </li>
+<li class="li step stepexpand" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__GUID-E19C59F1-B83E-45E8-9D2C-3012B0C2F684">
+                <span class="ph cmd">选中需要绘制的区域，单击右侧的<img class="image icon" style="display:none;" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__IMAGE_YCV_D4C_4VB" src="GUID-B0E56FA4-D032-4681-9F2E-7F63D068737C-high.png" />。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__GUID-7321EA91-D3A2-48CD-AF4C-C005704DE20B">
+                <span class="ph cmd">在图像预览区域中单击绘制测温区域，双击结束绘制。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__GUID-EE7FD170-7D40-4B95-AE33-18AB5A67141C">
+                <span class="ph cmd">在左侧区域列表中选中某个区域，勾选需要显示的测温区域温度信息，点区域仅支持显示平均值，多边形、线和圆区域支持显示最大值、最小值和平均值。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__GUID-B7214D58-F50E-45F3-8145-02DE7C04CF76">
+                <span class="ph cmd">点击左下角的<span class="ph uicontrol">设置参数</span>，即可显示绘制的测温区域和勾选的温度信息，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__FIG_SKN_R4D_4VB">
+                        
+                        <img class="image" style="display:none;" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__IMAGE_YBP_W4D_4VB" src="GUID-779135FE-C61C-4338-BE93-086691202B6E-high.jpg" width="1500" />
+                    <div class="fig_caption"><span class="figcap">图 3 设置参数</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__GUID-95726330-8912-4018-B3B8-905510E4638A"><strong>可选操作： </strong>
+                <span class="ph cmd">选中需要删除的区域类型，单击右侧的<img class="image icon" style="display:none;" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__IMAGE_MS4_GJD_4VB" src="GUID-EFDD573E-2077-43AD-B3D6-473068B02AB5-high.png" />删除即可。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__GUID-178F26B1-74DE-40C5-B9F6-6792AE88AF3D"><strong>可选操作： </strong>
+                <span class="ph cmd">点击区域列表右侧的<span class="ph uicontrol">显示全部</span>，在图像预览界面上即可显示绘制的所有测温区域和温度信息。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A__GUID-2BA86F0D-32FE-41CD-BBA8-F25713F99046"><span class="notetitle">说明</span> 
+                        <p class="p">进入测温区域设置界面时，图像预览区域显示绘制的所有测温区域和温度信息。但在区域列表选中任一测温区域时，图像预览区域仅显示当前测温区域和温度信息。</p>
+
+                    </div>
+
+                </div>
+            </li>
+</ol>
+
+</div>
+
+</div>
+<div class="topic concept nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20">
+    <h2 class="title topictitle2">相关参数设置</h2>
+
+
+<div class="body conbody"><p class="shortdesc">测温区域设置界面右侧还可进行测温参数设置、告警设置以及显示设置。</p>
+
+        <div class="note note" id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-ABB460B2-493D-4476-A846-2A820163F99B"><span class="notetitle">说明</span> 
+            <p class="p">完成相关设置后，点击右下角的<span class="ph uicontrol">确定</span>设置生效并关闭界面，点击左下角的<span class="ph uicontrol">设置参数</span>设置生效不关闭界面。</p>
+
+        </div>
+
+        <div class="section" id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-2AE4F9E0-BB1B-4F5D-940C-4B508DBF7B6D"><h3 class="title sectiontitle">测温参数</h3>
+            
+            <p class="p">测温参数部分可对伪彩模式、相机参数、全局测温以及专家测温进行设置。</p>
+
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-A64F4677-E1B4-4E65-8E1A-C9F8F6A8E150"><!-- --></a>伪彩模式</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">可选择相机的伪彩模式。</p>
+
+                    </dd>
+
+                
+            </dl>
+
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-07693C39-807E-4E72-9679-3DB6281EB577"><!-- --></a>相机参数</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">对亮度、灰度系数、锐度、降噪等基础参数进行设置。</p>
+
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-8282ACEE-0EE8-4FDB-9122-AFFC824CF3CD"><!-- --></a>亮度</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">可调整预览图像的亮度。设置的值越大，图像越亮；设置的值越小，图像越暗。</p>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-E88B2392-E59D-481E-992F-CC9776E4921B"><!-- --></a>灰度系数使能</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">可设置是否开启灰度系数功能，开启后可通过<span class="keyword parmname">灰度系数</span>进行设置。</p>
+
+                                    <dl class="dl parml">
+                                        
+                                            <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-2AF0CE1D-F789-4B4D-AED2-ADD870A484CF"><!-- --></a>灰度系数</dt>
+
+                                            <dd class="dd pd">
+                                                <p class="p">可设置预览图像的灰度系数。设置的值越大，对比度越大；设置的值越小，对比度越小。</p>
+
+                                            </dd>
+
+                                        
+                                    </dl>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-1A299F78-DA4C-4619-A708-E7157702451D"><!-- --></a>锐度使能</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">可设置是否开启锐度功能，开启后可通过<span class="keyword parmname">锐度</span>进行设置。</p>
+
+                                    <dl class="dl parml">
+                                        
+                                            <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-B8C2A725-E708-4D7A-AC1D-3E38ED544722"><!-- --></a>锐度</dt>
+
+                                            <dd class="dd pd">
+                                                <p class="p">可设置预览图像边缘的锐利程度。</p>
+
+                                            </dd>
+
+                                        
+                                    </dl>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-63EF2327-9982-4746-888B-C6CE31E6B7C2"><!-- --></a>降噪使能</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">可设置是否开启降噪功能，开启后可提高图像的信噪比，进一步提高图像的成像质量。</p>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                    </dd>
+
+                
+            </dl>
+
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-0F2D4B42-8587-47F1-9A20-C19F0B22AB66"><!-- --></a>全局测温</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">可设置测温区域的全局测温参数。</p>
+
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-17BAD78C-6F0D-4087-A004-5378F92DEC59"><!-- --></a>大气透过率</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">若红外相机的镜头前需增加锗玻璃，可通过该参数设置锗玻璃的透过率。</p>
+
+                                    <div class="note note" id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-E14B5ED7-EDB0-4907-8142-41E46A57202F"><span class="notetitle">说明</span> 
+                                        <p class="p">若无需增加锗玻璃，则可设置为100。</p>
+
+                                    </div>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-B1E49F0E-3A33-4594-802B-5FDAA53C4001"><!-- --></a>温度测量范围</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">根据实际需求选择温度测量范围，可选-20℃~150℃和0℃~550℃。</p>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-4B55A68B-6F73-402E-80E8-2C56EF260A5A"><!-- --></a>目标距离</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">可设置被测物体到设备的直线距离，单位为m。</p>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-5E3C1767-6243-4177-82D8-AB2FFC90E268"><!-- --></a>全屏发射率</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">可设置被测物体的发射率，不同物体的发射率数值有所差别，具体请查看相应型号的红外测温相机用户手册。</p>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                    </dd>
+
+                
+            </dl>
+
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-5E78CA12-3DBB-4A1E-B42A-8C1D51820BA5"><!-- --></a>专家测温</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">可对当前选中的测温区域进行专家测温参数设置。</p>
+
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-BE40F10C-6799-457E-BD0E-288507C34550"><!-- --></a>测温区域专家模式</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">可设置是否开启专家测温模式，开启后需设置以下参数。</p>
+
+                                    <dl class="dl parml">
+                                        
+                                            <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-84C6731D-E128-4531-BBD5-947BF395D0E0"><!-- --></a>测温区域反射使能</dt>
+
+                                            <dd class="dd pd">
+                                                <p class="p">当场景中存在高温物体，若被测物体的发射率较小，并且被测物体反射高温物体时，需开启测温区域反射率。</p>
+
+                                            </dd>
+
+                                        
+                                        
+                                            <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-7215C3CF-685C-4BE1-8796-67ADBF915505"><!-- --></a>测温区域反射率</dt>
+
+                                            <dd class="dd pd">
+                                                <p class="p">设置测温区域反射温度值，需与高温物体的温度值保持一致。</p>
+
+                                            </dd>
+
+                                        
+                                        
+                                            <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-1DBDFD75-8C9B-45F1-9A89-54C803F1098C"><!-- --></a>测温区域发射率</dt>
+
+                                            <dd class="dd pd">
+                                                <p class="p">设置目标物体的发射率，单位为％，不同物体的发射率数值有所差别，具体请查看相应型号的红外测温相机用户手册。</p>
+
+                                            </dd>
+
+                                        
+                                        
+                                            <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-4B549CFB-542D-42D1-B009-FA927014C71A"><!-- --></a>测温区域目标距离</dt>
+
+                                            <dd class="dd pd">
+                                                <p class="p">设置被测量物体到设备的直线距离，单位为m。</p>
+
+                                            </dd>
+
+                                        
+                                    </dl>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                    </dd>
+
+                
+            </dl>
+
+        </div>
+
+        <div class="section" id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-FAFC3FD0-F61B-4E11-9B27-84FC6BA4DE1C"><h3 class="title sectiontitle">告警设置</h3>
+            
+            <p class="p">可对绘制的测温区域设置相应的温度告警条件，分为区域内告警和区域间告警两种。</p>
+
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-12D0E129-4754-48F6-AF24-A10698E625FA"><!-- --></a>区域内告警</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">可对绘制的单个测温区域进行告警规则设置。</p>
+
+                        <p class="p">不同测温区域的告警条件设置方式不同，主要可分为以下两种。</p>
+
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-A153F7B7-E877-4100-8C83-C6394A1DC57C"><!-- --></a>点</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">开启点区域，如下图所示。</p>
+
+                                    <div class="fig fignone" id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__FIG_SWZ_FK2_4VB">
+                                        
+                                        <img class="image" style="display:none;" id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__IMAGE_X4P_ZL1_SVB" src="GUID-EAF1DDF2-54C6-42F5-B661-6F7FE423BB27-high.jpg" width="1000" />
+                                    <div class="fig_caption"><span class="figcap">图 4 点区域告警条件</span></div></div>
+
+                                    <dl class="dl parml">
+                                        
+                                            <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-F752E8BC-ABD3-434A-990E-CDC356022432"><!-- --></a>点的温度</dt>
+
+                                            <dd class="dd pd">
+                                                <p class="p">设置告警温度条件和温度阈值。</p>
+
+                                                <p class="p">若告警温度条件选择<span class="keyword parmname">＞</span>，设置的温度阈值为50℃，当绘制的点区域处的目标温度大于50℃时产生告警。</p>
+
+                                            </dd>
+
+                                        
+                                    </dl>
+
+                                    <dl class="dl parml">
+                                        
+                                            <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-4D33B2E2-4E92-476F-9FD1-249382988E88"><!-- --></a>容差温度</dt>
+
+                                            <dd class="dd pd">
+                                                <p class="p">设置点测温区域内告警的恢复阈值。</p>
+
+                                                <p class="p">当设置容差温度为 5℃时，告警温度为 50℃，当点测温区域内的温度小于等于
+                                                  45℃时，告警取消。 </p>
+
+                                            </dd>
+
+                                        
+                                    </dl>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-AA3A06ED-86B5-461F-ABB3-E74C41C539D8"><!-- --></a>多边形、线或圆</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">开启多边形、线或圆区域。以多边形区域为例，如下图所示。</p>
+
+                                    <div class="fig fignone" id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__FIG_QGQ_JK2_4VB">
+                                        
+                                        <img class="image" style="display:none;" id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__IMAGE_FHS_1M1_SVB" src="GUID-F661C621-3D96-462F-99BA-C0BBA9061D6F-high.jpg" width="1000" />
+                                    <div class="fig_caption"><span class="figcap">图 5 多边形区域告警条件</span></div></div>
+
+                                    <p class="p">设置告警温度来源、温度条件和温度阈值。</p>
+
+                                    <p class="p">若告警温度来源选择<span class="keyword parmname">最低温度</span>，告警温度条件选择<span class="keyword parmname">＜</span>，设置的温度阈值为-20℃，当绘制的多边形、线或圆区域处的目标温度小于-20℃时产生告警。</p>
+
+                                    <dl class="dl parml">
+                                        
+                                            <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-59E789FE-8290-4C35-A304-2FF891EB71AF"><!-- --></a>容差温度</dt>
+
+                                            <dd class="dd pd">
+                                                <p class="p">设置测温区域内告警的恢复阈值。</p>
+
+                                            </dd>
+
+                                        
+                                    </dl>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                    </dd>
+
+                
+            </dl>
+
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-564C065D-83C1-4F90-A7DF-A06DFA43CC65"><!-- --></a>区域间告警</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">可对绘制的两个测温区域之间的温度特征信息进行对比，共支持设置4个区域间告警规则。</p>
+
+                        <p class="p">开启需要设置的区域间告警规则。以规则0为例，如下图所示。</p>
+
+                        <div class="fig fignone" id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__FIG_HNQ_MM2_4VB">
+                            
+                            <img class="image" style="display:none;" id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__IMAGE_HX1_CM1_SVB" src="GUID-E8D3A395-B18C-4E0D-8370-81638C73184F-high.jpg" width="1000" />
+                        <div class="fig_caption"><span class="figcap">图 6 区域间告警</span></div></div>
+
+                        <p class="p">首先，在<span class="keyword parmname">区域索引1</span>中设置源测温区域，即被比较区域，在<span class="keyword parmname">区域索引2</span>中设置目标测温区域，即比较区域。</p>
+
+                        <p class="p">其次，设置告警温度来源、温度条件和温度阈值。</p>
+
+                        <p class="p">若告警温度来源选择<span class="keyword parmname">最高温度</span>，告警温度条件选择<span class="keyword parmname">＞</span>，设置的温度阈值为10°C，当源测温区域的最高温度比目标测温区域的最高温度大于10°C时，产生告警。</p>
+
+                    </dd>
+
+                
+            </dl>
+
+        </div>
+
+        <div class="section" id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-D310A7F0-2896-4B4D-A1F4-672352EB37A4"><h3 class="title sectiontitle">显示设置</h3>
+            
+            <p class="p">可对基础显示和温度窗口等温度显示功能进行设置。</p>
+
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-04CA8095-7102-4536-A9B3-46B9CFDC612C"><!-- --></a>基础显示</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">可设置预览图像的测温条显示功能和图像叠加功能。</p>
+
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-B1B122E1-52BE-4945-9912-66A4D2D3A22C"><!-- --></a>测温条</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">使能后，可在图像预览画面右侧显示测温温度条，如下图所示。</p>
+
+                                    <div class="fig fignone" id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__FIG_BPS_KW2_4VB">
+                                        
+                                        <img class="image" style="display:none;" id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__IMAGE_HFR_LW2_4VB" src="GUID-65D50AFF-6AE1-4242-8E9F-2C1BFCAB09E9-high.jpg" width="1500" />
+                                    <div class="fig_caption"><span class="figcap">图 7 测温条</span></div></div>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-1390F752-E61C-4ECE-BDB8-3B1E2A55FCAA"><!-- --></a>区域信息叠加</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">选择图像叠加方式，可选<span class="keyword parmname">裸图</span>、<span class="keyword parmname">相机叠加</span>和<span class="keyword parmname">客户端叠加</span>。</p>
+
+                                    <ul class="ul" id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__UL_DPF_DKF_PVB">
+                                        <li class="li" id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-96928C81-2CBB-4232-A58F-5FAD1E4A2329">
+                                            <p class="p"><span class="keyword parmname">裸图</span>：取消图像叠加信息功能，相机采集图像和保存图像时均不显示测温区域和温度信息。</p>
+
+                                        </li>
+
+                                        <li class="li" id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-01884DEF-07F4-4525-9799-96BF677B3FE2">
+                                            <p class="p"><span class="keyword parmname">相机叠加</span>：相机出图画面包含测温区域和温度信息。</p>
+
+                                        </li>
+
+                                        <li class="li" id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-ECB410AB-DEAE-487D-B165-432601491BEF">
+                                            <p class="p"><span class="keyword parmname">客户端叠加</span>：测温区域和温度信息叠加至客户端，相机出图画面不包含测温区域和温度信息。</p>
+
+                                        </li>
+
+                                    </ul>
+
+                                    <div class="note note" id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-91420D07-1EEF-436C-AD28-D12634237CC4"><span class="notetitle">说明</span> 
+                                        <p class="p">如需显示测温条和测温区域温度信息，需先开启<span class="keyword parmname">相机叠加</span>功能。</p>
+
+                                    </div>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                    </dd>
+
+                
+            </dl>
+
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-9E86452B-4E89-40FC-A5B2-90A7C5C45989"><!-- --></a>温度窗口</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">温度窗口包含4个数值选项和1个曲线图选项，开启任一选项后，可显示在属性树的温度窗口栏处。</p>
+
+                        <p class="p">开启某一选项，下拉选择已绘制的测温区域和温度来源，如下图所示。</p>
+
+                        <p class="p">显示结果具体请见<a class="xref" href="GUID-1D27B98E-1204-4E8F-9530-FD8C3F9AE46E.html#GUID-1D27B98E-1204-4E8F-9530-FD8C3F9AE46E" title="温度窗口可查看测温区域的温度数值以及温度曲线。">温度窗口</a>章节。</p>
+
+                        <div class="fig fignone" id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__FIG_WXD_CY2_4VB">
+                            
+                            <img class="image" style="display:none;" id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__IMAGE_DJN_DY2_4VB" src="GUID-6BD41D53-64E9-418F-A211-1321FA27DC1B-high.jpg" width="1000" />
+                        <div class="fig_caption"><span class="figcap">图 8 温度窗口设置</span></div></div>
+
+                    </dd>
+
+                
+            </dl>
+
+        </div>
+
+</div>
+
+</div>
+</div>
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>本页导航</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-CA33C834-3A26-4B33-90B4-9553D31C1B4A" class="feature_guide_h2"><span class="link_button">绘制测温区域</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20" class="feature_guide_h2"><span class="link_button">相关参数设置</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-2AE4F9E0-BB1B-4F5D-940C-4B508DBF7B6D" class="feature_guide_h3"><span class="link_button">测温参数</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-FAFC3FD0-F61B-4E11-9B27-84FC6BA4DE1C" class="feature_guide_h3"><span class="link_button">告警设置</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-97D705AD-AF10-46D3-BF8F-3B2217FD0F20__GUID-D310A7F0-2896-4B4D-A1F4-672352EB37A4" class="feature_guide_h3"><span class="link_button">显示设置</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

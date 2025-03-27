@@ -1,0 +1,6 @@
+<Root>
+    <Group ui_param_show="1" ui_display_name="" id="0" ui_param_name="BaseParams" extend="false">
+        <Node ui_param_display_type="SpinBox" ui_param_show="0" ui_display_cn_name="插值算法" Value="1" max="2" ui_display_name="InterMethod" min="1" ui_param_type="Integer" ui_param_name="InterMethod" ui_display_en_name="InterMethod"/>
+        <Node ui_param_display_type="SpinBox" ui_display_cn_name="缩放比例系数" Value="1000" max="2800" ui_display_name="Scale" min="1000" ui_param_type="Integer" ui_param_name="Scale" ui_display_en_name="Scaling Factor"/>
+    </Group>
+</Root>

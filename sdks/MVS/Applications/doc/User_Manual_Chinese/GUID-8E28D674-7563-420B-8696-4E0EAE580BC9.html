@@ -1,0 +1,339 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="GenTL管理" /><meta name="abstract" content="GenTL标准提供一个统一的接口，不仅可对采集卡进行参数控制，还可使客户端在不依赖于底层传输技术的情况下连接相机，与相机通信，甚至直接获取相机采集的数据。" /><meta name="description" content="GenTL标准提供一个统一的接口，不仅可对采集卡进行参数控制，还可使客户端在不依赖于底层传输技术的情况下连接相机，与相机通信，甚至直接获取相机采集的数据。" /><meta name="DC.Relation" scheme="URI" content="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9" /><meta name="DC.Language" content="zh-CN" /><title>GenTL管理</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html" data-id="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E">设备管理</a></span></li><li class="active"><span class="topicref">GenTL管理</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">GenTL管理</h1>
+
+    
+    <div class="body conbody"><p class="shortdesc">GenTL标准提供一个统一的接口，不仅可对采集卡进行参数控制，还可使客户端在不依赖于底层传输技术的情况下连接相机，与相机通信，甚至直接获取相机采集的数据。</p>
+
+        <div class="section" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__GUID-D67E93F9-DCD5-4EF4-BC00-09CC0BDCEADD"><h2 class="title sectiontitle">加载cti文件</h2>
+            
+            <p class="p">设备列表选中GenTL，单击<img class="image" style="display:none;" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__IMAGE_HFD_RRL_YXB" src="GUID-EEFE6837-D4D1-4F4D-8ED8-4C938F5D6FCF-high.png" />，手动选择需要的cti文件后单击<span class="ph uicontrol">打开</span>即可枚举该cti文件下的所有采集卡。</p>
+
+            <p class="p">加载cti文件后，可通过设备列表GenTL右侧的<img class="image icon" style="display:none;" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__IMAGE_HXB_1TL_YXB" src="GUID-21129D57-7CF9-4746-88F0-C5EFF4A4C073-high.png" />手动刷新枚举到的采集卡。</p>
+
+            <p class="p">客户端提供的cti文件路径为C:\Program Files (x86)\Common Files\MVS\Runtime， 请根据电脑实际系统类型选择路径下的文件夹。cti文件介绍如下表所示。</p>
+
+            
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__TABLE_E12_GWL_PTB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 1 cti文件介绍</span></caption>
+                    
+                    
+                    <thead class="thead" align="left">
+                        <tr>
+                            <th class="entry" valign="top" width="48.54368932038835%" id="d25602e55">文件名称</th>
+
+                            <th class="entry" valign="top" width="51.45631067961165%" id="d25602e58">设备类型</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody class="tbody">
+                        <tr>
+                            <td class="entry" valign="top" width="48.54368932038835%" headers="d25602e55 ">
+                                <p class="p">MvFGProducerCML.cti</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="51.45631067961165%" headers="d25602e58 ">
+                                <p class="p">Camera Link采集卡</p>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="48.54368932038835%" headers="d25602e55 ">
+                                <p class="p">MvFGProducerCXP.cti</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="51.45631067961165%" headers="d25602e58 ">
+                                <p class="p">CoaXPress采集卡</p>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="48.54368932038835%" headers="d25602e55 ">
+                                <p class="p">MvFGProducerGEV.cti</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="51.45631067961165%" headers="d25602e58 ">
+                                <p class="p">GigE采集卡</p>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="48.54368932038835%" headers="d25602e55 ">
+                                <p class="p">MvFGProducerXoF.cti</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="51.45631067961165%" headers="d25602e58 ">
+                                <p class="p">XoFLink采集卡</p>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="48.54368932038835%" headers="d25602e55 ">
+                                <p class="p">MvProducerGEV.cti</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="51.45631067961165%" headers="d25602e58 ">
+                                <p class="p">GEV接口</p>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="48.54368932038835%" headers="d25602e55 ">
+                                <p class="p">MvProducerU3V.cti</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="51.45631067961165%" headers="d25602e58 ">
+                                <p class="p">USB接口</p>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+</div>
+
+            <div class="note note" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__GUID-6E63A828-F8AB-48BD-B52E-159EDEA27654"><span class="notetitle">说明</span> 
+                <ul class="ul" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__UL_K1K_QBS_QTB">
+                    <li class="li" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__GUID-E7ABCAF1-CF56-45BA-9B0B-73ACE4F43A7C">
+                        <p class="p">MvFG开头的四个cti文件均为本公司自研采集卡。</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__GUID-1E3278A6-26CD-4D42-85F8-E999EC1E088E">
+                        <p class="p">其他厂商的cti文件请自行获取，若打开cti文件异常，请联系cti文件的提供厂商获得支持。</p>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__GUID-395FD5DE-A1CE-4C7F-A9FF-53A9FC2B59FD"><h2 class="title sectiontitle">设备操作</h2>
+            
+            <p class="p">通过设备列表的GenTL接口，可对枚举出的采集卡以及采集卡下连接的相机进行相关操作。</p>
+
+            <ul class="ul" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__UL_USG_XZL_PTB">
+                <li class="li" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__GUID-BA43697E-77A2-4812-A4C7-E0FD78EB3E21">
+                    <p class="p">采集卡：加载cti文件后，设备列表的GenTL会显示加载该cti文件枚举到的采集卡并可进行相关操作。对于不同状态的采集卡，设备列表的采集卡图标有所差别，采集卡的状态说明请见下表。</p>
+
+                    
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__GUID-E7D126B8-DA78-494C-872E-5E49C46B87D1" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 2 采集卡状态介绍</span></caption>
+                            
+                            
+                            
+                            <thead class="thead" align="left">
+                                <tr>
+                                    <th class="entry" valign="top" width="16.94915254237288%" id="d25602e211">
+                                        <p class="p">图标</p>
+
+                                    </th>
+
+                                    <th class="entry" valign="top" width="18.64406779661017%" id="d25602e217">
+                                        <p class="p">状态</p>
+
+                                    </th>
+
+                                    <th class="entry" valign="top" width="64.40677966101694%" id="d25602e223">
+                                        <p class="p">含义</p>
+
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody class="tbody">
+                                <tr>
+                                    <td class="entry" valign="top" width="16.94915254237288%" headers="d25602e211 "><img class="image" style="display:none;" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__IMAGE_TRB_WKR_4TB" src="GUID-00F2CB57-CD35-46EA-9BE0-8FBAD9732CC1-high.png" /></td>
+
+                                    <td class="entry" valign="top" width="18.64406779661017%" headers="d25602e217 ">
+                                        <p class="p">可用</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="64.40677966101694%" headers="d25602e223 ">
+                                        <p class="p">采集卡处于可用状态，可正常连接和使用。</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="16.94915254237288%" headers="d25602e211 "><img class="image" style="display:none;" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__IMAGE_VXT_WKR_4TB" src="GUID-E73E2DEB-0370-4C3B-899F-EEC869073A4F-high.png" /></td>
+
+                                    <td class="entry" valign="top" width="18.64406779661017%" headers="d25602e217 ">
+                                        <p class="p">打开</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="64.40677966101694%" headers="d25602e223 ">
+                                        <p class="p">客户端已经打开该采集卡，可进行采集卡参数设置等操作，并枚举采集卡下连接的相机。</p>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+</div>
+
+                    <ul class="ul" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__UL_C21_41N_PTB">
+                        <li class="li" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__GUID-EF71C496-3B94-4724-9A0D-0DDAD1A30095">
+                            <p class="p">采集卡参数设置：点击<img class="image icon" style="display:none;" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__IMAGE_GSP_4VF_PSB" src="GUID-65704AC7-82AE-472D-8026-82ABAF852023-high.png" />打开采集卡，右侧显示采集卡属性树，即可对采集卡进行参数设置，具体介绍请参见采集卡相应接口的用户手册。</p>
+
+                            <div class="note note" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__GUID-DCAEB648-D7C9-4A1B-8923-9B5FFE12B2BF"><span class="notetitle">说明</span> 
+                                <p class="p">GenTL接口和PCIe接口可同时枚举并连接相同的采集卡。</p>
+
+                            </div>
+
+                        </li>
+
+                        <li class="li" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__GUID-607FB1B3-46E0-42C1-9565-44EDEE301EB1">
+                            <p class="p">保存采集卡GenlCam文件：点击<img class="image icon" style="display:none;" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__IMAGE_V5P_5JK_4TB" src="GUID-65704AC7-82AE-472D-8026-82ABAF852023-high.png" />打开采集卡，选中采集卡右键点击<span class="ph uicontrol">保存GenlCam
+                                XML</span>，可将当前打开采集卡的GenlCam文件以XML格式保存到本地PC，导出文件名默认为采集卡型号。</p>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="li" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__GUID-D9F6C2C5-2344-45AB-BCDD-7DC1F791C787">
+                    <p class="p">相机：打开采集卡后，可获取通过采集卡连接的相机，双击连接相机，右侧可显示相机的属性树，可对相机进行参数设置和图像预览等操作。</p>
+
+                    <div class="note note" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__GUID-3B4AF9C0-78AE-4C5D-A92B-2FA1ED4EE775"><span class="notetitle">说明</span> 
+                        <ul class="ul" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__UL_TY4_YSQ_SDC">
+                            <li class="li" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__GUID-7506428F-B658-4711-BF0C-5145CC23B9B0">
+                                <p class="p">必须先打开采集卡才可枚举通过采集卡连接的相机。</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__GUID-FEE8011C-558A-4497-A4ED-C28D453F8C40">
+                                <p class="p">GenTL接口和PCIe接口可同时枚举同一采集卡下的相同相机，但仅支持通过其中一个接口连接相机。若需要通过另一个接口连接相机，需先断开当前接口的相机连接，另一个接口才可连接相机。</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="fig fignone" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__FIG_WCM_LBN_PTB">
+                        
+                        <img class="image" style="display:none;" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__IMAGE_XQP_XZR_4TB" src="GUID-B2134F4C-710B-4E1A-AB6C-A4D7C910742F-high.png" width="1000" />
+                    <div class="fig_caption"><span class="figcap">图 1 显示枚举的采集卡及连接的相机</span></div></div>
+
+                    <ul class="ul" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__UL_VYH_4BN_PTB">
+                        <li class="li" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__GUID-0C9CBFD7-2750-4313-A8DB-59CD9140EE90">
+                            <p class="p">刷新相机：加载cti文件后，可通过设备列表GenTL右侧的<img class="image icon" style="display:none;" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__IMAGE_IBD_4QZ_BKB" src="GUID-21129D57-7CF9-4746-88F0-C5EFF4A4C073-high.png" />手动刷新连接的相机。</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__GUID-30065844-DCC7-4775-9DFB-60B6DE0101CE">
+                            <p class="p">单一相机的固件升级：选中相机右键点击<span class="ph uicontrol">固件升级</span>，点击<img class="image icon" style="display:none;" id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__IMAGE_WSN_QBN_PTB" src="GUID-63DAD9E8-D5BC-4C8F-82B3-9AF9D55585A9-high.png" />选择固件升级包（dav文件），点击<span class="ph uicontrol">升级</span>按钮即可。</p>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>本页导航</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__GUID-D67E93F9-DCD5-4EF4-BC00-09CC0BDCEADD" class="feature_guide_h2"><span class="link_button">加载cti文件</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9__GUID-395FD5DE-A1CE-4C7F-A9FF-53A9FC2B59FD" class="feature_guide_h2"><span class="link_button">设备操作</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

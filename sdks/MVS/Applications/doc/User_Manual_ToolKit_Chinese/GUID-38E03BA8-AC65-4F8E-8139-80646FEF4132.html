@@ -1,0 +1,433 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="description" content="工具包含 日志 和 快速色彩标定 。 日志处可查询并导出日志信息，主要为使用图像调试工具时的基本操作信息。 通过菜单栏的工具进入日志，如下图所示。 图 1 工具界面 根据实际需求选择需查询的日志类别，可选 全部 、 跟踪 、 调试 、 信息 、 告警 和 错误 。 可选操作： 设置需查询日志的时间段，如下图所示。左侧选择年月日，右侧通过滑动选择时分秒，数值停留在橙色区域方有效，完成设置后单击 确定 ..." /><meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="工具" /><meta name="DC.Relation" scheme="URI" content="GUID-25FC4626-5C11-4EBB-917E-446BD2802B7A.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-38E03BA8-AC65-4F8E-8139-80646FEF4132" /><meta name="DC.Language" content="zh-CN" /><title>工具</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-4A707B85-6362-489F-AD0C-12957E57E3F9.html" data-id="GUID-4A707B85-6362-489F-AD0C-12957E57E3F9">图像调试工具</a></span></li><li><span class="topicref"><a href="GUID-25FC4626-5C11-4EBB-917E-446BD2802B7A.html" data-id="GUID-25FC4626-5C11-4EBB-917E-446BD2802B7A">菜单栏</a></span></li><li class="active"><span class="topicref">工具</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body "><div class="nested0" id="GUID-38E03BA8-AC65-4F8E-8139-80646FEF4132">
+    <h1 class="title topictitle1">工具</h1>
+
+<div class="body conbody">
+<p class="p">工具包含<a class="xref" href="GUID-38E03BA8-AC65-4F8E-8139-80646FEF4132.html#GUID-111280D9-501B-4402-BFAB-A852509B58F2" title="日志处可查询并导出日志信息，主要为使用图像调试工具时的基本操作信息。">日志</a>和<a class="xref" href="GUID-38E03BA8-AC65-4F8E-8139-80646FEF4132.html#GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1" title="快速色彩标定工具支持实现任意照明条件下标准值以及参考相机色彩效果的相机色彩参数标定。">快速色彩标定</a>。</p>
+
+</div>
+
+
+<div class="topic task nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-111280D9-501B-4402-BFAB-A852509B58F2">
+    <h2 class="title topictitle2">日志</h2>
+
+
+<div class="body taskbody"><p class="shortdesc">日志处可查询并导出日志信息，主要为使用图像调试工具时的基本操作信息。</p>
+
+<ol class="ol steps" id="GUID-111280D9-501B-4402-BFAB-A852509B58F2__GUID-F0E08209-6CE6-4F65-82CE-8C1A89D815CB"><li class="li step stepexpand" id="GUID-111280D9-501B-4402-BFAB-A852509B58F2__GUID-E527881A-8787-49D4-80FD-E5825998C5A5">
+                <span class="ph cmd">通过菜单栏的工具进入日志，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-111280D9-501B-4402-BFAB-A852509B58F2__FIG_TGQ_YLS_RQB">
+                        
+                        <img class="image" style="display:none;" id="GUID-111280D9-501B-4402-BFAB-A852509B58F2__IMAGE_EZJ_TBF_5QB" src="GUID-D316EEDD-5E53-4604-8743-2FE3A138784B-high.png" width="1706" />
+                    <div class="fig_caption"><span class="figcap">图 1 工具界面</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-111280D9-501B-4402-BFAB-A852509B58F2__GUID-8A34FD8D-3EFB-4E0B-A337-E1822188F505">
+                <span class="ph cmd">根据实际需求选择需查询的日志类别，可选<span class="keyword parmname">全部</span>、<span class="keyword parmname">跟踪</span>、<span class="keyword parmname">调试</span>、<span class="keyword parmname">信息</span>、<span class="keyword parmname">告警</span>和<span class="keyword parmname">错误</span>。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-111280D9-501B-4402-BFAB-A852509B58F2__GUID-B18BCF48-A9ED-43AC-8D4F-15C4173C868A"><strong>可选操作： </strong>
+                <span class="ph cmd">设置需查询日志的时间段，如下图所示。左侧选择年月日，右侧通过滑动选择时分秒，数值停留在橙色区域方有效，完成设置后单击<span class="ph uicontrol">确定</span>即可。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-111280D9-501B-4402-BFAB-A852509B58F2__GUID-D3F5AECA-E7FB-4DE8-9707-C4B03298FFFC"><span class="notetitle">说明</span> 
+                        <p class="p">查询时间段默认为PC当前时间的24小时内。</p>
+
+                    </div>
+
+                </div>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-111280D9-501B-4402-BFAB-A852509B58F2__FIG_DD3_4MS_RQB">
+                        
+                        <img class="image" style="display:none;" id="GUID-111280D9-501B-4402-BFAB-A852509B58F2__IMAGE_PZL_VBF_5QB" src="GUID-8D13AC4D-B206-45AB-82B6-11F24F5FB2FA-high.png" width="1088" />
+                    <div class="fig_caption"><span class="figcap">图 2 时间段查询</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-111280D9-501B-4402-BFAB-A852509B58F2__GUID-E6A392BD-BCA6-4D75-B2AC-858487C23961">
+                <span class="ph cmd">单击<span class="ph uicontrol">查询</span>即可查询图像调试工具日志，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-111280D9-501B-4402-BFAB-A852509B58F2__FIG_USC_QMS_RQB">
+                        
+                        <img class="image" style="display:none;" id="GUID-111280D9-501B-4402-BFAB-A852509B58F2__IMAGE_TJF_XBF_5QB" src="GUID-CEF067B5-8F2E-4961-B324-1F2ED934AA23-high.png" width="1704" />
+                    <div class="fig_caption"><span class="figcap">图 3 查询结果</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-111280D9-501B-4402-BFAB-A852509B58F2__GUID-5B3D9ADA-C356-48BF-B5A8-A95BDC6AA654"><strong>可选操作： </strong>
+                <span class="ph cmd">单击<span class="ph uicontrol">导出</span>可将查询的日志信息以json文件保存到本地。</span>
+            </li>
+</ol>
+
+</div>
+
+</div>
+<div class="topic task nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1">
+    <h2 class="title topictitle2">快速色彩标定</h2>
+
+
+<div class="body taskbody"><p class="shortdesc">快速色彩标定工具支持实现任意照明条件下标准值以及参考相机色彩效果的相机色彩参数标定。</p>
+
+<div class="section prereq p" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-C51F395A-A25A-4F7E-BFF5-386882FF5F4E">
+            <p class="p">已通过<span class="ph menucascade"><span class="ph uicontrol">工具</span> &gt; <span class="ph uicontrol">快速色彩标定</span></span>进入快速色彩标定界面。</p>
+
+        </div>
+
+<ol class="ol steps" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-016A4590-54A6-4348-B2E9-7BE48A8E9F67"><li class="li step stepexpand" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-93FBA562-9671-40D0-9068-893FEFEB50EE">
+                <span class="ph cmd">选择<span class="ph uicontrol">图像来源</span>和<span class="ph uicontrol">色彩标定模式</span>。</span>
+                <div class="itemgroup info">
+                    <ul class="ul" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__UL_WDW_F5R_SWB">
+                        <li class="li" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-A7F3CA48-C298-496D-961F-53F190BAFBCA">
+                            <p class="p">图像来源：可选连接相机和本地图像。</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-700CEBDF-ABA6-4714-8034-F815E2CBC031">
+                            <p class="p">色彩标定模式：可选标准模式和参考模式。</p>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-EFBC33D0-9F3E-4FA7-9D4F-00B62D830743">
+                <span class="ph cmd">调节图像亮度。</span>
+                <div class="itemgroup info">
+                    <ol class="ol" type="a" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__OL_WFK_NJM_TWB">
+                        <li class="li" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-6617BAC1-4E0B-453C-98C6-580117F25FBF">
+                            <p class="p">获取图像。</p>
+
+                            <ul class="ul" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__UL_B3D_TKM_TWB">
+                                <li class="li" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-9970E991-E8B1-4FF9-A0F2-C17D87064281">
+                                    <p class="p">当图像来源选择连接相机时，单击图像窗口左上角的<img class="image icon" style="display:none;" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__IMAGE_XYN_4LM_TWB" src="GUID-5B15CD10-FDE8-4E41-A980-8454F81175E0-high.png" />进行采图，同时可设置相机<span class="keyword parmname">曝光时间</span>和<span class="keyword parmname">增益</span>，也可点击<span class="ph uicontrol">自动</span>对曝光时间进行自动调节。</p>
+
+                                </li>
+
+                                <li class="li" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-373B3438-6525-42B6-8EFC-201B64018ED4">
+                                    <p class="p">当图像来源选择本地图像时，单击<span class="ph uicontrol">导入图像源</span>进行导入图像。</p>
+
+                                    <div class="note note" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-05AA9F74-CDE0-405E-9721-E40CC6E0A5F7"><span class="notetitle">说明</span> 
+                                        <p class="p">此处导入的图像应为关闭所有色彩校正算法使能的图像。导入图像后，也可点击<img class="image icon" style="display:none;" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__IMAGE_FS2_THX_SWB" src="GUID-C653B8F6-BCB5-47D0-881C-596407F86E10-high.png" />进行替换图像。</p>
+
+                                    </div>
+
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <li class="li" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-752B711E-D9FA-4298-A82A-2F14EC4208F1">
+                            <p class="p">单击<span class="keyword parmname">绘制ROI</span>右侧的<img class="image icon" style="display:none;" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__IMAGE_P23_S5R_SWB" src="GUID-C312D8F2-6983-4D79-9083-8E0632CCECD0-high.png" />并在左侧图像上绘制24色卡ROI。</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-A31B17CD-9D70-4DBE-8F1E-917C8591D8BB">
+                            <p class="p">单击<span class="ph uicontrol">判断亮度</span>。</p>
+
+                            <div class="note note" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-85D7C505-3F26-4B47-96FA-08D0E1B7AD04"><span class="notetitle">说明</span> 
+                                <ul class="ul" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__UL_R5V_QDX_SWB">
+                                    <li class="li" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-62ECC876-C579-4A83-B7D1-C74BBB9E1C84">
+                                        <p class="p">若<span class="keyword parmname">当前亮度值</span>显示绿色（在建议值范围内），可点击<span class="ph uicontrol">下一步</span>。</p>
+
+                                    </li>
+
+                                    <li class="li" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-007AB1C8-6E04-44B9-B2EC-F2BD525937F2">
+                                        <p class="p">若<span class="keyword parmname">当前亮度值</span>显示红色（超出建议值范围），则需重新调整曝光和增益值并重新采图，直至亮度符合建议值区间。</p>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </li>
+
+                    </ol>
+
+                    <div class="fig fignone" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__FIG_KMD_CXM_TWB">
+                        
+                        <img class="image" style="display:none;" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__IMAGE_LMD_CXM_TWB" src="GUID-EFD70CBF-6A08-4639-A3F5-6881CC0DC6B7-high.png" width="2000" />
+                    <div class="fig_caption"><span class="figcap">图 4 调节图像亮度（本地图像）</span></div></div>
+
+                    <div class="fig fignone" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__FIG_CLD_CXM_TWB">
+                        
+                        <img class="image" style="display:none;" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__IMAGE_DLD_CXM_TWB" src="GUID-73224C20-E457-4D9A-810F-EE6D53EC058F-high.png" width="2000" />
+                    <div class="fig_caption"><span class="figcap">图 5 调节图像亮度（连接相机）</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-47AF12C5-3546-495D-B6EE-FDA34EF6EDED">
+                <span class="ph cmd">导入参考图像。</span>
+                <div class="itemgroup info">
+                    <p class="p">色彩标定模式选择<span class="keyword parmname">标准模式</span>时，此步骤会自动导入图像源内置的24色卡标准颜色作为参考颜色，点击<span class="ph uicontrol">下一步</span>即可。</p>
+
+                    <div class="fig fignone" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__FIG_DLV_NMX_SWB">
+                        
+                        <img class="image" style="display:none;" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__IMAGE_ELV_NMX_SWB" src="GUID-3E10409C-F19B-4519-8804-1787B175E7F1-high.png" width="2000" />
+                    <div class="fig_caption"><span class="figcap">图 6 导入参考图像（标准模式）</span></div></div>
+
+                    <p class="p">色彩标定模式选择<span class="keyword parmname">参考模式</span>时，此步骤需针对不同模式导入对应色彩校正算法使能的参考图像。</p>
+
+                    <ol class="ol" type="a" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__OL_KKX_XPW_SWB">
+                        <li class="li" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-1A499389-9538-49E6-8BEF-812ED4CEDC97">
+                            <p class="p">选择<span class="ph uicontrol">模式</span>，可选模式1、模式2、模式3。模式1需导入3张参考图像，模式2和模式3均需导入2张参考图像。每种模式对应的参考图像要求具体请见下表。</p>
+
+                            
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__TABLE_OJC_DPW_SWB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 1 不同模式下的参考图像要求</span></caption>
+                                    
+                                    
+                                    <thead class="thead" align="left">
+                                        <tr>
+                                            <th class="entry" valign="top" width="22.624434389140273%" id="d7016e392">
+                                                <p class="p">模式</p>
+
+                                            </th>
+
+                                            <th class="entry" valign="top" width="77.37556561085974%" id="d7016e398">
+                                                <p class="p">参考图像要求</p>
+
+                                            </th>
+
+                                        </tr>
+
+                                    </thead>
+
+                                    <tbody class="tbody">
+                                        <tr>
+                                            <td class="entry" rowspan="3" valign="top" width="22.624434389140273%" headers="d7016e392 ">
+                                                <p class="p">模式1</p>
+
+                                            </td>
+
+                                            <td class="entry" valign="top" width="77.37556561085974%" headers="d7016e398 ">
+                                                <p class="p">参考图像1：仅开启白平衡使能</p>
+
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td class="entry" valign="top" width="77.37556561085974%" headers="d7016e398 ">
+                                                <p class="p">参考图像2：开启白平衡和CCM使能</p>
+
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td class="entry" valign="top" width="77.37556561085974%" headers="d7016e398 ">
+                                                <p class="p">参考图像3：开启白平衡、CCM和超级调色盘使能</p>
+
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td class="entry" rowspan="2" valign="top" width="22.624434389140273%" headers="d7016e392 ">
+                                                <p class="p">模式2</p>
+
+                                            </td>
+
+                                            <td class="entry" valign="top" width="77.37556561085974%" headers="d7016e398 ">
+                                                <p class="p">参考图像1：开启白平衡和CCM使能</p>
+
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td class="entry" valign="top" width="77.37556561085974%" headers="d7016e398 ">
+                                                <p class="p">参考图像2：开启白平衡、CCM和超级调色盘使能</p>
+
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td class="entry" rowspan="2" valign="top" width="22.624434389140273%" headers="d7016e392 ">
+                                                <p class="p">模式3</p>
+
+                                            </td>
+
+                                            <td class="entry" valign="top" width="77.37556561085974%" headers="d7016e398 ">
+                                                <p class="p">参考图像1：仅开启白平衡使能</p>
+
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td class="entry" valign="top" width="77.37556561085974%" headers="d7016e398 ">
+                                                <p class="p">参考图像2：开启白平衡、CCM和超级调色盘使能</p>
+
+                                            </td>
+
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+</div>
+
+                        </li>
+
+                        <li class="li" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-6D437BB7-1644-4294-B458-83AAD7BF6494">
+                            <p class="p">单击<span class="keyword parmname">参考图像</span>右下方的<img class="image icon" style="display:none;" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__IMAGE_KRZ_TTD_TWB" src="GUID-984CCDB6-01FD-4554-B211-240219071A49-high.png" />并导入对应色彩校正算法使能的图像。</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-B108F5E0-F002-48A9-835E-05261B1951BB">
+                            <p class="p">单击<span class="keyword parmname">绘制ROI</span>右侧的<img class="image icon" style="display:none;" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__IMAGE_BDG_RCX_SWB" src="GUID-C312D8F2-6983-4D79-9083-8E0632CCECD0-high.png" />并在左侧参考图像上绘制24色ROI。单击其余参考图像右侧的<span class="ph uicontrol">配置ROI</span>可直接复用绘制的ROI。</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-8119295F-1B70-49EE-9241-37C98FEFEA02">
+                            <p class="p">设置<span class="ph uicontrol">相机是否开启SRGB</span>。若图像在采集时开启SRGB，则需勾选此项，否则无需勾选。</p>
+
+                        </li>
+
+                    </ol>
+
+                    <div class="fig fignone" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__FIG_CRV_PMX_SWB">
+                        
+                        <img class="image" style="display:none;" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__IMAGE_DRV_PMX_SWB" src="GUID-E0CB3420-2139-457C-B49B-72D7F8867820-high.png" width="2000" />
+                    <div class="fig_caption"><span class="figcap">图 7 导入参考图像（参考模式）</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-1C1ADE50-554B-4E19-9EBE-2AA0CDB8A1A6">
+                <span class="ph cmd">预览标定结果。</span>
+                <div class="itemgroup info">
+                    <p class="p">此步骤可自动获取色彩校正参数（包含白平衡、CCM、超级调色盘）以及颜色信息（包含当前颜色、原始颜色、目标颜色以及颜色误差）。启用<span class="ph uicontrol">量化</span>功能后，通过调整白平衡和CCM的<span class="ph uicontrol">量化系数</span>可将矩阵中的数值进行对应倍数的量化。</p>
+
+                    <div class="fig fignone" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__FIG_IB2_HLX_SWB">
+                        
+                        <img class="image" style="display:none;" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__IMAGE_JB2_HLX_SWB" src="GUID-9DB09E55-DE65-494A-A095-56AA9A5417A8-high.png" width="2000" />
+                    <div class="fig_caption"><span class="figcap">图 8 预览标定结果</span></div></div>
+
+                    <div class="note note" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-2BBE8226-AA1F-4F96-8034-8E23226CDB74"><span class="notetitle">说明</span> 
+                        <p class="p">24色卡中的每个格子被划分为3个子区域，1号区域代表目标值（Target Value），2号区域代表原始值（Original
+                            Value），3号区域代表当前值（Current Value）。若1和3号区域颜色越接近，则说明校正效果越好。</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-D9BE299B-184B-4724-92F7-91406B7A27F1">
+                <span class="ph cmd">保存标定结果。</span>
+                <div class="itemgroup info">
+                    <ul class="ul" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__UL_TZ5_FHX_SWB">
+                        <li class="li" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-8F1AE2E7-BFA6-4221-9297-4EEF03EFA300">
+                            <p class="p">单击校正后图像右上角的<img class="image icon" style="display:none;" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__IMAGE_YTP_HHX_SWB" src="GUID-86B65EBC-C9C8-4B47-BB0C-7A904ACC03B8-high.png" />可保存校正后的图像。</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-4BB78F4C-0E26-4F92-AA59-70F65DD1E2B4">
+                            <p class="p">单击<span class="keyword parmname">保存相机设置文件</span>和<span class="keyword parmname">保存标定描述文件</span>右侧的<img class="image icon" style="display:none;" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__IMAGE_ZN5_SWR_SWB" src="GUID-677760C9-E1D3-4269-BEFF-7505533FB1CF-high.png" />并选择对应保存路径，点击<span class="ph uicontrol">保存</span>即可。</p>
+
+                        </li>
+
+                    </ul>
+
+                    <div class="fig fignone" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__FIG_JTC_LMX_SWB">
+                        
+                        <img class="image" style="display:none;" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__IMAGE_DH4_4YL_HZB" src="GUID-B6DCD0E3-8B0B-403E-9512-89ECB139D406-high.png" width="2000" />
+                    <div class="fig_caption"><span class="figcap">图 9 保存标定结果</span></div></div>
+
+                    <div class="note note" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-4DCC2E0A-253A-4D18-B29B-8F132ED359F7"><span class="notetitle">说明</span> 
+                        <ul class="ul" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__UL_EKQ_SYL_HZB">
+                            <li class="li" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-8100E486-DA23-47FB-AC92-0C03754EA00F">
+                                <p class="p">在对应保存路径中可查看相机设置文件（ini
+                                    格式）和标定描述文件。其中，标定描述文件包含标定总结文件（xml格式）、原始输入图以及校正后的结果图。</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1__GUID-0E785F30-4F33-4B13-8A46-478C7C2F138D">
+                                <p class="p">点击<span class="ph uicontrol">完成</span>将直接退出快速色彩标定，标定结果不会进行保存。</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </li>
+</ol>
+
+</div>
+
+</div>
+</div>
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>本页导航</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-111280D9-501B-4402-BFAB-A852509B58F2" class="feature_guide_h2"><span class="link_button">日志</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-6ED69D02-F5E4-40EC-8EA2-C0929365CBA1" class="feature_guide_h2"><span class="link_button">快速色彩标定</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

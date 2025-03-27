@@ -1,0 +1,236 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="GigE Vision动作命令" /><meta name="abstract" content="GigE Vision动作命令可实现同一局域网内，多个网口相机同时触发拍照的功能，可确保图像的同步性。" /><meta name="description" content="GigE Vision动作命令可实现同一局域网内，多个网口相机同时触发拍照的功能，可确保图像的同步性。" /><meta name="DC.Relation" scheme="URI" content="GUID-49ADF167-5FCB-4A42-9EDD-59690BE91937.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134" /><meta name="DC.Language" content="zh-CN" /><title>GigE Vision动作命令</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-49ADF167-5FCB-4A42-9EDD-59690BE91937.html" data-id="GUID-49ADF167-5FCB-4A42-9EDD-59690BE91937">工具应用</a></span></li><li class="active"><span class="topicref">GigE Vision动作命令</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">GigE Vision动作命令</h1>
+
+
+<div class="body taskbody"><p class="shortdesc">GigE Vision动作命令可实现同一局域网内，多个网口相机同时触发拍照的功能，可确保图像的同步性。</p>
+
+        <div class="section prereq p" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__GUID-0EBA842E-EE69-42E5-B1B6-A6AE46F4FE6A">
+            <ul class="ul" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__UL_GTD_H1F_CKB">
+                <li class="li" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__GUID-DF3B62CC-040E-4432-A4F1-5D0CA3F11085">
+                    <p class="p">客户端已连接需要设置该功能的网口相机。</p>
+
+                </li>
+
+                <li class="li" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__GUID-CA81BE23-859C-4398-AE81-C9A889546558">
+                    <p class="p">相机均开启<span class="keyword parmname">触发模式</span>且<span class="keyword parmname">触发源</span>选择<span class="keyword parmname">动作1</span>。</p>
+
+                </li>
+
+            </ul>
+
+            <div class="note note" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__GUID-2F75A338-4F26-4833-B354-BB98FCA22B49"><span class="notetitle">说明</span> 
+                <p class="p">相机是否支持动作命令控制功能，与相机型号以及固件程序有关，具体请咨询技术支持。</p>
+
+            </div>
+
+        </div>
+
+<ol class="ol steps" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__GUID-BA2ABEB2-75C9-4677-989A-407208B1EA19"><li class="li step stepexpand" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__GUID-AB1396DE-BCC1-4358-8737-9538B1D19F50">
+                <span class="ph cmd">通过菜单栏选择<span class="ph menucascade"><span class="ph uicontrol">工具</span> &gt; <span class="ph uicontrol">GigE Vision动作命令</span></span>，进入设置界面，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__FIG_VTL_PKF_CKB">
+                        
+                        <img class="image" style="display:none;" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__IMAGE_BVV_15P_TNB" src="GUID-91EAABF1-36B8-4135-B1A8-32A6FFC8A7B9-high.png" width="1200" />
+                    <div class="fig_caption"><span class="figcap">图 1 GigE
+                            Vision动作命令</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__GUID-6DE74145-B6B8-458E-A2CD-3DDDBA3CA358">
+                <span class="ph cmd">选择网卡。在<span class="keyword wintitle">GigE Vision 动作命令</span>界面中，勾选需要的网卡，默认全部勾选。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__GUID-08E05372-6259-48D3-AFFE-EF93C0F86858"><span class="notetitle">说明</span> 
+                        <p class="p">该功能仅对统一局域网内的相机生效，不能跨局域网使用，建议选择其中一个网卡。</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__GUID-FB7AA91E-5670-47A2-BE88-8B30962EDBC1">
+                <span class="ph cmd">设置客户端的设备密钥、组密钥和组掩码参数，该参数在客户端以16进制显示，与相机参数的对应关系请见下表。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__GUID-15349423-2074-48AA-A71B-004EBD6CAFBA"><span class="notetitle">说明</span> 
+                        
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__TABLE_WSZ_51F_CKB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 1 参数设置</span></caption>
+                                
+                                
+                                <thead class="thead" align="left">
+                                    <tr>
+                                        <th class="entry" valign="top" width="40.98360655737705%" id="d41740e119">
+                                            <p class="p">VisionEye客户端参数名称</p>
+
+                                        </th>
+
+                                        <th class="entry" valign="top" width="59.01639344262295%" id="d41740e125">
+                                            <p class="p">对应的相机参数名称</p>
+
+                                        </th>
+
+                                    </tr>
+
+                                </thead>
+
+                                <tbody class="tbody">
+                                    <tr>
+                                        <td class="entry" valign="top" width="40.98360655737705%" headers="d41740e119 "><span class="keyword parmname">设备密钥</span></td>
+
+                                        <td class="entry" valign="top" width="59.01639344262295%" headers="d41740e125 ">
+                                            <p class="p"><span class="ph uicontrol">动作命令控制</span>属性下的<span class="keyword parmname">动作设备密钥</span>参数</p>
+
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td class="entry" valign="top" width="40.98360655737705%" headers="d41740e119 "><span class="keyword parmname">组密钥</span></td>
+
+                                        <td class="entry" valign="top" width="59.01639344262295%" headers="d41740e125 ">
+                                            <p class="p"><span class="ph uicontrol">动作命令控制</span>属性下的<span class="keyword parmname">动作组密钥</span>参数</p>
+
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td class="entry" valign="top" width="40.98360655737705%" headers="d41740e119 "><span class="keyword parmname">组掩码</span></td>
+
+                                        <td class="entry" valign="top" width="59.01639344262295%" headers="d41740e125 ">
+                                            <p class="p">与<span class="ph uicontrol">动作命令控制</span>属性下的<span class="keyword parmname">动作组掩码</span>参数按位进行“与”运算，运算结果非零有效</p>
+
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+</div>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__GUID-58A3C8CA-517B-4C2F-960F-6EBB9667D2DC">
+                <span class="ph cmd">设置是否启用<span class="ph uicontrol">预定时间</span>功能，客户端默认不启用。若启用，则需要选择其中一台相机为主相机并设置延迟时间；若不启用，则跳过此步骤。</span>
+                <div class="itemgroup info">
+                    <ul class="ul" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__UL_D3X_HKL_G3B">
+                        <li class="li" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__GUID-09B5B085-FB4D-4FDB-BDE8-CEB988074478">
+                            <p class="p"><span class="keyword parmname">主相机</span>：通过<span class="keyword parmname">主相机</span>右侧的<img class="image icon" style="display:none;" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__IMAGE_SZX_5KF_CKB" src="GUID-E0A0E8D5-C131-43B4-BA52-C7BFBE47072C-high.png" />进入选择相机的窗口。被选中的相机作为GigE
+                                Vision动作命令中的主相机，同一局域网内的其他相机作为从相机。主相机会与从相机做时间校准，保证触发时各相机采集的图像是同一时刻的。 </p>
+
+                        </li>
+
+                        <li class="li" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__GUID-039AFE12-6794-443C-BD90-A49FA5FF75FC">
+                            <p class="p"><span class="keyword parmname">延迟时间</span>：单击<span class="ph uicontrol">开始发送</span>按钮后，根据设置的延迟时间推迟发送命令的时间，默认为20
+                                ns。 </p>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__GUID-9B02CF5A-0C84-469E-8AD1-E095F271DC6C"><strong>可选操作： </strong>
+                <span class="ph cmd">设置是否启用<span class="ph uicontrol">定时发送</span>功能或<span class="ph uicontrol">回复信息</span>功能。客户端默认不启用。若启用，则需要设置定时发送时间，默认为1000
+                    ms，可配置范围为1 ~ 3600000 ms。</span>
+                <div class="itemgroup info">
+                    <ul class="ul" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__UL_HSN_1CF_CKB">
+                        <li class="li" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__GUID-229B7541-EEB9-44BA-9EA1-234406E23191">
+                            <p class="p"><span class="ph uicontrol">定时发送</span>功能需要设置<span class="keyword parmname">定时发送时间</span>，默认为1000 ms，可配置范围为1 ~ 3600000 ms。</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__GUID-F4780E34-8CBA-4201-8621-48D1CF356888">
+                            <p class="p">启用<span class="ph uicontrol">回复信息</span>功能时，将在下方显示相机回复的信息。</p>
+
+                        </li>
+
+                    </ul>
+
+                    <div class="note note" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__GUID-262063E9-3412-410F-94F4-B336CB2285BD"><span class="notetitle">说明</span> 
+                        <p class="p"><span class="ph uicontrol">定时发送</span>和<span class="ph uicontrol">回复信息</span>功能互斥，仅支持二选一使用。</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__GUID-5FDEF372-AEBA-4E15-9C0E-300A27B048D2">
+                <span class="ph cmd">参数设置完成后，单击<span class="ph uicontrol">开始发送</span>按钮即可。</span>
+            </li>
+</ol>
+
+</div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

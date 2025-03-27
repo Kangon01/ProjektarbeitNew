@@ -1,0 +1,269 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="IO输出" /><meta name="abstract" content="IO输出可以设置相机的输出信号。" /><meta name="description" content="IO输出可以设置相机的输出信号。" /><meta name="DC.Relation" scheme="URI" content="GUID-B5B0E554-FCFA-4A40-B8AC-62739E53B270.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80" /><meta name="DC.Language" content="zh-CN" /><title>IO输出</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB.html" data-id="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB">相机属性配置</a></span></li><li><span class="topicref"><a href="GUID-B5B0E554-FCFA-4A40-B8AC-62739E53B270.html" data-id="GUID-B5B0E554-FCFA-4A40-B8AC-62739E53B270">触发</a></span></li><li class="active"><span class="topicref">IO输出</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">IO输出</h1>
+
+
+<div class="body conbody"><p class="shortdesc">IO输出可以设置相机的输出信号。</p>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80__GUID-E1EC491E-7AF8-4FF3-A3BB-58BB89E1BD8C"><!-- --></a>线路选择器</dt>
+
+                <dd class="dd pd">
+                    <p class="p">选择需要设置的相机GPIO线路。</p>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80__GUID-468981CE-8CE7-442B-9CAF-DBEF0661CCC3"><!-- --></a>线路模式</dt>
+
+                <dd class="dd pd">
+                    <p class="p">设置选择线路的模式，分为<span class="keyword parmname">输入</span>和<span class="keyword parmname">频闪输出</span>两种。</p>
+
+                    <div class="note note" id="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80__GUID-E3EB843F-AA60-4515-9A20-292EB7D0455B"><span class="notetitle">说明</span> 
+                        <p class="p">部分线路的模式可选，部分线路的模式不可选，具体请以实际参数为准。</p>
+
+                    </div>
+
+                    <dl class="dl parml">
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80__GUID-F129DB83-3427-496F-92EA-E0F7C1E7361A"><!-- --></a>输入</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">线路作为输入信号使用，除线路防抖时间外的相关参数可通过<a class="xref" href="GUID-EC9823B7-4DD1-4232-A524-31A802680424.html#GUID-EC9823B7-4DD1-4232-A524-31A802680424" title="IO输入可设置相机的触发相关功能。相机收到触发信号时会采集图像。">IO输入</a>的参数进行设置。</p>
+
+                                <dl class="dl parml">
+                                    
+                                        <dt class="dt pt dlterm"><a name="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80__GUID-BC5DC28B-F93A-410B-B48A-5EA9AF8E58D5"><!-- --></a>线路防抖时间</dt>
+
+                                        <dd class="dd pd">可设置触发信号的防抖时间。外触发信号给到相机时可能存在毛刺，如果直接进入到相机内部可能会造成误触发，此时可以对触发信号进行去抖处理。当设置的防抖时间大于触发信号的时间时，则该触发信号被忽略。</dd>
+
+                                    
+                                </dl>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80__GUID-0C7B0840-A14A-4109-933B-283AD9459672"><!-- --></a>频闪输出</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">线路作为输出信号使用时，需要设置以下参数。</p>
+
+                                <dl class="dl parml">
+                                    
+                                        <dt class="dt pt dlterm"><a name="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80__GUID-B3732130-1DFB-416A-A514-7DF16CFE5425"><!-- --></a>线路源</dt>
+
+                                        <dd class="dd pd">
+                                            <p class="p">设置相机输出信号的时间源，主要有以下几种事件源。</p>
+
+                                            <dl class="dl parml">
+                                                
+                                                  <dt class="dt pt dlterm"><a name="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80__GUID-18283DB7-0B7A-4ADD-AD54-087D26C711E5"><!-- --></a>曝光开始有效</dt>
+
+                                                  <dd class="dd pd">
+                                                  <p class="p">相机每次开始曝光时输出信号。</p>
+
+                                                  </dd>
+
+                                                
+                                                
+                                                  <dt class="dt pt dlterm"><a name="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80__GUID-D7734315-36AF-4296-AE0A-20337871576C"><!-- --></a>采集开始有效</dt>
+
+                                                  <dd class="dd pd">
+                                                  <p class="p">相机每次开始图像采集时输出信号。</p>
+
+                                                  </dd>
+
+                                                
+                                                
+                                                  <dt class="dt pt dlterm"><a name="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80__GUID-630E9478-B4D0-4A7E-95CD-C4421EBF4249"><!-- --></a>采集停止有效</dt>
+
+                                                  <dd class="dd pd">
+                                                  <p class="p">相机每次停止图像采集时输出信号。</p>
+
+                                                  </dd>
+
+                                                
+                                                
+                                                  <dt class="dt pt dlterm"><a name="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80__GUID-DFD2F83F-C273-42AA-BA79-A686BF982332"><!-- --></a>帧突发开始有效</dt>
+
+                                                  <dd class="dd pd">
+                                                  <p class="p">相机每次帧突发开始时输出信号。</p>
+
+                                                  </dd>
+
+                                                
+                                                
+                                                  <dt class="dt pt dlterm"><a name="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80__GUID-7222BB9E-37B3-489A-8A41-B3E6B219C112"><!-- --></a>帧突发结束有效</dt>
+
+                                                  <dd class="dd pd">
+                                                  <p class="p">相机每次帧突发结束时输出信号。</p>
+
+                                                  </dd>
+
+                                                
+                                                
+                                                  <dt class="dt pt dlterm"><a name="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80__GUID-A614411B-0A93-4E82-98F5-5251B769FADC"><!-- --></a>软触发有效</dt>
+
+                                                  <dd class="dd pd">
+                                                  <p class="p">相机每次收到软触发信号时输出信号。</p>
+
+                                                  </dd>
+
+                                                
+                                                
+                                                  <dt class="dt pt dlterm"><a name="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80__GUID-D3CE52BA-490B-490E-B1B8-8021371AF494"><!-- --></a>硬触发有效</dt>
+
+                                                  <dd class="dd pd">
+                                                  <p class="p">相机每次收到外触发信号时输出信号。</p>
+
+                                                  </dd>
+
+                                                
+                                                
+                                                  <dt class="dt pt dlterm"><a name="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80__GUID-79AA94A9-144A-4270-B497-BC9910383200"><!-- --></a>计数器有效</dt>
+
+                                                  <dd class="dd pd">
+                                                  <p class="p">相机每次收到计数器触发时输出信号。</p>
+
+                                                  </dd>
+
+                                                
+                                                
+                                                  <dt class="dt pt dlterm"><a name="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80__GUID-4C4A2B2E-B5C4-4D92-AE25-7AA88F415A27"><!-- --></a>计时器有效</dt>
+
+                                                  <dd class="dd pd">
+                                                  <p class="p">相机执行<span class="ph uicontrol">行软触发</span>后每间隔一次<span class="keyword parmname">输出线路延迟</span>的时间就持续输出一段<span class="keyword parmname">输出线路持续时间</span>时长的信号。</p>
+
+                                                  </dd>
+
+                                                
+                                            </dl>
+
+                                        </dd>
+
+                                    
+                                    
+                                        <dt class="dt pt dlterm"><a name="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80__GUID-BE692A18-C80B-47A2-AC63-5645BC3AE33A"><!-- --></a>输出使能</dt>
+
+                                        <dd class="dd pd">
+                                            <p class="p">开启<span class="ph uicontrol">输出使能</span>，则相机在发生线路源选择的时间后自动输出信号给外部设备。</p>
+
+                                        </dd>
+
+                                    
+                                    
+                                        <dt class="dt pt dlterm"><a name="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80__GUID-3CC15CEC-4D08-4B8C-A0C5-184B41AEEA9D"><!-- --></a>输出线路持续时间</dt>
+
+                                        <dd class="dd pd">
+                                            <p class="p">可设置相机输出信号的持续时间。</p>
+
+                                        </dd>
+
+                                    
+                                    
+                                        <dt class="dt pt dlterm"><a name="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80__GUID-B1548426-9AE2-4FBE-9703-85450D5555B8"><!-- --></a>输出线路延迟</dt>
+
+                                        <dd class="dd pd">
+                                            <p class="p">可设置相机发生事件源后输出信号的延迟时间。</p>
+
+                                        </dd>
+
+                                    
+                                    
+                                        <dt class="dt pt dlterm"><a name="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80__GUID-5E7F0251-CF9D-4516-993E-BF64D1A4E044"><!-- --></a>输出线路预延迟</dt>
+
+                                        <dd class="dd pd">
+                                            <p class="p">可设置相机发生事件源后输出信号的提前时间。</p>
+
+                                        </dd>
+
+                                    
+                                </dl>
+
+                            </dd>
+
+                        
+                    </dl>
+
+                </dd>
+
+            
+        </dl>
+
+    </div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

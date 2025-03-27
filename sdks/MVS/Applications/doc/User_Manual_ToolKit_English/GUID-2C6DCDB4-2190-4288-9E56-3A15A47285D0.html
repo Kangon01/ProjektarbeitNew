@@ -1,0 +1,170 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="© Hikrobot Co., Ltd. All rights reserved." /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="Configure the Pipeline" /><meta name="abstract" content="The pipeline of a camera is the image processing algorithm settings of the camera. You can import an existing pipeline configuration file or configure the pipeline manually." /><meta name="description" content="The pipeline of a camera is the image processing algorithm settings of the camera. You can import an existing pipeline configuration file or configure the pipeline manually." /><meta name="DC.Relation" scheme="URI" content="GUID-9824EEC7-A88E-4FD6-8CCC-1D73FBFFF1E6.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0" /><meta name="DC.Language" content="en-US" /><title>Configure the Pipeline</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">Home Page</a></span></li><li><span class="topicref"><a href="GUID-69DC65C8-2E6C-4BDF-B4C9-00969538C2CA.html" data-id="GUID-69DC65C8-2E6C-4BDF-B4C9-00969538C2CA">ISP Tool</a></span></li><li><span class="topicref"><a href="GUID-9824EEC7-A88E-4FD6-8CCC-1D73FBFFF1E6.html" data-id="GUID-9824EEC7-A88E-4FD6-8CCC-1D73FBFFF1E6">Image Correction</a></span></li><li class="active"><span class="topicref">Configure the Pipeline</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">Configure the Pipeline</h1>
+
+
+    <div class="body conbody"><p class="shortdesc">The pipeline of a camera is the image processing algorithm settings of the
+        camera. You can import an existing pipeline configuration file or configure the pipeline
+        manually.</p>
+
+        <div class="note note" id="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0__GUID-1D3E8719-8A90-46E9-81E9-AE1D6F0C6391"><span class="notetitle">Note</span> 
+            <p class="p">Before importing or configuring the pipeline, you should connect to a camera or
+                import a local image.</p>
+
+        </div>
+
+        <div class="section" id="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0__GUID-3C35C47B-6587-4AB6-9736-C53F6E800D68"><h2 class="title sectiontitle">Import an Local Pipeline</h2>
+            
+            <p class="p">Click <img class="image icon" style="display:none;" id="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0__IMAGE_AZ4_B5H_5QB" src="GUID-00E63F25-DADB-42A4-BF40-C18CCCB7F5CD-high.png" /> on
+                the
+                toolbar and select the pipeline configuration file (in XML
+                format) on your PC.</p>
+
+            <p class="p">When the file is imported, the pipeline area of the Software will show
+                the algorithms included in the imported pipeline.</p>
+
+        </div>
+
+        <div class="section" id="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0__GUID-92A31597-CCAF-44F6-9005-2B2EBC846D34"><h2 class="title sectiontitle">Import the Pipeline from a Camera</h2>
+            
+            <p class="p">If a camera is configured with related algorithms, the pipeline will be imported to
+                the Software automatically.</p>
+
+            <div class="note note" id="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0__GUID-538ADAAF-38DA-46B2-9583-501594120DE5"><span class="notetitle">Note</span> 
+                <ul class="ul" id="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0__UL_C2V_FQW_XQB">
+                    <li class="li" id="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0__GUID-34F7E04B-CFA9-4620-B9BF-62B4AC65ECF6">
+                        <p class="p">If you have configured a pipeline in the Software, when you connect to a
+                            camera with a pipeline, you will be asked if you want to replace it with
+                            that of the camera.</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0__GUID-38441881-A530-4AC6-A8C2-94E948A805DE">
+                        <p class="p">If the image format of the pipeline you configured in the Software is not
+                            the same with that of the camera you are connecting, the camera's
+                            pipeline will replace the pipeline in the Software.</p>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0__GUID-EEC6F372-66FF-4D1E-8C50-029275E94456"><h2 class="title sectiontitle">Configure the Pipeline
+                Manually</h2>
+            
+            <p class="p">Click <span class="ph uicontrol">Click to configure the pipeline</span> in the
+                pipeline area. Select the algorithms you need.</p>
+
+            <p class="p">After selecting the algorithms, click <span class="ph uicontrol">Done</span> and the selected
+                ones will be shown in the pipeline area.</p>
+
+            <div class="note note" id="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0__GUID-0AEDB7C4-420E-4858-BA20-C0788DDCF5EC"><span class="notetitle">Note</span> 
+                <ul class="ul" id="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0__UL_JSP_YN3_SQB">
+                    <li class="li" id="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0__GUID-F820880A-F15F-46DD-84C4-603944A11771">
+                        <p class="p">Some algorithms cannot be selected at the same time. Algorithms
+                            contradict to the selected ones are grayed out.</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0__GUID-0F309494-FEC5-486C-82F7-CFFFDF748C9B">
+                        <p class="p">Algorithms that are not supported by the camera are marked
+                            with the simulation label. Simulation requires that the camera has the
+                            simulation algorithm.</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0__GUID-AAB58993-AC66-42CB-A30D-77FE4CC02A6C">
+                        <p class="p">If you need to edit the selection of algorithms, click
+                                <span class="ph uicontrol">Set PIPELINE</span> in the pipeline area.</p>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="fig fignone" id="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0__FIG_YDF_DT3_SQB">
+                
+                <img class="image" style="display:none;" id="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0__IMAGE_IV1_D4H_5QB" src="GUID-26258D0F-90AD-45F4-B11C-47713D72B28A-high.png" width="2067" />
+            <div class="fig_caption"><span class="figcap">Figure 1 Select Algorithms</span></div></div>
+
+        </div>
+
+    </div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">Share</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>Previous Page</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>Next Page</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>On This Page</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0__GUID-3C35C47B-6587-4AB6-9736-C53F6E800D68" class="feature_guide_h2"><span class="link_button">Import an Local Pipeline</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0__GUID-92A31597-CCAF-44F6-9005-2B2EBC846D34" class="feature_guide_h2"><span class="link_button">Import the Pipeline from a Camera</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0__GUID-EEC6F372-66FF-4D1E-8C50-029275E94456" class="feature_guide_h2"><span class="link_button">Configure the Pipeline
+                Manually</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8c01380e02e9eb04798d5"></div>
+		
+	</body>
+</html>

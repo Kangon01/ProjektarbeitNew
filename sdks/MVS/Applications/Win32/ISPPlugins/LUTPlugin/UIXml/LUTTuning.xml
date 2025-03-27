@@ -1,0 +1,20 @@
+<Root>
+    <Group extend="false" ui_param_name="BaseParams" ui_display_name="" id="0" ui_param_show="1">
+	    <Node ui_param_show="0" ui_param_display_type="lineedit" ui_param_name="LUT" ui_display_name="LUT" ui_param_type="String"/>
+        <Node Value="0" max="100" ui_param_name="Gamma" ui_display_name="Gamma" ui_param_type="Float" ui_param_show="1" min="0" ui_display_en_name="Gamma" ui_display_cn_name="Gamma" ui_param_display_type="float_lineedit"/>
+        <Node Value="0" max="1" ui_param_name="Contrast" ui_display_name="Contrast" ui_param_type="Float" ui_param_show="1" min="-1" ui_display_en_name="Contrast" ui_display_cn_name="对比度" ui_param_display_type="float_lineedit"/>
+        <Node Value="0" max="1" ui_param_name="Lum" ui_display_name="Lum" ui_param_type="Float" ui_param_show="1" min="-1" ui_display_en_name="Brightness" ui_display_cn_name="亮度" ui_param_display_type="float_lineedit"/>
+		
+		<Node ui_display_cn_name="LUT线型" ui_param_display_type="ComboBox" ui_param_lock="1" ui_param_name="LutLineType" ui_display_en_name="Lut Line Type" ui_display_name="Lut Line Type" Value="0" ui_param_type="Enumeration" only_ui_node="1">
+			<RelationList>LUTCurve</RelationList>
+			<EnumEntry DisplayName="Adaptive" DisplayNameCN="自适应" Value="0"/>
+			<EnumEntry DisplayName="Fold Line" DisplayNameCN="折线" Value="1"/>
+            <EnumEntry DisplayName="Curve" DisplayNameCN="曲线" Value="2"/>
+            <EnumEntry DisplayName="Free Line" DisplayNameCN="自由线" Value="3"/>            
+        </Node>
+		
+		<Node ui_param_name="LUTCurve" ui_param_type="LUTCurve" ui_param_display_type="lut_curve"/>
+		
+		<Node ui_display_cn_name="清除" ui_param_display_type="button" ui_param_lock="1" ui_param_button_name="Clear" ui_param_button_cn_name="清除" ui_param_name="Clear" ui_display_en_name="Clear" ui_display_name="Clear" ui_param_type="Command"/>
+    </Group>
+</Root>

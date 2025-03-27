@@ -1,0 +1,11 @@
+<Root>
+    <Group id="0" extend="false" ui_display_name="" ui_param_show="1" ui_param_name="BaseParams">
+        <Node ui_display_en_name="Filtering Kernel Size" ui_param_show="1" Value="5" ui_param_display_type="ComboBox" ui_display_name="Kernel Size" ui_display_cn_name="滤波核尺寸" ui_param_name="KernelSize" ui_param_type="Enumeration">
+			<EnumEntry DisplayName="3" Value="3"/>
+            <EnumEntry DisplayName="5" Value="5"/>
+            <EnumEntry DisplayName="7" Value="7"/>
+            <EnumEntry DisplayName="9" Value="9"/>
+		</Node>
+        <Node ui_display_en_name="Edge Threshold Value" Value="180" ui_param_display_type="SpinBox" ui_param_type="Integer" min="0" max="2040" ui_display_name="Edge Threshold" ui_display_cn_name="边缘阈值" ui_param_name="EdgeThreshold"/>
+    </Group>
+</Root>

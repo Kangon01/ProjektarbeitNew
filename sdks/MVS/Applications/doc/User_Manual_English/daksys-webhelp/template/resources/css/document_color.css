@@ -1,0 +1,107 @@
+
+:root {
+	/* Font color */
+	--font-color-title: #000000;
+	--font-color-content: #333333;
+	--font-color-link: #FF7500;
+	--font-color-link-web: #2E85E8;
+	/* button */
+	--font-color-primary-button: #FFFFFF;
+	--font-color-normal-button: #666666;
+	--font-color-submit-button: #2E85E8;
+	
+	/* header */
+	--font-color-header: #FFFFFF;
+	--font-color-header-mobile: #1A202C;
+	--font-color-header-search-input: #E6E6E6;
+	--font-color-header-search-input_mobile: #1A202C;
+	--font-color-search-input: #333333;
+	/* menu */
+	--font-color-menu-toc: #4A5568;
+	--font-color-menu-button: #333333;
+	--font-color-menu-level1: #202124;
+	--font-color-menu-level2: #202124;
+	--font-color-menu-level3: #4A5568;
+	--font-color-menu-level4: #6F7889;
+	--font-color-menu-level5: #6F7889;
+	--font-color-menu-level6: #6F7889;
+	--font-color-menu-selected: #FF7500;
+	/* topic */
+	--font-color-topic-title: #1A202C;
+	--font-color-section-title: #1A202C;
+	--font-color-section-title3: #4A5568;
+	--font-color-topic-content: #4A5568;
+	
+	--font-color-ul-level1: #4A5568;
+	--font-color-ul-level2: #6F7889;
+	
+	--font-color-body-footer: #666666;
+	
+	/* fig table */
+	--font-color-fig-table: #4A5568;
+	--font-color-fig-carousel-title: #000000;
+	--font-color-fig-carousel-para: #666666;
+	/* .caution .danger .warning .note  */
+	--font-color-note-title: #4A5568;
+	--font-color-note-content: #6F7889;
+	
+	/* breadcrumb  & right-content */
+	--font-color-right-content-active: #18253E;
+	--font-color-right-content: #6F7889;
+	
+	/* custom  zTree */
+	--font-color-custom-title: #000000;
+	--font-color-custom-body: #333333;
+	/* custom  mobile */
+	--font-color-custom-mobile-title: #333333;
+	--font-color-custom-mobile-button: #999999;
+	--font-color-custom-mobile-notice: #F4F5F7;
+	--font-color-custom-mobile-functions: #666666;
+	
+	/* search  result */
+	--font-color-search-results-header: #6F7889;
+	
+	/* footer */
+	--font-color-copyright: #999999;
+	--font-color-footer-mobile: #4A5568;
+	
+	/* background color */
+	--background-color-scrollbar-thumb: #B5BAD6;
+	--background-color-fig-carousel-spot: #E0E3EA;
+	
+	--background-color-normal: #FFFFFF;
+	--background-color-mask: #666666;
+	--background-color-header-navbar: #2D2D2D;
+	--background-color-menu: #F8F9FB;
+	--background-color-footer: #F8F9FB;
+	--background-color-thead: #F5F9FF;
+	--background-color-primary-button: #FF7500;
+	--background-color-normal-button: #FFFFFF;
+	--background-color-custom-mobile-container: rgba(0,0,0,0.5);
+	--background-color-breadcrumb: #F8F9FA;
+	
+	/* background color  mobile menu*/
+	--background-color-menu-mobile-level1: #FFFFFF;
+	--background-color-menu-mobile-level2: #F7F8F9;
+	--background-color-menu-mobile-level3: #F6F8FB;
+	--background-color-menu-mobile-level4: #F3F5F8;
+	
+	--background-color-mobile-functions: #F4F4F4;
+	
+	
+	/* border */
+	--border-normal: 1px solid #E8E8E8;
+	--border-header-search: 1px solid var(--background-color-header-navbar);
+	--border-menu-expand: 1px solid #E7E9E8;
+	--border-menu-active: 2px solid #FF7500;
+	--border-section: 1px solid #F0F2F5;
+	--border-table: 1px solid #F0F2F5;
+	--border-primary-button: 1px solid #FF7500;
+	--border-normal-button: 1px solid #BBBBBB;
+	--border-normal-search: 1px solid #BBBBBB;
+	
+	
+	
+}
+	
+

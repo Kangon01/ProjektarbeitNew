@@ -1,0 +1,270 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="坏点校正工具" /><meta name="abstract" content="坏点校正工具（本节简称为“工具”）可计算和校正相机或本地图像中的坏点信息。" /><meta name="description" content="坏点校正工具（本节简称为“工具”）可计算和校正相机或本地图像中的坏点信息。" /><meta name="DC.Relation" scheme="URI" content="GUID-0C3250C2-6015-41E0-A1FE-3075872DF2AB.html#GUID-0C3250C2-6015-41E0-A1FE-3075872DF2AB" /><meta name="DC.Relation" scheme="URI" content="GUID-5325D051-1FFC-41C9-A14B-E8CCA5582D19.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-077F7BBC-6865-4731-BD99-1E33E9464FE6" /><meta name="DC.Language" content="zh-CN" /><title>坏点校正工具</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-077F7BBC-6865-4731-BD99-1E33E9464FE6" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li class="active"><span class="topicref">坏点校正工具</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">坏点校正工具</h1>
+
+
+    <div class="body conbody"><p class="shortdesc">坏点校正工具（本节简称为“工具”）可计算和校正相机或本地图像中的坏点信息。</p>
+
+        <div class="note note" id="GUID-077F7BBC-6865-4731-BD99-1E33E9464FE6__GUID-7F682DE6-4BEA-482F-812C-60AC99453B28"><span class="notetitle">说明</span> 
+            <p class="p">坏点校正工具目前不支持对以下类型相机进行坏点计算：</p>
+
+            <ul class="ul" id="GUID-077F7BBC-6865-4731-BD99-1E33E9464FE6__UL_WNJ_MTL_XDC">
+                <li class="li" id="GUID-077F7BBC-6865-4731-BD99-1E33E9464FE6__GUID-75B988FA-0C87-4E96-9FCE-5EC2F9304BA2">
+                    <p class="p">MV-CU020-19GMGC型号网口面阵相机</p>
+
+                </li>
+
+                <li class="li" id="GUID-077F7BBC-6865-4731-BD99-1E33E9464FE6__GUID-9A813118-014E-48E7-BBE1-22AB0FF9E191">
+                    <p class="p">红外相机</p>
+
+                </li>
+
+                <li class="li" id="GUID-077F7BBC-6865-4731-BD99-1E33E9464FE6__GUID-9E52E31A-1ADA-414D-AEA4-F9CCCA8DC009">
+                    <p class="p">线阵相机</p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <p class="p">工具主界面如下图所示，相关说明请见下表。</p>
+
+        <div class="fig fignone" id="GUID-077F7BBC-6865-4731-BD99-1E33E9464FE6__FIG_C2M_TMZ_QDC">
+            
+            <img class="image" style="display:none;" id="GUID-077F7BBC-6865-4731-BD99-1E33E9464FE6__IMAGE_Q53_GHP_YDC" src="GUID-020470BF-555E-48A6-92CB-1329806D9B93-high.png" width="2100" />
+        <div class="fig_caption"><span class="figcap">图 1 坏点校正工具</span></div></div>
+
+        
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-077F7BBC-6865-4731-BD99-1E33E9464FE6__TABLE_EDY_2G5_MXB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 1 主界面说明</span></caption>
+                
+                
+                
+                <thead class="thead" align="left">
+                    <tr>
+                        <th class="entry" valign="top" width="18.181818181818183%" id="d61e71">
+                            <p class="p">序号</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="27.27272727272727%" id="d61e77">
+                            <p class="p">区域</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="54.54545454545454%" id="d61e83">
+                            <p class="p">说明</p>
+
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody class="tbody">
+                    <tr>
+                        <td class="entry" valign="top" width="18.181818181818183%" headers="d61e71 ">
+                            <p class="p">1</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="27.27272727272727%" headers="d61e77 ">
+                            <p class="p">菜单栏</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="54.54545454545454%" headers="d61e83 ">
+                            <p class="p">菜单栏可提供帮助操作，可对工具的语言（中英文）进行选择，并查看该用户手册和工具版本信息。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="18.181818181818183%" headers="d61e71 ">
+                            <p class="p">2</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="27.27272727272727%" headers="d61e77 ">
+                            <p class="p">设备列表</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="54.54545454545454%" headers="d61e83 ">
+                            <p class="p">可分类显示各接口下的相机，分为GigE、USB、PCIe和Serial Port。</p>
+
+                            <ul class="ul" id="GUID-077F7BBC-6865-4731-BD99-1E33E9464FE6__UL_B54_DK1_RDC">
+                                <li class="li" id="GUID-077F7BBC-6865-4731-BD99-1E33E9464FE6__GUID-FECAF1A6-15FF-4747-A143-538F90975073">
+                                    <p class="p">工具可自动刷新枚举GigE和USB下的相机以及PCIe下采集卡能搜索到的相机，也可以通过GigE、USB和PCIe右侧的<img class="image icon" style="display:none;" id="GUID-077F7BBC-6865-4731-BD99-1E33E9464FE6__IMAGE_A3Z_LCV_MXB" src="GUID-21129D57-7CF9-4746-88F0-C5EFF4A4C073-high.png" />手动刷新枚举；</p>
+
+                                </li>
+
+                                <li class="li" id="GUID-077F7BBC-6865-4731-BD99-1E33E9464FE6__GUID-7DCD97D3-6FBD-4A6D-AF13-AC9D31780FF3">
+                                    <p class="p">工具默认不自动刷新枚举Serial Port下的相机，需通过Serial
+                                            Port右侧的<img class="image icon" style="display:none;" id="GUID-077F7BBC-6865-4731-BD99-1E33E9464FE6__IMAGE_DFM_MK1_RDC" src="GUID-21129D57-7CF9-4746-88F0-C5EFF4A4C073-high.png" />手动刷新枚举。</p>
+
+                                </li>
+
+                            </ul>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="18.181818181818183%" headers="d61e71 ">
+                            <p class="p">3</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="27.27272727272727%" headers="d61e77 ">
+                            <p class="p">接口/设备信息</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="54.54545454545454%" headers="d61e83 ">
+                            <p class="p">可查看选中设备或接口的具体信息。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="18.181818181818183%" headers="d61e71 ">
+                            <p class="p">4</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="27.27272727272727%" headers="d61e77 ">
+                            <p class="p">坏点校正操作</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="54.54545454545454%" headers="d61e83 ">
+                            <p class="p">可对已连接相机采集到的图像或本地图像中的坏点信息进行计算，并支持对相机中的坏点信息进行导入、导出、清空等操作，详情请见<a class="xref" href="GUID-0C3250C2-6015-41E0-A1FE-3075872DF2AB.html#GUID-0C3250C2-6015-41E0-A1FE-3075872DF2AB" title="工具对相机和本地图像中坏点信息的操作方式和步骤有所不同。">坏点校正</a>。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="18.181818181818183%" headers="d61e71 ">
+                            <p class="p">5</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="27.27272727272727%" headers="d61e77 ">
+                            <p class="p">图片显示窗口</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="54.54545454545454%" headers="d61e83 ">
+                            <p class="p">在计算坏点信息过程中，显示当前正在计算的图片。</p>
+
+                            <div class="note note" id="GUID-077F7BBC-6865-4731-BD99-1E33E9464FE6__GUID-05389BFC-0967-427D-8235-7661F7133F4C"><span class="notetitle">说明</span> 
+                                <p class="p">计算完成后，若关闭自动计算窗口，图片显示窗口清空显示；若不关闭自动计算窗口，则显示最后一张图片。</p>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="18.181818181818183%" headers="d61e71 ">
+                            <p class="p">6</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="27.27272727272727%" headers="d61e77 ">
+                            <p class="p">坏点列表</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="54.54545454545454%" headers="d61e83 ">
+                            <p class="p">可导入/导出本地坏点坐标，并对其进行删除、添加等操作，详情请见<a class="xref" href="GUID-5325D051-1FFC-41C9-A14B-E8CCA5582D19.html#GUID-5325D051-1FFC-41C9-A14B-E8CCA5582D19" title="工具支持通过坏点列表自定义坏点坐标，并支持导入本地坏点信息后进行编辑。">坏点信息编辑</a>。</p>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+</div>
+
+    </div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

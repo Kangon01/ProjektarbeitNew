@@ -1,0 +1,28 @@
+<Root>
+    <Group extend="false" ui_param_show="1" ui_param_name="BaseParams" ui_display_name="" id="0">
+        <Node ui_display_cn_name="Gamma类型" ui_param_display_type="ComboBox" ui_param_name="GammaType" ui_display_en_name="Gamma Type" ui_display_name="Gamma Type" Value="0" ui_param_type="Enumeration">
+            <RelationList>GammaValue,GammaCurve_Command</RelationList>
+			<EnumEntry DisplayName="None" DisplayNameCN="不启用" Value="0"/>
+            <EnumEntry DisplayName="User Value" DisplayNameCN="Gamma值" Value="1"/>
+            <EnumEntry DisplayName="User Curve" DisplayNameCN="Gamma曲线" Value="2"/>
+            <EnumEntry DisplayName="LRGB2SRGB" Value="3"/>
+        </Node>
+        <Node ui_display_cn_name="Gamma值" ui_param_show="0" ui_param_display_type="float_lineedit" ui_param_name="GammaValue" ui_display_en_name="Gamma Value" ui_display_name="Gamma Value" ui_param_type="Float"/>
+        <Node ui_display_cn_name="Gamma曲线" ui_param_show="0" ui_param_display_type="button" ui_param_button_name="Import Curve" ui_param_button_cn_name="导入曲线" ui_param_name="GammaCurve_Command" ui_display_en_name="Gamma Curve" ui_display_name="Gamma Curve" ui_param_type="Command"/>
+        <Node ui_param_name="GammaCurve" ui_param_show="0" ui_param_display_type="lineedit" ui_param_type="String"/>
+		<Node ui_display_cn_name="CCM类型" ui_param_show="0" ui_param_display_type="ComboBox" ui_param_name="CCMType" ui_display_en_name="CCM Type" ui_display_name="CCM Type" Value="2" ui_param_type="Enumeration">            
+			<EnumEntry DisplayName="None" Value="0"/>
+            <EnumEntry DisplayName="IntType" Value="2"/>
+        </Node>
+		<Node ui_display_cn_name="量化系数" ui_param_display_type="ComboBox" ui_param_name="CCMScale" ui_display_en_name="Scale" ui_display_name="Scale" Value="1024" ui_param_type="Enumeration">
+			<!--1是假值，代码里特殊处理不会设置到MvISPConfig.xml中-->
+			<EnumEntry DisplayName="1" Value="1"/>
+            <EnumEntry DisplayName="256" Value="256"/>
+            <EnumEntry DisplayName="512" Value="512"/>
+            <EnumEntry DisplayName="1024" Value="1024"/>
+            <EnumEntry DisplayName="2048" Value="2048"/>
+        </Node>
+        <Node col="3" ui_display_cn_name="CCM矩阵" ui_param_display_type="ccm_form" ui_param_name="CCMat" row="3" ui_display_en_name="CCM Matrix" ui_display_name="CCM Matrix" ui_param_type="IntArray"/>
+		<Node ui_param_show="1" ui_param_display_type="color_saturation" ui_param_name="ColorSaturation" ui_display_name="Color Saturation" ui_param_type="Saturation"/>
+    </Group>
+</Root>

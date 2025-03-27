@@ -1,0 +1,169 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="采集卡升级" /><meta name="abstract" content="采集卡的固件升级过程主要分为三个阶段，即 搜索设备 &gt; 开始升级 &gt; 升级状态 。" /><meta name="description" content="采集卡的固件升级过程主要分为三个阶段，即 搜索设备 &gt; 开始升级 &gt; 升级状态 。" /><meta name="DC.Relation" scheme="URI" content="GUID-8B84E3BC-2185-4420-A18E-38FA8CF849DD.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5" /><meta name="DC.Language" content="zh-CN" /><title>采集卡升级</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-8B84E3BC-2185-4420-A18E-38FA8CF849DD.html" data-id="GUID-8B84E3BC-2185-4420-A18E-38FA8CF849DD">固件升级工具</a></span></li><li class="active"><span class="topicref">采集卡升级</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">采集卡升级</h1>
+
+    
+    <div class="body conbody"><p class="shortdesc">采集卡的固件升级过程主要分为三个阶段，即<span class="ph menucascade"><span class="ph uicontrol">搜索设备</span> &gt; <span class="ph uicontrol">开始升级</span> &gt; <span class="ph uicontrol">升级状态</span></span>。</p>
+
+        <ul class="ul" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__UL_BJQ_HRN_HZB">
+            <li class="li" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__GUID-BEC145E1-7318-41A0-A5B4-1A342064DECC">
+                <p class="p"><a class="xref" href="#GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__GUID-125E64A4-A4D9-4A1A-84E8-E93A04EFB4CC">搜索设备</a></p>
+
+            </li>
+
+            <li class="li" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__GUID-FFBC6B29-A66A-4EF2-9F3F-C8D7DF8F4762">
+                <p class="p"><a class="xref" href="#GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__GUID-3D47E892-066A-41B3-B9ED-528FC723D92C">开始升级</a></p>
+
+            </li>
+
+            <li class="li" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__GUID-BA3EB0B1-2DC0-4BCF-867F-7486136FA8D0">
+                <p class="p"><a class="xref" href="#GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__GUID-05E0F6D4-B257-4B1B-AAB9-417239BB9FF8">升级状态</a></p>
+
+            </li>
+
+        </ul>
+
+        <div class="section" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__GUID-125E64A4-A4D9-4A1A-84E8-E93A04EFB4CC"><h2 class="title sectiontitle">搜索设备</h2>
+            
+            <p class="p">打开固件升级工具后，在工具界面上方的<span class="keyword parmname">选择类型</span>处下拉选择<span class="keyword parmname">采集卡</span>。工具界面左侧显示当前PC上PCIe接口的信息，如下图所示。</p>
+
+            <div class="fig fignone" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__FIG_JXX_X3Y_BZB">
+                
+                <img class="image" style="display:none;" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__IMAGE_KDV_MBM_HCC" src="GUID-D8F2743E-272D-47C5-8D35-3849058EC5CA-high.png" width="2100" />
+            <div class="fig_caption"><span class="figcap">图 1 采集卡升级</span></div></div>
+
+            <ul class="ul" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__UL_QFL_XBV_MXB">
+                <li class="li" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__GUID-59C97EAE-F731-4966-84E4-126DC0D9FB8A">
+                    <p class="p">PCIe接口可自动枚举搜索到的所有采集卡设备，选中PCIe，右侧显示PCIe下的所有采集卡。</p>
+
+                </li>
+
+                <li class="li" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__GUID-62D7F143-7163-4858-B450-9CCEB85CA6C1">
+                    <p class="p">工具可自动刷新枚举PCIe下的采集卡，也可通过PCIe右侧的<img class="image" style="display:none;" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__IMAGE_ER3_K2V_MXB" src="GUID-21129D57-7CF9-4746-88F0-C5EFF4A4C073-high.png" />手动刷新枚举。</p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="section" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__GUID-3D47E892-066A-41B3-B9ED-528FC723D92C"><h2 class="title sectiontitle">开始升级</h2>
+            
+            <p class="p"><span class="ph">请从海康机器人官网（<a class="xref" href="http://www.hikrobotics.com" target="_blank">http://www.hikrobotics.com</a>）</span>获取需固件升级采集卡的固件驱动包，单独安装在默认路径下：C:\Program Files (x86)\Common Files\<span class="ph">MVS</span>\FirmWare。安装完成后，工具即可检测到该采集卡匹配的所有固件文件。</p>
+
+            <p class="p">确认需固件升级的采集卡处于可用状态并在工具右侧进行勾选，同时在对应采集卡的<span class="keyword parmname">选择固件升级版本</span>列下拉选择需要的固件版本，如下图所示。</p>
+
+            <div class="fig fignone" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__FIG_C1D_ZKV_DZB">
+                
+                <img class="image" style="display:none;" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__IMAGE_MTP_KKM_HCC" src="GUID-7C48632D-7470-403F-9ECF-A85C4A75C552-high.png" width="2100" />
+            <div class="fig_caption"><span class="figcap">图 2 选择固件版本</span></div></div>
+
+            <p class="p">工具支持模糊搜索采集卡匹配的固件文件，根据实际需求勾选<span class="keyword parmname">模糊匹配</span>即可。</p>
+
+            <p class="p">工具可批量升级多个采集卡固件，最多可同时勾选20个采集卡。</p>
+
+            <p class="p">完成固件升级版本选择后，单击<span class="ph uicontrol">升级</span>按钮即可。</p>
+
+            <div class="note note" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__GUID-07CFCCEC-3184-4D3F-8953-CC820177A547"><span class="notetitle">说明</span> 
+                <ul class="ul" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__UL_YYB_RGV_MXB">
+                    <li class="li" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__GUID-D70C00AB-FAF9-4636-BC9F-4FDBEF033F4E">
+                        <p class="p">升级固件过程中，请勿断开采集卡与PC的连接，并保证设备处于工作状态。</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__GUID-464DDF0B-9366-407B-8984-81227BC7F20E">
+                        <p class="p">采集卡升级完成后需重启系统后生效。</p>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__GUID-05E0F6D4-B257-4B1B-AAB9-417239BB9FF8"><h2 class="title sectiontitle">升级状态</h2>
+            
+            <p class="p">工具左上角会显示当前升级设备的升级情况，如下图所示。可通过工具上方的<span class="ph uicontrol">返回</span>按钮返回工具的初始界面。工具右侧选中的设备也会显示具体的升级状态。</p>
+
+            <div class="fig fignone" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__FIG_GZR_FHV_MXB">
+                
+                <img class="image" style="display:none;" id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__IMAGE_AXZ_LKM_HCC" src="GUID-9EE12736-5F40-48E4-B5A9-7788C680E3FC-high.png" width="2100" />
+            <div class="fig_caption"><span class="figcap">图 3 采集卡固件升级</span></div></div>
+
+        </div>
+
+    </div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>本页导航</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__GUID-125E64A4-A4D9-4A1A-84E8-E93A04EFB4CC" class="feature_guide_h2"><span class="link_button">搜索设备</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__GUID-3D47E892-066A-41B3-B9ED-528FC723D92C" class="feature_guide_h2"><span class="link_button">开始升级</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5__GUID-05E0F6D4-B257-4B1B-AAB9-417239BB9FF8" class="feature_guide_h2"><span class="link_button">升级状态</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

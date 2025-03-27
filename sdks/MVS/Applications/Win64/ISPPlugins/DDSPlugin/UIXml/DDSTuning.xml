@@ -1,0 +1,9 @@
+<Root>
+    <Group extend="false" ui_param_show="1" ui_param_name="DDSTuning" id="1">
+        <Node ui_param_display_type="noise_curve" ui_param_name="Curve" ui_param_type="NoiseCurve"/>
+        <Node ui_display_cn_name="噪声曲线" ui_param_show="0" ui_param_display_type="lineedit" ui_param_name="NoiseCurve" ui_display_en_name="Noise Curve" ui_display_name="NoiseProfile" ui_param_type="String"/>
+        <Node ui_display_cn_name="噪声校正系数" ui_param_display_type="SpinBox" ui_param_name="NoiseCorrect" ui_display_en_name="Noise Correction Factor" ui_display_name="Noise Correct" ui_param_type="Integer"/>
+        <Node ui_display_cn_name="降噪强度" ui_param_display_type="SpinBox" ui_param_name="DenoiseStrength" ui_display_en_name="Denoise Intensity" ui_display_name="Denoise Strength" ui_param_type="Integer"/>
+        <Node ui_display_cn_name="噪声曲线点数" ui_param_display_type="SpinBox" ui_param_name="PointNum" ui_display_en_name="Number of Noise Curve Points" ui_display_name="Point Num" ui_param_type="Integer"/>
+    </Group>
+</Root>

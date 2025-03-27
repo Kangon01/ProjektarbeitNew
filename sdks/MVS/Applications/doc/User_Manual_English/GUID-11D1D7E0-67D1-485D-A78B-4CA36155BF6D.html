@@ -1,0 +1,372 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="© Hikrobot Co., Ltd. All rights reserved." /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="GenTL Device Management" /><meta name="abstract" content="The GenTL standard allows the Software to enumerate cameras, communicate with the enumerated cameras, and if possible, stream data from these cameras independent from the underlying transport technology, and configuring features of connected frame grabbers. The standard provides a generic way for the Software to control cameras (including third-party cameras) and acquire data." /><meta name="description" content="The GenTL standard allows the Software to enumerate cameras, communicate with the enumerated cameras, and if possible, stream data from these cameras independent from the underlying transport technology, and configuring features of connected frame grabbers. The standard provides a generic way for the Software to control cameras (including third-party cameras) and acquire data." /><meta name="DC.Relation" scheme="URI" content="GUID-7807DA4F-CEC8-422D-94C0-36A6BCAF6255.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D" /><meta name="DC.Language" content="en-US" /><title>GenTL Device Management</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">Home Page</a></span></li><li><span class="topicref"><a href="GUID-7807DA4F-CEC8-422D-94C0-36A6BCAF6255.html" data-id="GUID-7807DA4F-CEC8-422D-94C0-36A6BCAF6255">Device Management</a></span></li><li class="active"><span class="topicref">GenTL Device Management</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">GenTL Device Management</h1>
+
+
+<div class="body taskbody"><p class="shortdesc">The GenTL standard allows the Software to enumerate cameras, communicate
+        with the enumerated cameras, and if possible, stream data from these cameras independent
+        from the underlying transport technology, and configuring features of connected frame
+        grabbers. The standard provides a generic way for the Software to control cameras (including
+        third-party cameras) and acquire data.</p>
+
+<ol class="ol steps" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__GUID-8B66C8E8-7119-4E24-884A-97139E377158"><li class="li step stepexpand" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__GUID-CBB9DC6A-BC71-46AB-AE20-54EACF4F8103">
+                <span class="ph cmd">Click <span class="ph menucascade"><span class="ph uicontrol">GenTL</span> &gt; <span class="ph uicontrol"><img class="image icon" style="display:none;" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__IMAGE_HFD_RRL_YXB" src="GUID-EEFE6837-D4D1-4F4D-8ED8-4C938F5D6FCF-high.png" /></span></span>, and then load the cti file.</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__GUID-BCE26614-3771-4B9E-A74F-F0B18C90F693"><span class="notetitle">Note</span> 
+                        <ul class="ul" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__UL_Q2L_QTL_QDC">
+                            <li class="li" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__GUID-5CB731D3-EE9C-4626-9A8F-1FEA52119689">
+                                <p class="p">The cti files of GigE interface and USB3 Vision
+                                    interface are provided by the Software (directory: C:\Program
+                                    Files (x86)\Common Files\MVS\Runtime\Win32_i86 or C:\Program Files (x86)\Common
+                                        Files\MVS\Runtime\Win64_x64).</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__GUID-92C3E750-3010-4815-A447-6094B410998B">
+                                <p class="p">The Software supports loading the cti files of GigE,
+                                    CameraLink, CoaXPress frame grabber. The saving path of the file
+                                    is C:\Program Files (x86)\Common Files\MVS\Runtime\Win32_i86 or C:\Program Files (x86)\Common
+                                        Files\MVS\Runtime\Win64_x64.</p>
+
+                                
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__TABLE_E12_GWL_PTB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">Table 1 cti File
+                                        Description</span></caption>
+                                        
+                                        
+                                        <thead class="thead" align="left">
+                                            <tr>
+                                                <th class="entry" valign="top" width="48.54368932038835%" id="d2504e76">File Name</th>
+
+                                                <th class="entry" valign="top" width="51.45631067961165%" id="d2504e79">Device Type</th>
+
+                                            </tr>
+
+                                        </thead>
+
+                                        <tbody class="tbody">
+                                            <tr>
+                                                <td class="entry" valign="top" width="48.54368932038835%" headers="d2504e76 ">
+                                                  <p class="p">MvFGProducerCML.cti</p>
+
+                                                </td>
+
+                                                <td class="entry" valign="top" width="51.45631067961165%" headers="d2504e79 ">
+                                                  <p class="p">Camera Link frame grabber.</p>
+
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td class="entry" valign="top" width="48.54368932038835%" headers="d2504e76 ">
+                                                  <p class="p">MvFGProducerCXP.cti</p>
+
+                                                </td>
+
+                                                <td class="entry" valign="top" width="51.45631067961165%" headers="d2504e79 ">
+                                                  <p class="p">CoaXPress frame grabber.</p>
+
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td class="entry" valign="top" width="48.54368932038835%" headers="d2504e76 ">
+                                                  <p class="p">MvFGProducerGEV.cti</p>
+
+                                                </td>
+
+                                                <td class="entry" valign="top" width="51.45631067961165%" headers="d2504e79 ">
+                                                  <p class="p">GigE frame grabber.</p>
+
+                                                </td>
+
+                                            </tr>
+
+                                            
+                                            <tr>
+                                                <td class="entry" valign="top" width="48.54368932038835%" headers="d2504e76 ">
+                                                  <p class="p">MvFGProducerXoF.cti</p>
+
+                                                </td>
+
+                                                <td class="entry" valign="top" width="51.45631067961165%" headers="d2504e79 ">
+                                                  <p class="p">Frame grabber using XoF
+                                                  protocol.</p>
+
+                                                </td>
+
+                                            </tr>
+
+                                            
+                                            <tr>
+                                                <td class="entry" valign="top" width="48.54368932038835%" headers="d2504e76 ">
+                                                  <p class="p">MvProducerGEV.cti</p>
+
+                                                </td>
+
+                                                <td class="entry" valign="top" width="51.45631067961165%" headers="d2504e79 ">
+                                                  <p class="p">Camera with GEV interface.</p>
+
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td class="entry" valign="top" width="48.54368932038835%" headers="d2504e76 ">
+                                                  <p class="p">MvProducerU3V.cti</p>
+
+                                                </td>
+
+                                                <td class="entry" valign="top" width="51.45631067961165%" headers="d2504e79 ">
+                                                  <p class="p">Camera with USB interface.</p>
+
+                                                </td>
+
+                                            </tr>
+
+                                        </tbody>
+
+                                    </table>
+</div>
+
+                            </li>
+
+                            <li class="li" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__GUID-752CB756-B851-4C38-B610-8AF04C73EA46">
+                                <p class="p">The Software also supports third-party cti files that
+                                    conform to the GenTL standard. To get a third-party cti file,
+                                    you can contact the corresponding third-party camera
+                                    manufacturer for support.</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="itemgroup stepresult">
+                    <p class="p">The device list will enumerate the cameras that can be
+                        discovered by the cti file.</p>
+
+                    <div class="note note" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__GUID-4B328E31-CDAE-49A9-84BC-AD201EDC65ED"><span class="notetitle">Note</span> 
+                        <p class="p">CoaXPress cameras can only be connected by GenTL. If
+                            connected, you can control the camera and acquire image data.</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__GUID-736398B7-E4A6-4C87-9AE2-2F9DB59F2107"><strong>Optional: </strong>
+                <span class="ph cmd">Connect the frame grabber, and then click <img class="image icon" style="display:none;" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__IMAGE_PRZ_QYG_CKB" src="GUID-EE689C0E-48C5-40A5-91E9-3548786D6A07-high.png" /> to refresh cameras after loading the cti file.</span>
+                <div class="itemgroup info">
+                    <p class="p">Different icons indicate different statuses of a frame
+                        grabber.</p>
+
+                    
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__TABLE_UXG_TNL_4TB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">Table 2 Frame Grabber
+                            Status</span></caption>
+                            
+                            
+                            
+                            <thead class="thead" align="left">
+                                <tr>
+                                    <th class="entry" valign="top" width="20%" id="d2504e236">
+                                        <p class="p">Icon</p>
+
+                                    </th>
+
+                                    <th class="entry" valign="top" width="20%" id="d2504e242">
+                                        <p class="p">Status</p>
+
+                                    </th>
+
+                                    <th class="entry" valign="top" width="60%" id="d2504e248">
+                                        <p class="p">Description</p>
+
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody class="tbody">
+                                <tr>
+                                    <td class="entry" valign="top" width="20%" headers="d2504e236 "><img class="image" style="display:none;" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__IMAGE_TRB_WKR_4TB" src="GUID-00F2CB57-CD35-46EA-9BE0-8FBAD9732CC1-high.png" /></td>
+
+                                    <td class="entry" valign="top" width="20%" headers="d2504e242 ">
+                                        <p class="p">Available</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="60%" headers="d2504e248 ">
+                                        <p class="p">The frame grabber can be connected and
+                                            operated.</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="20%" headers="d2504e236 "><img class="image" style="display:none;" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__IMAGE_VXT_WKR_4TB" src="GUID-E73E2DEB-0370-4C3B-899F-EEC869073A4F-high.png" /></td>
+
+                                    <td class="entry" valign="top" width="20%" headers="d2504e242 ">
+                                        <p class="p">Connected</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="60%" headers="d2504e248 ">
+                                        <p class="p">The
+                                            Software has been connected to the frame
+                                            grabber. You can configure parameters
+                                            of the frame grabber and enumerate cameras connected to
+                                            the frame grabber.</p>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+</div>
+
+                    <div class="note note" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__GUID-5C9BD36C-FA57-4CB4-8490-17EDC94CCB47"><span class="notetitle">Note</span> 
+                        <p class="p">When you connect the same frame grabber through the PCIe
+                            interface and GenTL interface,
+                            the
+                            cameras connected with the frame grabber display
+                            under the GenTL interface by default.</p>
+
+                    </div>
+
+                </div>
+                <div class="itemgroup stepresult">
+                    <p class="p">The cameras connected to the enumerated frame grabber will be
+                        displayed. You can double-click a camera to connect to it.</p>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__GUID-B0235C36-A17F-4987-A9AC-6683A526C16A"><strong>Optional: </strong>
+                <span class="ph cmd">Perform the following operations.</span>
+                <div class="itemgroup info">
+                    <ul class="ul" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__UL_O14_5YK_RSB">
+                        
+                        <li class="li" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__GUID-09B9A77A-7765-4E91-BC97-B0B8619008D8">
+                            <p class="p">After connecting to the frame grabber, the feature tree
+                                of the frame grabber will be displayed on the right. Configure the
+                                features if necessary.</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__GUID-BED859F3-EE4F-4D32-B0AD-C49173A059AF">
+                            <p class="p">After connecting to the frame grabber, right-click it
+                                and then select <span class="ph uicontrol">Save GenlCam XML</span> to save the
+                                frame grabber's GenlCam file to the PC in XML format.</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__GUID-12A3D23D-9683-489E-99C9-367ADACB3560">
+                            <p class="p">After disconnecting to the frame grabber, you can
+                                right-click the frame grabber and select <span class="ph uicontrol">Upgrade
+                                    Firmware</span> to upgrade its firmware.</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__GUID-486C12FF-0129-41A8-8E72-BA7085396F21">
+                            <p class="p">Upgrade firmware of a single camera connected to frame
+                                grabber: Click <img class="image icon" style="display:none;" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__IMAGE_GSP_4VF_PSB" src="GUID-65704AC7-82AE-472D-8026-82ABAF852023-high.png" /> to connect to a
+                                frame grabber and enumerate cameras connected to it. Right-click a
+                                camera and select <span class="ph uicontrol">Upgrade Firmware</span>. Click
+                                    <img class="image icon" style="display:none;" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__IMAGE_MFP_4FD_4SB" src="GUID-63DAD9E8-D5BC-4C8F-82B3-9AF9D55585A9-high.png" /> to select an upgrade
+                                package (a dav file), and then click
+                                <span class="ph uicontrol">Upgrade</span>.</p>
+
+                            <div class="note note" id="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D__GUID-4E8B773A-86D6-48C0-AC73-E3479ADAC48C"><span class="notetitle">Note</span> 
+                                <p class="p">Reboot the camera after upgrade, otherwise the
+                                    upgrade will not take effect.</p>
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+            </li>
+</ol>
+
+</div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">Share</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>Previous Page</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>Next Page</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8c01380e02e9eb04798d5"></div>
+		
+	</body>
+</html>

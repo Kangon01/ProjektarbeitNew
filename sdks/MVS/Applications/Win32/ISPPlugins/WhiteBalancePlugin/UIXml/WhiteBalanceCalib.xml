@@ -1,0 +1,30 @@
+<Root>
+    <Group extend="false" ui_param_show="1" ui_param_name="BaseParams" ui_display_name="" id="0">
+        <Node ui_display_cn_name="ROI宽度" ui_param_show="1" ui_param_display_type="SpinBox" ui_param_name="ROIWidth" ui_display_en_name="ROI Width" ui_display_name="ROI Width" ui_param_type="Integer"/>
+        <Node ui_display_cn_name="ROI高度" ui_param_show="1" ui_param_display_type="SpinBox" ui_param_name="ROIHeight" ui_display_en_name="ROI Height" ui_display_name="ROI Height" ui_param_type="Integer"/>
+        <Node ui_param_level="0" ui_display_cn_name="ROI绘制" ui_param_polling="0" ui_param_lock="0" ui_param_show="1" ui_param_display_type="find_roi" ui_param_name="" ui_type="config_param" ui_display_en_name="Draw ROI" ui_display_name="roi_edit">
+            <SubNode ui_param_level="0" ui_param_polling="0" ui_param_lock="0" ui_param_show="1" ui_param_display_type="find_roi" ui_param_name="Roi" ui_roi_param_type="24 ROIs,m * n ROIs" ui_type="roi_param" ui_roi_seek_type="0" ui_display_name="" ui_roi_num_max="1" ui_roi_num_min="1">
+			<RelationList>ColorWeights</RelationList>
+			</SubNode>
+        </Node>
+		<Node ui_display_cn_name="使用输入颜色" ui_param_display_type="manually_color" ui_param_name="ManuallyColor" ui_param_type="ManuallyColor"  ui_display_en_name="Manually Color Set" ui_display_name="Manually Color Set">
+			<ShowRef>0</ShowRef>
+		</Node>
+        <Node ui_display_cn_name="标定类型" ui_param_display_type="ComboBox" ui_param_name="CalibType" ui_display_en_name="Calib Type" ui_display_name="Calib Type" ui_param_show="1" Value="0" ui_param_type="Enumeration">
+			<EnumEntry DisplayName="Standard" Value="0"/>
+            <EnumEntry DisplayName="REF Value" Value="1"/>
+        </Node>
+		
+		<Node ui_display_cn_name="标定方式" ui_param_display_type="ComboBox" ui_param_name="CalibMethod" ui_display_en_name="Calib Method" ui_display_name="Calib Method" Value="1" ui_param_type="Enumeration">
+			<EnumEntry DisplayName="AVG" Value="0"/>
+            <EnumEntry DisplayName="SOLVE" Value="1"/>
+        </Node>
+		
+		<Node ui_display_cn_name="量化系数" ui_param_display_type="ComboBox" ui_param_name="CalibScale" ui_display_en_name="Scale" ui_display_name="Scale" Value="1024" ui_param_type="Enumeration">
+            <EnumEntry DisplayName="256" Value="256"/>
+            <EnumEntry DisplayName="512" Value="512"/>
+            <EnumEntry DisplayName="1024" Value="1024"/>
+            <EnumEntry DisplayName="2048" Value="2048"/>
+        </Node>
+    </Group>
+</Root>

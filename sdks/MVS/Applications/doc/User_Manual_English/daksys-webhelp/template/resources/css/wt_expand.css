@@ -1,0 +1,84 @@
+﻿/* Expand / collapse */
+.wh_expand_btn.expanded:before {
+    content:"";
+	transform: rotate(90deg);
+}
+.wh_expand_btn.expanded:before:hover {
+    content:"";
+	transform: rotate(90deg);
+}
+
+.wh_expand_btn:before {
+    content:"";
+    display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url("../images/标题-收起1@2x.png");
+	background-size: 16px 16px;
+    margin-right: 12px;
+    opacity: 0.5;
+}
+.wh_expand_btn:before:hover {
+    content:"";
+    display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url("../images/标题-收起2@2x.png");
+	background-size: 16px 16px;
+    margin-right: 12px;
+    opacity: 0.5;
+}
+.wh_expand_btn {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+	.wh_expand_btn.expanded:before {
+		content:"";
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		background-image: url("../images_m/标题收起向上.png");
+		background-size: 12px 12px;
+		margin-right: 12px;
+		position: relative;
+		top: 2.5px; /* 向下移动 */
+	}
+	.wh_expand_btn:before {
+		content:"";
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		background-image: url("../images_m/标题收起向下.png");
+		background-size: 12px 12px;
+		margin-right: 12px;
+		position: relative;
+		top: 2.5px; /* 向下移动 */
+	}
+
+
+	.wh_expand_btn.expanded:before:hover {
+		content:"";
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		background-image: url("../images/标题收起向上.png");
+		background-size: 12px 12px;
+		margin-right: 12px;
+		position: relative;
+		top: 2.5px; /* 向下移动 */
+	}
+
+	.wh_expand_btn:before:hover {
+		content:"";
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		background-image: url("../images/标题收起向下.png");
+		background-size: 12px 12px;
+		margin-right: 12px;
+		position: relative;
+		top: 2.5px; /* 向下移动 */
+	}
+	
+}

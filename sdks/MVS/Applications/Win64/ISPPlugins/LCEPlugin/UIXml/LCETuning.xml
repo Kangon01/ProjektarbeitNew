@@ -1,0 +1,16 @@
+<Root>
+    <Group extend="false" ui_param_name="BaseParams" ui_display_name="" id="0" ui_param_show="1">	
+		<Node ui_param_display_type="SpinBox" ui_display_cn_name="LCE双边滤波窗口" Value="11" max="41" ui_display_name="LCE WinSize" min="3" ui_param_type="Integer" ui_param_name="WinSize" ui_display_en_name="Bilateral Filtering Size"/>		
+		<Node ui_param_display_type="SpinBox" ui_display_cn_name="LCE高斯空域标准差" Value="500" max="10000" ui_display_name="LCE SigmaD" min="100" ui_param_type="Integer" ui_param_name="SigmaD" ui_display_en_name="LCE SigmaD"/>		
+		<Node ui_param_display_type="SpinBox" ui_display_cn_name="LCE高斯值域标准差" Value="7000" max="20000" ui_display_name="LCE SigmaR" min="1000" ui_param_type="Integer" ui_param_name="SigmaR" ui_display_en_name="LCE SigmaR"/>		
+		<Node ui_param_display_type="SpinBox" ui_display_cn_name="LCE Gamma值" Value="5" max="10000" ui_display_name="LCE_Gammalog" min="1" ui_param_type="Integer" ui_param_name="Gammalog" ui_display_en_name="Gamma"/>				
+        <Node ui_param_display_type="SpinBox" ui_display_cn_name="LCE纹理图像比例系数" Value="128" max="1280" ui_display_name="LCE DetailScale" min="0" ui_param_type="Integer" ui_param_name="DetailScale" ui_display_en_name="Texture Enhancement Level"/>		
+		<Node ui_param_display_type="SpinBox" ui_display_cn_name="LCE加权曲线对称点" Value="2048" max="4095" ui_display_name="LCE FuseSP" min="0" ui_param_type="Integer" ui_param_name="FuseSP" ui_display_en_name="LCE FuseSP"/>		
+		<Node ui_param_display_type="SpinBox" ui_param_show="0" ui_display_cn_name="LCE加权曲线左段曲率强度" Value="96" max="255" ui_display_name="LCE FuseWL" min="0" ui_param_type="Integer" ui_param_name="FuseWL" ui_display_en_name="LCE FuseWL"/>
+		<Node ui_param_display_type="SpinBox" ui_param_show="0" ui_display_cn_name="LCE加权曲线右段曲率强度" Value="96" max="255" ui_display_name="LCE FuseWR" min="0" ui_param_type="Integer" ui_param_name="FuseWR" ui_display_en_name="LCE FuseWR"/>			
+		<Node ui_param_display_type="SpinBox" ui_display_cn_name="LCE提亮控制系数比率" Value="50" max="256" ui_display_name="LCE FuseBRSlope" min="0" ui_param_type="Integer" ui_param_name="FuseBRSlope" ui_display_en_name="Brightness Enhancement Level"/>		
+		<Node ui_param_display_type="SpinBox" ui_param_show="0" ui_display_cn_name="LCE提亮控制系数偏移" Value="14000" max="65535" ui_display_name="LCE FuseBROffset" min="0" ui_param_type="Integer" ui_param_name="FuseBROffset" ui_display_en_name="LCE FuseBROffset"/>		
+		<Node ui_display_cn_name="LCE压暗控制使能" ui_param_show="0" ui_param_display_type="Switch" ui_param_name="FuseDKEnable" ui_display_en_name=">LCE FuseDKEnable" ui_display_name="LCE FuseDKEnable" ui_param_type="Boolean"/>		
+		<Node ui_param_display_type="SpinBox" ui_param_show="0" ui_display_cn_name="LCE压暗控制系数" Value="3276" max="4095" ui_display_name="LCE FuseDKCoef" min="0" ui_param_type="Integer" ui_param_name="FuseDKCoef" ui_display_en_name="LCE FuseDKCoef"/>
+    </Group>
+</Root>

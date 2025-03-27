@@ -1,0 +1,17 @@
+<Root>
+    <Group extend="false" ui_param_show="1" ui_param_name="DenoiseParams" id="0">        
+        <Node ui_param_display_type="noise_curve" ui_param_name="NoiseCurve" ui_param_type="NoiseCurve"/>
+		<Node ui_param_display_type="custom_noise_curve" ui_param_name="CustomNoiseCurve" ui_param_type="CustomNoiseCurve"/>
+        <Node ui_param_display_type="SpinBox" ui_param_show="0" ui_param_name="BayerDenoiseStrength" ui_display_name="SpatialDenoise_BayerDenoiseStrength" ui_display_en_name="Denoise Intensity" ui_display_cn_name="降噪强度" ui_param_type="Integer"/>
+        <Node ui_param_display_type="SpinBox" ui_param_show="0" ui_param_name="BayerSharpenStrength" ui_display_name="SpatialDenoise_BayerSharpenStrength" ui_display_en_name="Sharpen Intensity" ui_display_cn_name="锐化强度" ui_param_type="Integer"/>        
+        <Node ui_param_display_type="SpinBox" ui_param_name="RGBStrengthLumBF" ui_display_name="SpatialDenoise_RGBStrengthLumBF" ui_display_en_name="Brightness Denoise Intensity" ui_display_cn_name="亮度降噪强度" ui_param_type="Integer"/>
+        <Node ui_param_display_type="SpinBox" ui_param_name="RGBStrengthChromBF" ui_display_name="SpatialDenoise_RGBStrengthChromBF" ui_display_en_name="Color Denoise Intensity" ui_display_cn_name="色度降噪强度" ui_param_type="Integer"/>
+        <Node ui_param_show="0" ui_param_display_type="float_lineedit" ui_param_name="Gain" ui_display_name="Gain" ui_display_en_name="Gain" ui_display_cn_name="增益" ui_param_type="Float"/>
+		<Node ui_param_show="0" ui_param_display_type="ComboBox" ui_param_name="DenoiseMethod" ui_display_name="Method" ui_param_type="Enumeration"/>
+        <Node ui_param_show="0" ui_param_display_type="lineedit" ui_param_name="NoiseProfile" ui_display_name="NoiseProfile" ui_param_type="String"/>
+		<Node ui_param_display_type="fold_btn" ui_param_type="Fold" ui_param_name="SeniorFoldBtn" />
+		<Node ui_param_display_type="SpinBox" ui_param_show="0" ui_param_name="BayerNoiseCorrect" ui_display_name="SpatialDenoise_BayerNoiseCorrect" ui_display_en_name="Noise Correct Factor" ui_display_cn_name="噪声校正系数" ui_param_type="Integer"/>
+		<Node ui_param_display_type="SpinBox" ui_param_name="RGBNoiseCorrectLumBF" ui_display_name="SpatialDenoise_RGBNoiseCorrectLumBF" ui_display_en_name="Brightness Correct Factor" ui_display_cn_name="亮度校正系数" ui_param_type="Integer"/>
+        <Node ui_param_display_type="SpinBox" ui_param_name="RGBNoiseCorrectChromBF" ui_display_name="SpatialDenoise_RGBNoiseCorrectChromBF" ui_display_en_name="Color Correct Factor" ui_display_cn_name="色度校正系数" ui_param_type="Integer"/>		
+    </Group>
+</Root>

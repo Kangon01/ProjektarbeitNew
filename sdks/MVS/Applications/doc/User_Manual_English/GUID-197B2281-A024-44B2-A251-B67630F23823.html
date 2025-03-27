@@ -1,0 +1,219 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="© Hikrobot Co., Ltd. All rights reserved." /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="Multicast Settings" /><meta name="abstract" content="By enabling Multicast, a GigE Vision camera can be accessed through multiple Softwares. This is especially useful when a camera needs to be accessed by different end users. Before that, you need to configure roles for the Softwares to specify different permission for them to access different cameras." /><meta name="description" content="By enabling Multicast, a GigE Vision camera can be accessed through multiple Softwares. This is especially useful when a camera needs to be accessed by different end users. Before that, you need to configure roles for the Softwares to specify different permission for them to access different cameras." /><meta name="DC.Relation" scheme="URI" content="GUID-F6FC6C26-0CFF-46C9-A718-84ADB7035DCA.html" /><meta name="DC.Relation" scheme="URI" content="GUID-69214609-4285-47D2-A671-012B1BB300F5.html" /><meta name="DC.Relation" scheme="URI" content="GUID-F74A1437-FFB8-4813-A457-57DB6B22BA82.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-197B2281-A024-44B2-A251-B67630F23823" /><meta name="DC.Language" content="en-US" /><title>Multicast Settings</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-197B2281-A024-44B2-A251-B67630F23823" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">Home Page</a></span></li><li><span class="topicref"><a href="GUID-7807DA4F-CEC8-422D-94C0-36A6BCAF6255.html" data-id="GUID-7807DA4F-CEC8-422D-94C0-36A6BCAF6255">Device Management</a></span></li><li><span class="topicref"><a href="GUID-F6FC6C26-0CFF-46C9-A718-84ADB7035DCA.html" data-id="GUID-F6FC6C26-0CFF-46C9-A718-84ADB7035DCA">GigE Vision Camera Management</a></span></li><li class="active"><span class="topicref">Multicast Settings</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">Multicast Settings</h1>
+
+
+<div class="body conbody"><p class="shortdesc">By enabling Multicast, a GigE Vision camera can be accessed through multiple
+    Softwares. This is especially useful when a camera needs to be accessed by different end users.
+    Before that, you need to configure roles for the Softwares to specify different permission for
+    them to access different cameras.</p>
+
+    <div class="note note" id="GUID-197B2281-A024-44B2-A251-B67630F23823__GUID-BF4F98AE-A163-4401-9C94-79C5D106235D"><span class="notetitle">Note</span> 
+      <ul class="ul" id="GUID-197B2281-A024-44B2-A251-B67630F23823__GUID-406324BF-C54F-48A3-9C0C-8901E4CEAFD8">
+        <li class="li" id="GUID-197B2281-A024-44B2-A251-B67630F23823__GUID-FCE967B5-DE3B-49A4-9880-68498BAD142C">
+          
+          <p class="p">Multicast configuration is only available for GigE Vision cameras.</p>
+
+          
+        </li>
+
+        
+        <li class="li" id="GUID-197B2281-A024-44B2-A251-B67630F23823__GUID-306B860A-FE2A-4D35-9F23-A1C23F7042D1">
+          <p class="p">Multicast configuration should be supported by the GigE Vision camera.</p>
+
+        </li>
+
+        
+      </ul>
+
+    </div>
+
+    <p class="p">For different cameras, a Software can be configured with different roles to
+      access them. In other words, the end user of a Software can have different permissions to
+      access different cameras. The following roles are available:</p>
+
+    
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-197B2281-A024-44B2-A251-B67630F23823__TABLE_L3N_VN3_FKB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">Table 1 Role Description</span></caption>
+        
+        
+        <thead class="thead" align="left">
+          <tr>
+            <th class="entry" valign="top" width="26.525198938992045%" id="d4292e60">
+              <p class="p">Role</p>
+
+            </th>
+
+            <th class="entry" valign="top" width="73.47480106100795%" id="d4292e66">
+              <p class="p">Description</p>
+
+            </th>
+
+          </tr>
+
+        </thead>
+
+        <tbody class="tbody">
+          <tr>
+            <td class="entry" valign="top" width="26.525198938992045%" headers="d4292e60 ">
+              <p class="p">Controller and Data Receiver</p>
+
+            </td>
+
+            <td class="entry" valign="top" width="73.47480106100795%" headers="d4292e66 ">
+              <p class="p">The camera's features are editable, and the Software can receive
+                camera data to display
+                live
+                image.</p>
+
+            </td>
+
+          </tr>
+
+          <tr>
+            <td class="entry" valign="top" width="26.525198938992045%" headers="d4292e60 ">
+              <p class="p">Controller</p>
+
+            </td>
+
+            <td class="entry" valign="top" width="73.47480106100795%" headers="d4292e66 ">
+              <p class="p">The camera's features are editable, but the Software cannot receive
+                camera data to display live images.</p>
+
+            </td>
+
+          </tr>
+
+          <tr>
+            <td class="entry" valign="top" width="26.525198938992045%" headers="d4292e60 ">
+              <p class="p">Data Receiver</p>
+
+            </td>
+
+            <td class="entry" valign="top" width="73.47480106100795%" headers="d4292e66 ">
+              <p class="p">The camera's features are NOT editable, but the Software can receive
+                camera data to display live images.</p>
+
+              <div class="note note" id="GUID-197B2281-A024-44B2-A251-B67630F23823__GUID-B08812BF-9D3D-41CB-989A-3A86C04F488B"><span class="notetitle">Note</span> 
+                <ul class="ul" id="GUID-197B2281-A024-44B2-A251-B67630F23823__GUID-B1A870F2-AB40-4EF4-9B0E-828132E52E0E">
+                  <li class="li" id="GUID-197B2281-A024-44B2-A251-B67630F23823__GUID-0522C0F9-7810-4C96-870D-846A29B3A0B7">
+                    <p class="p">You cannot set the role of a Software as Data Receiver manually.
+                    </p>
+
+                  </li>
+
+                  <li class="li" id="GUID-197B2281-A024-44B2-A251-B67630F23823__GUID-44E48760-1508-4072-9CB1-BD0D2896B7F5">
+                    <p class="p">Multiple Softwares can be Data Receiver of the same camera.</p>
+
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </td>
+
+          </tr>
+
+        </tbody>
+
+      </table>
+</div>
+
+    <div class="note note" id="GUID-197B2281-A024-44B2-A251-B67630F23823__GUID-FF877DFA-FA1F-4F6B-A908-8375014CE1E9"><span class="notetitle">Note</span> 
+      <ul class="ul" id="GUID-197B2281-A024-44B2-A251-B67630F23823__GUID-22165A77-1304-4BE0-AE88-AA7DC45D2449">
+        <li class="li" id="GUID-197B2281-A024-44B2-A251-B67630F23823__GUID-5D0070C0-8F8A-409C-ACC5-1039B64E83C8">
+          <p class="p">For one camera, only one Software can be the role of "Controller and Data
+            Receiver" or "Controller".</p>
+
+        </li>
+
+        <li class="li" id="GUID-197B2281-A024-44B2-A251-B67630F23823__GUID-1078268D-AB4C-4CCC-81DF-5E915B41B3D3">
+          <p class="p">You can configure Multicast for a camera only when the role is set to
+            "Controller and Data Receiver" or "Controller".</p>
+
+        </li>
+
+        <li class="li" id="GUID-197B2281-A024-44B2-A251-B67630F23823__GUID-DA25D586-3526-4A69-8778-D1D777F7BD4D">
+          <p class="p">For the Softwares running on the same PC, one of them can only be
+            configured as "Controller" and the others as "Data Receiver".</p>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+</div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">Share</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>Previous Page</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>Next Page</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8c01380e02e9eb04798d5"></div>
+		
+	</body>
+</html>

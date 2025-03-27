@@ -1,0 +1,279 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="串口设备管理" /><meta name="abstract" content="设备列表区域的Serial Port接口可对串口设备进行相关操作，例如添加设备、设置波特率等。" /><meta name="description" content="设备列表区域的Serial Port接口可对串口设备进行相关操作，例如添加设备、设置波特率等。" /><meta name="DC.Relation" scheme="URI" content="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-A36A6F04-79F8-49A0-8A2A-2F10DA2DAF96" /><meta name="DC.Language" content="zh-CN" /><title>串口设备管理</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html" data-id="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E">设备管理</a></span></li><li class="active"><span class="topicref">串口设备管理</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body "><div class="nested0" id="GUID-A36A6F04-79F8-49A0-8A2A-2F10DA2DAF96">
+    <h1 class="title topictitle1">串口设备管理</h1>
+
+    
+    <div class="body conbody"><p class="shortdesc">设备列表区域的Serial Port接口可对串口设备进行相关操作，例如添加设备、设置波特率等。</p>
+
+        <p class="p">本节包含如下内容：</p>
+
+        <ul class="ul" id="GUID-A36A6F04-79F8-49A0-8A2A-2F10DA2DAF96__UL_IRB_S5C_GCC">
+            <li class="li" id="GUID-A36A6F04-79F8-49A0-8A2A-2F10DA2DAF96__GUID-9CEF0AA5-828A-494F-B86C-48B6C07E016D">
+                <p class="p"><a class="xref" href="GUID-A36A6F04-79F8-49A0-8A2A-2F10DA2DAF96.html#GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4" title="由于串口设备刷新耗时较长，故客户端不支持自动刷新Serial Port接口。添加串口设备时需要手动刷新并连接。">添加串口设备</a></p>
+
+            </li>
+
+            <li class="li" id="GUID-A36A6F04-79F8-49A0-8A2A-2F10DA2DAF96__GUID-BCB831CB-0A4C-4B35-9CEA-A819982096A4">
+                <p class="p"><a class="xref" href="GUID-A36A6F04-79F8-49A0-8A2A-2F10DA2DAF96.html#GUID-2FB64241-EB8B-46B3-9202-6AD9A50BFE60" title="对于不同状态的串口设备，设备列表的相机图标有所差别。">状态介绍</a></p>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+
+<div class="topic task nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4">
+    <h2 class="title topictitle2">添加串口设备</h2>
+
+
+<div class="body taskbody"><p class="shortdesc">由于串口设备刷新耗时较长，故客户端不支持自动刷新Serial Port接口。添加串口设备时需要手动刷新并连接。</p>
+
+<div class="section prereq p" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__GUID-2BF90298-2313-409D-BEFF-11387B8CBF02">
+            <p class="p">串口设备正常连接。</p>
+
+            <div class="note note" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__GUID-F9E54E26-D571-4944-BCED-E21FF90E183B"><span class="notetitle">说明</span> 
+                <p class="p">客户端连接Camera Link相机时，还需确保Camera Link采集卡驱动安装正确。</p>
+
+            </div>
+
+        </div>
+
+<ol class="ol steps" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__GUID-60AE5C0D-7C0A-4BD9-8AD5-1AAB94C6820D"><li class="li step stepexpand" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__GUID-ED066720-B344-4336-9275-FCF74728A62A">
+                <span class="ph cmd">点击设备列表Serial Port接口右侧的<img class="image icon" style="display:none;" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__IMAGE_KKH_KS5_BKB" src="GUID-21129D57-7CF9-4746-88F0-C5EFF4A4C073-high.png" />进行手动刷新。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__GUID-366BBD75-1DE9-4FB8-9EBD-92F9D4FE25EE"><span class="notetitle">说明</span> 
+                        <p class="p">串口设备刷新耗时较长，此为正常现象。</p>
+
+                    </div>
+
+                </div>
+                <div class="itemgroup stepresult">
+                    <p class="p">若设备连接正常，Serial Port下方会显示可搜索到的相机，如下图所示。</p>
+
+                    <div class="fig fignone" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__FIG_FPW_4V5_BKB">
+                        
+                        <img class="image" style="display:none;" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__IMAGE_E2L_SVC_GCC" src="GUID-C03E3991-175A-4A2B-AD0C-151E880ABBE6-high.png" width="1000" />
+                    <div class="fig_caption"><span class="figcap">图 1 枚举串口设备</span></div></div>
+
+                    <div class="note note" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__GUID-73EBDD43-5E00-4D59-8C51-3AB8DF1956D6"><span class="notetitle">说明</span> 
+                        <p class="p">客户端枚举Camera Link相机时通过串口和采集卡会枚举两次，此为正常现象。</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__GUID-5E474A3F-8DEE-4E40-BED6-B033635727A3">
+                <span class="ph cmd">设置串口设备的波特率。</span>
+                <ol type="a" class="ol substeps" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__SUBSTEPS_PK3_H55_BKB">
+                    <li class="li substep substepexpand" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__GUID-2FE0EC5C-B4FC-4E5D-9176-F228C70B0D20">
+                        <span class="ph cmd">设备列表选择需要连接的串口设备。</span>
+                    </li>
+
+                    <li class="li substep substepexpand" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__GUID-331F9EA8-F6EA-4928-99DB-1C4E23CE21D5">
+                        <span class="ph cmd">右键单击选择<span class="ph uicontrol">波特率设置</span>进入波特率设置界面，如下图所示。</span>
+                        <div class="itemgroup info">
+                            <div class="fig fignone" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__FIG_JL2_RV5_BKB">
+                                
+                                <img class="image" style="display:none;" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__IMAGE_SPW_BWC_GCC" src="GUID-711C2FAE-0658-4E07-B805-559D97875185-high.png" width="1000" />
+                            <div class="fig_caption"><span class="figcap">图 2 进入波特率设置</span></div></div>
+
+                        </div>
+                    </li>
+
+                    <li class="li substep substepexpand" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__GUID-F5BE3147-B2B4-4A76-BB58-E3426D84F97B">
+                        <span class="ph cmd">根据实际情况选择波特率。</span>
+                        <div class="itemgroup info">
+                            <div class="fig fignone" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__FIG_UB5_TV5_BKB">
+                                
+                                <img class="image" style="display:none;" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__IMAGE_VB5_TV5_BKB" src="GUID-407C3649-3F2B-4D9F-A3A5-E535969A9737-high.png" width="1000" />
+                            <div class="fig_caption"><span class="figcap">图 3 波特率设置</span></div></div>
+
+                            <div class="note note" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__GUID-3679C26C-53C3-4283-8374-30230AADE865"><span class="notetitle">说明</span> 
+                                <p class="p">客户端连接Camera
+                                    Link相机时，波特率默认为9600，实际使用中建议设置为115200，可提高连接速度。若采集卡支持更高的波特率设置，推荐设置所支持的最大波特率数值。</p>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="li substep substepexpand" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__GUID-50A51DFF-310F-4859-9FDD-2D1F7CF6DFA3">
+                        <span class="ph cmd">点击<span class="ph uicontrol">确定</span>，</span>
+                    </li>
+
+                </ol>
+
+            </li>
+<li class="li step stepexpand" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__GUID-60DF6134-4113-4797-8642-3F107C17473C">
+                <span class="ph cmd">设备列表选择串口设备双击连接。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4__GUID-02CF6F64-FDFE-4503-8AD5-4F216C5024B6"><span class="notetitle">说明</span> 
+                        <p class="p">串口设备连接耗时较长，此为正常现象。</p>
+
+                    </div>
+
+                </div>
+            </li>
+</ol>
+
+</div>
+
+</div>
+<div class="topic concept nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-2FB64241-EB8B-46B3-9202-6AD9A50BFE60">
+    <h2 class="title topictitle2">状态介绍</h2>
+
+
+<div class="body conbody"><p class="shortdesc">对于不同状态的串口设备，设备列表的相机图标有所差别。</p>
+
+<p class="p">串口设备的状态说明请见下表。</p>
+
+        
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-2FB64241-EB8B-46B3-9202-6AD9A50BFE60__TABLE_ZCH_2WT_BKB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 1 串口设备状态介绍</span></caption>
+                
+                
+                
+                <thead class="thead" align="left">
+                    <tr>
+                        <th class="entry" valign="top" width="10.351966873706003%" id="d27504e240">
+                            <p class="p">图标</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="13.871635610766045%" id="d27504e246">
+                            <p class="p">状态</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="75.77639751552795%" id="d27504e252">
+                            <p class="p">含义</p>
+
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody class="tbody">
+                    <tr>
+                        <td class="entry" valign="top" width="10.351966873706003%" headers="d27504e240 ">
+                            <p class="p"><img class="image icon" style="display:none;" id="GUID-2FB64241-EB8B-46B3-9202-6AD9A50BFE60__IMAGE_C32_WWT_BKB" src="GUID-8186F79B-008D-41E6-9633-DB4C5EE5EF45-high.png" /></p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="13.871635610766045%" headers="d27504e246 ">
+                            <p class="p">可用</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="75.77639751552795%" headers="d27504e252 ">
+                            <p class="p">设备处于可连接状态，双击设备可正常连接和使用。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="10.351966873706003%" headers="d27504e240 ">
+                            <p class="p"><img class="image icon" style="display:none;" id="GUID-2FB64241-EB8B-46B3-9202-6AD9A50BFE60__IMAGE_WT1_XWT_BKB" src="GUID-AD2CC819-9499-4681-8B8D-FB9DCA8CA0DA-high.png" /></p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="13.871635610766045%" headers="d27504e246 ">
+                            <p class="p">已连接</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="75.77639751552795%" headers="d27504e252 ">
+                            <p class="p">客户端已经连接该设备，并可进行读取和设置参数的操作。</p>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+</div>
+
+        <div class="note note" id="GUID-2FB64241-EB8B-46B3-9202-6AD9A50BFE60__GUID-390E504B-6EAF-4884-AEA4-174B2719ECAA"><span class="notetitle">说明</span> 
+            <p class="p">客户端连接Camera Link接口相机时会提示：Camera
+                Link相机不支持采集和预览操作，无法映射画幅，请通过第三方采集软件进行预览。</p>
+
+        </div>
+
+</div>
+
+</div>
+</div>
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>本页导航</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-53BD199E-B9DA-41C3-90D1-54A5F56B63C4" class="feature_guide_h2"><span class="link_button">添加串口设备</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-2FB64241-EB8B-46B3-9202-6AD9A50BFE60" class="feature_guide_h2"><span class="link_button">状态介绍</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

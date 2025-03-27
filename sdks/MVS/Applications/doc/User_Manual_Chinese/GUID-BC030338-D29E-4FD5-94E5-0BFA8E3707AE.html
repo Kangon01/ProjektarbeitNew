@@ -1,0 +1,156 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="事件监视" /><meta name="abstract" content="事件监视功能可对网口相机、U3V相机以及采集卡的事件信息进行记录并查看。" /><meta name="description" content="事件监视功能可对网口相机、U3V相机以及采集卡的事件信息进行记录并查看。" /><meta name="DC.Relation" scheme="URI" content="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE" /><meta name="DC.Language" content="zh-CN" /><title>事件监视</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html" data-id="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E">设备管理</a></span></li><li class="active"><span class="topicref">事件监视</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">事件监视</h1>
+
+
+<div class="body taskbody"><p class="shortdesc">事件监视功能可对网口相机、U3V相机以及采集卡的事件信息进行记录并查看。</p>
+
+<div class="section prereq p" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__GUID-FC035685-86A0-4B5F-900B-5759B9C1B751">
+            <p class="p">网口相机、U3V相机或采集卡为打开状态，且支持事件控制功能。</p>
+
+        </div>
+
+        <div class="section context" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__GUID-5EA135CA-0763-4EBD-BBBE-55C099FB24A3">
+            <div class="note note" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__GUID-ED823677-972A-4835-8D10-1FD38FC54AB4"><span class="notetitle">说明</span> 
+                <p class="p">相机与采集卡的事件监视功能大致相同，本章节仅介绍相机的事件监视步骤。对于采集卡，事件配置请参考<span class="ph">MVS </span>工具集中的事件配置工具用户手册，事件监视请参考本章节的步骤5~9。</p>
+
+            </div>
+
+        </div>
+
+<p class="li stepsection" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__GUID-B3515227-8900-4573-98F3-5ECBB0C6C651">
+                <div class="note note" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__GUID-D2782309-2988-4845-86A1-46A772B62B8C"><span class="notetitle">说明</span> 
+                    <p class="p">采集卡下的网口相机和U3V相机不支持事件监视功能。</p>
+
+                </div>
+
+            </p><ol class="ol steps" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__GUID-4B25E1C7-9578-49AD-880E-A1DECD855062"><li class="li step stepexpand" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__GUID-C5622E4B-D9A9-463A-8A72-9F82F83508EE">
+                <span class="ph cmd">在设备列表选择需要查看事件的相机。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__GUID-C5F954EF-6F2B-47F2-8AF7-8B10B3759B15">
+                <span class="ph cmd">双击连接相机。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__GUID-641E940F-A811-42A7-B925-B41CC6127647">
+                <span class="ph cmd">在客户端主界面的右侧找到高级属性中的<span class="keyword parmname">事件控制信息</span>属性。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__GUID-2F5ACBC1-2881-44C6-BC70-B3CC80574562">
+                <span class="ph cmd">勾选需要查看的事件，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__FIG_UYN_XSX_NVB">
+                        
+                        <img class="image" style="display:none;" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__IMAGE_WRX_55K_1YB" src="GUID-C8112EAF-2569-4677-B935-D7AD1D95644E-high.jpg" width="1000" />
+                    <div class="fig_caption"><span class="figcap">图 1 事件控制信息</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__GUID-4E963673-D387-4F2F-9430-C977F0A9FCCA">
+                <span class="ph cmd">右键单击选择<span class="ph uicontrol">事件监视</span>进入事件监视界面，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__FIG_CCB_SR5_BKB">
+                        
+                        <img class="image" style="display:none;" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__IMAGE_DCB_SR5_BKB" src="GUID-259E47D6-7CFC-4E2A-83AF-06A1F38B4129-high.png" width="1000" />
+                    <div class="fig_caption"><span class="figcap">图 2 进入事件监视</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__GUID-FCF0676A-86EC-4A22-A97E-93527D57E204"><strong>可选操作： </strong>
+                <span class="ph cmd">可设置相机事件信息的自动存储。在事件监视窗口左下角的<span class="keyword parmname">存储路径</span>处设置事件txt文件存储的路径和文件名后，开启右下角的<span class="ph uicontrol">自动存储</span>即可。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__FIG_KDN_TR5_BKB">
+                        
+                        <img class="image" style="display:none;" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__IMAGE_GN5_MVK_1YB" src="GUID-93E1C7C2-4743-4FA2-8636-0D29A683EEF1-high.jpg" width="1400" />
+                    <div class="fig_caption"><span class="figcap">图 3 事件监视</span></div></div>
+
+                    <div class="note note" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__GUID-ACFE0FD6-98B3-468A-AF1D-E0BA970854A6"><span class="notetitle">说明</span> 
+                        <p class="p">事件监视窗口最多显示10000条事件信息。若需查看全部信息，请设置自动存储功能，打开txt文件进行查看。</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__GUID-9C1CC9FE-ECC6-4DE6-9296-1A2654949C77">
+                <span class="ph cmd">开启<span class="ph uicontrol">消息通道事件</span>。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__GUID-456C2499-0793-4164-AC8A-FF4C0B30744A">
+                <span class="ph cmd">相机开始采集图像。</span>
+                <div class="itemgroup stepresult">此时事件监视窗口显示具体时间的时间戳和内容等信息。</div>
+            </li>
+<li class="li step stepexpand" id="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE__GUID-374DF409-4215-4B9A-9399-F136650ED16F"><strong>可选操作： </strong>
+                <span class="ph cmd">可通过右上角的<span class="ph uicontrol">清空日志</span>清空当前窗口显示的事件信息。</span>
+            </li>
+</ol>
+
+</div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

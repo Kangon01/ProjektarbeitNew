@@ -1,0 +1,184 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="文件存取" /><meta name="abstract" content="文件存取可对相机的用户集或DPC数据进行导入或者导出的操作。" /><meta name="description" content="文件存取可对相机的用户集或DPC数据进行导入或者导出的操作。" /><meta name="DC.Relation" scheme="URI" content="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-334F2293-5F58-4FF6-95F2-BA8810339776" /><meta name="DC.Language" content="zh-CN" /><title>文件存取</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB.html" data-id="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB">相机属性配置</a></span></li><li class="active"><span class="topicref">文件存取</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body "><div class="nested0" id="GUID-334F2293-5F58-4FF6-95F2-BA8810339776">
+    <h1 class="title topictitle1">文件存取</h1>
+
+
+<div class="body conbody"><p class="shortdesc">文件存取可对相机的用户集或DPC数据进行导入或者导出的操作。</p>
+
+        <p class="p">该功能支持对相机属性UserSet 1/2/3和DPC数据进行存取。其中DPC表示相机校正过的坏点数据。</p>
+
+        <div class="note note" id="GUID-334F2293-5F58-4FF6-95F2-BA8810339776__GUID-742638CE-597A-4370-92DC-A9F95B522E52"><span class="notetitle">说明</span> 
+            <ul class="ul" id="GUID-334F2293-5F58-4FF6-95F2-BA8810339776__UL_CM2_VWC_CKB">
+                <li class="li" id="GUID-334F2293-5F58-4FF6-95F2-BA8810339776__GUID-213E32D5-0D64-48CB-B33B-6E75B2F20311">
+                    <p class="p">该功能仅支持同型号相机之间导入或导出。</p>
+
+                </li>
+
+                <li class="li" id="GUID-334F2293-5F58-4FF6-95F2-BA8810339776__GUID-07D5A41B-0C1D-4D03-A3E9-FB6ECE271C96">
+                    <p class="p">相机是否支持该功能由相机型号和固件程序决定，具体请咨询技术支持。</p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <p class="p">本节包含如下内容：</p>
+
+        <ul class="ul" id="GUID-334F2293-5F58-4FF6-95F2-BA8810339776__UL_WWV_HMF_2CC">
+            <li class="li" id="GUID-334F2293-5F58-4FF6-95F2-BA8810339776__GUID-9841E100-3EE1-4E23-AB37-0F02BC0FCA7F">
+                <p class="p"><a class="xref" href="GUID-334F2293-5F58-4FF6-95F2-BA8810339776.html#GUID-61EB3726-9908-427A-982D-74759BAB71A9" title="客户端可通过文件存取的导入功能将相机属性以mfa格式文件导入到相机中。">导入属性文件</a></p>
+
+            </li>
+
+            <li class="li" id="GUID-334F2293-5F58-4FF6-95F2-BA8810339776__GUID-FD7C9987-DA46-4AB3-A64F-CB0B966CFBEC">
+                <p class="p"><a class="xref" href="GUID-334F2293-5F58-4FF6-95F2-BA8810339776.html#GUID-2FD6B9EE-A9CF-4510-9AF7-83EBEC4B8BFD" title="客户端可通过文件存取的导出功能将相机属性以mfa格式文件导出，同时可将设备的开源合规文件进行导出。">导出属性文件</a></p>
+
+            </li>
+
+        </ul>
+
+</div>
+
+
+<div class="topic task nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-61EB3726-9908-427A-982D-74759BAB71A9">
+    <h2 class="title topictitle2">导入属性文件</h2>
+
+    
+    <div class="body taskbody"><p class="shortdesc">客户端可通过文件存取的导入功能将相机属性以mfa格式文件导入到相机中。</p>
+
+        <div class="section prereq p" id="GUID-61EB3726-9908-427A-982D-74759BAB71A9__GUID-BA4BEDD9-26A7-4B5F-93F9-26A64143BD16">
+            <p class="p">客户端已连接相机。</p>
+
+        </div>
+
+        <ol class="ol steps" id="GUID-61EB3726-9908-427A-982D-74759BAB71A9__GUID-75B99802-EFF7-4D22-97B4-3C452585AF16"><li class="li step stepexpand" id="GUID-61EB3726-9908-427A-982D-74759BAB71A9__GUID-3E0435D3-5118-44DD-A529-C78D9620C11C">
+                <span class="ph cmd">点击属性区域的<img class="image icon" style="display:none;" id="GUID-61EB3726-9908-427A-982D-74759BAB71A9__IMAGE_YWZ_4ZC_CKB" src="GUID-8B11C682-0CC4-4ED2-9AA9-D2EB37EB1CE5-high.png" />进入文件存取窗口。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-61EB3726-9908-427A-982D-74759BAB71A9__GUID-E861631A-029A-4354-98C1-7446EAB4E02A">
+                <span class="ph cmd">选择需要导入的<span class="keyword parmname">设备属性</span>。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-61EB3726-9908-427A-982D-74759BAB71A9__GUID-3733CD4F-4790-4271-8665-D80C83542757">
+                <span class="ph cmd">点击<span class="ph uicontrol">导入</span>按钮。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-61EB3726-9908-427A-982D-74759BAB71A9__GUID-659FEC9A-886F-4211-8447-943F0B0878EA">
+                <span class="ph cmd">选择需要导入的mfa文件并<span class="ph uicontrol">打开</span>。</span>
+                <div class="itemgroup stepresult">此时会显示实时导入进度直至弹出“导入成功”的提示窗口。</div>
+            </li>
+<li class="li step stepexpand" id="GUID-61EB3726-9908-427A-982D-74759BAB71A9__GUID-5DABEF89-F97E-43BF-AA67-3218C5DB6CE2">
+                <span class="ph cmd">点击提示窗口的<span class="ph uicontrol">确定</span>。</span>
+            </li>
+</ol>
+
+    </div>
+
+</div>
+<div class="topic task nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-2FD6B9EE-A9CF-4510-9AF7-83EBEC4B8BFD">
+    <h2 class="title topictitle2">导出属性文件</h2>
+
+    
+    <div class="body taskbody"><p class="shortdesc">客户端可通过文件存取的导出功能将相机属性以mfa格式文件导出，同时可将设备的开源合规文件进行导出。</p>
+
+        <div class="section prereq p" id="GUID-2FD6B9EE-A9CF-4510-9AF7-83EBEC4B8BFD__GUID-B1372985-436B-4DE4-8E5F-27FF385A4FC0">
+            <p class="p">客户端已连接相机。</p>
+
+        </div>
+
+        <ol class="ol steps" id="GUID-2FD6B9EE-A9CF-4510-9AF7-83EBEC4B8BFD__GUID-75B99802-EFF7-4D22-97B4-3C452585AF16"><li class="li step stepexpand" id="GUID-2FD6B9EE-A9CF-4510-9AF7-83EBEC4B8BFD__GUID-98577940-10FB-4EA2-B7BA-FF0C39B705BD">
+                <span class="ph cmd"> 点击属性区域的<img class="image icon" style="display:none;" id="GUID-2FD6B9EE-A9CF-4510-9AF7-83EBEC4B8BFD__IMAGE_YWZ_4ZC_CKB" src="GUID-8B11C682-0CC4-4ED2-9AA9-D2EB37EB1CE5-high.png" />进入文件存取窗口。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-2FD6B9EE-A9CF-4510-9AF7-83EBEC4B8BFD__GUID-7FAAF11F-4428-4C83-A13F-D0B493C42796">
+                <span class="ph cmd">选择需要导出的<span class="ph uicontrol">设备属性</span>，可选择<span class="keyword parmname">User Set
+                        1/2/3</span>（用户参数集）、<span class="keyword parmname">License Notice</span>（开源许可文件）。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-2FD6B9EE-A9CF-4510-9AF7-83EBEC4B8BFD__GUID-B41F2C9C-F877-45D9-837F-DAA82F43DED3"><span class="notetitle">说明</span> 
+                        <p class="p">不同类型以及固件版本设备，支持导出的属性有所差别，请以实际参数为准。</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-2FD6B9EE-A9CF-4510-9AF7-83EBEC4B8BFD__GUID-CAA07C27-56ED-4195-8222-1CEF3D6F4D77">
+                <span class="ph cmd">点击<span class="ph uicontrol">导出</span>按钮。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-2FD6B9EE-A9CF-4510-9AF7-83EBEC4B8BFD__GUID-93BDDC21-A017-4A5F-B1F5-83DD5398F332">
+                <span class="ph cmd">选择导出文件的保存路径并<span class="ph uicontrol">保存</span>。</span>
+                <div class="itemgroup stepresult"> 此时会显示实时导出进度直至提示“导出成功”。</div>
+            </li>
+</ol>
+
+    </div>
+
+</div>
+</div>
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>本页导航</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-61EB3726-9908-427A-982D-74759BAB71A9" class="feature_guide_h2"><span class="link_button">导入属性文件</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-2FD6B9EE-A9CF-4510-9AF7-83EBEC4B8BFD" class="feature_guide_h2"><span class="link_button">导出属性文件</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

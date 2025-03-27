@@ -1,0 +1,5 @@
+<Root>
+    <Group ui_param_show="1" ui_display_name="" id="0" ui_param_name="BaseParams" extend="false">
+        <Node ui_param_display_type="SpinBox" ui_display_cn_name="对比度调节强度" Value="100" max="10000" ui_display_name="Factor" min="1" ui_param_type="Integer" ui_param_name="Factor" ui_display_en_name="Factor"/>
+    </Group>
+</Root>

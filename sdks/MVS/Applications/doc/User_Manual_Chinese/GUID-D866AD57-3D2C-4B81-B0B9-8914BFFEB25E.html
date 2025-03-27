@@ -1,0 +1,88 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="图像数据采集与预览" /><meta name="abstract" content="客户端可通过图像预览窗口采集相机图像，预览相机的图像或本地图像。" /><meta name="description" content="客户端可通过图像预览窗口采集相机图像，预览相机的图像或本地图像。" /><meta name="DC.Relation" scheme="URI" content="GUID-891CACA9-9195-40E2-8972-20E52967903C.html" /><meta name="DC.Relation" scheme="URI" content="GUID-681B20D7-ED88-42B5-9101-1C2F6AC5E65C.html" /><meta name="DC.Relation" scheme="URI" content="GUID-AF922860-9535-4852-981A-BFDCD247A2AA.html" /><meta name="DC.Relation" scheme="URI" content="GUID-89DA605F-F237-4010-8EB5-B925064014C2.html" /><meta name="DC.Relation" scheme="URI" content="GUID-B4AF1E7B-AC29-4EFC-8A2E-8F6F74010307.html" /><meta name="DC.Relation" scheme="URI" content="GUID-23055BAD-541D-4E75-8D27-15A712B16EDC.html" /><meta name="DC.Relation" scheme="URI" content="GUID-CB360AA3-FA97-40B8-807D-B79EE019D561.html" /><meta name="DC.Relation" scheme="URI" content="GUID-12D61D51-E204-48A0-B26D-49950274F52A.html" /><meta name="DC.Relation" scheme="URI" content="GUID-7018C54E-43F0-4572-B0A1-8837C30C1486.html" /><meta name="DC.Relation" scheme="URI" content="GUID-91F1DA24-4566-44B9-893B-0BC788B3662D.html" /><meta name="DC.Relation" scheme="URI" content="GUID-CC7A4BA9-55B6-470E-904E-9C325FA9E2F8.html" /><meta name="DC.Relation" scheme="URI" content="GUID-DE3D6496-B3A5-416B-A8FE-45D10D74ED00.html#GUID-DE3D6496-B3A5-416B-A8FE-45D10D74ED00" /><meta name="DC.Relation" scheme="URI" content="GUID-8576C6A2-7B00-46D2-90C5-23A91C577702.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-D866AD57-3D2C-4B81-B0B9-8914BFFEB25E" /><meta name="DC.Language" content="zh-CN" /><title>图像数据采集与预览</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-D866AD57-3D2C-4B81-B0B9-8914BFFEB25E" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li class="active"><span class="topicref">图像数据采集与预览</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">图像数据采集与预览</h1>
+
+
+<div class="body conbody"><p class="shortdesc">客户端可通过图像预览窗口采集相机图像，预览相机的图像或本地图像。</p>
+
+<p class="p">相机的采集和预览含义有所不同。采集是对相机的图像数据进行采集，对应状态中的采集帧率；预览是将相机采集的图像数据通过渲染的方式在预览窗口进行显示，对应状态中的显示帧率。具体采集情况和显示效率可通过控制工具条的状态查看。 </p>
+
+        <div class="note note" id="GUID-D866AD57-3D2C-4B81-B0B9-8914BFFEB25E__GUID-517EFA72-392A-41DB-AFB1-87215CA27246"><span class="notetitle">说明</span> 
+            <p class="p">相机预览时可进行其他相关操作，例如抓图、录像、设置十字辅助线、设置网格、查看直方图等等，具体功能的介绍请见对应章节，预览相关章节不展开介绍。</p>
+
+        </div>
+
+</div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

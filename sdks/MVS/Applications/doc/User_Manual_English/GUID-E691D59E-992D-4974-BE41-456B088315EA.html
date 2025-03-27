@@ -1,0 +1,191 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="© Hikrobot Co., Ltd. All rights reserved." /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="Encoder Control" /><meta name="abstract" content="For line scan cameras, if the trigger mode is set to line trigger, you can configure the encoder signal sources for triggering." /><meta name="description" content="For line scan cameras, if the trigger mode is set to line trigger, you can configure the encoder signal sources for triggering." /><meta name="DC.Relation" scheme="URI" content="GUID-F4452949-0DAC-4E1B-B527-B77D89F48DD2.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-E691D59E-992D-4974-BE41-456B088315EA" /><meta name="DC.Language" content="en-US" /><title>Encoder Control</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-E691D59E-992D-4974-BE41-456B088315EA" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">Home Page</a></span></li><li><span class="topicref"><a href="GUID-159CD23F-0154-41E0-8B76-B6EF974289E5.html" data-id="GUID-159CD23F-0154-41E0-8B76-B6EF974289E5">Camera Feature Configuration</a></span></li><li><span class="topicref"><a href="GUID-F4452949-0DAC-4E1B-B527-B77D89F48DD2.html" data-id="GUID-F4452949-0DAC-4E1B-B527-B77D89F48DD2">Trigger</a></span></li><li class="active"><span class="topicref">Encoder Control</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">Encoder Control</h1>
+
+    
+    <div class="body conbody"><p class="shortdesc">For line scan cameras, if the trigger mode is set to line trigger, you
+        can configure the encoder signal sources for triggering.</p>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-E691D59E-992D-4974-BE41-456B088315EA__GUID-CB657749-C58F-4ACA-81F5-9F0A3ED9B50A"><!-- --></a>Encoder Selector</dt>
+
+                <dd class="dd pd">
+                    <p class="p">Select an encoder.</p>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-E691D59E-992D-4974-BE41-456B088315EA__GUID-F40307D3-C7AB-4606-95AC-7999BA156D58"><!-- --></a>Encoder Source A/B</dt>
+
+                <dd class="dd pd">
+                    <p class="p">Set the signal source A and B respectively for the encoder.</p>
+
+                    <div class="note note" id="GUID-E691D59E-992D-4974-BE41-456B088315EA__GUID-53F85712-91EE-48F4-AD96-D90BC09BB576"><span class="notetitle">Note</span> 
+                        <p class="p">It is recommended that you select different sources for A and B. If they
+                            are set to the same source, the shaft encoder will not output
+                            signal.</p>
+
+                    </div>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-E691D59E-992D-4974-BE41-456B088315EA__GUID-154EA045-F581-4DF2-9752-0C95CCEC46FC"><!-- --></a>Encoder Trigger Mode</dt>
+
+                <dd class="dd pd">
+                    <p class="p">Select the triggering direction of the signal sources from
+                            <span class="keyword parmname">Any Direction</span>, <span class="keyword parmname">Forward Only</span>,
+                        and <span class="keyword parmname">Backward Only</span>.</p>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-E691D59E-992D-4974-BE41-456B088315EA__GUID-ECC192B7-3D3A-4D85-B7C1-AA759173F210"><!-- --></a>Encoder Counter Mode</dt>
+
+                <dd class="dd pd">
+                    <p class="p">Select a counting mode for the counter of the encoder from
+                            <span class="keyword parmname">Ignore Direction</span>, <span class="keyword parmname">Follow
+                            Direction</span>, and <span class="keyword parmname">Backward Direction</span>.</p>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-E691D59E-992D-4974-BE41-456B088315EA__GUID-135A616A-80ED-4509-974C-04A4C336600E"><!-- --></a>Encoder Counter</dt>
+
+                <dd class="dd pd">
+                    <p class="p">(Read Only) Displays the number of triggered signals counted by
+                        the encoder counter in real time.</p>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-E691D59E-992D-4974-BE41-456B088315EA__GUID-51BE430B-4443-426F-A977-CB26BB5108DB"><!-- --></a>Encoder Counter Max</dt>
+
+                <dd class="dd pd">
+                    <p class="p">Set the maximum value allowed for the encoder counter.</p>
+
+                    <p class="p">When the value displayed by <span class="keyword parmname">Encoder
+                            Counter</span> reaches the set maximum value during counting,
+                            <span class="keyword parmname">Encoder Counter</span> will be automatically
+                        cleared when the next valid signal is
+                        received,
+                        and the counting will start again.
+                        <span class="keyword parmname">Encoder Counter</span> can also be cleared
+                        manually via <span class="keyword parmname">Encoder Counter Reset</span>.</p>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-E691D59E-992D-4974-BE41-456B088315EA__GUID-6F6A907B-20CD-41EB-BC1C-1ADEE79C4015"><!-- --></a>Encoder Counter Reset</dt>
+
+                <dd class="dd pd">
+                    <p class="p">Click <span class="ph uicontrol">Execute</span> to reset <span class="keyword parmname">Encoder
+                            Counter</span> to 0.</p>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-E691D59E-992D-4974-BE41-456B088315EA__GUID-6EE36118-CD29-4365-ABC1-6246D09D8E84"><!-- --></a>Encoder Max Reverse Counter</dt>
+
+                <dd class="dd pd">
+                    <p class="p">Set the maximum value allowed for the reverse counter of the
+                        encoder to allow the camera to not output images until the object returns to
+                        the starting position in the forward direction.</p>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-E691D59E-992D-4974-BE41-456B088315EA__GUID-7199B54B-2DE7-4F67-A3D1-E6218D5A3ADC"><!-- --></a>Encoder Reverse Counter Reset</dt>
+
+                <dd class="dd pd">
+                    <p class="p">Click <span class="ph uicontrol">Execute</span> to reset the count of the
+                        reverse counter to 0.</p>
+
+                </dd>
+
+            
+        </dl>
+
+    </div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">Share</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>Previous Page</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>Next Page</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8c01380e02e9eb04798d5"></div>
+		
+	</body>
+</html>

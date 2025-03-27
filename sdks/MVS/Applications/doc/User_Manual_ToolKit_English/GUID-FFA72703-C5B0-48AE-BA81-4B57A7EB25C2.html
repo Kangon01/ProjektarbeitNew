@@ -1,0 +1,379 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="© Hikrobot Co., Ltd. All rights reserved." /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="Correct Image" /><meta name="abstract" content="Three ways for correcting the image are provided: correcting the image by importing parameters from the local PC, correcting the image by camera parameters, and correcting the image by calibration parameters. The supported correction modes of different algorithms vary." /><meta name="description" content="Three ways for correcting the image are provided: correcting the image by importing parameters from the local PC, correcting the image by camera parameters, and correcting the image by calibration parameters. The supported correction modes of different algorithms vary." /><meta name="DC.Relation" scheme="URI" content="GUID-9824EEC7-A88E-4FD6-8CCC-1D73FBFFF1E6.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-FFA72703-C5B0-48AE-BA81-4B57A7EB25C2" /><meta name="DC.Language" content="en-US" /><title>Correct Image</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">Home Page</a></span></li><li><span class="topicref"><a href="GUID-69DC65C8-2E6C-4BDF-B4C9-00969538C2CA.html" data-id="GUID-69DC65C8-2E6C-4BDF-B4C9-00969538C2CA">ISP Tool</a></span></li><li><span class="topicref"><a href="GUID-9824EEC7-A88E-4FD6-8CCC-1D73FBFFF1E6.html" data-id="GUID-9824EEC7-A88E-4FD6-8CCC-1D73FBFFF1E6">Image Correction</a></span></li><li class="active"><span class="topicref">Correct Image</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body "><div class="nested0" id="GUID-FFA72703-C5B0-48AE-BA81-4B57A7EB25C2">
+    <h1 class="title topictitle1">Correct Image</h1>
+
+<p class="shortdesc">Three ways for correcting the image are provided: correcting the image
+        by
+        importing parameters from the local PC, correcting the image by camera parameters, and
+        correcting the image by calibration parameters.
+        The
+        supported
+        correction
+        modes of different algorithms vary. </p>
+
+
+<div class="topic task nested1" xml:lang="en-US" lang="en-US" id="GUID-AF17B904-2DB0-4C3B-93C7-6D018DBFDA04">
+    <h2 class="title topictitle2">Correct the Image by Local
+        Parameters</h2>
+
+
+<div class="body taskbody"><p class="shortdesc">You can correct the image by local parameters. For example, you correct
+        images via PC 1 with ISP Tool. Now you are going to use the parameters on PC 1 to correct
+        images via PC 2 with ISP Tool. You can send the parameters to PC 2 and correct images by
+        importing the parameters to the ISP Tool installed on PC 2.</p>
+
+<div class="section prereq p" id="GUID-AF17B904-2DB0-4C3B-93C7-6D018DBFDA04__GUID-BF96941E-B70A-45F8-BC14-487C87C80A68">
+            
+            <p class="p">Make sure that you have configured the pipeline for the camera. See <a class="xref" href="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0.html#GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0" title="The pipeline of a camera is the image processing algorithm settings of the camera. You can import an existing pipeline configuration file or configure the pipeline manually.">Configure the Pipeline</a> for details.</p>
+
+            
+        </div>
+
+<ol class="ol steps" id="GUID-AF17B904-2DB0-4C3B-93C7-6D018DBFDA04__GUID-24D4966B-9C60-4111-B25A-258B204C745B"><li class="li step stepexpand" id="GUID-AF17B904-2DB0-4C3B-93C7-6D018DBFDA04__GUID-333591E5-6DAD-4347-898E-D61C971455B8">
+                <span class="ph cmd">Click the first algorithm module in the
+                        <span class="keyword parmname">Set Pipeline</span> area.</span>
+            </li>
+<li class="li step stepexpand" id="GUID-AF17B904-2DB0-4C3B-93C7-6D018DBFDA04__GUID-58346428-8695-4E04-8EBC-7CB7C4893115">
+                <span class="ph cmd">Click <span class="ph uicontrol">Import Local Parameters</span>.</span>
+            </li>
+<li class="li step stepexpand" id="GUID-AF17B904-2DB0-4C3B-93C7-6D018DBFDA04__GUID-2305291E-3573-4570-918F-C5C74A5D6BF4">
+                <span class="ph cmd">Select a file from the PC and import it into the Software.</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-AF17B904-2DB0-4C3B-93C7-6D018DBFDA04__GUID-9BA9F5D5-DB96-4EB6-B61B-A77160C79097"><span class="notetitle">Note</span> 
+                        <p class="p">The local parameters will be displayed.</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-AF17B904-2DB0-4C3B-93C7-6D018DBFDA04__GUID-AB60A98C-A09D-47C0-BD8A-F19E6DFD0EA3"><strong>Optional: </strong>
+                <span class="ph cmd">Check if the parameters have been configured correctly. If not, edit
+                    them.</span>
+            </li>
+<li class="li step stepexpand" id="GUID-AF17B904-2DB0-4C3B-93C7-6D018DBFDA04__GUID-1AB8E17A-83F6-4373-AE79-4F4CE6A54B29">
+                
+                <span class="ph cmd">Click <span class="ph uicontrol">Correct</span>.</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-AF17B904-2DB0-4C3B-93C7-6D018DBFDA04__GUID-DBEF3225-9658-4806-B310-E42E123905A4"><span class="notetitle">Note</span> 
+                        <p class="p">The original image and its corrected version will be
+                            displayed.</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-AF17B904-2DB0-4C3B-93C7-6D018DBFDA04__GUID-34CEA1AE-FC50-4626-9A94-1A1947049D22">
+                <span class="ph cmd">Click <span class="ph uicontrol">Next</span> or the next algorithm module in the
+                        <span class="keyword parmname">Set Pipeline</span> area to correct next module.</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-AF17B904-2DB0-4C3B-93C7-6D018DBFDA04__FIG_ENG_GNH_5QB">
+                        <p class="p">Image Correction  by Local Parameters</p>
+
+                        <img class="image" style="display:none;" id="GUID-AF17B904-2DB0-4C3B-93C7-6D018DBFDA04__IMAGE_GTR_1TC_YQB" src="GUID-52F32473-E32F-4BFE-8431-2B9D11D3F613-high.png" width="2067" />
+                    </div>
+
+                </div>
+            </li>
+</ol>
+
+</div>
+
+</div>
+<div class="topic task nested1" xml:lang="en-US" lang="en-US" id="GUID-CE199764-4D74-4352-A468-B1DD1945E6D3">
+    <h2 class="title topictitle2">Correct the Image by Camera
+        Parameters</h2>
+
+
+<div class="body taskbody"><p class="shortdesc">If there are correction parameters in the camera that do not need changing
+        again, you can correct the image by camera parameters.</p>
+
+<div class="section prereq p" id="GUID-CE199764-4D74-4352-A468-B1DD1945E6D3__GUID-BF96941E-B70A-45F8-BC14-487C87C80A68">
+            <p class="p">Make sure that
+                the
+                camera has been connected to the Software (or an image has been
+                imported into the Software) and the pipeline has been configured. See <a class="xref" href="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0.html#GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0" title="The pipeline of a camera is the image processing algorithm settings of the camera. You can import an existing pipeline configuration file or configure the pipeline manually.">Configure the Pipeline</a> for
+                details.</p>
+
+            
+        </div>
+
+<ol class="ol steps" id="GUID-CE199764-4D74-4352-A468-B1DD1945E6D3__GUID-24D4966B-9C60-4111-B25A-258B204C745B"><li class="li step stepexpand" id="GUID-CE199764-4D74-4352-A468-B1DD1945E6D3__GUID-333591E5-6DAD-4347-898E-D61C971455B8">
+                <span class="ph cmd">Click the first algorithm module in the
+                        <span class="keyword parmname">Set Pipeline</span> area.</span>
+            </li>
+<li class="li step stepexpand" id="GUID-CE199764-4D74-4352-A468-B1DD1945E6D3__GUID-A2C225FA-A016-4A46-8253-69F5D678E457">
+                <span class="ph cmd">Click <span class="ph uicontrol">Import Camera Parameters</span>.</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-CE199764-4D74-4352-A468-B1DD1945E6D3__GUID-A3382891-7580-4951-8DB0-2D120CFCDAE2"><span class="notetitle">Note</span> 
+                        <p class="p">The camera parameters will be displayed.</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-CE199764-4D74-4352-A468-B1DD1945E6D3__GUID-AB60A98C-A09D-47C0-BD8A-F19E6DFD0EA3"><strong>Optional: </strong>
+                <span class="ph cmd">Check if the parameters have been configured correctly. If not, edit
+                    them.</span>
+            </li>
+<li class="li step stepexpand" id="GUID-CE199764-4D74-4352-A468-B1DD1945E6D3__GUID-2FD2DD1A-1318-49E2-9C77-2B78AC53231E">
+                
+                <span class="ph cmd">Click <span class="ph uicontrol">Correct</span>.</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-CE199764-4D74-4352-A468-B1DD1945E6D3__GUID-25916AF1-291B-4986-8C44-20CC45CF943B"><span class="notetitle">Note</span> 
+                        <p class="p">The original image and its corrected version will be
+                            displayed.</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-CE199764-4D74-4352-A468-B1DD1945E6D3__GUID-EFD44623-278B-4CB9-9D50-9475848B70CA">
+                <span class="ph cmd">Click <span class="ph uicontrol">Next</span> or the next algorithm module in the
+                        <span class="keyword parmname">Set Pipeline</span> area to correct next module.</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-CE199764-4D74-4352-A468-B1DD1945E6D3__FIG_TXQ_BPN_5QB">
+                        
+                        <img class="image" style="display:none;" id="GUID-CE199764-4D74-4352-A468-B1DD1945E6D3__IMAGE_UBT_P4C_YQB" src="GUID-9842F652-8F1E-4508-BB99-82E18FF1F3FD-high.png" width="1367" />
+                    <div class="fig_caption"><span class="figcap">Figure 1 Image Correction by
+                            Camera Parameters</span></div></div>
+
+                </div>
+            </li>
+</ol>
+
+</div>
+
+</div>
+<div class="topic task nested1" xml:lang="en-US" lang="en-US" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06">
+    <h2 class="title topictitle2">Correct Image by Calibration Parameters</h2>
+
+
+    <div class="body taskbody"><p class="shortdesc">You can conduct the calibration manually and use the calibration results to
+        correct the image.</p>
+
+        <div class="section prereq p" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-EC81D278-AA9D-4B14-A604-4353080A36C2">
+            <p class="p">Make sure you have imported an image and configured the pipeline.</p>
+
+        </div>
+
+        <ol class="ol steps" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__STEPS_QTG_PKT_5QB"><li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-97648541-2286-421F-8BBE-495A8E6CF3A4">
+                <span class="ph cmd">Select an algorithm in the pipeline.</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-61EF2865-8B05-4897-9253-9CC2E541ABD7"><span class="notetitle">Note</span> 
+                        <ul class="ul" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__UL_QXP_DQT_5QB">
+                            <li class="li" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-2BB0985C-78FB-4526-BA62-9330641A96D5">
+                                <p class="p">You need to configure the algorithms from left to
+                                    right successively.</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-13B7018D-F8EF-493A-819C-E1AA47A88E70">
+                                <p class="p">Not all algorithms support calibrating image
+                                    manually.</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-FC33F9EA-333E-44B8-915E-DEE000CDC150">
+                <span class="ph cmd">Click <span class="ph uicontrol">Manually Calibrate</span> to show the Calibration
+                    Parameters pane.</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__FIG_RTG_PKT_5QB">
+                        
+                        <img class="image" style="display:none;" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__IMAGE_Q5W_2FP_VQB" src="GUID-E0A17113-51F2-464A-95F5-82762168F0BA-high.png" width="2067" />
+                    <div class="fig_caption"><span class="figcap">Figure 2 Calibration Parameters</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-8EC5770B-910E-4774-8ABF-51FB8E962F3C"><strong>Optional: </strong>
+                <span class="ph cmd">Click <span class="ph uicontrol">Import Reference Image</span> and select a reference
+                    image is needed.</span>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-F23036FC-9234-4280-905B-FABA398EADDC">
+                <span class="ph cmd">Draw ROI(s)
+                    on the
+                    images.</span>
+                
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__FIG_QK2_JFP_VQB">
+                        
+                        <img class="image" style="display:none;" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__IMAGE_HS1_LFP_VQB" src="GUID-447C048E-86D1-4F5F-A9DA-F5D154F9865F-high.png" width="2067" />
+                    <div class="fig_caption"><span class="figcap">Figure 3 Draw ROI</span></div></div>
+
+                    <div class="note note" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-6187430B-9A5D-44F9-A055-826502190FC5"><span class="notetitle">Note</span> 
+                        <p class="p">For custom ROI, if you want to change the image's position when drawing
+                            the ROIs, you can right-click the image to cause drawing, and then drag
+                            the image to change its position. After that, you can right-click the
+                            image again to continue drawing the ROIs.</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-35721055-7827-44C2-800D-0776059B782E"><strong>Optional: </strong>
+                <span class="ph cmd">Adjust the parameters according to your actual needs.</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-B6B6A46B-FEA7-4A77-9821-183CA73D0DA3"><span class="notetitle">Note</span> 
+                        <p class="p">Calibration parameters vary with different algorithms. See
+                            detailed descriptions in <a class="xref" href="GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00.html#GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00" title="The Software supports correcting an image by the following algorithms: lens shading correction (LSC), denoise, bayer interpolation (demosaic, DDS), color correction (CCM, CLUT, super palette, purple fringe correction), image enhancement (sharpness, LUT, contrast), and image scaling.">Algorithm Introduction</a>.</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-C5DE8B40-D7BE-43CF-B0E1-A34EFF1B6DB8">
+                <span class="ph cmd">Click <span class="ph uicontrol">Calibrate</span> and the correction parameters will be
+                    returned on the left.</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__FIG_NXJ_SFP_VQB">
+                        
+                        <img class="image" style="display:none;" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__IMAGE_XRN_VFP_VQB" src="GUID-A5C789AA-74E0-4985-A485-B9EEEC9FE012-high.png" width="2067" />
+                    <div class="fig_caption"><span class="figcap">Figure 4 Correction
+                            Parameters</span></div></div>
+
+                </div>
+                <div class="itemgroup stepresult">
+                    <ul class="ul" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__UL_FTS_QPW_XQB">
+                        <li class="li" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-F4B8EC54-7D89-4345-99B6-9CC39F8F84BF">
+                            <p class="p">The Software will generate correction parameters on the left
+                                panel.</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-EA3BF8C9-EC6A-451B-BF8D-B61C7182ACC1">
+                            <p class="p">The Software will generate several images for calibration on the left
+                                of the calibration parameters.</p>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-02A4C961-F7B8-4DA9-9B3A-0AA9CE487547"><strong>Optional: </strong>
+                <span class="ph cmd">Click <img class="image icon" style="display:none;" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__IMAGE_OCG_YDX_XQB" src="GUID-6797FABF-1C69-4F4B-A37C-EA4B03091F1E-high.png" /> to export the calibration file
+                    to the PC.</span>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-D763BC05-C0DE-4D92-A320-2E595A26C42B"><strong>Optional: </strong>
+                <span class="ph cmd">For DDS and denoise algorithms, click <img class="image icon" style="display:none;" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__IMAGE_WFZ_FQW_XQB" src="GUID-4A5622E2-AA5A-4909-9CE2-F1B529289E80-high.png" /> to add the original image as the first image for
+                    calibration.</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-B2421BDA-F790-4C2A-A2ED-12F600EAE958"><span class="notetitle">Note</span> 
+                        <p class="p">The Software will get the images' gain values via their
+                            names. If the name format of the images for calibration is not right,
+                            you should enter their gain values. You can click <span class="ph uicontrol">Edit
+                                Gain</span> on the Calibration Parameters pane to edit the
+                            images' gain values.</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-2AC9E4D7-45E0-4C41-B0E0-6011AD32D327"><strong>Optional: </strong>
+                <span class="ph cmd">Adjust the correction parameters according to your actual needs.</span>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-F0776373-00D0-41ED-B064-530EFB32D110">
+                <span class="ph cmd">Click <span class="ph uicontrol">Correct</span> and then you can see the original image,
+                    reference image, and corrected image altogether.</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__FIG_UTG_PKT_5QB">
+                        
+                        <img class="image" style="display:none;" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__IMAGE_WVS_JHP_VQB" src="GUID-7430C52C-366E-42BF-9EE6-45DE17C6BA81-high.png" width="2067" />
+                    <div class="fig_caption"><span class="figcap">Figure 5 Correction
+                            Result</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-E0656F62-5F05-4E1D-8635-73BF6EFF907B"><strong>Optional: </strong>
+                <span class="ph cmd">Click <img class="image icon" style="display:none;" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__IMAGE_QJX_XHP_VQB" src="GUID-FD95C850-650E-4702-9A9E-E5E848D6E876-high.png" /> of the corrected image to save
+                    it to the PC.</span>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-A2E79690-1810-422F-BD87-998DBBA293FE">
+                <span class="ph cmd">Click <span class="ph uicontrol">Next</span> to move on to the next algorithm down
+                    the
+                    pipeline.</span>
+            </li>
+</ol>
+
+    </div>
+
+</div>
+</div>
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">Share</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>Previous Page</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>Next Page</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>On This Page</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-AF17B904-2DB0-4C3B-93C7-6D018DBFDA04" class="feature_guide_h2"><span class="link_button">Correct the Image by Local
+        Parameters</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-CE199764-4D74-4352-A468-B1DD1945E6D3" class="feature_guide_h2"><span class="link_button">Correct the Image by Camera
+        Parameters</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06" class="feature_guide_h2"><span class="link_button">Correct Image by Calibration Parameters</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8c01380e02e9eb04798d5"></div>
+		
+	</body>
+</html>

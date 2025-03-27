@@ -1,0 +1,12 @@
+<Root>
+    <Group extend="false" ui_param_show="1" ui_param_name="TuningParams" id="0">
+	    <Node ui_param_display_type="float_lineedit" uui_param_name="none" ui_param_show="0" ui_param_type="Float"/>
+        <Node ui_display_cn_name="插值方式" ui_param_display_type="ComboBox" ui_param_name="Method" ui_display_en_name="Interpolation Mode" ui_display_name="Method" Value="0" ui_param_type="Enumeration">
+            <RelationList>FilterType</RelationList>
+			<EnumEntry DisplayName="Quick" DisplayNameCN="快速" Value="0"/>
+            <EnumEntry DisplayName="Balance" DisplayNameCN="均衡" Value="2"/>
+            <EnumEntry DisplayName="Optimal" DisplayNameCN="最优" Value="3"/>
+        </Node>
+		<Node ui_display_cn_name="平滑" ui_param_show="0" ui_param_display_type="Switch" ui_param_name="FilterType" ui_display_en_name="Filter Type" ui_display_name="Filter Type" ui_param_type="Boolean"/>
+    </Group>
+</Root>

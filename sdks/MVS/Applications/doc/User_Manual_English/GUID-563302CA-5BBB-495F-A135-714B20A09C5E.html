@@ -1,0 +1,294 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="© Hikrobot Co., Ltd. All rights reserved." /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="Add GigE Vision Camera" /><meta name="abstract" content="You can connect GigE Vision cameras to the Software in 3 ways, i.e., letting the Client automatically enumerating local cameras, connecting camera by command, and adding remote camera." /><meta name="description" content="You can connect GigE Vision cameras to the Software in 3 ways, i.e., letting the Client automatically enumerating local cameras, connecting camera by command, and adding remote camera." /><meta name="DC.Relation" scheme="URI" content="GUID-F6FC6C26-0CFF-46C9-A718-84ADB7035DCA.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-563302CA-5BBB-495F-A135-714B20A09C5E" /><meta name="DC.Language" content="en-US" /><title>Add GigE Vision Camera</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">Home Page</a></span></li><li><span class="topicref"><a href="GUID-7807DA4F-CEC8-422D-94C0-36A6BCAF6255.html" data-id="GUID-7807DA4F-CEC8-422D-94C0-36A6BCAF6255">Device Management</a></span></li><li><span class="topicref"><a href="GUID-F6FC6C26-0CFF-46C9-A718-84ADB7035DCA.html" data-id="GUID-F6FC6C26-0CFF-46C9-A718-84ADB7035DCA">GigE Vision Camera Management</a></span></li><li class="active"><span class="topicref">Add  GigE Vision Camera</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body "><div class="nested0" id="GUID-563302CA-5BBB-495F-A135-714B20A09C5E">
+    <h1 class="title topictitle1">Add
+        GigE Vision Camera</h1>
+
+    
+    <div class="body conbody"><p class="shortdesc">You can connect GigE Vision cameras to the Software in 3 ways, i.e.,
+        letting the Client automatically enumerating local cameras, connecting camera by command,
+        and
+        adding remote camera.</p>
+
+        <ul class="ul" id="GUID-563302CA-5BBB-495F-A135-714B20A09C5E__UL_JPK_BQ3_GCC">
+            <li class="li" id="GUID-563302CA-5BBB-495F-A135-714B20A09C5E__GUID-35729D72-497E-40EA-93AB-5C2E186D5023">
+                <p class="p"><a class="xref" href="GUID-563302CA-5BBB-495F-A135-714B20A09C5E.html#GUID-6882E498-C5C2-437B-90B5-DB12B0E352EF" title="All the GigE Vision cameras in the same local subnet with the Software will be automatically enumerated in the device list.">Automatically Enumerate Local Cameras</a></p>
+
+            </li>
+
+            <li class="li" id="GUID-563302CA-5BBB-495F-A135-714B20A09C5E__GUID-B4EF6D1A-6851-4CEF-8951-C71224BAB4A8">
+                <p class="p"><a class="xref" href="GUID-563302CA-5BBB-495F-A135-714B20A09C5E.html#GUID-346E6878-F69D-42E6-AF51-2B83D7946387" title="You can use CMD commands to run the Software and connect cameras to it.">Connect Camera by Command</a></p>
+
+            </li>
+
+            <li class="li" id="GUID-563302CA-5BBB-495F-A135-714B20A09C5E__GUID-B30CE0E1-4174-4A79-A712-9944E7ED72D4">
+                <p class="p"><a class="xref" href="GUID-563302CA-5BBB-495F-A135-714B20A09C5E.html#GUID-D7BA2F97-3816-4672-A4D9-7C449795A14C" title="You can add GigE Vision camera NOT in the same local subnet with the client software to the device list.">Add Remote Camera</a></p>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+
+<div class="topic concept nested1" xml:lang="en-US" lang="en-US" id="GUID-6882E498-C5C2-437B-90B5-DB12B0E352EF">
+    <h2 class="title topictitle2">Automatically Enumerate Local
+        Cameras</h2>
+
+
+<div class="body conbody"><p class="shortdesc">All the GigE Vision cameras in the same local subnet with the
+        Software
+        will be automatically enumerated in the device list. </p>
+
+<p class="p">You can hover the cursor over the camera interface and then click <img class="image icon" style="display:none;" id="GUID-6882E498-C5C2-437B-90B5-DB12B0E352EF__IMAGE_FH2_3Y5_BKB" src="GUID-EE689C0E-48C5-40A5-91E9-3548786D6A07-high.png" /> to refresh the enumerated cameras on the same local subnet with
+            the PC on which the Software runs. </p>
+
+        <p class="p">Or you can enable the Software to automatically refresh the device list. See <a class="xref" href="GUID-91B2A9B3-C38B-4059-81A9-0250322A0174.html#GUID-91B2A9B3-C38B-4059-81A9-0250322A0174" title="You can configure settings for the Software, including general parameters, recording and capture parameters, buffer size, and packet resending parameters via the Settings sub-menu.">Settings</a> for details.</p>
+
+        <p class="p">When the cameras are enumerated, if the camera status is available, you can double-click
+            the camera or click <img class="image icon" style="display:none;" id="GUID-6882E498-C5C2-437B-90B5-DB12B0E352EF__IMAGE_EMY_CFW_HJB" src="GUID-AA8E455C-D4E7-4659-8C73-9B22C3663B14-high.png" /> to connect it to the Software.</p>
+
+        <div class="note note" id="GUID-6882E498-C5C2-437B-90B5-DB12B0E352EF__GUID-6E6442CB-9108-4418-84C7-F72E16F65971"><span class="notetitle">Note</span> 
+            <p class="p">For details about status of the GigE Vision cameras, see <a class="xref" href="GUID-55CD1D96-0B7E-437E-87DC-CDEBB25683C4.html#GUID-55CD1D96-0B7E-437E-87DC-CDEBB25683C4" title="The Software provides multiple icons to represent different status of GigE Vision cameras.">Status of GigE Vision Camera</a>.</p>
+
+        </div>
+
+        <div class="fig fignone" id="GUID-6882E498-C5C2-437B-90B5-DB12B0E352EF__FIG_M5T_WY5_BKB">
+            
+            <img class="image" style="display:none;" id="GUID-6882E498-C5C2-437B-90B5-DB12B0E352EF__IMAGE_JPM_BZ5_BKB" src="GUID-2BC15812-83A0-4539-9630-9C9030267587-high.png" width="878" />
+        <div class="fig_caption"><span class="figcap">Figure 1 Local Camera Enumeration</span></div></div>
+
+</div>
+
+</div>
+<div class="topic task nested1" xml:lang="en-US" lang="en-US" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387">
+    <h2 class="title topictitle2">Connect Camera by Command</h2>
+
+
+<div class="body taskbody"><p class="shortdesc">You can use CMD commands to run the Software and connect cameras to
+    it.</p>
+
+<ol class="ol steps" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__GUID-6759B45D-32A3-48D0-9F67-03D3F07E7E6D"><li class="li step stepexpand" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__GUID-673C94CC-4CE2-421C-B07E-5AEC4995B138">
+        <span class="ph cmd">Go to <span class="ph menucascade"><span class="ph uicontrol">Start</span> &gt; <span class="ph uicontrol">CMD</span></span>.</span>
+      </li>
+<li class="li step stepexpand" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__GUID-0F347CC2-B2EF-4F92-9874-321B3DE95975">
+        <span class="ph cmd">Enter "cd" and <span class="ph">"the directory of MVS.exe"</span>.</span>
+        <div class="itemgroup stepxmp">
+          <p class="p">If the directory of <span class="ph">MVS.exe</span> is "C:\Program Files (x86)\<span class="ph">MVS</span>\Applications\Win64", you should enter <span class="ph">"cd
+              /d C:\Program Files (x86)\MVS\Applications\Win64"</span>.</p>
+
+        </div>
+        <div class="itemgroup info">
+          <div class="fig fignone" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__FIG_SJF_BCW_HJB">
+            
+            <img class="image" style="display:none;" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__IMAGE_GLG_JCW_HJB" src="GUID-CAD4664F-0659-475B-9B1F-8F4E59E88326-high.png" width="2067" />
+          <div class="fig_caption"><span class="figcap">Figure 2 Connect Camera by CMD</span></div></div>
+
+        </div>
+      </li>
+<li class="li step stepexpand" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__GUID-BEAF19F7-F35F-4FF4-93C1-882D01679D6D">
+        <span class="ph cmd">Press the Enter key.</span>
+      </li>
+<li class="li step stepexpand" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__GUID-CD4EFDFE-FF91-4CE0-BD09-129EEAD6E533">
+        <span class="ph cmd">Connect the camera to the client software in the following four ways:</span>
+        <ul class="ul choices" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__CHOICES_EVL_NCW_HJB">
+          <li class="li choice" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__GUID-C6C407F2-6B3B-4C5D-B497-CA48F6BF2EC1">
+            <p class="p">Connect by Camera IP Address: Enter <span class="ph">"MVS.exe/IP xx.xx.xx.xx"</span>.</p>
+
+            
+            <div class="note note" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__GUID-74F9DAC0-8808-42C6-ACE2-36567CFA3E71"><span class="notetitle">Note</span> 
+              <p class="p">Connection by IP address is not supported by USB3 Vision camera, Camera
+                Link camera, and CoaXPress camera. </p>
+
+            </div>
+
+            
+            <div class="fig fignone" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__GUID-8E4D0FB2-28F3-4436-855F-8C3379455F62">
+              
+              <img class="image" style="display:none;" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__IMAGE_MGK_PCW_HJB" src="GUID-77CC9EEE-62D3-45D3-BBF8-E6EB799B37F1-high.png" width="1784" />
+            <div class="fig_caption"><span class="figcap">Figure 3 Connect Camera by CMD</span></div></div>
+
+          </li>
+
+          <li class="li choice" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__GUID-B3F2DFD5-0FA4-4340-A5AD-65BD9FAED7DC">
+            <p class="p">Connect by Camera Serial Number: Enter <span class="ph">"MVS.exe/SN xxxxxxxx"</span>.</p>
+
+            <div class="note note" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__GUID-F8311B73-E32E-4BBE-BAC4-1ACFD470BECF"><span class="notetitle">Note</span> 
+              <p class="p">xxxxxxxx here refers to the camera serial number.</p>
+
+            </div>
+
+          </li>
+
+          <li class="li choice" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__GUID-2D372355-D672-4C22-A5BF-A4FC60163D25">
+            <p class="p">Connect by Camera Mac Address: Enter <span class="ph">"MVS.exe/Mac xx.xx.xx.xx.xx.xx"</span>.</p>
+
+            <div class="note note" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__GUID-A83A982F-C162-446A-9B5C-5969340BE694"><span class="notetitle">Note</span> 
+              <ul class="ul" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__UL_GVL_NCW_HJB">
+                <li class="li" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__GUID-36CE3AA9-0645-4498-A4CA-38103D7A598D">
+                  <p class="p">Connection by Mac address is not supported by USB3 Vision camera
+                    and Camera Link camera.</p>
+
+                </li>
+
+                <li class="li" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__GUID-FAF74F3C-B105-4D40-9DDD-63811722CB7A">
+                  <p class="p">xx.xx.xx.xx.xx.xx here refers to the camera Mac address.</p>
+
+                </li>
+
+              </ul>
+
+            </div>
+
+          </li>
+
+          <li class="li choice" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__GUID-27ABD9CD-8CD1-4A9F-9CC8-DADD21FB9362">
+            
+            <p class="p">Connect by Opening Project File: Enter <span class="ph">"MVS.exe/mcfg"
+                +"the directory of the mcfg file"+"mcfg file name.mcfg"</span>.</p>
+
+            
+            <div class="note note" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__GUID-D6C26C24-2A7F-44C3-AD70-D6892E181B15"><span class="notetitle">Note</span> 
+              <p class="p">You should have saved camera features as
+                project
+                file. For details about how to save camera features as project
+                file, see <a class="xref" href="GUID-B12FCFE0-BFAA-48A3-9112-D0F8822B557F.html#GUID-B12FCFE0-BFAA-48A3-9112-D0F8822B557F" title="The File sub-menu provides functionality related to project file, functionality for opening local files, as well as the functionality for exiting from the Software. Project file is useful if you need to switch global camera settings in different scenarios. You can save the current settings of all the connected cameras as a project file (format: mcfg) to the local PC, after which you can fast restore the settings of the same connected cameras by opening the saved project file.">File</a>.</p>
+
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="itemgroup stepxmp">
+          <p class="p">If the directory of the mcfg is
+            "C:\Users\VB2100\Desktop\CDE"
+            and the name of the mcfg file is "CDE", you should enter <span class="ph">"MVS.exe/mcfg C:\Users\VB2100\Desktop\CDE\CDE.mcfg"</span>.</p>
+
+        </div>
+      </li>
+<li class="li step stepexpand" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__GUID-33CFABDC-C118-468B-BF8D-1149D3E655FE">
+        <span class="ph cmd">Press the Enter key.</span>
+      </li>
+</ol>
+
+    <div class="section result" id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387__GUID-4718875D-B81B-4D96-844B-1F598AD95BFA">
+      <p class="p">The Software will start running and parsing the entered parameters such as
+        camera IP address, and then the camera will be connected automatically.</p>
+
+    </div>
+
+</div>
+
+</div>
+<div class="topic task nested1" xml:lang="en-US" lang="en-US" id="GUID-D7BA2F97-3816-4672-A4D9-7C449795A14C">
+    <h2 class="title topictitle2">Add Remote Camera</h2>
+
+
+<div class="body taskbody"><p class="shortdesc">You can add GigE Vision camera NOT in the same local subnet with the client
+    software to the device list.</p>
+
+<ol class="ol steps" id="GUID-D7BA2F97-3816-4672-A4D9-7C449795A14C__GUID-0B84E4A9-8D5E-4A60-B14C-320C0E0AFE66"><li class="li step stepexpand" id="GUID-D7BA2F97-3816-4672-A4D9-7C449795A14C__GUID-F7B6879F-0264-4817-9DD3-FC43C459CA71">
+        <span class="ph cmd">Right-click the network interface card (for example, <span class="ph uicontrol">Local Area
+            Connection</span> in the following picture) to open the right-click menu.</span>
+        <div class="itemgroup info">
+          <div class="fig fignone" id="GUID-D7BA2F97-3816-4672-A4D9-7C449795A14C__FIG_O13_JDW_HJB">
+            
+            <img class="image" style="display:none;" id="GUID-D7BA2F97-3816-4672-A4D9-7C449795A14C__IMAGE_QB1_MDW_HJB" src="GUID-94453698-BA7C-46EA-8378-B1F5AD3E772A-high.png" width="1466" />
+          <div class="fig_caption"><span class="figcap">Figure 4 Right-click
+              Menu</span></div></div>
+
+        </div>
+      </li>
+<li class="li step stepexpand" id="GUID-D7BA2F97-3816-4672-A4D9-7C449795A14C__GUID-F0B0A8CE-B375-4C9E-9A86-B2840A3D30C2">
+        <span class="ph cmd">Click <span class="ph uicontrol">Add Remote Camera</span> to open the Add Remote Camera
+          window.</span>
+        <div class="itemgroup info">
+          <div class="fig fignone" id="GUID-D7BA2F97-3816-4672-A4D9-7C449795A14C__FIG_WF3_NDW_HJB">
+            
+            <img class="image" style="display:none;" id="GUID-D7BA2F97-3816-4672-A4D9-7C449795A14C__IMAGE_XMT_NDW_HJB" src="GUID-2FF59B7F-CC0A-4FBB-B7A9-54FB04B5C829-high.png" width="1169" />
+          <div class="fig_caption"><span class="figcap">Figure 5 Add Remote Camera</span></div></div>
+
+        </div>
+      </li>
+<li class="li step stepexpand" id="GUID-D7BA2F97-3816-4672-A4D9-7C449795A14C__GUID-79DD7AFB-2B35-4651-8825-980E3617ACDD">
+        <span class="ph cmd">Enter the camera IP address and then click <span class="ph uicontrol">OK</span> to add the
+          camera.</span>
+      </li>
+</ol>
+
+</div>
+
+</div>
+</div>
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">Share</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>Previous Page</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>Next Page</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>On This Page</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-6882E498-C5C2-437B-90B5-DB12B0E352EF" class="feature_guide_h2"><span class="link_button">Automatically Enumerate Local
+        Cameras</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-346E6878-F69D-42E6-AF51-2B83D7946387" class="feature_guide_h2"><span class="link_button">Connect Camera by Command</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-D7BA2F97-3816-4672-A4D9-7C449795A14C" class="feature_guide_h2"><span class="link_button">Add Remote Camera</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8c01380e02e9eb04798d5"></div>
+		
+	</body>
+</html>

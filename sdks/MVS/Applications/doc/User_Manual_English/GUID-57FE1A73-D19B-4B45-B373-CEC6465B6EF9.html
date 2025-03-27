@@ -1,0 +1,395 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="© Hikrobot Co., Ltd. All rights reserved." /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="GigE Vision Action Command" /><meta name="abstract" content="The Action Command is used to trigger actions in multiple cameras in a network simultaneously. When Action Command is configured, the Software can send commands across the network and have devices in a predefined group respond based on how they have been configured to respond to certain commands. In this way, a single command can trigger actions such as Frame Start in multiple cameras with a minimum of latency and configuration effort. The Action Command can be used in various scenarios where image fusion is required." /><meta name="description" content="The Action Command is used to trigger actions in multiple cameras in a network simultaneously. When Action Command is configured, the Software can send commands across the network and have devices in a predefined group respond based on how they have been configured to respond to certain commands. In this way, a single command can trigger actions such as Frame Start in multiple cameras with a minimum of latency and configuration effort. The Action Command can be used in various scenarios where image fusion is required." /><meta name="DC.Relation" scheme="URI" content="GUID-545BED7E-6E3C-4D3F-BB3F-496843D1B428.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9" /><meta name="DC.Language" content="en-US" /><title>GigE Vision Action Command</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">Home Page</a></span></li><li><span class="topicref"><a href="GUID-545BED7E-6E3C-4D3F-BB3F-496843D1B428.html" data-id="GUID-545BED7E-6E3C-4D3F-BB3F-496843D1B428">Tool Management</a></span></li><li class="active"><span class="topicref">GigE Vision Action Command</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">GigE Vision Action Command</h1>
+
+
+<div class="body taskbody"><p class="shortdesc">The Action Command is used to trigger actions in multiple cameras in a
+    network simultaneously. When Action Command is configured, the Software can send commands across
+    the network and
+    have
+    devices in a predefined group respond based on how they have been configured to respond to
+    certain commands. In this way, a single command can trigger actions such as
+    Frame Start in multiple cameras with a minimum of latency and configuration effort. The Action
+    Command can be used in various scenarios where image fusion is required. </p>
+
+<div class="section prereq p" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-0533AE1E-03D7-4ABD-B799-83A8063FF0ED">
+      <p class="p">Search for the following three parameters in the feature tree and configure
+        them for each camera that needs to receive commands.</p>
+
+      <div class="note note" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-9BCF8624-B80B-4A87-8897-B83B64494F94"><span class="notetitle">Note</span> 
+        <ul class="ul" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__UL_FQR_WW3_FKB">
+          <li class="li" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-8BFB4388-6EB6-4516-9BEF-503C36886144">
+            <p class="p">The camera should support the Action Control feature, or configuring Action Command
+              will be unavailable.</p>
+
+          </li>
+
+          <li class="li" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-8ECDEA2B-4C28-478C-B49E-B49E98933AFA">
+            <p class="p">ActionDeviceKey, ActionGroupKey, and ActionGroupMask are all displayed in
+              hexadecimal notation.</p>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+      
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__TABLE_TYG_JT3_FKB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">Table 1 Parameter Description</span></caption>
+          
+          
+          <thead class="thead" align="left">
+            <tr>
+              <th class="entry" valign="top" width="23.474178403755868%" id="d11327e58">
+                <p class="p">Parameter</p>
+
+              </th>
+
+              <th class="entry" valign="top" width="76.52582159624413%" id="d11327e64">
+                <p class="p">Description</p>
+
+              </th>
+
+            </tr>
+
+          </thead>
+
+          <tbody class="tbody">
+            <tr>
+              <td class="entry" valign="top" width="23.474178403755868%" headers="d11327e58 ">
+                <p class="p">ActionDeviceKey </p>
+
+              </td>
+
+              <td class="entry" valign="top" width="76.52582159624413%" headers="d11327e64 ">
+                <p class="p">A kind of password which enables the camera to check the validity of
+                  the commands.</p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry" valign="top" width="23.474178403755868%" headers="d11327e58 ">
+                <p class="p">ActionGroupKey </p>
+
+              </td>
+
+              <td class="entry" valign="top" width="76.52582159624413%" headers="d11327e64 ">
+                <p class="p">Used to specify a group of cameras to perform actions. </p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry" valign="top" width="23.474178403755868%" headers="d11327e58 ">
+                <p class="p">ActionGroupMask</p>
+
+              </td>
+
+              <td class="entry" valign="top" width="76.52582159624413%" headers="d11327e64 ">
+                <p class="p">Used to filter out some cameras from the specified group. </p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+</div>
+
+    </div>
+
+<ol class="ol steps" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-97ECE0F9-671F-44D5-AE03-5CBB853B9663"><li class="li step stepexpand" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-12EF057B-81B8-4CAA-B0E6-57CC0929FF5C">
+        <span class="ph cmd">Go to <span class="ph menucascade"><span class="ph uicontrol">Tool</span> &gt; <span class="ph uicontrol">GigE Vision Action Command</span></span>.</span>
+        <div class="itemgroup info">
+          <div class="fig fignone" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__FIG_EFR_Y45_HJB">
+            
+            <img class="image" style="display:none;" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__IMAGE_PDL_HV4_CKB" src="GUID-D50B7BC3-A530-418E-ABA9-77565B8F772A-high.png" width="1194" />
+          <div class="fig_caption"><span class="figcap">Figure 1 GigE Vision Action Command Window</span></div></div>
+
+        </div>
+      </li>
+<li class="li step stepexpand" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-2711318C-CE62-4791-8E6D-37E5326C2667">
+        <span class="ph cmd">Select network interface(s) to set the subnet(s) that the command to be sent to.</span>
+      </li>
+<li class="li step stepexpand" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-83CAEB40-5C83-4D56-B52D-6DFBA351D68B">
+        <span class="ph cmd">Enter the device key, group key, and group mask.</span>
+        
+<table border="1" frame="hsides" rules="rows" cellpadding="4" cellspacing="0" summary="" class="simpletable choicetable choicetableborder">
+<thead><tr class="sthead chhead"><th valign="bottom" align="left" id="d11327e162-option">
+              <p class="p">Parameter</p>
+
+            </th>
+<th valign="bottom" align="left" id="d11327e162-desc">
+              <p class="p">Requirement</p>
+
+            </th></tr></thead>
+<tbody>
+          
+          <tr class="strow chrow">
+            <td valign="top" headers="d11327e162-option" id="d11327e181" class="stentry choption" width="50%"><strong>
+              <p class="p">Device Key </p>
+
+            </strong></td>
+
+            <td valign="top" headers="d11327e162-desc d11327e181" class="stentry chdesc" width="50%">
+              <p class="p">Its value should be the same with the value of the ActionDeviceKey
+                feature.</p>
+
+            </td>
+
+          </tr>
+
+          <tr class="strow chrow">
+            <td valign="top" headers="d11327e162-option" id="d11327e196" class="stentry choption" width="50%"><strong>
+              <p class="p">Group Key </p>
+
+            </strong></td>
+
+            <td valign="top" headers="d11327e162-desc d11327e196" class="stentry chdesc" width="50%">
+              <p class="p">Its value should be the same with the ActionGroupKey feature.</p>
+
+            </td>
+
+          </tr>
+
+          <tr class="strow chrow">
+            <td valign="top" headers="d11327e162-option" id="d11327e211" class="stentry choption" width="50%"><strong>
+              <p class="p">Group Mask </p>
+
+            </strong></td>
+
+            <td valign="top" headers="d11327e162-desc d11327e211" class="stentry chdesc" width="50%">
+              <p class="p">The bitwise AND operation of the Group Mask against the ActionGroupMask feature
+                should results in non-zero.</p>
+
+            </td>
+
+          </tr>
+
+        </tbody></table>
+
+      </li>
+<li class="li step stepexpand" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-37087A42-E4E4-4114-B9D8-6AD4828D33F7"><strong>Optional: </strong>
+        <span class="ph cmd">Set <img class="image icon" style="display:none;" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__IMAGE_DFJ_4P5_HJB" src="GUID-B725CFAD-4B2F-41B7-99D5-898CDBA60098-high.png" /> in <span class="keyword parmname">Scheduled</span> field to <img class="image icon" style="display:none;" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__IMAGE_ON3_QP5_HJB" src="GUID-410B8370-69A4-4270-AD46-5070841A8925-high.png" /> to enable scheduled action command.</span>
+        <div class="itemgroup info">
+          <dl class="dl parml">
+            
+              <dt class="dt pt dlterm"><a name="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-A2E3FE07-8FDF-41E9-8F86-09670894A80F"><!-- --></a>Benchmark Camera</dt>
+
+              <dd class="dd pd">
+                <p class="p">The value of the GevTimestampValue feature of the selected camera
+                  will be automatically acquired and be used as the start time point for the
+                  delay.</p>
+
+              </dd>
+
+            
+            
+              <dt class="dt pt dlterm"><a name="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-653D835C-AE28-4E45-9D27-8D8A0ABA3959"><!-- --></a>Delay Time</dt>
+
+              <dd class="dd pd">
+                <p class="p">The delay time should NOT be shorter than the maximum time required
+                  to transmit the command across the network.</p>
+
+              </dd>
+
+            
+          </dl>
+
+        </div>
+        <div class="itemgroup stepresult">
+          <p class="p">When the benchmark camera receives the command, all the cameras will
+            trigger certain actions simultaneously after the specified delay time.</p>
+
+        </div>
+      </li>
+<li class="li step stepexpand" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-D25191B1-6D64-4732-B39F-829718A9DB1C"><strong>Optional: </strong>
+        <span class="ph cmd">Enable the Software system to send commands periodically.</span>
+        <ol type="a" class="ol substeps" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-2A411CC6-1230-4EC9-AB0F-57FFEA301312">
+          <li class="li substep" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-2510BD57-FA78-4E9C-B3AD-BC329B259A5C">
+            <span class="ph cmd">Enable <span class="ph uicontrol">Periodically Send</span>.</span>
+          </li>
+
+          <li class="li substep" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-C6A77F85-2B8B-41AA-92D2-C2B3B6FC38DF">
+            <span class="ph cmd">Enter the interval for sending the command.</span>
+          </li>
+
+        </ol>
+
+        <div class="itemgroup info">
+          <div class="note note" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-04748029-30BD-42A7-AD5D-657C063E30A0"><span class="notetitle">Note</span> 
+            <ul class="ul" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__UL_QBR_YV4_CKB">
+              <li class="li" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-3D909FD9-7BEA-4A87-AA83-8FB7C890B3ED">
+                <p class="p">If you enable <span class="ph uicontrol">Periodically Send</span>,
+                    <span class="ph uicontrol">Request Acknowledge</span> will be disabled, or vice versa.</p>
+
+              </li>
+
+              <li class="li" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-38FF8C89-337D-4C5A-BBC6-99B57896E85D">
+                <p class="p">The default value is 1000ms, and valid value range is from 1ms to
+                  3600000ms.</p>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </li>
+<li class="li step stepexpand" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-025D5CAC-FE95-4EA5-980F-07C590E401D2"><strong>Optional: </strong>
+        <span class="ph cmd">Enable <span class="ph uicontrol">Request Acknowledge</span> to display the acknowledgment
+          messages.</span>
+        <div class="itemgroup info">
+          <div class="note note" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-28793B2E-D270-4B4F-8F47-C2B246C36066"><span class="notetitle">Note</span> 
+            <ul class="ul" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__UL_UYR_LV4_CKB">
+              <li class="li" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-651CCF24-B9CF-40DA-B07E-4F49FAB49B2C">
+                <p class="p">If you enable <span class="ph uicontrol">Request Acknowledge</span>,
+                    <span class="ph uicontrol">Periodically Send</span> will be disabled, or vice versa.</p>
+
+              </li>
+
+              <li class="li" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-A2CC700B-215D-4073-B8F7-03107C807517">
+                <p class="p">Up to 50 messages can be displayed. Once the message number exceeds
+                  50, the earliest message will be automatically deleted.</p>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </li>
+<li class="li step stepexpand" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-E440EDF5-4A06-4479-88EA-214E606FA5F8">
+        <span class="ph cmd">Click <span class="ph uicontrol">Start Sending</span>.</span>
+      </li>
+</ol>
+
+    <div class="example section" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-EB78AC63-4AD3-40C8-A223-C4DFF53F22E6"><h2 class="title sectiontitle">Sample Use Case</h2>
+      
+      <p class="p">To generate slow-motion playback in stadiums for the purpose of  viewing and analyzing the
+        athlete's movement details, a group of camera is installed parallel to a race track (see
+        picture below).</p>
+
+      <p class="p">When the athlete passes, four cameras (subgroup 1) synchronously execute an
+        action (capture images in this example).</p>
+
+      <p class="p">As the athlete advances, the next four cameras (subgroup 2) synchronously
+        capture images. One after the other, the subgroups continue in this way until the athlete
+        has reached the end of the race track. The resulting images can be combined and processed to
+        generate the slow-motion playback in subsequent steps using other technology and
+        programs.</p>
+
+      <p class="p">In this sample use case, the followings should be defined.</p>
+
+      <ul class="ul" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__UL_E5H_N3P_CKB">
+        <li class="li" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-3096A956-9E2B-441E-81A7-FD0446D22D75">
+          <p class="p">Use the <span class="keyword parmname">ActionDeviceKey</span> parameter to
+            authorize the execution of the synchronous image acquisition. The device key should be
+            configured on each camera and it should be same with the device key for the action
+            command protocol message. </p>
+
+        </li>
+
+        <li class="li" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-DA8DD30E-7B37-4FCE-B8FD-ABD9C420D759">
+          <p class="p">Use the <span class="keyword parmname">ActionGroupKey</span> parameter to define
+            the group of cameras in a network segment that is addressed by the action command (in
+            this use case: group 1).</p>
+
+        </li>
+
+        <li class="li" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-AE39277D-FBCA-4557-B895-E8F0A3F2CCE8">
+          <p class="p">Use the <span class="keyword parmname">ActionGroupMask</span> parameter to
+            define the subgroups in the group of cameras that capture images synchronously (in this
+            use case: subgroups 1, 2, and 3).</p>
+
+        </li>
+
+      </ul>
+
+      <div class="fig fignone" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__FIG_O12_3HP_CKB">
+        
+        <img class="image" style="display:none;" id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__IMAGE_RFZ_KHP_CKB" src="GUID-0A03CD95-DF9E-45EB-9273-D143AA71DA40-high.png" width="1981" />
+      <div class="fig_caption"><span class="figcap">Figure 2 Sample Use Case In Stadium</span></div></div>
+
+    </div>
+
+</div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">Share</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>Previous Page</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>Next Page</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>On This Page</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9__GUID-EB78AC63-4AD3-40C8-A223-C4DFF53F22E6" class="feature_guide_h2"><span class="link_button">Sample Use Case</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8c01380e02e9eb04798d5"></div>
+		
+	</body>
+</html>

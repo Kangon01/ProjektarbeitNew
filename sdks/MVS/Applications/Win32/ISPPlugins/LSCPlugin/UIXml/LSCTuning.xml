@@ -1,0 +1,6 @@
+<Root>
+    <Group extend="false" ui_param_show="1" ui_param_name="TuningParams" ui_display_name="" id="0">
+        <Node ui_param_show="0" ui_param_display_type="lineedit" ui_param_name="LSCCalib" ui_display_name="LSCCalib" ui_param_type="String"/>
+        <Node ui_display_cn_name="LSC标定系数" ui_param_display_type="grayimage" ui_param_name="FactorK" row="3" ui_display_en_name="LSC Calibration Factor" ui_display_name="FactorK" ui_param_type="GrayImage"/>
+    </Group>
+</Root>

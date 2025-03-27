@@ -1,0 +1,266 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="© Hikrobot Co., Ltd. All rights reserved." /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="Denoise" /><meta name="abstract" content="You need to calibrate and correct the image when using the denoise algorithm." /><meta name="description" content="You need to calibrate and correct the image when using the denoise algorithm." /><meta name="DC.Relation" scheme="URI" content="GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5" /><meta name="DC.Language" content="en-US" /><title>Denoise</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">Home Page</a></span></li><li><span class="topicref"><a href="GUID-69DC65C8-2E6C-4BDF-B4C9-00969538C2CA.html" data-id="GUID-69DC65C8-2E6C-4BDF-B4C9-00969538C2CA">ISP Tool</a></span></li><li><span class="topicref"><a href="GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00.html" data-id="GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00">Algorithm Introduction</a></span></li><li class="active"><span class="topicref">Denoise</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">Denoise</h1>
+
+
+    <div class="body conbody"><p class="shortdesc">You need to calibrate and correct the image when using the denoise
+        algorithm.</p>
+
+        <div class="section" id="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__GUID-A98461A9-FAD7-45AE-8CDE-FD64A9379B49"><h2 class="title sectiontitle">Calibration Parameters</h2>
+            
+            <p class="p">You can import multiple images of different gain values. You need to
+                draw ROI for every image.</p>
+
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__GUID-A9AC835F-89EA-4443-A1A9-B08169A880E7"><!-- --></a>Draw ROI</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">You can select the type of ROI according to your actual
+                            needs.</p>
+
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__GUID-7830C100-F8C0-4807-A2B3-E0EB7F28466E"><!-- --></a><img class="image icon" style="display:none;" id="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__IMAGE_Z4B_3J5_5QB" src="GUID-7F5E5E0B-1711-4289-B2C3-00BC064FB85A-high.png" />: 24 ROIs</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">An ROI consists of 24 small ROIs in 6*4
+                                        format.</p>
+
+                                </dd>
+
+                            
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__GUID-00557E79-DA39-4A22-8769-076AF00A31EC"><!-- --></a><img class="image icon" style="display:none;" id="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__IMAGE_JVB_JJ5_5QB" src="GUID-EEC207D4-386E-4BE3-A1CA-37BCABC0009E-high.png" />: 140 ROIs</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">An ROI consists of 140 small ROIs in 14*10
+                                        format.</p>
+
+                                </dd>
+
+                            
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__GUID-F2F521FB-E7F6-4435-A80E-553C6A8944F8"><!-- --></a><img class="image icon" style="display:none;" id="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__IMAGE_L5N_NB2_YQB" src="GUID-B9AE66D0-FCA5-46AA-B50E-703F4CA03F7A-high.png" />: Single ROI</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">A single and rectangular ROI.</p>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__GUID-6A2D7252-3E9C-4260-846A-B954DD20E2D7"><!-- --></a>ROI Width/Height</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">When the size of 24 ROIs and 140 ROIs changes, the gap
+                            between each small ROI will also change but the width and height of the
+                            small ROIs will not change.</p>
+
+                    </dd>
+
+                
+            </dl>
+
+        </div>
+
+        <div class="section" id="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__GUID-8D2A13D6-BB27-42F5-B506-D3CA8844394D"><h2 class="title sectiontitle">Correction Parameters</h2>
+            
+            <div class="fig fignone" id="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__FIG_BFY_11G_5QB">
+                
+                <img class="image" style="display:none;" id="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__IMAGE_CZQ_MFQ_VQB" src="GUID-3B6FBC89-F113-44FD-8548-B3BA0712995E-high.png" width="591" />
+            <div class="fig_caption"><span class="figcap">Figure 1 Denoise Correction
+                    Parameters</span></div></div>
+
+            <p class="p">The noise calibration curve will be displayed. When calibrating multiple
+                images, noise curves of different gain values will also be displayed at the same
+                time. You can click <span class="ph uicontrol">Filter</span> to hide or show the curves of
+                certain gain values.</p>
+
+            
+            <p class="p">You can also draw a noise calibration curve manually. Click the red/green/blue lines
+                to select a line; double-click a line to add a point to the line; drag the point to
+                change the line's shape.</p>
+
+            
+            <div class="note note" id="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__GUID-F7E09368-D89F-4022-88CA-CCEB03738F90"><span class="notetitle">Note</span> 
+                <p class="p">The noise reduction parameters for the Bayer image and RGB image are
+                    different.</p>
+
+            </div>
+
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__GUID-241EBDEB-CA85-4F82-BEB1-F2CA74DBB23C"><!-- --></a>For Bayer Images</dt>
+
+                    <dd class="dd pd">
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__GUID-4A5833BE-9D76-47DD-94BA-C35D67BA2181"><!-- --></a>Noise Correction Factor</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">The fusion level of the noise reduction result
+                                        and the original image. Range: 0 to 100.</p>
+
+                                </dd>
+
+                            
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__GUID-0C4434A7-968A-4F29-A923-486DD01EA288"><!-- --></a>Denoise Intensity</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">The higher the value, the stronger the noise
+                                        reduction. Range: 0 to 32.</p>
+
+                                </dd>
+
+                            
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__GUID-1F112565-D8E0-42B4-AF81-BA906BA1E267"><!-- --></a>Sharpen Intensity</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">The higher the value, the higher the sharpness.
+                                        Range: 0 to 1,280.</p>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__GUID-BCB5801C-5D19-4D51-A5B0-EE75A3A91774"><!-- --></a>For RGB Images</dt>
+
+                    <dd class="dd pd">
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__GUID-6B5477B5-0076-4F9D-8959-C94A52DE6DD5"><!-- --></a>Brightness Denoise Intensity</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">The higher the value, the stronger the
+                                        brightness noise reduction. Range: 0 to 12,800.</p>
+
+                                </dd>
+
+                            
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__GUID-2A214B86-8A6F-4C81-8AB1-FC5B565F7727"><!-- --></a>Color Denoise Intensity</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">The higher the value, the stronger the chroma
+                                        noise reduction. Range: 0 to 12,800.</p>
+
+                                </dd>
+
+                            
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__GUID-C26AC8DB-CBC0-4D9F-8593-3027E0F1F231"><!-- --></a>Brightness</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">The fusion level of the brightness noise
+                                        reduction result and the original image. Range: 0 to
+                                        128.</p>
+
+                                </dd>
+
+                            
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__GUID-68628614-7B76-4638-88CD-775898D31077"><!-- --></a>Color</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">The fusion level of the chroma noise reduction
+                                        result and the original image. Range: 0 to 128.</p>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                    </dd>
+
+                
+            </dl>
+
+        </div>
+
+    </div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">Share</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>Previous Page</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>Next Page</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>On This Page</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__GUID-A98461A9-FAD7-45AE-8CDE-FD64A9379B49" class="feature_guide_h2"><span class="link_button">Calibration Parameters</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5__GUID-8D2A13D6-BB27-42F5-B506-D3CA8844394D" class="feature_guide_h2"><span class="link_button">Correction Parameters</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8c01380e02e9eb04798d5"></div>
+		
+	</body>
+</html>

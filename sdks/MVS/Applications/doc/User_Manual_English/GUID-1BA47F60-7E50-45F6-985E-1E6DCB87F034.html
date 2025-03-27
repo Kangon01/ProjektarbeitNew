@@ -1,0 +1,499 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="© Hikrobot Co., Ltd. All rights reserved." /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="Log Viewer Tool" /><meta name="abstract" content="You can view the logs of SDK and frame grabbers via the log viewer tool." /><meta name="description" content="You can view the logs of SDK and frame grabbers via the log viewer tool." /><meta name="DC.Relation" scheme="URI" content="GUID-39B081FB-54CB-4FA6-B6C2-6EB93F4828DB.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-1BA47F60-7E50-45F6-985E-1E6DCB87F034" /><meta name="DC.Language" content="en-US" /><title>Log Viewer Tool</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">Home Page</a></span></li><li><span class="topicref"><a href="GUID-39B081FB-54CB-4FA6-B6C2-6EB93F4828DB.html" data-id="GUID-39B081FB-54CB-4FA6-B6C2-6EB93F4828DB">Logs</a></span></li><li class="active"><span class="topicref">Log Viewer Tool</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body "><div class="nested0" id="GUID-1BA47F60-7E50-45F6-985E-1E6DCB87F034">
+    
+    <h1 class="title topictitle1">Log Viewer Tool</h1>
+
+
+    <div class="body conbody"><p class="shortdesc">You can view the logs of SDK and frame grabbers via the log viewer
+        tool.</p>
+
+        <ul class="ul" id="GUID-1BA47F60-7E50-45F6-985E-1E6DCB87F034__UL_O3M_GJM_2CC">
+            <li class="li" id="GUID-1BA47F60-7E50-45F6-985E-1E6DCB87F034__GUID-C007CD2A-39D2-4292-B5BE-5D735761F23E">
+                <p class="p"><a class="xref" href="GUID-1BA47F60-7E50-45F6-985E-1E6DCB87F034.html#GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5" title="Logs store events, processes, and messages from the Software and devices, with which you can monitor the status and effectively locate configuration issues. With the Log Viewer, you can view log type, time, content, and other related information.">View Logs</a></p>
+
+            </li>
+
+            <li class="li" id="GUID-1BA47F60-7E50-45F6-985E-1E6DCB87F034__GUID-36B7F736-1C35-4893-9E87-3F6F96C3B7F4">
+                <p class="p"><a class="xref" href="GUID-1BA47F60-7E50-45F6-985E-1E6DCB87F034.html#GUID-D47A3CDA-67EA-418D-AA7F-C75C4FD3B9EA" title="Configure log view settings and driver log service settings.">Configure Logs</a></p>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+
+<div class="topic concept nested1" xml:lang="en-US" lang="en-US" id="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5">
+    <h2 class="title topictitle2">View Logs</h2>
+
+
+<div class="body conbody"><p class="shortdesc">Logs store events, processes, and messages from the Software and devices,
+        with which you can monitor the status and effectively locate configuration issues. With the
+        Log Viewer, you can view log type, time, content, and other related information.</p>
+
+        <p class="p">Click <span class="ph menucascade"><span class="ph uicontrol">Tool</span> &gt; <span class="ph uicontrol">Log Viewer</span></span> in the menu bar to open the Log Viewer window. </p>
+
+        <div class="fig fignone" id="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__FIG_GYJ_12C_4VB">
+            
+            <img class="image" style="display:none;" id="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__IMAGE_HYJ_12C_4VB" src="GUID-428A74CE-3543-4208-978D-A6606068B0AD-high.png" width="2067" />
+        <div class="fig_caption"><span class="figcap">Figure 1 Log Viewer</span></div></div>
+
+        <div class="p">The following table describes SDK log types.
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__TABLE_VJD_XMS_3JB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">Table 1 Type of SDK Logs</span></caption>
+                    
+                    
+                    <thead class="thead" align="left">
+                        <tr>
+                            <th class="entry" valign="top" width="21.008403361344538%" id="d4687e107">
+                                <p class="p">Log Type</p>
+
+                            </th>
+
+                            <th class="entry" valign="top" width="78.99159663865547%" id="d4687e113">
+                                <p class="p">Description</p>
+
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody class="tbody">
+                        <tr>
+                            <td class="entry" valign="top" width="21.008403361344538%" headers="d4687e107 ">
+                                <p class="p">Level 1</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="78.99159663865547%" headers="d4687e113 ">
+                                <p class="p">Fatal level. One key functionality is not working.</p>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="21.008403361344538%" headers="d4687e107 ">
+                                <p class="p">Level 2</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="78.99159663865547%" headers="d4687e113 ">
+                                <p class="p">Error level. Errors occurred on the Client. </p>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="21.008403361344538%" headers="d4687e107 ">
+                                <p class="p">Level 3</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="78.99159663865547%" headers="d4687e113 ">
+                                <p class="p">Warning Level. The warning information sent by the
+                                    Client when precondition error occurs. </p>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="21.008403361344538%" headers="d4687e107 ">
+                                <p class="p">Level 4</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="78.99159663865547%" headers="d4687e113 ">
+                                <p class="p">Info Level. The information about operations.</p>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+</div>
+</div>
+
+        <p class="p">You can perform the following operations.</p>
+
+        <dl class="dl">
+            
+                <dt class="dt dlterm"><a name="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__GUID-CC0314C5-0214-487B-9075-37412ABFF3ED"><!-- --></a>Set Log Service Settings</dt>
+
+                <dd class="dd">
+                    <p class="p">In <span class="keyword parmname">Log Service Settings</span>, you can
+                        configure the following:</p>
+
+                    <dl class="dl parml">
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__GUID-AB0DC0A0-FD00-4266-A781-ABC0A0B220BA"><!-- --></a>Storage Type</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">Select the minimal log level to store in the log
+                                    file.</p>
+
+                                <p class="p">The greater the level number, the more logs would be displayed.
+                                    Suppose the <span class="keyword parmname">Storage Type</span> is set to
+                                        <span class="keyword parmname">Level 3</span>, all logs equal or under the
+                                    level 3 would be stored.</p>
+
+                                <p class="p">From Level 0 to Level 6, the corresponding meanings
+                                    of each level are: Off, Fatal, Error, Warning, Info, Debug,
+                                    Trace.</p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__GUID-289BF0B9-ABDF-4CE2-977D-A6B2FB90BE2F"><!-- --></a>Max. Storage Size (MB)</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">Set the maximum log file size (by default 10).</p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__GUID-5901B809-4D23-41BF-A18E-4A99ABB07228"><!-- --></a>Storage File Amount</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">Set available log file amount.</p>
+
+                            </dd>
+
+                        
+                    </dl>
+
+                </dd>
+
+            
+            
+                <dt class="dt dlterm"><a name="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__GUID-4AF4D75A-7FC6-4682-806D-CFD478EA2198"><!-- --></a>Refresh and Customize Displayed Logs and Information</dt>
+
+                <dd class="dd">
+                    <dl class="dl parml">
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__GUID-0D4F8011-9638-4F4A-B7CB-A8D8FCB785D2"><!-- --></a>Refresh Logs</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">Click <span class="ph uicontrol">Refresh</span> to refresh
+                                    logs.</p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__GUID-CE1983A1-2C5F-4781-98DB-77B6D2D94947"><!-- --></a>Select Display Log Types</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">In the <span class="keyword parmname">Log List</span>,
+                                    select displayed log types.</p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__GUID-0A67FDE9-CDE3-410D-B43C-08E7F98D5DC6"><!-- --></a>Search Logs</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">Enter keywords in <img class="image icon" style="display:none;" id="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__IMAGE_M4K_DDR_2CC" src="GUID-FC3B3249-E4A9-4EDD-8205-68F73CE26C4F-high.png" /> to search
+                                    logs.</p>
+
+                                <div class="note note" id="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__GUID-A235157C-C73B-45CD-8BE6-5B848A3BE3D2"><span class="notetitle">Note</span> 
+                                    <p class="p">You can only search the keywords from the log
+                                            <span class="keyword parmname">Content</span>.</p>
+
+                                </div>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__GUID-254EC303-24C0-49B5-B77C-271831337BB7"><!-- --></a>Select Displayed Information</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">Click <img class="image icon" style="display:none;" id="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__IMAGE_JFT_DQ3_CKB" src="GUID-96DC08AB-F831-4878-91BE-95A76F9C90DE-high.png" /> to select the
+                                    to-be-displayed information (time, type, content, source,
+                                    etc.).</p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__GUID-BA3AA309-D228-4FEC-87CA-74655713DBFE"><!-- --></a>Select Time Range</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">Click <img class="image icon" style="display:none;" id="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__IMAGE_IWG_QBR_2CC" src="GUID-78470DC1-DC83-4822-AFF7-7399F3C08CAE-high.png" /> to set the time
+                                    range of the displayed logs.</p>
+
+                            </dd>
+
+                        
+                    </dl>
+
+                </dd>
+
+            
+            
+                <dt class="dt dlterm"><a name="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__GUID-FE264C10-A6DE-436B-A785-31E0DC8459F7"><!-- --></a>Sort Logs by Time in Descending or Ascending Order</dt>
+
+                <dd class="dd">
+                    <p class="p">Click the <span class="ph uicontrol">Time</span> table header to sort the
+                        logs by time.</p>
+
+                </dd>
+
+            
+            
+                <dt class="dt dlterm"><a name="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__GUID-D8607445-6FC7-4E90-840B-5ABA100B8F66"><!-- --></a>Export, Copy, and Clear Logs</dt>
+
+                <dd class="dd">
+                    <dl class="dl">
+                        
+                            <dt class="dt dlterm"><a name="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__GUID-A03318DE-A3EA-4DE1-A2CC-BC217093C7A9"><!-- --></a>Export All Logs</dt>
+
+                            <dd class="dd">
+                                <p class="p">Right-click the list and click <span class="ph uicontrol">Export All
+                                        Logs</span>. </p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt dlterm"><a name="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__GUID-9A232B6D-5E87-4D0D-9B53-28C2952B06B7"><!-- --></a>Export Selected Logs</dt>
+
+                            <dd class="dd">
+                                <p class="p">Press and hold <span class="ph uicontrol">Shift</span> or
+                                        <span class="ph uicontrol">Ctrl</span>, select multiple logs,
+                                    right-click the log list, and click <span class="ph uicontrol">Export Selected
+                                        Logs</span>. </p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt dlterm"><a name="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__GUID-8C9C52EA-D8E9-48C9-9415-D04E444CAABD"><!-- --></a>Copy All Logs</dt>
+
+                            <dd class="dd">
+                                <p class="p">Right-click the log list and then click
+                                        <span class="ph uicontrol">Copy All Logs</span>. </p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt dlterm"><a name="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__GUID-C4DAD73C-D8E1-42C9-8480-83AA343C1CEC"><!-- --></a>Copy Selected Logs</dt>
+
+                            <dd class="dd">
+                                <p class="p">Press and hold <span class="ph uicontrol">Shift</span> or
+                                        <span class="ph uicontrol">Ctrl</span>, select multiple logs,
+                                    right-click the log list, and click <span class="ph uicontrol">Copy Selected
+                                        Logs</span>. </p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt dlterm"><a name="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__GUID-CDBCEA8D-8474-4F60-BDB1-8D2E42BD33C1"><!-- --></a>Clear All Logs</dt>
+
+                            <dd class="dd">
+                                <p class="p">Right-click the log list ant then click
+                                        <span class="ph uicontrol">Clear Logs</span></p>
+
+                            </dd>
+
+                        
+                    </dl>
+
+                </dd>
+
+            
+            
+                <dt class="dt dlterm"><a name="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__GUID-D15C1E14-D894-4F77-B2B1-56652B06F7A2"><!-- --></a>Other</dt>
+
+                <dd class="dd">
+                    <dl class="dl">
+                        
+                            <dt class="dt dlterm"><a name="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__GUID-3971285F-344B-4026-A69D-9E1A5939FA00"><!-- --></a>More</dt>
+
+                            <dd class="dd">
+                                <p class="p">See <a class="xref" href="GUID-1BA47F60-7E50-45F6-985E-1E6DCB87F034.html#GUID-D47A3CDA-67EA-418D-AA7F-C75C4FD3B9EA" title="Configure log view settings and driver log service settings.">Configure Logs</a> for details.</p>
+
+                                <p class="p">You can also customize log storage type for each driver type.</p>
+
+                                <p class="p"></p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt dlterm"><a name="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__GUID-B73AA454-3AF0-463D-A275-45CBCF22A2BC"><!-- --></a>Always on Top</dt>
+
+                            <dd class="dd">
+                                <p class="p">Click <img class="image icon" style="display:none;" id="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__IMAGE_RGF_2SS_3JB" src="GUID-51B39D56-81CC-4689-9E61-53F6CE8EA797-high.png" /> to pin the log
+                                    viewer window above all other windows. Click <img class="image icon" style="display:none;" id="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5__IMAGE_PJJ_DSS_3JB" src="GUID-41DAEF95-7AAC-4228-A15D-F17C37170044-high.png" /> to unpin.</p>
+
+                            </dd>
+
+                        
+                    </dl>
+
+                </dd>
+
+            
+        </dl>
+
+    </div>
+
+</div>
+<div class="topic concept nested1" xml:lang="en-US" lang="en-US" id="GUID-D47A3CDA-67EA-418D-AA7F-C75C4FD3B9EA">
+    <h2 class="title topictitle2">Configure Logs</h2>
+
+
+<div class="body conbody"><p class="shortdesc">Configure log view settings and driver log service settings.</p>
+
+        <p class="p">Click <span class="ph menucascade"><span class="ph uicontrol">More</span> &gt; <span class="ph uicontrol">Settings</span></span> to configure displayed logs amount and automatic log refresh interval. </p>
+
+        <div class="fig fignone" id="GUID-D47A3CDA-67EA-418D-AA7F-C75C4FD3B9EA__FIG_U33_MFR_2CC">
+            
+            <img class="image" style="display:none;" id="GUID-D47A3CDA-67EA-418D-AA7F-C75C4FD3B9EA__IMAGE_BP4_QFR_2CC" src="GUID-18074D85-8919-4A68-AC80-5401AF9903C0-high.png" width="1000" />
+        <div class="fig_caption"><span class="figcap">Figure 2 More Log Settings</span></div></div>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-D47A3CDA-67EA-418D-AA7F-C75C4FD3B9EA__GUID-239E6E66-2A76-496C-9038-AF7848B7A7EA"><!-- --></a>Log View Settings</dt>
+
+                <dd class="dd pd">
+                    
+                    <dl class="dl parml">
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-D47A3CDA-67EA-418D-AA7F-C75C4FD3B9EA__GUID-77DC84E4-1899-4F0D-B464-244EF1A72FFF"><!-- --></a>Max. Displayed Logs</dt>
+
+                            <dd class="dd pd">Set the maximum number of displayed logs.<div class="note note" id="GUID-D47A3CDA-67EA-418D-AA7F-C75C4FD3B9EA__GUID-265DE12B-CA04-45FE-96F8-98919732C610"><span class="notetitle">Note</span> 
+                                    <p class="p">The range of maximum displayed logs is from 1 to
+                                        100,000 (default value: 1000). </p>
+
+                                </div>
+</dd>
+
+                        
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-D47A3CDA-67EA-418D-AA7F-C75C4FD3B9EA__GUID-52F91DCE-6178-40F2-A39D-67412AC82AA4"><!-- --></a>Interval for Update</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">Set the time interval (unit: ms) for upgrading the
+                                    log list.</p>
+
+                                <div class="note note" id="GUID-D47A3CDA-67EA-418D-AA7F-C75C4FD3B9EA__GUID-8C4C26B7-8A40-48B6-842F-52D82909D224"><span class="notetitle">Note</span> 
+                                    <p class="p">The range of the time interval is from 100 to
+                                        1000,000 (default value: 1000). </p>
+
+                                </div>
+
+                            </dd>
+
+                        
+                    </dl>
+
+                    
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-D47A3CDA-67EA-418D-AA7F-C75C4FD3B9EA__GUID-46651269-ECAF-40E4-B46C-C13DB96CC399"><!-- --></a>Driver Log Service Settings</dt>
+
+                <dd class="dd pd">
+                    <p class="p">Select the minimal log level to note for each type of
+                        drivers.</p>
+
+                    <p class="p">The greater the level number, the more logs would be displayed. Suppose the
+                        log level is set to <span class="keyword parmname">Level 3</span>, all logs equal or under
+                        the level 3 would be displayed in the <span class="ph uicontrol">Log Viewer</span>.</p>
+
+                    <p class="p">From Level 0 to Level 6, the corresponding meanings of each level are: Off,
+                        Fatal, Error, Warning, Info, Debug, Trace.</p>
+
+                </dd>
+
+            
+        </dl>
+
+    </div>
+
+</div>
+</div>
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">Share</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>Previous Page</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>Next Page</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>On This Page</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-5952B7C6-B552-432F-8A8D-13D7EFC839B5" class="feature_guide_h2"><span class="link_button">View Logs</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-D47A3CDA-67EA-418D-AA7F-C75C4FD3B9EA" class="feature_guide_h2"><span class="link_button">Configure Logs</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8c01380e02e9eb04798d5"></div>
+		
+	</body>
+</html>

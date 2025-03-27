@@ -1,0 +1,17 @@
+<Root>
+    <Group extend="false" ui_param_show="1" ui_param_name="BaseParams" ui_display_name="" id="0">
+		<Node ui_display_cn_name="白平衡类型" ui_param_show="0" ui_param_display_type="ComboBox" ui_param_name="WB_CCMType" ui_display_en_name="Type" ui_display_name="Type" Value="2" ui_param_type="Enumeration">            
+			<EnumEntry DisplayName="None" Value="0"/>
+            <EnumEntry DisplayName="FloatType" Value="1"/>
+        </Node>
+		<Node ui_display_cn_name="量化系数" ui_param_display_type="ComboBox" ui_param_name="WB_CCMScale" ui_display_en_name="Scale" ui_display_name="Scale" Value="1024" ui_param_type="Enumeration">
+			<!--1是假值，代码里特殊处理不会设置到MvISPConfig.xml中-->
+			<EnumEntry DisplayName="1" Value="1"/>
+            <EnumEntry DisplayName="256" Value="256"/>
+            <EnumEntry DisplayName="512" Value="512"/>
+            <EnumEntry DisplayName="1024" Value="1024"/>
+            <EnumEntry DisplayName="2048" Value="2048"/>
+        </Node>
+        <Node row="1" col="3" showHeader="1" ui_display_cn_name="白平衡矩阵" ui_param_display_type="ccm_form" ui_param_name="WB_CCMat"  ui_display_en_name="Matrix" ui_display_name="Matrix" ui_param_type="IntArray"/>
+    </Group>
+</Root>

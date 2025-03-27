@@ -1,0 +1,173 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="导入/导出单个设备属性" /><meta name="abstract" content="客户端可通过属性区域进行导入/导出单个设备属性的操作。" /><meta name="description" content="客户端可通过属性区域进行导入/导出单个设备属性的操作。" /><meta name="DC.Relation" scheme="URI" content="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51" /><meta name="DC.Language" content="zh-CN" /><title>导入/导出单个设备属性</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB.html" data-id="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB">相机属性配置</a></span></li><li class="active"><span class="topicref">导入/导出单个设备属性</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">导入/导出单个设备属性</h1>
+
+
+<div class="body conbody"><p class="shortdesc">客户端可通过属性区域进行导入/导出单个设备属性的操作。</p>
+
+        <p class="p">在设备列表中选中已连接的相机或采集卡设备，通过属性区域上方的<img class="image icon" style="display:none;" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__IMAGE_T3J_RJW_QTB" src="GUID-B1D5E107-BEC7-4A8F-BC2F-CECA98D9AD48-high.png" />和<img class="image icon" style="display:none;" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__IMAGE_UDL_L2D_CKB" src="GUID-6C28538D-2DCC-4C78-A8DE-CBC2773F43F9-high.png" />对已选中的设备进行属性导入/导出操作。</p>
+
+        <div class="note note" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__GUID-3E1A2C26-F2C7-4C07-B80A-669977156987"><span class="notetitle">说明</span> 
+            <ul class="ul" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__UL_WC2_XPR_XXB">
+                <li class="li" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__GUID-1F2034E2-FD6B-4F35-BCC8-CE3F80B4258C">
+                    <p class="p">客户端不支持导出只读的设备属性，且导出的属性文件中不包含设备IP地址、设备MAC地址、设备序列号以及设备用户ID。</p>
+
+                </li>
+
+                <li class="li" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__GUID-E7A5A474-FD4A-41C8-A6C7-D6CC2C024582">
+                    <p class="p">虚拟相机和虚拟采集卡不支持导入/导出设备属性。</p>
+
+                </li>
+
+                <li class="li" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__GUID-CC9003A8-B139-4C32-BB44-C7FF03FED056">
+                    <p class="p">本章节仅介绍导入/导出单个设备属性的操作步骤，导入/导出多个设备属性需使用MVS工具集中的属性导入导出工具，操作步骤请见属性导入导出工具用户手册。</p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <ul class="ul" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__UL_PPK_DWV_YDC">
+            <li class="li" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__GUID-21AE8DDF-DD5F-45D0-887C-EC702D3D8D49">
+                <p class="p">导出属性：</p>
+
+                <ol class="ol" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__OL_HKY_TYV_YDC">
+                    <li class="li" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__GUID-5BA5A072-04AF-4234-84AA-FBF542DF7D16">
+                        <p class="p">单击属性区域上方的<img class="image icon" style="display:none;" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__IMAGE_SYD_WYV_YDC" src="GUID-B1D5E107-BEC7-4A8F-BC2F-CECA98D9AD48-high.png" />。</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__GUID-82A87BF7-6A3B-42E2-A201-450686399907">
+                        <p class="p">在属性区域的<span class="keyword parmname">Feature Tree</span>下勾选需要导出的属性。</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__GUID-70604D32-E134-4CDD-9850-1B57C13B813D">
+                        <p class="p">弹出的<span class="keyword parmname">导出属性</span>窗口中单击<img class="image icon" style="display:none;" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__IMAGE_X2R_ZPM_QDC" src="GUID-C2AD6E6D-7224-4A0B-AA26-54FE4398FE38" />，选择需要保存属性文件的路径。</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__GUID-403969A8-E7B6-42DA-8048-7B389918E64C">
+                        <p class="p">单击<span class="ph uicontrol">确定</span>即可导出已选择的设备属性。</p>
+
+                        <div class="note note" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__GUID-D0805138-925B-4C36-B1A5-E738DCC663CD"><span class="notetitle">说明</span> 
+                            <p class="p">相机属性文件为msf文件，采集卡属性文件为hcf文件。</p>
+
+                        </div>
+
+                    </li>
+
+                </ol>
+
+            </li>
+
+            <li class="li" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__GUID-1655D078-4523-4121-A9E5-A799A9EF1A76">
+                <p class="p">导入属性：</p>
+
+                <ol class="ol" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__OL_HTR_FZV_YDC">
+                    <li class="li" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__GUID-FA516CFE-7143-4808-AEF3-75B1AB0D92B3">
+                        <p class="p">单击属性区域上方的<img class="image icon" style="display:none;" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__IMAGE_WPW_B1W_YDC" src="GUID-6C28538D-2DCC-4C78-A8DE-CBC2773F43F9-high.png" />。</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__GUID-81BD07A2-6E94-4F2F-AC5B-3DB0BCDB888F">
+                        <p class="p">选择需要导入的mfs属性文件或hcf属性文件。</p>
+
+                        <div class="note note" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__GUID-D79C86B1-A472-4D7F-A05A-0DF1D00390B3"><span class="notetitle">说明</span> 
+                            <p class="p">相机属性文件为mfs文件，采集卡属性文件为hcf文件。</p>
+
+                        </div>
+
+                    </li>
+
+                    <li class="li" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__GUID-3AF96951-982C-40AC-801C-C9BEE24C3D8B">
+                        <p class="p">单击<span class="ph uicontrol">打开</span>后即可进行导入设备属性。</p>
+
+                        <div class="note note" id="GUID-4F1C673A-EBE5-4A02-AD92-8BD9E04D5F51__GUID-6F953E83-1D4A-475D-B998-B460301C886A"><span class="notetitle">说明</span> 
+                            <p class="p">该功能只支持相同型号以及相同固件版本相机或采集卡属性的导入。若型号或固件版本不匹配，则导入不成功。</p>
+
+                        </div>
+
+                    </li>
+
+                </ol>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

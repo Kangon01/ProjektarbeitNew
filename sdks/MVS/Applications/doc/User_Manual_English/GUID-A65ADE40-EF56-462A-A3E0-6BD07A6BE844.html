@@ -1,0 +1,325 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="© Hikrobot Co., Ltd. All rights reserved." /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="Camera Bandwidth Manager" /><meta name="abstract" content="The Camera Bandwidth Manager allows you to adjust the bandwidth distribution of the connected cameras to avoid excessive packet losses to ensure data integrity. This is especially useful when multiple cameras use the same network interface for image acquisition." /><meta name="description" content="The Camera Bandwidth Manager allows you to adjust the bandwidth distribution of the connected cameras to avoid excessive packet losses to ensure data integrity. This is especially useful when multiple cameras use the same network interface for image acquisition." /><meta name="DC.Relation" scheme="URI" content="GUID-545BED7E-6E3C-4D3F-BB3F-496843D1B428.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844" /><meta name="DC.Language" content="en-US" /><title>Camera Bandwidth Manager</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">Home Page</a></span></li><li><span class="topicref"><a href="GUID-545BED7E-6E3C-4D3F-BB3F-496843D1B428.html" data-id="GUID-545BED7E-6E3C-4D3F-BB3F-496843D1B428">Tool Management</a></span></li><li class="active"><span class="topicref">Camera Bandwidth Manager</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">Camera Bandwidth Manager</h1>
+
+
+<div class="body conbody"><p class="shortdesc">The Camera Bandwidth Manager allows you to adjust the bandwidth distribution
+        of the connected cameras to avoid excessive packet losses to ensure data integrity. This is
+        especially useful when multiple cameras use the same network interface for image
+        acquisition.</p>
+
+        <div class="note note" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__GUID-8CAC0BE4-9E1A-4C96-B379-8759CD2495B1"><span class="notetitle">Note</span> 
+            <ul class="ul" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__UL_DKM_MCY_1KB">
+                <li class="li" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__GUID-5813A36B-6959-4186-805C-C107212716A4">
+                    <p class="p">All GigE Vision cameras<span class="ph"> produced by
+                            Hikrobot</span> support bandwidth adjustment via Camera Bandwidth Manager.
+                        You can also adjust bandwidth for GigE Vision cameras by setting the
+                            <span class="keyword parmname">Gev SCPS Packet Size</span> parameter and the
+                            <span class="keyword parmname">Gev SCPD</span> parameter. For details about
+                        the two parameters, see <a class="xref" href="GUID-B15DA3DE-2A26-4FEB-B0CD-91C0E399884A.html#GUID-B15DA3DE-2A26-4FEB-B0CD-91C0E399884A" title="The Transport Layer Control feature allows you to configure parameters related to data packet transmission.">Transport Layer Control</a>.</p>
+
+                </li>
+
+                <li class="li" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__GUID-41B7C7E4-8EF7-43A7-93AC-A709042828E1">
+                    <p class="p">Part of the USB3 Vision cameras<span class="ph">
+                            produced by Hikrobot</span> support bandwidth adjustment via Camera
+                        Bandwidth Manager. You can also adjust bandwidth for USB3 Vison cameras by
+                        setting the <span class="keyword parmname">Device Link Throughput Limit
+                            Enable</span> parameter and the <span class="keyword parmname">Device Link
+                            Throughput Limit</span> parameter. You can inquire our technical
+                        support for details about how to adjust bandwidth by the two parameters if
+                        your USB3 Vision camera supports the two parameters.</p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+<p class="p">Ensure that the camera(s) whose bandwidth needs to be adjusted are not in acquisition
+            and that their Trigger mode is turned off, and then click <span class="ph menucascade"><span class="ph uicontrol">Tool</span> &gt; <span class="ph uicontrol">Camera Bandwidth Manager</span></span> to open the tool.</p>
+
+        <p class="p">You can click <img class="image icon" style="display:none;" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__IMAGE_JFT_DQ3_CKB" src="GUID-96DC08AB-F831-4878-91BE-95A76F9C90DE-high.png" /> to  select the to-be-displayed
+            information (model name, device user ID, MAC address, etc.).</p>
+
+        <div class="fig fignone" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__FIG_XYV_42Y_1KB">
+            
+            <img class="image" style="display:none;" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__IMAGE_HHY_GRN_2KB" src="GUID-8E54B5CA-4100-47CB-9A7A-3442809417ED-high.png" width="2067" />
+        <div class="fig_caption"><span class="figcap">Figure 1 Camera Bandwidth Manager
+                Window</span></div></div>
+
+        <p class="p">The list on the left shows the information on the GigE and USB interfaces on
+            the PC. </p>
+
+        <ul class="ul" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__UL_BDS_WFY_1KB">
+            <li class="li" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__GUID-AFA8EF65-F460-4B76-9658-B4769ADF4673">
+                <p class="p">If you select <span class="ph uicontrol">All</span>, the camera list on the right will
+                    display all cameras under the GigE interfaces and USB interfaces.</p>
+
+            </li>
+
+            <li class="li" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__GUID-4225EE36-ED92-43B5-B9C8-A8E164664654">
+                <p class="p">If you select <span class="ph uicontrol">GigE</span>, the camera list on the right will
+                    display all cameras under the GigE interfaces.</p>
+
+            </li>
+
+            <li class="li" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__GUID-A94CCAB4-74B2-4ACA-9C5E-DC2EA526883D">
+                <p class="p">If you select <span class="ph uicontrol">USB</span>, the camera list on the right will
+                    display all cameras under USB interfaces.</p>
+
+            </li>
+
+            <li class="li" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__GUID-296018D0-0728-4EDC-9154-B3FA4741F679">
+                <p class="p">If you select a specific Interface, the camera list on the right will
+                    display all cameras under the selected interface.</p>
+
+            </li>
+
+        </ul>
+
+        <div class="section" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__GUID-98DDD38B-18C6-4A44-B167-83C24AA8FFEF"><h2 class="title sectiontitle">Analysis before Optimization</h2>
+            
+            <p class="p">After connecting camera(s), click <span class="ph uicontrol">Start Analysis</span>
+                to start analysis, and then click <span class="ph uicontrol">Stop Analysis</span> to complete
+                analyzing the bandwidth distribution of the cameras (you can also set the analysis
+                duration to automatically stop analysis when the duration ends). The value of the
+                payload received, frame sent, frame received, etc., will be displayed.</p>
+
+            <div class="note note" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__GUID-62C27073-5367-4D2E-BAFB-06252B5AD48F"><span class="notetitle">Note</span> 
+                <p class="p">You can click <span class="ph uicontrol">Reset Data</span> to reset the value of the
+                    above-mentioned parameters to 0.</p>
+
+            </div>
+
+            
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__TABLE_OWF_2T4_CKB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">Table 1 Information Item Description</span></caption>
+                    
+                    
+                    <thead class="thead" align="left">
+                        <tr>
+                            <th class="entry" valign="top" width="33.44481605351171%" id="d27267e162">
+                                <p class="p">Information Item</p>
+
+                            </th>
+
+                            <th class="entry" valign="top" width="66.5551839464883%" id="d27267e168">
+                                <p class="p">Description</p>
+
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody class="tbody">
+                        <tr>
+                            <td class="entry" valign="top" width="33.44481605351171%" headers="d27267e162 ">
+                                <p class="p">Payload Sent (Mbps)</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="66.5551839464883%" headers="d27267e168 ">
+                                <p class="p">The payloads that the camera sent to the PC during analysis.</p>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="33.44481605351171%" headers="d27267e162 ">
+                                <p class="p">Payload Received (Mbps)</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="66.5551839464883%" headers="d27267e168 ">
+                                <p class="p">The payloads that the camera received from the PC during
+                                    analysis.</p>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="33.44481605351171%" headers="d27267e162 ">
+                                <p class="p">Frame Sent (fps)</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="66.5551839464883%" headers="d27267e168 ">
+                                <p class="p">The frames that the camera sent to the PC during analysis.</p>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="33.44481605351171%" headers="d27267e162 ">
+                                <p class="p">Frame Received (fps)</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="66.5551839464883%" headers="d27267e168 ">
+                                <p class="p">The frame that the camera received from the PC during
+                                    analysis.</p>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="33.44481605351171%" headers="d27267e162 ">
+                                <p class="p">Images</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="66.5551839464883%" headers="d27267e168 ">
+                                <p class="p">The number of images that the PC received from the camera during
+                                    analysis.</p>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="33.44481605351171%" headers="d27267e162 ">
+                                <p class="p">Lost Packets</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="66.5551839464883%" headers="d27267e168 ">
+                                <p class="p">The amount of packets that the PC failed to receive from the
+                                    camera during analysis.</p>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="33.44481605351171%" headers="d27267e162 ">
+                                <p class="p">Lost Frames</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="66.5551839464883%" headers="d27267e168 ">
+                                <p class="p">The amount of frames that the PC failed to receive
+                                    from the camera during analysis.</p>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+</div>
+
+        </div>
+
+        <div class="section" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__GUID-B6C852E2-22DD-4BA3-8FDA-1509AC69DFC7"><h2 class="title sectiontitle">Bandwidth Optimization</h2>
+            
+            <p class="p">Based on the analysis result, you can optimize the bandwidth
+                distribution of the connected cameras in the following two ways:</p>
+
+            <ul class="ul" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__UL_RXF_R3Y_1KB">
+                <li class="li" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__GUID-1006CD97-BD3D-42C2-88EC-49254886107B">
+                    <p class="p">Select a GigE interface and then click <span class="ph uicontrol">Optimize Now</span> to
+                        automatically optimize the bandwidth of the selected camera(s).</p>
+
+                    <div class="note note" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__GUID-3617085F-35F1-442D-8BC6-4A716C6101DF"><span class="notetitle">Note</span> 
+                        <p class="p">Only GigE Vision cameras support the Optimize Now function. </p>
+
+                    </div>
+
+                </li>
+
+                <li class="li" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__GUID-7CC64D59-2F7C-4DF1-980F-80009244A9CA">
+                    <p class="p">Manually adjust the bandwidth, and then analyze again to view the changed
+                        value of payload received, frame sent, frame received, etc. </p>
+
+                </li>
+
+            </ul>
+
+            <div class="note note" id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__GUID-A3DF7300-A079-4734-BF74-37FA31DF5607"><span class="notetitle">Note</span> 
+                <p class="p">The less the payload losses and frame losses, the better the image quality would
+                    be.</p>
+
+            </div>
+
+        </div>
+
+</div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">Share</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>Previous Page</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>Next Page</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>On This Page</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__GUID-98DDD38B-18C6-4A44-B167-83C24AA8FFEF" class="feature_guide_h2"><span class="link_button">Analysis before Optimization</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844__GUID-B6C852E2-22DD-4BA3-8FDA-1509AC69DFC7" class="feature_guide_h2"><span class="link_button">Bandwidth Optimization</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8c01380e02e9eb04798d5"></div>
+		
+	</body>
+</html>

@@ -1,0 +1,226 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="固件升级工具" /><meta name="abstract" content="固件升级工具（本节简称为“工具”）支持对网口相机、USB相机、Camera Link相机、CoaXPress相机、XoFLink光口相机、采集卡进行固件升级。" /><meta name="description" content="固件升级工具（本节简称为“工具”）支持对网口相机、USB相机、Camera Link相机、CoaXPress相机、XoFLink光口相机、采集卡进行固件升级。" /><meta name="DC.Relation" scheme="URI" content="GUID-49ADF167-5FCB-4A42-9EDD-59690BE91937.html" /><meta name="DC.Relation" scheme="URI" content="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304.html" /><meta name="DC.Relation" scheme="URI" content="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-8B84E3BC-2185-4420-A18E-38FA8CF849DD" /><meta name="DC.Language" content="zh-CN" /><title>固件升级工具</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-8B84E3BC-2185-4420-A18E-38FA8CF849DD" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-49ADF167-5FCB-4A42-9EDD-59690BE91937.html" data-id="GUID-49ADF167-5FCB-4A42-9EDD-59690BE91937">工具应用</a></span></li><li class="active"><span class="topicref">固件升级工具</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">固件升级工具</h1>
+
+    
+    <div class="body conbody"><p class="shortdesc">固件升级工具（本节简称为“工具”）支持对网口相机、USB相机、Camera Link相机、CoaXPress相机、XoFLink光口相机、采集卡进行固件升级。</p>
+
+        <p class="p">工具主界面如下图所示，相关说明请见下表。</p>
+
+        <div class="fig fignone" id="GUID-8B84E3BC-2185-4420-A18E-38FA8CF849DD__FIG_H2M_HF5_MXB">
+            
+            <img class="image" style="display:none;" id="GUID-8B84E3BC-2185-4420-A18E-38FA8CF849DD__IMAGE_G4B_GNH_HCC" src="GUID-C9BFC6D7-F056-4B17-9D4F-1B245EF54624-high.png" width="2100" />
+        <div class="fig_caption"><span class="figcap">图 1 固件升级工具</span></div></div>
+
+        
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-8B84E3BC-2185-4420-A18E-38FA8CF849DD__TABLE_EDY_2G5_MXB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 1 主界面说明</span></caption>
+                
+                
+                
+                <thead class="thead" align="left">
+                    <tr>
+                        <th class="entry" valign="top" width="18.181818181818183%" id="d24538e47">
+                            <p class="p">序号</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="27.27272727272727%" id="d24538e53">
+                            <p class="p">区域</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="54.54545454545454%" id="d24538e59">
+                            <p class="p">说明</p>
+
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody class="tbody">
+                    <tr>
+                        <td class="entry" valign="top" width="18.181818181818183%" headers="d24538e47 ">
+                            <p class="p">1</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="27.27272727272727%" headers="d24538e53 ">
+                            <p class="p">菜单栏</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="54.54545454545454%" headers="d24538e59 ">
+                            <p class="p">菜单栏可提供帮助操作，可对工具的语言（中英文）进行选择，并查看该用户手册和工具版本信息。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="18.181818181818183%" headers="d24538e47 ">
+                            <p class="p">2</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="27.27272727272727%" headers="d24538e53 ">
+                            <p class="p">升级配置</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="54.54545454545454%" headers="d24538e59 ">
+                            <ul class="ul" id="GUID-8B84E3BC-2185-4420-A18E-38FA8CF849DD__UL_CW4_LL4_DZB">
+                                <li class="li" id="GUID-8B84E3BC-2185-4420-A18E-38FA8CF849DD__GUID-67F0DDAD-EECB-45E1-BC8C-39A7614DA1ED">
+                                    <p class="p">可对需要升级的设备类型进行选择，可选<span class="keyword parmname">相机</span>和<span class="keyword parmname">采集卡</span>。</p>
+
+                                </li>
+
+                                <li class="li" id="GUID-8B84E3BC-2185-4420-A18E-38FA8CF849DD__GUID-3771A45A-247D-442C-B46A-A663F5B4568D">
+                                    <p class="p">可对相机的固件升级包进行选择，并执行升级操作。</p>
+
+                                    <div class="note note" id="GUID-8B84E3BC-2185-4420-A18E-38FA8CF849DD__GUID-CC49E1AF-D44B-407A-957A-EE6874C838B7"><span class="notetitle">说明</span> 
+                                        <p class="p">采集卡的固件升级包需在区域4中进行选择。</p>
+
+                                    </div>
+
+                                </li>
+
+                            </ul>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="18.181818181818183%" headers="d24538e47 ">
+                            <p class="p">3</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="27.27272727272727%" headers="d24538e53 ">
+                            <p class="p">接口信息</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="54.54545454545454%" headers="d24538e59 ">
+                            <p class="p">显示当前PC上接口的信息，不同接口设备可执行不同操作，具体请见<a class="xref" href="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304.html#GUID-A6D9D2D5-F525-497E-AAE1-A66748539304" title="相机的固件升级过程主要分为三个阶段，即 搜索设备 &gt; 开始升级 &gt; 升级状态 。">相机升级</a>和<a class="xref" href="GUID-63163578-FF63-486C-A4A1-E53DFC1956D5.html#GUID-63163578-FF63-486C-A4A1-E53DFC1956D5" title="采集卡的固件升级过程主要分为三个阶段，即 搜索设备 &gt; 开始升级 &gt; 升级状态 。">采集卡升级</a>章节。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="18.181818181818183%" headers="d24538e47 ">
+                            <p class="p">4</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="27.27272727272727%" headers="d24538e53 ">
+                            <p class="p">设备信息</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="54.54545454545454%" headers="d24538e59 ">
+                            <p class="p">显示不同接口下搜索到的设备以及相关信息。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="18.181818181818183%" headers="d24538e47 ">
+                            <p class="p">5</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="27.27272727272727%" headers="d24538e53 ">
+                            <p class="p">设备信息配置</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="54.54545454545454%" headers="d24538e59 ">
+                            <p class="p">可根据实际需求，对区域3中显示的设备信息进行设置。不同接口可配置的信息不同，具体请以实际显示为准。</p>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+</div>
+
+    </div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

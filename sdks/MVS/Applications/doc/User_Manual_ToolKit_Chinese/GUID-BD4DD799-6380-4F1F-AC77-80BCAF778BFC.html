@@ -1,0 +1,158 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="IO波形监测" /><meta name="abstract" content="事件图处解析后的事件通过IO波形图可查看相应IO的响应波形图，可对该事件下的脉冲数量进行实时统计。" /><meta name="description" content="事件图处解析后的事件通过IO波形图可查看相应IO的响应波形图，可对该事件下的脉冲数量进行实时统计。" /><meta name="DC.Relation" scheme="URI" content="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC" /><meta name="DC.Language" content="zh-CN" /><title>IO波形监测</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC.html" data-id="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC">设备诊断工具</a></span></li><li class="active"><span class="topicref">IO波形监测</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">IO波形监测</h1>
+
+
+<div class="body conbody"><p class="shortdesc">事件图处解析后的事件通过IO波形图可查看相应IO的响应波形图，可对该事件下的脉冲数量进行实时统计。</p>
+
+        <p class="p">针对“总览图”和“事件图”选择和解析的事件，单击IO波形图界面的<img class="image" style="display:none;" id="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC__IMAGE_MQF_MYM_WWB" src="GUID-1271292D-4258-4120-8366-26B65E71B6E6-high.png" />，对该采集卡显示的IO线路进行选择，如下图所示。选择后，单击<span class="ph uicontrol">确定</span>即可。</p>
+
+        <div class="p">
+            <div class="note note" id="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC__GUID-765E151C-963F-494B-AC01-4B6DB6158694"><span class="notetitle">说明</span> 
+                <p class="p">IO波形图最多可显示8路IO波形通道。</p>
+
+            </div>
+
+        </div>
+
+        <div class="p">
+            <div class="fig fignone" id="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC__FIG_NQF_MYM_WWB">
+                
+                <img class="image" style="display:none;" id="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC__IMAGE_WKR_LN1_KCC" src="GUID-3094CC5A-0848-429A-BF15-D19A828A6251-high.png" width="1400" />
+            <div class="fig_caption"><span class="figcap">图 1 选择IO</span></div></div>
+
+        </div>
+
+        <p class="p">通过IO波形图可清晰查看各IO的触发情况。单击右侧的<span class="ph menucascade"><span class="ph uicontrol">IO分析</span> &gt; <span class="ph uicontrol">统计区间脉冲数量</span></span>，将鼠标悬空至IO波形图处，可查看相应IO波形的系统时间、Delta时间以及脉冲数量信息，如下图所示。若不需要统计区间脉冲数量，单击<span class="ph uicontrol">退出</span>即可。</p>
+
+        <div class="fig fignone" id="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC__FIG_F2H_YNN_HCC">
+            
+            <img class="image" style="display:none;" id="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC__IMAGE_G2H_YNN_HCC" src="GUID-B15C989B-5F08-429E-AE7A-6DD971751599-high.png" width="1400" />
+        <div class="fig_caption"><span class="figcap">图 2 查看IO波形信息</span></div></div>
+
+        <p class="p">在IO波形图处单击任意时间点，向上拖动鼠标滚轮，可对界面进行放大，向下拖动即还原；按住鼠标右键，左右拖动鼠标可查看前后时间段的IO波形图。</p>
+
+        <div class="p">
+            <div class="fig fignone" id="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC__FIG_IBN_NK3_5WB">
+                
+                <img class="image" style="display:none;" id="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC__IMAGE_VXN_514_WWB" src="GUID-C06028F1-66A8-414A-BB66-E4CCDA06BCA5-high.png" width="1800" />
+            <div class="fig_caption"><span class="figcap">图 3 IO波形图监测</span></div></div>
+
+        </div>
+
+        <p class="p">单击右侧的<span class="ph menucascade"><span class="ph uicontrol">IO分析</span> &gt; <span class="ph uicontrol">定位异常IO</span></span>可对IO波形图中的异常IO进行筛选定位。</p>
+
+        <p class="p">在定位异常IO界面中，可进行如下操作：</p>
+
+        <ul class="ul" id="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC__UL_V4Y_44N_HCC">
+            <li class="li" id="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC__GUID-D6EFD4C7-3459-498F-A93E-EF17B171F5D0">
+                <p class="p"><span class="keyword parmname">选择IO</span>：下拉选择需要筛选定位的IO。</p>
+
+            </li>
+
+            <li class="li" id="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC__GUID-0977D4AA-2077-469C-B5A0-439A0E95F480">
+                <p class="p"><span class="keyword parmname">发生异常时停止运行</span>：选择是否开启使能。若开启使能，当检测到异常IO时，弹出异常IO提醒界面，如下图所示，同时工具停止运行。</p>
+
+                <div class="fig fignone" id="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC__FIG_W4Z_GZ1_KCC">
+                    
+                    <img class="image" style="display:none;" id="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC__IMAGE_X4Z_GZ1_KCC" src="GUID-996FA77E-49B2-4B43-B431-6554A81D7E64-high.png" width="1400" />
+                <div class="fig_caption"><span class="figcap">图 4 IO异常提醒界面</span></div></div>
+
+            </li>
+
+            <li class="li" id="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC__GUID-E9BDFC79-F223-4F54-9E4F-61177FCD99FD">
+                <p class="p"><span class="keyword parmname">时间范围类型</span>：下拉选择需筛选的时间范围类型。</p>
+
+            </li>
+
+            <li class="li" id="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC__GUID-9CCD0AB1-41CF-4F7C-8E08-13BCFB5EE4A0">
+                <p class="p"><span class="keyword parmname">正常脉冲持续时间</span>：设置需筛选的时间范围。</p>
+
+            </li>
+
+            <li class="li" id="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC__GUID-9A8C3C0D-08A9-4C9F-9591-F94159C1283D">
+                <p class="p"><span class="ph uicontrol">查找异常IO</span>：单击<span class="ph uicontrol">查找异常IO</span>，异常IO的相关信息将显示在界面下方，单击异常IO对应操作列的<span class="ph uicontrol">定位</span>可定位至该异常IO处。</p>
+
+            </li>
+
+        </ul>
+
+        <div class="fig fignone" id="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC__FIG_I1J_CGB_5XB">
+            
+            <img class="image" style="display:none;" id="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC__IMAGE_AMD_K4N_HCC" src="GUID-A63D71D0-BC8B-471D-9E26-7FDE2112BD0F-high.png" width="1400" />
+        <div class="fig_caption"><span class="figcap">图 5 定位异常IO</span></div></div>
+
+    </div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

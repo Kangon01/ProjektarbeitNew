@@ -1,0 +1,152 @@
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Note
+ * 
+ */
+ 
+.note{
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+.note_noline{
+	margin-top: 14px;
+	margin-bottom: 14px;
+	padding: 0px 12px 0px 38px;
+}
+/** 注意 */
+.cautiontitle {
+	position: relative;
+	left: -26px;
+	color: var(--font-color-note-title);
+	font-size: 13px;
+	line-height: 20px;
+}
+.cautiontitle:before {
+	content: "";
+	display: inline-block;
+    background-image:url("../images/注意-无阴影@2x.png");
+	background-size: 18px 18px;
+	width: 18px;
+	height: 18px;
+	position: relative;
+	top: 4px;
+	margin-right: 8px;
+}
+/** 危险 */
+.dangertitle{
+	position: relative;
+	left: -26px;
+	color: var(--font-color-note-title);
+	font-size: 13px;
+	line-height: 20px;
+}
+.dangertitle:before {
+	content: "";
+	display: inline-block;
+    background-image:url("../images/危险-无阴影@2x.png");
+	background-size: 18px 18px;
+	width: 18px;
+	height: 18px;
+	position: relative;
+	top: 4px;
+	margin-right: 8px;
+}
+/** 说明 */
+.notetitle {
+	position: relative;
+	left: -26px;
+	color: var(--font-color-note-title);
+	font-size: 13px;
+	line-height: 20px;
+}
+.notetitle:before {
+	content: "";
+	display: inline-block;
+    background-image: url(../images/说明-无阴影@2x.png);
+	background-size: 18px 18px;
+	width: 18px;
+	height: 18px;
+	position: relative;
+	top: 4px;
+	margin-right: 8px;
+}
+/** 警告 */
+.warningtitle{
+	position: relative;
+	left: -26px;
+	color: var(--font-color-note-title);
+	font-size: 13px;
+	line-height: 20px;
+}
+.warningtitle:before {
+	content: "";
+	display: inline-block;
+    background-image:url("../images/警告-无阴影@2x.png");
+	background-size: 18px 18px;
+	width: 18px;
+	height: 18px;
+	position: relative;
+	top: 4px;
+	margin-right: 8px;
+}
+.caution>.p,
+.danger>.p,
+.warning>.p,
+.note>.p{
+	margin-top: 8px;
+	margin-bottom: 0px;
+	font-size: 13px;
+	line-height: 20px;
+	font-weight: normal!important;
+	color: var(--font-color-note-content);
+}
+.note_noline .p{
+	margin-top: 0;
+	color: var(--font-color-note-content);
+}
+
+.caution .li .p,
+.danger .li .p,
+.warning .li .p,
+.note .li .p {
+	padding-left: 0px;
+	font-weight: normal!important;
+}
+td .caution,
+td .danger,
+td .warning,
+td .note{
+	margin-top: 0px;
+	margin-bottom: 14px;
+}
+.note.caution{
+	border-radius: 4px;
+	background-color: rgb(23,138,250, 0.05);
+	border: 1pt solid rgb(19,139,253, 0.24);
+	padding: 12px 12px 12px 38px;
+}
+.note.danger{
+	border-radius: 4px;
+	background-color: rgb(247,89,82, 0.05);
+	border: 1pt solid rgb(247,77,70, 0.3);
+	padding: 12px 12px 12px 38px;
+}
+.note.warning{
+	border-radius: 4px;
+	background-color: rgb(250,183,87, 0.05);
+	border: 1pt solid rgb(253,194,120, 0.36);
+	padding: 12px 12px 12px 38px;
+}
+ /**  note 必须放在最后 只有一个note **/
+.note{
+	border-radius: 4px;
+	background-color: rgb(2,200,220, 0.06);
+	border: 1pt solid rgb(2,200,220, 0.24);
+	padding: 12px 12px 12px 38px;
+}
+
+.note .tbody {
+	background-color: #fff;
+}

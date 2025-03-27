@@ -1,0 +1,138 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="description" content="问题描述 启动客户端后，刷新Camera Link接口，搜索不到Camera Link相机。 可能的原因 原因1：Camera Link相机未正常启动。 原因2：Camera Link线缆连接异常。 原因3：相机和采集卡的Camera Link接口不匹配。 原因4：采集卡驱动安装异常。 解决方法 针对原因1，通过观察Camera Link相机的LED指示灯情况判断相机供电是否正常。 ..." /><meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="reference" /><meta name="DC.Title" content="启动客户端后无法搜到Camera Link相机" /><meta name="DC.Relation" scheme="URI" content="GUID-64F698FF-2F83-497F-AF1F-691CC1ECD190.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-9EE03888-107E-4E30-88DA-65AF22816D61" /><meta name="DC.Language" content="zh-CN" /><title>启动客户端后无法搜到Camera Link相机</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-64F698FF-2F83-497F-AF1F-691CC1ECD190.html" data-id="GUID-64F698FF-2F83-497F-AF1F-691CC1ECD190">常见问题</a></span></li><li class="active"><span class="topicref">启动客户端后无法搜到Camera Link相机</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">启动客户端后无法搜到Camera Link相机</h1>
+
+<div class="body refbody">
+<div class="section" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-54EDCB52-B7FC-4CD2-93C2-6F4066EBE8AA"><h2 class="title sectiontitle">问题描述</h2>
+            
+            <p class="p">启动客户端后，刷新Camera Link接口，搜索不到Camera Link相机。</p>
+
+        </div>
+
+        <div class="section" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-461B7641-26F7-4399-A62D-6D3902B21FEB"><h2 class="title sectiontitle">可能的原因</h2>
+            
+            <ul class="ul" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__UL_D2D_ZLQ_F3B">
+                <li class="li" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-A715D56E-763E-4FE4-9AA4-79389F09E285">
+                    <p class="p">原因1：Camera Link相机未正常启动。</p>
+
+                </li>
+
+                <li class="li" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-75E3CD74-FCFB-4B20-9565-35AAFF9534C3">
+                    <p class="p">原因2：Camera Link线缆连接异常。</p>
+
+                </li>
+
+                <li class="li" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-A38975D1-F325-49A2-A5CF-8FC4881740FD">
+                    <p class="p">原因3：相机和采集卡的Camera Link接口不匹配。</p>
+
+                </li>
+
+                <li class="li" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-24C31B71-0090-43AC-840A-E28FB259406E">
+                    <p class="p">原因4：采集卡驱动安装异常。</p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="section" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-77C81565-7799-4D0B-B0EE-224EB8846C25"><h2 class="title sectiontitle">解决方法</h2>
+            
+            <ul class="ul" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__UL_KF5_CMQ_F3B">
+                <li class="li" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-C6A438A2-5067-4D68-B6E4-7845A3E973B5">
+                    <p class="p">针对原因1，通过观察Camera Link相机的LED指示灯情况判断相机供电是否正常。</p>
+
+                </li>
+
+                <li class="li" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-200F5982-63EE-4E55-A18F-7B049AA3151D">
+                    <p class="p">针对原因2，通过观察Camera Link采集卡的指示灯情况判断Camera Link线缆传输是否正常。</p>
+
+                </li>
+
+                <li class="li" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-12CA1D23-A8F4-47C6-9B39-67B1D5FA7B1E">
+                    <p class="p">针对原因3，针对确认相机和采集卡的Camera Link接口相互对应。</p>
+
+                </li>
+
+                <li class="li" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-97172A11-9359-4F38-AF1D-0E70E32C1AEF">
+                    <p class="p">针对原因4，重装采集卡驱动。若还是不行，建议联系采集卡厂商。</p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+</div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>本页导航</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-54EDCB52-B7FC-4CD2-93C2-6F4066EBE8AA" class="feature_guide_h2"><span class="link_button">问题描述</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-461B7641-26F7-4399-A62D-6D3902B21FEB" class="feature_guide_h2"><span class="link_button">可能的原因</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-77C81565-7799-4D0B-B0EE-224EB8846C25" class="feature_guide_h2"><span class="link_button">解决方法</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

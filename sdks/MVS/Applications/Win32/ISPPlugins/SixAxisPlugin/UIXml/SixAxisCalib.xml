@@ -1,0 +1,12 @@
+<Root>
+    <Group extend="false" ui_param_show="1" ui_param_name="BaseParams" id="0">
+        <Node ui_display_cn_name="ROI宽度" ui_param_display_type="SpinBox" ui_param_show="1" ui_param_name="ROIWidth" ui_display_en_name="ROI Width" ui_display_name="ROI Width" ui_param_type="Integer"/>
+        <Node ui_display_cn_name="ROI高度" ui_param_display_type="SpinBox" ui_param_show="1" ui_param_name="ROIHeight" ui_display_en_name="ROI Height" ui_display_name="ROI Height" ui_param_type="Integer"/>
+        <Node ui_param_level="0" ui_display_cn_name="ROI绘制" ui_param_polling="0" ui_param_lock="0" ui_param_show="1" ui_param_display_type="find_roi" ui_param_name="" ui_type="config_param" ui_display_en_name="Draw ROI" ui_display_name="roi_edit">
+            <SubNode ui_param_level="0" ui_param_polling="0" ui_param_lock="0" ui_param_show="1" ui_param_display_type="find_roi" ui_param_name="Roi" ui_roi_param_type="24 ROIs,140 ROIs,Custom ROI" ui_type="roi_param" ui_roi_seek_type="0" ui_display_name="" ui_roi_num_max="1" ui_roi_num_min="1"/>
+        </Node>
+		<Node ui_display_cn_name="使用输入颜色" ui_param_display_type="manually_color" ui_param_name="ManuallyColor" ui_param_type="ManuallyColor"  ui_display_en_name="Manually Color Set" ui_display_name="Manually Color Set">
+			<ShowRef>1</ShowRef>
+		</Node>
+    </Group>
+</Root>

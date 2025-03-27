@@ -1,0 +1,30 @@
+<Root>
+    <Group extend="false" ui_param_show="1" ui_param_name="CalibParams" ui_display_name="" id="0">
+        <Node ui_display_cn_name="ROI宽度" ui_param_show="1" ui_param_display_type="SpinBox" ui_param_name="ROIWidth" ui_display_en_name="ROI Width" ui_display_name="ROI Width" ui_param_type="Integer"/>
+        <Node ui_display_cn_name="ROI高度" ui_param_show="1" ui_param_display_type="SpinBox" ui_param_name="ROIHeight" ui_display_en_name="ROI Height" ui_display_name="ROI Height" ui_param_type="Integer"/>
+        <Node ui_param_level="0" ui_display_cn_name="ROI绘制" ui_param_polling="0" ui_param_lock="0" ui_param_show="1" ui_param_display_type="find_roi" ui_param_name="" ui_type="config_param" ui_display_en_name="Draw ROI" ui_display_name="roi_edit">
+            <SubNode ui_param_level="0" ui_param_polling="0" ui_param_lock="0" ui_param_show="1" ui_param_display_type="find_roi" ui_param_name="Roi" ui_roi_param_type="24 ROIs,140 ROIs,Custom ROI" ui_type="roi_param" ui_roi_seek_type="0" ui_display_name="" ui_roi_num_max="1" ui_roi_num_min="1"/>
+        </Node>
+		<Node ui_display_cn_name="使用输入颜色" ui_param_display_type="manually_color" ui_param_name="ManuallyColor" ui_param_type="ManuallyColor"  ui_display_en_name="Manually Color Set" ui_display_name="Manually Color Set">
+			<ShowRef>1</ShowRef>
+		</Node>
+        <Node ui_display_cn_name="参考图Gamma类型" ui_param_display_type="ComboBox" ui_param_name="GammaType" ui_display_en_name="Reference Image Gamma Type" ui_display_name="Reference Image Gamma Type" Value="0" ui_param_type="Enumeration">
+            <RelationList>GammaValue,GammaCurve_Command</RelationList>
+			<EnumEntry DisplayName="None" DisplayNameCN="不启用" Value="0"/>
+            <EnumEntry DisplayName="User Value" DisplayNameCN="Gamma值" Value="1"/>
+            <EnumEntry DisplayName="User Curve" DisplayNameCN="Gamma曲线" Value="2"/>
+            <EnumEntry DisplayName="LRGB2SRGB" Value="3"/>
+        </Node>
+        <Node ui_display_cn_name="Gamma值" ui_param_show="0" ui_param_display_type="float_lineedit" ui_param_name="GammaValue" ui_display_en_name="Gamma Value" ui_display_name="Gamma Value" ui_param_type="Float"/>
+        <Node ui_display_cn_name="Gamma曲线" ui_param_show="0" ui_param_display_type="button" ui_param_button_name="Import Curve" ui_param_button_cn_name="导入曲线" ui_param_name="GammaCurve_Command" ui_display_en_name="Gamma Curve" ui_display_name="Gamma Curve" ui_param_type="Command"/>
+        <Node ui_param_name="GammaCurve" ui_param_show="0" ui_param_display_type="lineedit" ui_param_type="String"/>
+		<Node ui_display_cn_name="量化系数" ui_param_display_type="ComboBox" ui_param_name="CLUTScale" ui_display_en_name="Scale" ui_display_name="Scale" Value="1024" ui_param_type="Enumeration">         
+            <EnumEntry DisplayName="256" Value="256"/>
+            <EnumEntry DisplayName="512" Value="512"/>
+            <EnumEntry DisplayName="1024" Value="1024"/>
+            <EnumEntry DisplayName="2048" Value="2048"/>
+        </Node>
+        <Node ui_display_cn_name="平滑因子" min="0" increment="1" ui_param_display_type="SpinBox" max="100" ui_param_name="SmoothFactor" ui_display_en_name="Smooth Factor" ui_display_name="SmoothFactor" Value="25" ui_param_type="Integer"/>
+        <Node ui_param_display_type="colorcard" ui_param_name="ColorCard" ui_param_type="ColorCard"/>
+    </Group>
+</Root>

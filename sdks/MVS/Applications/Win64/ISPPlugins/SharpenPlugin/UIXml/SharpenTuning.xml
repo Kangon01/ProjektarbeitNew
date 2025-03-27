@@ -1,0 +1,8 @@
+<Root>
+    <Group ui_param_show="1" ui_display_name="" id="0" ui_param_name="BaseParams" extend="false">
+        <Node ui_param_display_type="SpinBox" ui_display_cn_name="锐度调节半径" Value="1" max="21" ui_display_name="Radius" min="1" ui_param_type="Integer" ui_param_name="Radius" ui_display_en_name="Sharpening Radius"/>
+        <Node ui_param_display_type="SpinBox" ui_display_cn_name="锐度调节阈值" Value="0" max="255" ui_display_name="Threshold" min="0" ui_param_type="Integer" ui_param_name="Threshold" ui_display_en_name="Sharpening Threshold"/>
+        <Node ui_param_display_type="SpinBox" ui_display_cn_name="锐度调节正向强度" Value="50" max="500" ui_display_name="PosAmount" min="0" ui_param_type="Integer" ui_param_name="PosAmount" ui_display_en_name="Positive Sharpening Strength"/>
+        <Node ui_param_display_type="SpinBox" ui_display_cn_name="锐度调节负向强度" Value="50" max="500" ui_display_name="NegAmount" min="0" ui_param_type="Integer" ui_param_name="NegAmount" ui_display_en_name="Negative Sharpening Strength"/>
+    </Group>
+</Root>

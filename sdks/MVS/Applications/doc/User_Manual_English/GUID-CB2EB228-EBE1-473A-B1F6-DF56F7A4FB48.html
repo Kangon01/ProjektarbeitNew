@@ -1,0 +1,175 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="© Hikrobot Co., Ltd. All rights reserved." /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="PCIe Bandwidth Test Tool" /><meta name="abstract" content="The PCIe Bandwidth Test Tool can test the actual bandwidth of connected frame grabbers, upon which you can decide if the frame grabber can satisfy application requirements." /><meta name="description" content="The PCIe Bandwidth Test Tool can test the actual bandwidth of connected frame grabbers, upon which you can decide if the frame grabber can satisfy application requirements." /><meta name="DC.Relation" scheme="URI" content="GUID-545BED7E-6E3C-4D3F-BB3F-496843D1B428.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48" /><meta name="DC.Language" content="en-US" /><title>PCIe Bandwidth Test Tool</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">Home Page</a></span></li><li><span class="topicref"><a href="GUID-545BED7E-6E3C-4D3F-BB3F-496843D1B428.html" data-id="GUID-545BED7E-6E3C-4D3F-BB3F-496843D1B428">Tool Management</a></span></li><li class="active"><span class="topicref">PCIe Bandwidth Test Tool</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">PCIe Bandwidth Test Tool</h1>
+
+
+<div class="body taskbody"><p class="shortdesc">The PCIe Bandwidth Test Tool can test the actual bandwidth of connected
+        frame grabbers, upon which you can decide if the frame grabber can satisfy application
+        requirements.</p>
+
+<div class="section prereq p" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-12407115-7E62-40F6-8E90-5DADF783E195">
+            <p class="p">Ensure the Software successfully enumerated frame grabber to be detected.</p>
+
+            <div class="note note" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-E44B2052-C822-48D8-A4F4-4E8425EC2A6B"><span class="notetitle">Note</span> 
+                <ul class="ul" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__UL_NWV_3FT_XDC">
+                    <li class="li" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-6E66E61A-874F-428C-9099-84671511B805">
+                        <p class="p">The PCIe Bandwidth Test tool only supports some CoaXPress frame
+                            grabbers and XoFLink Fiber Optic frame grabbers<span class="ph"> developed by Hikrobot</span>.</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-76BE1E4C-6ABE-4146-B3F8-1A5203EEECA2">
+                        <p class="p">You cannot test the bandwidth during acquisition or vice versa.</p>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+<ol class="ol steps" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-EEACD871-AA46-4452-A68E-2A0945EDEE6E"><li class="li step stepexpand" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-80421374-F12E-4060-A269-9D01238D72B0">
+                <span class="ph cmd">Click <span class="ph menucascade"><span class="ph uicontrol">Tool</span> &gt; <span class="ph uicontrol">PCIe Bandwidth Test</span></span> to open the tool.</span>
+            </li>
+<li class="li step stepexpand" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-F507C852-8F3B-48B4-87F3-D0975106FAB7">
+                <span class="ph cmd">Select the frame grabber, and select the desired
+                    <span class="ph uicontrol">stream</span>.</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-086FF624-7B04-49F6-8C98-73485A3B61D4"><span class="notetitle">Note</span> 
+                        <p class="p">The amount of available streams is subject to frame grabber
+                            type.</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-F77B8F0F-44FE-4C2D-8CE4-498F9C4668D0">
+                <span class="ph cmd">Set the size of the image with <span class="keyword parmname">Parameter
+                        (Width/Height)</span>.</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-956511CC-C567-4B0F-9F16-9A5913E447A5"><span class="notetitle">Note</span> 
+                        <p class="p">It is recommended to test all sizes to test the stability of
+                            the interface under different image sizes.</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-8CF9551B-441B-4A77-94D9-0C65172068BC">
+                <span class="ph cmd">Click <span class="ph uicontrol">Detect</span> to test the bandwidth of selected
+                    streams.</span>
+                <div class="itemgroup stepresult">
+                    <div class="fig fignone" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__FIG_KGM_XJK_GCC">
+                        
+                        <img class="image" style="display:none;" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__IMAGE_JSN_ZJK_GCC" src="GUID-09F64DE4-C065-4B66-8DC7-2648DC9201B5-high.png" width="1000" />
+                    <div class="fig_caption"><span class="figcap">Figure 1 Detecting Selected
+                            Stream Bandwidth</span></div></div>
+
+                    <p class="p">During testing, if any of the following situations occurs, you
+                        need to examine your frame grabber and the PCIe interface.</p>
+
+                    <ul class="ul" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__UL_UMZ_CF3_KCC">
+                        <li class="li" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-4165A40E-A285-4168-A9A2-5DB89D152383">
+                            <p class="p">The sum of <span class="keyword parmname">Frame
+                                    Rate/Fps</span> is significantly smaller than the
+                                theoretical frame rate: examine the PCIe interface.</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-A8B30F26-6879-4E20-B7A7-AC6D614DDFAC">
+                            <p class="p">The sum of <span class="keyword parmname">Band
+                                    Width(Max/Min/Avg)/MBps</span> is significantly smaller than
+                                the theoretical bandwidth: examine the PCIe interface.</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-47DF54D4-D1C8-4390-ABBE-2AF9B8572A66">
+                            <p class="p">If the <span class="keyword parmname">Image Number</span> does
+                                not accumulate: examine the frame grabber.</p>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-076729F1-8EE1-43A1-9B28-E279B492E2A8"><strong>Optional: </strong>
+                <span class="ph cmd">Click <span class="ph uicontrol">Stop Detect</span> to pause testing.</span>
+            </li>
+</ol>
+
+</div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">Share</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>Previous Page</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>Next Page</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8c01380e02e9eb04798d5"></div>
+		
+	</body>
+</html>

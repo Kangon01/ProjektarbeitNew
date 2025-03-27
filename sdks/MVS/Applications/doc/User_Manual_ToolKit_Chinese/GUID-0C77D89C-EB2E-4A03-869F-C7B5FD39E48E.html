@@ -1,0 +1,693 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="description" content="色彩校正模块包括6种算法模块：白平衡、CCM、超级调色盘、CLUT、去紫边、Gamma。 说明 色彩校正仅支持RGB格式的图片输入。当输入图片格式为Bayer时，可先通过 色彩插值 转换成RGB格式，再进行色彩校正处理。 白平衡模块可用于纠正偏色，使不同光源条件下画面呈现的色彩与人眼观看的色彩相近。 使用白平衡模块时可先进行标定再校正，也可省略标定过程，点击 直接校正 获取校正参数。 标定参数 ..." /><meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="色彩校正" /><meta name="DC.Relation" scheme="URI" content="GUID-4175955D-4EA6-459D-B215-E80FAB72DDB3.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-0C77D89C-EB2E-4A03-869F-C7B5FD39E48E" /><meta name="DC.Language" content="zh-CN" /><title>色彩校正</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-4A707B85-6362-489F-AD0C-12957E57E3F9.html" data-id="GUID-4A707B85-6362-489F-AD0C-12957E57E3F9">图像调试工具</a></span></li><li><span class="topicref"><a href="GUID-4175955D-4EA6-459D-B215-E80FAB72DDB3.html" data-id="GUID-4175955D-4EA6-459D-B215-E80FAB72DDB3">算法模块介绍</a></span></li><li class="active"><span class="topicref">色彩校正</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body "><div class="nested0" id="GUID-0C77D89C-EB2E-4A03-869F-C7B5FD39E48E">
+    <h1 class="title topictitle1">色彩校正</h1>
+
+    <div class="body conbody">
+        <p class="p">色彩校正模块包括6种算法模块：白平衡、CCM、超级调色盘、CLUT、去紫边、Gamma。</p>
+
+        <div class="note note" id="GUID-0C77D89C-EB2E-4A03-869F-C7B5FD39E48E__GUID-DF4599A4-4FCF-43E9-8C7D-87FD6BBA76C1"><span class="notetitle">说明</span> 
+            <p class="p">色彩校正仅支持RGB格式的图片输入。当输入图片格式为Bayer时，可先通过<a class="xref" href="GUID-CAA021A1-047F-4B1A-899A-243A2D55793F.html#GUID-CAA021A1-047F-4B1A-899A-243A2D55793F" title="色彩插值模块包含Demosaic和DDS两个算法模块。">色彩插值</a>转换成RGB格式，再进行色彩校正处理。</p>
+
+        </div>
+
+    </div>
+
+
+<div class="topic concept nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37">
+    <h2 class="title topictitle2">白平衡</h2>
+
+    
+    <div class="body conbody"><p class="shortdesc">白平衡模块可用于纠正偏色，使不同光源条件下画面呈现的色彩与人眼观看的色彩相近。</p>
+
+        <p class="p">使用白平衡模块时可先进行标定再校正，也可省略标定过程，点击<span class="ph uicontrol">直接校正</span>获取校正参数。</p>
+
+        <div class="section" id="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37__GUID-549AF734-AE58-4EA2-AA5C-398F5A43DF86"><h3 class="title sectiontitle">标定参数</h3>
+            
+            <p class="p">白平衡需对校正前图像绘制<span class="keyword parmname">24色卡ROI</span>，且可通过<span class="keyword parmname">ROI宽度</span>和<span class="keyword parmname">ROI高度</span>对单个ROI的宽度和高度值进行调整，具体可参考<a class="xref" href="GUID-F7EBCC11-8ED7-4DC2-9045-2BBB9A22D998.html#GUID-F7EBCC11-8ED7-4DC2-9045-2BBB9A22D998" title="图像降噪算法模块可去除图像中的噪声，提高图像信噪比。">图像降噪</a>章节。还需对以下参数进行设置：</p>
+
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37__GUID-64D1192D-95F1-4AC0-A507-C212F8B39C7E"><!-- --></a>使用输入颜色</dt>
+
+                    <dd class="dd pd">
+                        <ul class="ul" id="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37__UL_Q42_XNK_TWB">
+                            <li class="li" id="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37__GUID-F186FF96-C134-489F-A627-B64B99A7032C">
+                                <p class="p">不使用：无输入颜色。</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37__GUID-9457D38A-254B-41EF-9548-6FE4D6467782">
+                                <p class="p">原始颜色：点击<span class="ph uicontrol">原始颜色</span>并选择需导入的txt文件，或者点击<span class="ph uicontrol">增加行</span>并选择原始颜色进行添加。</p>
+
+                                <div class="note note" id="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37__GUID-B2B1FA9D-D74E-4C8D-81C1-7DA655466D3F"><span class="notetitle">说明</span> 
+                                    <ul class="ul" id="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37__UL_DF2_TTK_TWB">
+                                        <li class="li" id="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37__GUID-05058D1B-3761-42F7-BA55-3CF23E6B7BCA">
+                                            <p class="p">txt文件记录颜色格式的要求：一行代表一个颜色，按照r,g,b的格式写入，不允许有空白行。</p>
+
+                                        </li>
+
+                                        <li class="li" id="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37__GUID-9D274D3D-2B66-4AEC-92C2-9704F2A5A6E3">
+                                            <p class="p">输入颜色过程中如需删除，可点击<span class="ph uicontrol">删除行</span>。</p>
+
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37__GUID-8946DA81-C880-4492-A3D1-274DC38D0641"><!-- --></a>标定方法</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">可选AVG（平均法）、SOLVE（解析法）。</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37__GUID-57245C51-9E3E-429F-9038-38B1D41D66C7"><!-- --></a>量化系数</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">可将白平衡矩阵中的数值整数化，便于进行计算。设置后白平衡矩阵中的数值会随之改变。</p>
+
+                    </dd>
+
+                
+            </dl>
+
+            <div class="fig fignone" id="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37__FIG_ZV3_YX2_TWB">
+                
+                <img class="image" style="display:none;" id="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37__IMAGE_AW3_YX2_TWB" src="GUID-8DEE0A11-5274-4FD2-ACFB-54A680550E6A-high.png" width="1000" />
+            <div class="fig_caption"><span class="figcap">图 1 白平衡标定参数</span></div></div>
+
+        </div>
+
+        <div class="section" id="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37__GUID-DAE84142-1C50-4EF1-9562-478DD4EE4886"><h3 class="title sectiontitle">校正参数</h3>
+            
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37__GUID-73D13708-AEBB-439A-9181-8D430DED0DD1"><!-- --></a>量化系数</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">与标定参数中的量化系数保持一致。</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37__GUID-1195F9D1-68FA-4C29-9F24-046F5EEB4483"><!-- --></a>白平衡矩阵</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">单击<span class="ph uicontrol">编辑</span>可修改矩阵数值，从而调整RGB中红、绿、蓝三色分量的比例关系。</p>
+
+                        <div class="note note" id="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37__GUID-4E3B5AB4-4BE6-45C2-995F-12DEAFD79691"><span class="notetitle">说明</span> 
+                            <p class="p">当校正参数中的<span class="keyword parmname">量化系数</span>选择1时，矩阵数值可输入浮点数。</p>
+
+                        </div>
+
+                    </dd>
+
+                
+            </dl>
+
+            <div class="fig fignone" id="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37__FIG_MZ3_ZX2_TWB">
+                
+                <img class="image" style="display:none;" id="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37__IMAGE_AR1_SKH_DZB" src="GUID-63D1F413-391F-4BB1-8E20-EF937E4F8968-high.png" width="1000" />
+            <div class="fig_caption"><span class="figcap">图 2 白平衡校正参数</span></div></div>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="topic concept nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2">
+    <h2 class="title topictitle2">CCM</h2>
+
+    
+<div class="body conbody"><p class="shortdesc">CCM是一个3*3的色彩校正矩阵，可调整RGB中红、绿、蓝三色分量的比例关系。</p>
+
+        <p class="p">使用CCM模块时可先进行标定再校正，也可省略标定过程，直接导入校正参数进行图像校正，通过点击<span class="ph uicontrol">直接校正</span>实现。</p>
+
+        <div class="section" id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-A98461A9-FAD7-45AE-8CDE-FD64A9379B49"><h3 class="title sectiontitle">标定参数</h3>
+            
+            <p class="p">CCM标定支持输入多张标定图像和参考图像，对校正前的标定图像和参考图绘制ROI以提取输入颜色和参考颜色。</p>
+
+            <div class="note note" id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-F6012FF6-AF48-4B06-AEF6-B74CC4E82A72"><span class="notetitle">说明</span> 
+                <p class="p">图像列表最多支持导入24张图像。</p>
+
+            </div>
+
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-EB253533-6E1E-4510-BD23-08CC2C12D985"><!-- --></a>ROI绘制</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">支持24色卡ROI、140色卡ROI、自定义ROI和自由ROI四种绘制方式，具体介绍可参考<a class="xref" href="GUID-F7EBCC11-8ED7-4DC2-9045-2BBB9A22D998.html#GUID-F7EBCC11-8ED7-4DC2-9045-2BBB9A22D998" title="图像降噪算法模块可去除图像中的噪声，提高图像信噪比。">图像降噪</a>章节。</p>
+
+                        <div class="note note" id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-FF8F8F30-BDD8-4129-A8EB-74150B90FB55"><span class="notetitle">说明</span> 
+                            <p class="p">对于CCM标定，绘制ROI时预览窗口的图像上会显示ROI序号。</p>
+
+                        </div>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-64D1192D-95F1-4AC0-A507-C212F8B39C7E"><!-- --></a>使用输入颜色</dt>
+
+                    <dd class="dd pd">
+                        <ul class="ul" id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__UL_Q42_XNK_TWB">
+                            <li class="li" id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-7BDEFA39-7534-472A-B7EB-3FC7AC880FC8">
+                                <p class="p">不使用：无输入颜色。</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-13C3C111-DA7A-4528-B737-58673AA1759F">
+                                <p class="p">原始颜色：点击<span class="ph uicontrol">原始颜色</span>并选择需导入的txt文件，或者点击<span class="ph uicontrol">增加行</span>并选择原始颜色进行添加。</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-C3E04700-9B48-4511-AC80-AEDA25E59005">
+                                <p class="p">参考颜色：点击<span class="ph uicontrol">参考颜色</span>并选择需导入的txt文件，或者点击<span class="ph uicontrol">增加行</span>并选择参考颜色进行添加。</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-9B57AB88-1D4D-42D7-9DC2-BE518B509FA6">
+                                <p class="p">全部颜色：点击<span class="ph uicontrol">原始颜色</span>或<span class="ph uicontrol">参考颜色</span>可分别导入参考颜色的txt文件，或者点击<span class="ph uicontrol">增加行</span>并选择原始颜色和参考颜色进行添加。</p>
+
+                            </li>
+
+                        </ul>
+
+                        <div class="note note" id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-49A864D9-D9D5-4897-8ADD-E894C8B6A766"><span class="notetitle">说明</span> 
+                            <ul class="ul" id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__UL_DF2_TTK_TWB">
+                                <li class="li" id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-F545482C-5994-454F-A5AC-829D50F358DC">
+                                    <p class="p">txt文件记录颜色格式的要求：一行代表一个颜色，按照r,g,b的格式写入，不允许有空白行；原始颜色和参考颜色应分别存在两个文件中。</p>
+
+                                </li>
+
+                                <li class="li" id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-CAA52DF3-9673-4F40-AA4F-F2B14108E4B4">
+                                    <p class="p">原始颜色和参考颜色个数限制均为140，且原始颜色与参考颜色个数需保持一致。</p>
+
+                                </li>
+
+                                <li class="li" id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-7DD680D1-D4E7-4B65-84D2-CB24D128087C">
+                                    <p class="p">输入颜色过程中如需删除，可点击<span class="ph uicontrol">删除行</span>。</p>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-1DE108A2-1A44-4A3D-8072-B60FFC15E3DB"><!-- --></a>Gamma类型</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">可根据实际需求进行选择，分为以下4种。</p>
+
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-7A2888BE-EB3B-4A0B-851E-982AB4BBBE1F"><!-- --></a>None</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">不启用Gamma。</p>
+
+                                </dd>
+
+                            
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-28B39066-5050-4F71-A3CF-57B61EC07C78"><!-- --></a>User Value</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">通过设置Gamma数值进行控制，相关参数如下：</p>
+
+                                    <dl class="dl parml">
+                                        
+                                            <dt class="dt pt dlterm"><a name="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-738BEF5D-E18A-4BE2-A173-7F6668912B3D"><!-- --></a>Gamma值</dt>
+
+                                            <dd class="dd pd">
+                                                <p class="p">输入Gamma数值，范围为[0，3.9]。</p>
+
+                                            </dd>
+
+                                        
+                                    </dl>
+
+                                </dd>
+
+                            
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-3E9F81E6-AD4E-4C0E-ABE6-43D847D75712"><!-- --></a>User Curve</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">通过导入Gamma曲线文件进行控制，相关参数如下：</p>
+
+                                    <dl class="dl parml">
+                                        
+                                            <dt class="dt pt dlterm"><a name="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-61CAC5AE-2746-4D2C-863F-E5C9B2D8E2E3"><!-- --></a>Gamma曲线</dt>
+
+                                            <dd class="dd pd">
+                                                <p class="p">单击<span class="ph uicontrol">导入曲线</span>，选择本地的Gamma曲线文件进行导入。</p>
+
+                                                <div class="note note" id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-75073CFE-49E4-4D1E-AEEA-FCAE0FC7E23D"><span class="notetitle">说明</span> 
+                                                  <p class="p">Gamma曲线文件请联系技术支持获取。</p>
+
+                                                </div>
+
+                                            </dd>
+
+                                        
+                                    </dl>
+
+                                </dd>
+
+                            
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-A600CC7F-0AAE-4313-AB93-13A3D6F62E74"><!-- --></a>LRGB2SRGB</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">由算法内部生成Gamma值。</p>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                    </dd>
+
+                
+            </dl>
+
+            <div class="fig fignone" id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__FIG_OS3_J1L_TWB">
+                
+                <img class="image" style="display:none;" id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__IMAGE_PS3_J1L_TWB" height="945" src="GUID-88C0A6A8-A1D1-4263-9FD6-9CD90EEC2775-high.png" />
+            <div class="fig_caption"><span class="figcap">图 3 CCM标定参数</span></div></div>
+
+        </div>
+
+        <div class="section" id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-347CF20E-24E4-438A-A77B-969C4A6AEB36"><h3 class="title sectiontitle">校正参数</h3>
+            
+            <p class="p">CCM校正可对以下参数进行调整：</p>
+
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-D295CC4B-A5A6-4E0B-B6C8-00CCB2332840"><!-- --></a>Gamma类型</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">设置方法和标定参数中相同。</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-3CCDA532-771B-4B78-A94F-99D77B018B46"><!-- --></a>量化系数</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">可将CCM矩阵中的数值整数化，便于进行运算。设置后CCM矩阵中的数值会随之改变。</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-330D1B79-8D94-4BB2-8A2E-F6069DBCC0BF"><!-- --></a>CCM矩阵</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">单击<span class="ph uicontrol">编辑</span>可修改矩阵数值，从而调整RGB中红、绿、蓝三色分量的比例关系。</p>
+
+                        <div class="note note" id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-4E3B5AB4-4BE6-45C2-995F-12DEAFD79691"><span class="notetitle">说明</span> 
+                            <p class="p">当校正参数中的<span class="keyword parmname">量化系数</span>选择1时，矩阵数值可输入浮点数。</p>
+
+                        </div>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-A030D1DC-FA47-40AC-BD05-6C54E44238BD"><!-- --></a>饱和度使能</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">使能后，<span class="keyword parmname">饱和度</span>下的滑块才可拖动，且<span class="keyword parmname">量化系数</span>和<span class="keyword parmname">CCM矩阵</span>不可编辑。</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-56EEDBA3-69A6-4484-9FEE-A3332351FFDB"><!-- --></a>饱和度</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">拖动滑块可调整图像整体饱和度，CCM矩阵中的数值会随之改变。</p>
+
+                    </dd>
+
+                
+            </dl>
+
+            <div class="fig fignone" id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__FIG_LX5_K1L_TWB">
+                
+                <img class="image" style="display:none;" id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__IMAGE_I4C_GMH_DZB" src="GUID-613580E1-C37E-4385-B74B-F4163D48E6B9-high.png" width="1000" />
+            <div class="fig_caption"><span class="figcap">图 4 CCM校正参数</span></div></div>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="topic concept nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-4149592E-60AC-4C07-BF47-0F080AECB657">
+    <h2 class="title topictitle2">超级调色盘</h2>
+
+    
+<div class="body conbody"><p class="shortdesc">超级调色盘模块可对图像中的不同颜色区域进行色调与饱和度调节。</p>
+
+        <p class="p">使用超级调色盘模块时可先标定再校正，也可省略标定过程，直接导入校正参数进行图像校正，通过点击<span class="ph uicontrol">直接校正</span>实现。</p>
+
+        <div class="section" id="GUID-4149592E-60AC-4C07-BF47-0F080AECB657__GUID-A98461A9-FAD7-45AE-8CDE-FD64A9379B49"><h3 class="title sectiontitle">标定参数</h3>
+            
+            <p class="p">超级调色盘标定时需要导入一张参考图，并对校正前图像和参考图绘制ROI，具体方法及相关参数介绍可参考<a class="xref" href="GUID-0C77D89C-EB2E-4A03-869F-C7B5FD39E48E.html#GUID-A9BE6EE8-D105-4A03-9F64-49292549E600" title="CLUT是一个三维的颜色查找表，可以针对特定的颜色进行调整，同时不影响其他颜色。">CLUT</a>章节。</p>
+
+        </div>
+
+        <div class="section" id="GUID-4149592E-60AC-4C07-BF47-0F080AECB657__GUID-8D2A13D6-BB27-42F5-B506-D3CA8844394D"><h3 class="title sectiontitle">校正参数</h3>
+            
+            <p class="p">校正参数处可调节红/绿/蓝/青/品红/黄六种颜色的<span class="keyword parmname">色调</span>和<span class="keyword parmname">饱和度</span>，通过拖动滑块调整数值。</p>
+
+            <p class="p">使能<span class="keyword parmname">量化</span>前，<span class="keyword parmname">色调</span>和<span class="keyword parmname">饱和度</span>的数值可输入浮点数；使能<span class="keyword parmname">量化</span>后，仅可输入整数。</p>
+
+            <div class="fig fignone" id="GUID-4149592E-60AC-4C07-BF47-0F080AECB657__FIG_EZW_NYL_YWB">
+                
+                <img class="image" style="display:none;" id="GUID-4149592E-60AC-4C07-BF47-0F080AECB657__IMAGE_R1P_2QH_DZB" src="GUID-D75FF886-34BA-448D-AA1D-B795A6E9621A-high.png" height="945" />
+            <div class="fig_caption"><span class="figcap">图 5 超级调色盘校正参数</span></div></div>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="topic concept nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600">
+    <h2 class="title topictitle2">CLUT</h2>
+
+    
+    <div class="body conbody"><p class="shortdesc">CLUT是一个三维的颜色查找表，可以针对特定的颜色进行调整，同时不影响其他颜色。</p>
+
+        <p class="p">使用CLUT模块时需要进行标定和校正。</p>
+
+        <div class="section" id="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__GUID-A98461A9-FAD7-45AE-8CDE-FD64A9379B49"><h3 class="title sectiontitle">标定参数</h3>
+            
+            <p class="p">CLUT标定需要导入一张参考图，并对校正前图像和参考图绘制ROI，还需对以下参数进行设置：</p>
+
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__GUID-A6FEEC02-5499-41DF-BF1C-E48C35DE542F"><!-- --></a>ROI绘制</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">根据图片场景不同，有24色卡ROI、140色卡ROI及自由ROI三种方式可选，具体介绍请参考<a class="xref" href="GUID-F7EBCC11-8ED7-4DC2-9045-2BBB9A22D998.html#GUID-F7EBCC11-8ED7-4DC2-9045-2BBB9A22D998" title="图像降噪算法模块可去除图像中的噪声，提高图像信噪比。">图像降噪</a>章节。</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__GUID-64D1192D-95F1-4AC0-A507-C212F8B39C7E"><!-- --></a>使用输入颜色</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">参数具体介绍请参考<a class="xref" href="GUID-0C77D89C-EB2E-4A03-869F-C7B5FD39E48E.html#GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2" title="CCM是一个3*3的色彩校正矩阵，可调整RGB中红、绿、蓝三色分量的比例关系。">CCM</a>章节。</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__GUID-1DE108A2-1A44-4A3D-8072-B60FFC15E3DB"><!-- --></a>Gamma类型</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">参数具体介绍请参考<a class="xref" href="GUID-0C77D89C-EB2E-4A03-869F-C7B5FD39E48E.html#GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2" title="CCM是一个3*3的色彩校正矩阵，可调整RGB中红、绿、蓝三色分量的比例关系。">CCM</a>章节。</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__GUID-E6B8AE7A-3859-4FB5-9C50-F224CEFF1644"><!-- --></a>量化系数</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">可将CLUT矩阵中的数值整数化，便于进行运算。</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__GUID-7A111731-2F27-4DA6-8C87-BF6501C32EC0"><!-- --></a>平滑因子</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">设置数值大小将影响CLUT校正的范围。</p>
+
+                    </dd>
+
+                
+            </dl>
+
+            <div class="fig fignone" id="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__FIG_EBV_YFF_TWB">
+                
+                <img class="image" style="display:none;" id="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__IMAGE_FBV_YFF_TWB" src="GUID-96F2EDAE-FABB-4727-A872-B36E52AA2185-high.png" width="1000" />
+            <div class="fig_caption"><span class="figcap">图 6 CLUT标定参数</span></div></div>
+
+        </div>
+
+        <div class="section" id="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__GUID-192E35AE-E236-4953-BEAA-364393B09258"><h3 class="title sectiontitle">校正参数</h3>
+            
+            <p class="p">校正参数处可以对Gamma类型进行调整，具体方法与标定参数中相同。</p>
+
+            <div class="fig fignone" id="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__FIG_JHM_FDG_5QB">
+                
+                <img class="image" style="display:none;" id="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__IMAGE_CHT_GDG_5QB" src="GUID-86AF0C54-4305-4C5A-9589-317380E7FFE9-high.png" width="1000" />
+            <div class="fig_caption"><span class="figcap">图 7 CLUT校正参数</span></div></div>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="topic concept nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-AA075CEE-5231-4520-B280-DB9CAA81CC34">
+    <h2 class="title topictitle2">去紫边</h2>
+
+    
+<div class="body conbody"><p class="shortdesc">去紫边模块可有效处理图像中产生的“色像差”现象，去除由于镜头折射、光线等原因引起的边缘假色，可以有效提高色彩的保真度和图像清晰度。</p>
+
+        <p class="p">使用去紫边模块时可单击<span class="ph uicontrol">直接校正</span>获取校正参数，相关参数如下：</p>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-AA075CEE-5231-4520-B280-DB9CAA81CC34__GUID-27E243FB-64C8-43D3-A230-21867CD7C438"><!-- --></a>滤波核尺寸</dt>
+
+                <dd class="dd pd">
+                    <p class="p">即进行紫边校正滤波的滤波核大小。理论上来说，“紫边”越粗，滤波核尺寸的值需设置越大。</p>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-AA075CEE-5231-4520-B280-DB9CAA81CC34__GUID-300F013E-5267-4D9C-9601-89D5309DB0E1"><!-- --></a>边缘阈值</dt>
+
+                <dd class="dd pd">
+                    <p class="p">用于判断图像边缘点的阈值，范围为[0，2040]。边缘阈值越小，被判断为边缘的像素点越多，参与紫边校正的纹理边缘越多。</p>
+
+                </dd>
+
+            
+        </dl>
+
+        <div class="fig fignone" id="GUID-AA075CEE-5231-4520-B280-DB9CAA81CC34__FIG_T1J_TDG_5QB">
+            
+            <img class="image" style="display:none;" id="GUID-AA075CEE-5231-4520-B280-DB9CAA81CC34__IMAGE_O5F_VDG_5QB" src="GUID-133F0DE9-38A8-40E1-89D7-7FA4D0C4EC5D-high.png" width="1000" />
+        <div class="fig_caption"><span class="figcap">图 8 去紫边校正参数</span></div></div>
+
+    </div>
+
+</div>
+<div class="topic concept nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-C821D92B-09A2-4C96-A5AE-BC1E2D506E86">
+    <h2 class="title topictitle2">Gamma</h2>
+
+    
+    <div class="body conbody"><p class="shortdesc">Gamma模块可对图像进行非线性色调映射。</p>
+
+        <p class="p">使用Gamma模块时无需标定，点击<span class="ph uicontrol">直接校正</span>获取校正参数。</p>
+
+        <div class="section" id="GUID-C821D92B-09A2-4C96-A5AE-BC1E2D506E86__GUID-BBED08FB-263A-4F28-AE1D-F9D55DDDC15F"><h3 class="title sectiontitle">校正参数</h3>
+            
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-C821D92B-09A2-4C96-A5AE-BC1E2D506E86__GUID-1DE108A2-1A44-4A3D-8072-B60FFC15E3DB"><!-- --></a>Gamma类型</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">可根据实际需求进行选择，分为以下5种：</p>
+
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-C821D92B-09A2-4C96-A5AE-BC1E2D506E86__GUID-7A2888BE-EB3B-4A0B-851E-982AB4BBBE1F"><!-- --></a>None</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">不启用Gamma。</p>
+
+                                </dd>
+
+                            
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-C821D92B-09A2-4C96-A5AE-BC1E2D506E86__GUID-28B39066-5050-4F71-A3CF-57B61EC07C78"><!-- --></a>User Value</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">通过设置Gamma数值进行控制，相关参数如下：</p>
+
+                                    <dl class="dl parml">
+                                        
+                                            <dt class="dt pt dlterm"><a name="GUID-C821D92B-09A2-4C96-A5AE-BC1E2D506E86__GUID-738BEF5D-E18A-4BE2-A173-7F6668912B3D"><!-- --></a>Gamma值</dt>
+
+                                            <dd class="dd pd">
+                                                <p class="p">输入Gamma数值，范围为[0.1，3.9]。</p>
+
+                                            </dd>
+
+                                        
+                                    </dl>
+
+                                </dd>
+
+                            
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-C821D92B-09A2-4C96-A5AE-BC1E2D506E86__GUID-3E9F81E6-AD4E-4C0E-ABE6-43D847D75712"><!-- --></a>User Curve</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">通过导入Gamma曲线文件进行控制，相关参数如下：</p>
+
+                                    <dl class="dl parml">
+                                        
+                                            <dt class="dt pt dlterm"><a name="GUID-C821D92B-09A2-4C96-A5AE-BC1E2D506E86__GUID-82C0969D-8833-4D47-8762-0F5B7A35692B"><!-- --></a>Gamma曲线</dt>
+
+                                            <dd class="dd pd">
+                                                <p class="p">单击<span class="ph uicontrol">导入曲线</span>，选择本地的Gamma曲线文件进行导入。</p>
+
+                                                <div class="note note" id="GUID-C821D92B-09A2-4C96-A5AE-BC1E2D506E86__GUID-75073CFE-49E4-4D1E-AEEA-FCAE0FC7E23D"><span class="notetitle">说明</span> 
+                                                  <p class="p">Gamma曲线文件请联系技术支持获取。</p>
+
+                                                </div>
+
+                                            </dd>
+
+                                        
+                                    </dl>
+
+                                </dd>
+
+                            
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-C821D92B-09A2-4C96-A5AE-BC1E2D506E86__GUID-A600CC7F-0AAE-4313-AB93-13A3D6F62E74"><!-- --></a>LRGB2SRGB</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">由算法内部生成Gamma值。</p>
+
+                                </dd>
+
+                            
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-C821D92B-09A2-4C96-A5AE-BC1E2D506E86__GUID-80FB745C-A9D2-422A-AF3E-79C4759C4F20"><!-- --></a>SRGB2LRGB</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">由算法内部生成Gamma值。</p>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                    </dd>
+
+                
+            </dl>
+
+            <div class="fig fignone" id="GUID-C821D92B-09A2-4C96-A5AE-BC1E2D506E86__FIG_JHM_FDG_5QB">
+                
+                <img class="image" style="display:none;" id="GUID-C821D92B-09A2-4C96-A5AE-BC1E2D506E86__IMAGE_CHT_GDG_5QB" src="GUID-86AF0C54-4305-4C5A-9589-317380E7FFE9-high.png" width="1000" />
+            <div class="fig_caption"><span class="figcap">图 9 Gamma校正参数</span></div></div>
+
+        </div>
+
+    </div>
+
+</div>
+</div>
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>本页导航</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37" class="feature_guide_h2"><span class="link_button">白平衡</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37__GUID-549AF734-AE58-4EA2-AA5C-398F5A43DF86" class="feature_guide_h3"><span class="link_button">标定参数</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37__GUID-DAE84142-1C50-4EF1-9562-478DD4EE4886" class="feature_guide_h3"><span class="link_button">校正参数</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2" class="feature_guide_h2"><span class="link_button">CCM</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-A98461A9-FAD7-45AE-8CDE-FD64A9379B49" class="feature_guide_h3"><span class="link_button">标定参数</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2__GUID-347CF20E-24E4-438A-A77B-969C4A6AEB36" class="feature_guide_h3"><span class="link_button">校正参数</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-4149592E-60AC-4C07-BF47-0F080AECB657" class="feature_guide_h2"><span class="link_button">超级调色盘</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-4149592E-60AC-4C07-BF47-0F080AECB657__GUID-A98461A9-FAD7-45AE-8CDE-FD64A9379B49" class="feature_guide_h3"><span class="link_button">标定参数</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-4149592E-60AC-4C07-BF47-0F080AECB657__GUID-8D2A13D6-BB27-42F5-B506-D3CA8844394D" class="feature_guide_h3"><span class="link_button">校正参数</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600" class="feature_guide_h2"><span class="link_button">CLUT</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__GUID-A98461A9-FAD7-45AE-8CDE-FD64A9379B49" class="feature_guide_h3"><span class="link_button">标定参数</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__GUID-192E35AE-E236-4953-BEAA-364393B09258" class="feature_guide_h3"><span class="link_button">校正参数</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-AA075CEE-5231-4520-B280-DB9CAA81CC34" class="feature_guide_h2"><span class="link_button">去紫边</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-C821D92B-09A2-4C96-A5AE-BC1E2D506E86" class="feature_guide_h2"><span class="link_button">Gamma</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-C821D92B-09A2-4C96-A5AE-BC1E2D506E86__GUID-BBED08FB-263A-4F28-AE1D-F9D55DDDC15F" class="feature_guide_h3"><span class="link_button">校正参数</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

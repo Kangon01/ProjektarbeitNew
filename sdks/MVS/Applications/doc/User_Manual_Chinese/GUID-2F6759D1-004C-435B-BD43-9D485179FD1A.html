@@ -1,0 +1,147 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="坏点校正" /><meta name="abstract" content="坏点校正功能可对相机的坏点信息进行导入导出。" /><meta name="description" content="坏点校正功能可对相机的坏点信息进行导入导出。" /><meta name="DC.Relation" scheme="URI" content="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A" /><meta name="DC.Language" content="zh-CN" /><title>坏点校正</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html" data-id="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E">设备管理</a></span></li><li class="active"><span class="topicref">坏点校正</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">坏点校正</h1>
+
+
+<div class="body taskbody"><p class="shortdesc">坏点校正功能可对相机的坏点信息进行导入导出。</p>
+
+        <div class="section context" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-E3A27B18-BB72-49B0-80F0-4B3697CF9FDE">
+            <div class="note note" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-C1E84742-8909-4F39-BF98-B315BF823F48"><span class="notetitle">说明</span> 
+                <p class="p">客户端仅支持对网口相机的坏点信息进行导入导出操作。</p>
+
+            </div>
+
+        </div>
+
+<ol class="ol steps" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-EBF380CA-87B2-4C24-BD7B-077F5E0186CB"><li class="li step stepexpand" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-B744BB9E-66A7-4816-ABFE-6FC69222E6F3">
+                <span class="ph cmd">在设备列表选择需要导入或导出坏点信息的相机。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-4BEE346D-B762-4C6C-9FBE-197937172894">
+                <span class="ph cmd">双击连接相机。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-7D05DB33-E68B-4893-97EA-C87B016875A1">
+                <span class="ph cmd">设备列表选中相机，右键单击选择<span class="ph uicontrol">坏点校正</span>进入坏点校正界面，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__FIG_CHF_1QW_NVB">
+                        
+                        <img class="image" style="display:none;" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__IMAGE_UWN_CQW_NVB" src="GUID-DFFAB8E8-6D96-40A8-B06B-F275883F8EBD-high.jpg" width="1000" />
+                    <div class="fig_caption"><span class="figcap">图 1 坏点校正</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-19AA30D4-ED6D-45F7-9760-6651037ECB98"><strong>可选操作： </strong>
+                <span class="ph cmd">导出坏点信息文件。</span>
+                <ol type="a" class="ol substeps" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__SUBSTEPS_EXT_DTW_NVB">
+                    <li class="li substep substepexpand" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-EF5F37A5-EF25-4B75-A87F-9EE1D61B035C">
+                        <span class="ph cmd">点击<span class="ph uicontrol">导出</span>按钮。</span>
+                    </li>
+
+                    <li class="li substep substepexpand" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-68F02C5F-CB63-4CF1-8AE4-30B1E86111D6">
+                        <span class="ph cmd">选择导出文件的保存路径并<span class="ph uicontrol">保存</span>。</span>
+                        <div class="itemgroup stepresult">
+                            <p class="p">此时会显示实时导出进度直至提示“导出成功”。</p>
+
+                        </div>
+                    </li>
+
+                </ol>
+
+            </li>
+<li class="li step stepexpand" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-31E4D852-336F-4111-8CF1-8F27E65F7CB6"><strong>可选操作： </strong>
+                <span class="ph cmd">导入坏点信息文件。</span>
+                <ol type="a" class="ol substeps" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__SUBSTEPS_LYQ_PSW_NVB">
+                    <li class="li substep substepexpand" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-5A8C58A2-45C7-4712-9370-8AC747B45B7F">
+                        <span class="ph cmd">点击<img class="image" style="display:none;" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__IMAGE_O5P_ZRW_NVB" src="GUID-036B75D6-7C7E-4BE2-9F01-EC8743ED7EF8-high.png" />选择需要导入的mfa坏点信息文件，并<span class="ph uicontrol">打开</span>。</span>
+                    </li>
+
+                    <li class="li substep substepexpand" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-17B82D08-8372-4D88-B9E2-1C25028EB8B1">
+                        <span class="ph cmd">点击<span class="ph uicontrol">导入</span>按钮。</span>
+                        <div class="itemgroup stepresult">
+                            <p class="p">此时会显示实时导入进度直至弹出“导入成功”的提示窗口。</p>
+
+                        </div>
+                    </li>
+
+                    <li class="li substep substepexpand" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-6355B8C8-647F-4393-96E6-C4CC932C8E3C">
+                        <span class="ph cmd">点击提示窗口的<span class="ph uicontrol">确定</span>。</span>
+                    </li>
+
+                </ol>
+
+            </li>
+</ol>
+
+</div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

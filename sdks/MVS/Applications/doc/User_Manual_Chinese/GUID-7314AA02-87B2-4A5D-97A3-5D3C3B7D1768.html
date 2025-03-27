@@ -1,0 +1,162 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="传输层控制" /><meta name="abstract" content="传输层控制可对网口相机、CoaXPress相机、Camera Link相机的传输层控制参数进行设置。" /><meta name="description" content="传输层控制可对网口相机、CoaXPress相机、Camera Link相机的传输层控制参数进行设置。" /><meta name="DC.Relation" scheme="URI" content="GUID-174775E7-C15F-4BB1-8ACE-5119E4787E7B.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-7314AA02-87B2-4A5D-97A3-5D3C3B7D1768" /><meta name="DC.Language" content="zh-CN" /><title>传输层控制</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-7314AA02-87B2-4A5D-97A3-5D3C3B7D1768" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB.html" data-id="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB">相机属性配置</a></span></li><li><span class="topicref"><a href="GUID-174775E7-C15F-4BB1-8ACE-5119E4787E7B.html" data-id="GUID-174775E7-C15F-4BB1-8ACE-5119E4787E7B">常用属性</a></span></li><li class="active"><span class="topicref">传输层控制</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">传输层控制</h1>
+
+
+<div class="body conbody"><p class="shortdesc">传输层控制可对网口相机、CoaXPress相机、Camera Link相机的传输层控制参数进行设置。</p>
+
+        <div class="note note" id="GUID-7314AA02-87B2-4A5D-97A3-5D3C3B7D1768__GUID-268FD57C-7629-4D2C-9A2A-3F04F4CF29A2"><span class="notetitle">说明</span> 
+            <p class="p">不同接口相机支持的传输层控制有所差别，具体请以实际参数为准。</p>
+
+        </div>
+
+        <div class="section" id="GUID-7314AA02-87B2-4A5D-97A3-5D3C3B7D1768__GUID-7B7EA7C6-BB72-4123-A71C-3FA6E0258497"><h2 class="title sectiontitle">网口相机</h2>
+            
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-7314AA02-87B2-4A5D-97A3-5D3C3B7D1768__GUID-45944355-9F56-487A-9BF0-ADB9F710CAB2"><!-- --></a>GEV SCPS数据包大小</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">客户端默认根据PC的巨帧大小进行设置，也可手动修改。建议设置为8164。</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-7314AA02-87B2-4A5D-97A3-5D3C3B7D1768__GUID-3A9CED10-098A-40B2-8A5C-58CF247C5FE5"><!-- --></a>GEV SCPD</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">该参数可缓解相机丢包问题，默认值为400。实际使用中可根据相机预览时的丢包情况进行调整。参数数值越大，出现丢包的概率越低，相机所使用的带宽越低，采集帧率可能有所降低；参数数值越小，出现丢包的概率越大，相机所使用的带宽越大，采集帧率越大。使用该参数时，请结合当前相机的帧率以及丢包情况进行调整。</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-7314AA02-87B2-4A5D-97A3-5D3C3B7D1768__GUID-C676BEE8-DE93-4622-A091-56543F327654"><!-- --></a>GEV暂停接收帧</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">控制相机是否接收外部设备发送的数据包。开启GEV暂停接收帧，相机不接收其他设备发送的数据包；关闭GEV暂停接收帧，相机正常接收其他设备发送的数据包。</p>
+
+                    </dd>
+
+                
+            </dl>
+
+        </div>
+
+        <div class="section" id="GUID-7314AA02-87B2-4A5D-97A3-5D3C3B7D1768__GUID-7807C18E-DF07-40D6-8AF3-D8FD1B5B03B1"><h2 class="title sectiontitle">CoaXPress相机</h2>
+            
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-7314AA02-87B2-4A5D-97A3-5D3C3B7D1768__GUID-635A104B-DE59-4F64-908D-7CC47E741F2E"><!-- --></a>链路配置</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">设置链路的配置模式，可对链路数以及每个链路的传输带宽进行设置。</p>
+
+                    </dd>
+
+                
+            </dl>
+
+            <div class="note note" id="GUID-7314AA02-87B2-4A5D-97A3-5D3C3B7D1768__GUID-D50CF4AD-17E9-4F65-AF6F-31FBEF3F5326"><span class="notetitle">说明</span> 
+                <p class="p">不同型号以及不同固件版本相机，链路配置模式有所差别，具体请以实际参数为准。</p>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="GUID-7314AA02-87B2-4A5D-97A3-5D3C3B7D1768__GUID-DA72814F-840E-448A-8E48-A91E7217058D"><h2 class="title sectiontitle">Camera Link相机</h2>
+            
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-7314AA02-87B2-4A5D-97A3-5D3C3B7D1768__GUID-E1635970-E1CB-4780-8464-BE8CAD258652"><!-- --></a>通道配置</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">设置相机的通道模式，相机的通道模式不同，出图方式有所差别，具体请查看Camera Link相机用户手册。</p>
+
+                    </dd>
+
+                
+            </dl>
+
+            <div class="note note" id="GUID-7314AA02-87B2-4A5D-97A3-5D3C3B7D1768__GUID-5727ACAD-D3F5-434A-951A-5B8770FA45E7"><span class="notetitle">说明</span> 
+                <p class="p">相机的通道模式需与采集卡的配置模式对应，否则会导致相机图像异常。</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>本页导航</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-7314AA02-87B2-4A5D-97A3-5D3C3B7D1768__GUID-7B7EA7C6-BB72-4123-A71C-3FA6E0258497" class="feature_guide_h2"><span class="link_button">网口相机</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-7314AA02-87B2-4A5D-97A3-5D3C3B7D1768__GUID-7807C18E-DF07-40D6-8AF3-D8FD1B5B03B1" class="feature_guide_h2"><span class="link_button">CoaXPress相机</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-7314AA02-87B2-4A5D-97A3-5D3C3B7D1768__GUID-DA72814F-840E-448A-8E48-A91E7217058D" class="feature_guide_h2"><span class="link_button">Camera Link相机</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

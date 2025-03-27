@@ -1,0 +1,153 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="设置感兴趣区域" /><meta name="abstract" content="感兴趣区域可设置相机的像素格式，绘制ROI。" /><meta name="description" content="感兴趣区域可设置相机的像素格式，绘制ROI。" /><meta name="DC.Relation" scheme="URI" content="GUID-A49E183B-E790-47BB-AD38-E32914274316.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7" /><meta name="DC.Language" content="zh-CN" /><title>设置感兴趣区域</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB.html" data-id="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB">相机属性配置</a></span></li><li><span class="topicref"><a href="GUID-A49E183B-E790-47BB-AD38-E32914274316.html" data-id="GUID-A49E183B-E790-47BB-AD38-E32914274316">高级属性</a></span></li><li class="active"><span class="topicref">设置感兴趣区域</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">设置感兴趣区域</h1>
+
+
+<div class="body taskbody"><p class="shortdesc">感兴趣区域可设置相机的像素格式，绘制ROI。</p>
+
+        <div class="section prereq p" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__GUID-294526D2-BD79-411D-BA27-C7C08212D6F3">
+            <p class="p">客户端已连接相机。</p>
+
+        </div>
+
+<ol class="ol steps" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__GUID-C5CF6111-3E70-4B87-AC8D-E7BB23F1A471"><li class="li step stepexpand" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__GUID-D03930AE-EBFC-44B8-AC8D-7EC5BFB84E9E">
+                <span class="ph cmd">进入属性设置区域的高级属性Tab页。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__GUID-CE6D622C-5327-490E-B6EE-F051C752C28B">
+                <span class="ph cmd">找到<span class="ph uicontrol">感兴趣区域</span>参数并展开。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__GUID-EC22AADB-D41D-45E1-816B-4505DB774E6E">
+                <span class="ph cmd">根据需求下拉选择<span class="keyword parmname">像素格式</span>。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__GUID-8B74AFC6-3422-44BD-9D1D-602A7A5C22AA">
+                <span class="ph cmd">有三种方式可绘制ROI区域。</span>
+                <ul class="ul choices" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__CHOICES_GSD_HJC_CKB">
+                    <li class="li choice" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__GUID-264F8F65-BCF9-4B67-A0C3-CF3C0ECAA764">通过<span class="keyword parmname">绘制ROI</span>的<span class="ph uicontrol">重绘</span>进行ROI区域的绘制。<div class="note note" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__GUID-0638C199-1BBA-4D8B-9554-60A206258F7C"><span class="notetitle">说明</span> 
+                            <p class="p">点击<span class="ph uicontrol">重绘</span>后，ROI区域需要通过鼠标在预览窗口自行绘制。</p>
+
+                        </div>
+</li>
+
+                    <li class="li choice" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__GUID-4D2F3F97-63E0-4EA5-97D2-D87BF04616A3">通过<span class="keyword parmname">绘制ROI</span>的<span class="ph uicontrol">编辑</span>进行ROI区域的绘制。<div class="note note" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__GUID-33C23B48-19B4-415F-8709-69ABA244A8B9"><span class="notetitle">说明</span> 
+                            <p class="p">点击<span class="ph uicontrol">编辑</span>后，默认ROI区域为整副图像，需要通过鼠标在预览窗口调整四条边的位置。</p>
+
+                        </div>
+</li>
+
+                    <li class="li choice" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__GUID-6A13713C-3611-4747-8D1F-541AD04B7841">通过<span class="keyword parmname">水平偏移</span>、<span class="keyword parmname">垂直偏移</span>、<span class="keyword parmname">宽度</span>和<span class="keyword parmname">高度</span>参数进行设置。<div class="note note" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__GUID-B754726D-30B4-4519-90CA-4AAF455E819F"><span class="notetitle">说明</span> 
+                            <ul class="ul" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__UL_O5N_HLC_CKB">
+                                <li class="li" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__GUID-FC2C4AF6-F88F-463A-8DB4-828E3F296842">
+                                    <p class="p">不同型号相机的参数步进值有所不同，具体请以实际为准。当设置的数值不符合步进要求时，客户端自动调整为符合要求且离目标值最接近的数值。</p>
+
+                                </li>
+
+                                <li class="li" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__GUID-AB310D7A-76A0-4B34-A7F8-01AEAB56B216">
+                                    <p class="p">在使用前两种方法时，以上四个参数的数值会根据绘制的ROI区域实时变化。</p>
+
+                                </li>
+
+                                <li class="li" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__GUID-84904347-03F1-4073-B997-7B3D8E13C778">
+                                    <p class="p">该方法操作后实时生效，无需进行第3步和第4步操作。</p>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+</li>
+
+                </ul>
+
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__GUID-7D2B60FA-A2CA-4B73-8F2F-BC278E7A0383"><span class="notetitle">说明</span> 
+                        <p class="p">以上三种方法，前两种需要在相机开启预览后方可使用，最后一种方法只能在不采集图像的情况下使用。</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__GUID-73C9A064-FB13-4B11-A127-4C29F5B3870A"><strong>可选操作： </strong>
+                <span class="ph cmd">若需要将ROI区域居中，可通过<img class="image icon" style="display:none;" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__IMAGE_RYZ_JVC_CKB" src="GUID-EC366A71-2C2A-422C-9415-7D311314E128-high.png" />实现。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__GUID-53535DFC-CC75-469A-9CC5-7D972F67AEF1">
+                <span class="ph cmd">点击<img class="image icon" style="display:none;" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__IMAGE_RKP_KVC_CKB" src="GUID-6FEAD602-EE8B-411F-8013-161CA7DE568E-high.png" />即可完成ROI区域绘制。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7__GUID-8259F5D7-D532-44A3-851C-D8AE82F69FCE"><strong>可选操作： </strong>
+                <span class="ph cmd">点击<span class="keyword parmname">恢复至最大画幅</span>的<span class="ph uicontrol">执行</span>可恢复回相机全分辨率。</span>
+            </li>
+</ol>
+
+</div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

@@ -1,0 +1,164 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="日志管理" /><meta name="abstract" content="工具对采集卡/相机事件进行检测后，可通过日志对异常信息进行排查和精准定位，有利于对异常事件的监测和解析。" /><meta name="description" content="工具对采集卡/相机事件进行检测后，可通过日志对异常信息进行排查和精准定位，有利于对异常事件的监测和解析。" /><meta name="DC.Relation" scheme="URI" content="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5" /><meta name="DC.Language" content="zh-CN" /><title>日志管理</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC.html" data-id="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC">设备诊断工具</a></span></li><li class="active"><span class="topicref">日志管理</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">日志管理</h1>
+
+
+<div class="body conbody"><p class="shortdesc">工具对采集卡/相机事件进行检测后，可通过日志对异常信息进行排查和精准定位，有利于对异常事件的监测和解析。</p>
+
+        <div class="section" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__GUID-527B5419-2DF7-4933-ADF6-42730C165EC8"><h2 class="title sectiontitle">日志通用设置</h2>
+            
+            <p class="p">需先对日志的时间上限、自动保存和保存路径进行相关设置。单击菜单栏处的<span class="ph menucascade"><span class="ph uicontrol">设置</span> &gt; <span class="ph uicontrol">通用</span></span>，如下图所示。</p>
+
+            <div class="p">
+                <ul class="ul" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__UL_DWL_TGG_5WB">
+                    <li class="li" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__GUID-3116C115-2343-470E-B69D-9679856787A9">
+                        <p class="p">日志时间上限：在日志时间上限处设置日志最大保存时间，单位为“分钟”。超过设置时间的日志将不在界面显示。</p>
+
+                        <div class="p">
+                            <div class="note note" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__GUID-A5E5A56A-3A79-4A23-8C76-48F4CCE3242D"><span class="notetitle">说明</span> 
+                                <p class="p">日志时间上限值为100分钟。</p>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="li" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__GUID-DFF14B35-9CAC-4317-A85F-DD31FF2944DB">
+                        <p class="p">文件自动保存：开启文件自动保存功能，日志文件自动保存至设置的路径，若未选择路径则保存至默认路径，默认路径为：<span class="ph">MVS </span>\Data\DeviceDiagnostic\AutoSaveLog。</p>
+
+                        <div class="p">
+                            <div class="note note" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__GUID-D98221E1-7FA9-4E4A-B994-6B8C98E0179B"><span class="notetitle">说明</span> 
+                                <p class="p">开启文件自动保存功能时，不可对日志文件进行导出操作。</p>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="li" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__GUID-871B7CC1-44BE-4AAD-A9D3-563256E23607">
+                        <p class="p">保存路径：支持自定义设置日志文件的保存路径，单击<img class="image" style="display:none;" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__IMAGE_KCT_XLH_5WB" src="GUID-239D7BBB-873E-4F19-B99D-AB849412DB52-high.png" />可自定义日志文件保存路径，默认为自动保存路径。</p>
+
+                    </li>
+
+                </ul>
+
+                <div class="fig fignone" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__FIG_KRG_BHG_5WB">
+                    
+                    <img class="image" style="display:none;" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__IMAGE_YNL_LZQ_LZB" src="GUID-5D351943-CE5E-4CC8-B389-FDE4751BBF9A-high.png" width="1000" />
+                <div class="fig_caption"><span class="figcap">图 1 通用</span></div></div>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__GUID-3F961E81-ECED-4416-96C3-74F84DAF87D3"><h2 class="title sectiontitle">日志监测</h2>
+            
+            <p class="p">通过日志监测可对采集卡/相机的日志事件进行实时监测，支持筛选和配置日志标题的显示内容，如下图所示。</p>
+
+            <div class="p">日志监测可显示日志时间上限范围内的所有日志事件。为方便您对总览图和事件图的触发事件进行快速定位，单击总览图处的非正常事件，日志监测处对应的事件内容可高亮显示（选择的“6秒钟”事件仅有一个异常或警告时，才可高亮显示）；单击事件图处的任何事件，日志监测处对应的事件内容都可高亮显示。<div class="fig fignone" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__FIG_HVN_X13_5WB">
+                    
+                    <img class="image" style="display:none;" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__IMAGE_SGD_FC4_WWB" src="GUID-C387BBD1-A94B-4748-ADDC-AF38E968ECAE-high.png" width="2000" />
+                <div class="fig_caption"><span class="figcap">图 2 日志查看</span></div></div>
+</div>
+
+            <div class="p">采集卡/相机事件根据配置的标题内容进行显示，支持进行相应辅助操作，如下：<ul class="ul" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__UL_NP2_HKG_5WB">
+                    <li class="li" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__GUID-D3B8D9E8-04F0-4D3D-9530-393289EA817D">
+                        <div class="p">自定义显示标题：单击<img class="image" style="display:none;" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__IMAGE_QR5_1MH_5WB" src="GUID-EEFE6837-D4D1-4F4D-8ED8-4C938F5D6FCF-high.png" />可自定义日志的标题显示，可手动勾选或全部勾选，如下图所示。<div class="fig fignone" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__FIG_PNS_JKG_5WB">
+                                
+                                <img class="image" style="display:none;" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__IMAGE_KJB_FMH_5WB" src="GUID-5DA043B7-AD8B-4B14-8D00-9B932DBCB8C4-high.png" width="700" />
+                            <div class="fig_caption"><span class="figcap">图 3 检索标题</span></div></div>
+</div>
+
+                    </li>
+
+                    <li class="li" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__GUID-28E37152-26EE-4EB5-A056-719ADE449DF0">
+                        <p class="p">筛选日志信息：在界面上方搜索栏处输出相应关键字，单击<img class="image" style="display:none;" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__IMAGE_MCX_BMH_5WB" src="GUID-E6EE9D69-3A03-4B1A-9735-5E294A6C6E89-high.png" />即可基于关键字对日志信息进行筛选，单击<span class="ph uicontrol">上一个</span>/<span class="ph uicontrol">下一个</span>即可查看前后的日志信息。</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__GUID-51230CC2-0057-4595-A50E-F4E47008518B">
+                        <p class="p">查看最新日志：单击<span class="ph uicontrol">最新日志</span>，即可查看最新触发的日志信息。</p>
+
+                    </li>
+
+                </ul>
+</div>
+
+        </div>
+
+    </div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>本页导航</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__GUID-527B5419-2DF7-4933-ADF6-42730C165EC8" class="feature_guide_h2"><span class="link_button">日志通用设置</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5__GUID-3F961E81-ECED-4416-96C3-74F84DAF87D3" class="feature_guide_h2"><span class="link_button">日志监测</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

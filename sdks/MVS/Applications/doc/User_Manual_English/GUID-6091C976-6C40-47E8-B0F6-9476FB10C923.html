@@ -1,0 +1,510 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="© Hikrobot Co., Ltd. All rights reserved." /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="Add a Virtual Device" /><meta name="abstract" content="Virtual Device allows you to generate virtual cameras and frame grabbers when a real setup is unavailable. You can use this tool to simplify tests during the development stage." /><meta name="description" content="Virtual Device allows you to generate virtual cameras and frame grabbers when a real setup is unavailable. You can use this tool to simplify tests during the development stage." /><meta name="DC.Relation" scheme="URI" content="GUID-7807DA4F-CEC8-422D-94C0-36A6BCAF6255.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-6091C976-6C40-47E8-B0F6-9476FB10C923" /><meta name="DC.Language" content="en-US" /><title>Add a Virtual Device</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">Home Page</a></span></li><li><span class="topicref"><a href="GUID-7807DA4F-CEC8-422D-94C0-36A6BCAF6255.html" data-id="GUID-7807DA4F-CEC8-422D-94C0-36A6BCAF6255">Device Management</a></span></li><li class="active"><span class="topicref">Add a Virtual Device</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body "><div class="nested0" id="GUID-6091C976-6C40-47E8-B0F6-9476FB10C923">
+    <h1 class="title topictitle1">Add a Virtual Device</h1>
+
+
+    <div class="body conbody"><p class="shortdesc"><span class="ph uicontrol">Virtual Device</span> allows you to generate virtual cameras
+        and frame grabbers when a real setup is unavailable. You can use this tool to simplify tests
+        during the development stage.</p>
+
+        <p class="p">Virtual camera connecting methods differ by the camera type. Some require a virtual frame
+            grabber before connecting. </p>
+
+        
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-6091C976-6C40-47E8-B0F6-9476FB10C923__TABLE_J5X_5JX_YDC" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">Table 1 Virtual Camera Connecting Method</span></caption>
+                
+                
+                <thead class="thead" align="left">
+                    <tr>
+                        <th class="entry" valign="top" width="39.525691699604735%" id="d12611e38">
+                            <p class="p">Virtual Camera Type</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="60.47430830039525%" id="d12611e44">
+                            <p class="p">Description</p>
+
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody class="tbody">
+                    <tr>
+                        <td class="entry" valign="top" width="39.525691699604735%" headers="d12611e38 ">
+                            <p class="p">GigE Camera</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="60.47430830039525%" headers="d12611e44 ">
+                            <ul class="ul" id="GUID-6091C976-6C40-47E8-B0F6-9476FB10C923__UL_MX1_3KX_YDC">
+                                <li class="li" id="GUID-6091C976-6C40-47E8-B0F6-9476FB10C923__GUID-FDA1224D-F840-4A66-B58E-9ECE5BF4FF6F">
+                                    <p class="p">Before adding a virtual frame grabber</p>
+
+                                    <p class="p">You can connect to the virtual camera under the
+                                            <span class="keyword parmname">GigE</span> interface.</p>
+
+                                </li>
+
+                                <li class="li" id="GUID-6091C976-6C40-47E8-B0F6-9476FB10C923__GUID-56FCEE48-5DF8-49BF-A08B-738828EC3B42">
+                                    <p class="p">After binding to a virtual frame grabber</p>
+
+                                    <p class="p">You can view the virtual GigE camera under the
+                                            <span class="keyword parmname">GigE</span> interface and the
+                                        corresponding virtual frame grabber under the
+                                            <span class="keyword parmname">PCIe</span> interface. However, you can
+                                        only connect to the virtual camera from one interface.</p>
+
+                                </li>
+
+                            </ul>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="39.525691699604735%" headers="d12611e38 ">
+                            <p class="p">U3V Camera</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="60.47430830039525%" headers="d12611e44 ">
+                            <p class="p">You can enumerate and connect to the camera through the
+                                    <span class="keyword parmname">USB</span> interface.</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="39.525691699604735%" headers="d12611e38 ">
+                            <p class="p">Camera Link Camera</p>
+
+                            <p class="p">CoaXPress Camera</p>
+
+                            <p class="p">XoFLink Fiber Optic Camera</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="60.47430830039525%" headers="d12611e44 ">
+                            <p class="p">You can only connect to the camera after adding a frame grabber with
+                                the corresponding interface and binding the camera to the frame
+                                grabber. Then, you can enumerate and connect to it from the
+                                    <span class="keyword parmname">PCIe</span> interface.</p>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+</div>
+
+    </div>
+
+
+<div class="topic task nested1" xml:lang="en-US" lang="en-US" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25">
+    <h2 class="title topictitle2">Add a Virtual Camera</h2>
+
+    
+    <div class="body taskbody"><p class="shortdesc">The virtual camera allows you to simulate cameras with different
+        interfaces. After you create a virtual camera, you can connect to it and let it load local
+        images to simulate acquisition.</p>
+
+        <div class="section context" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-FD87E8C6-5372-4F21-8A2D-B6C8F82056BE">
+            <div class="note note" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-0EBE9ECA-0D8A-4533-A37D-F00762EE7116"><span class="notetitle">Note</span> 
+                <ul class="ul" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__UL_ZPB_NKG_XDC">
+                    <li class="li" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-15273F13-4786-4A2C-BCC3-34C86A1B3934">
+                        <p class="p">For now, virtual cameras only support the following features:
+                                <span class="keyword parmname">Width</span>, <span class="keyword parmname">Height</span>,
+                                <span class="keyword parmname">Pixel Format</span>, and <span class="keyword parmname">Trigger
+                                Source</span>. Other displayed features do not take effect.</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-D1BCAEFE-A117-4B59-AB9D-F85E8D9BEFC0">
+                        <p class="p">Virtual cameras only support Mono8, Mono10, Mono12, RGB24 pixel
+                            format.</p>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <ol class="ol steps" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-1DE2197F-55AB-44CC-8036-9E2DCBB21397"><li class="li step stepexpand" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-3A53070F-0E39-4696-98E0-91025852E362">
+                <span class="ph cmd">Click <span class="ph menucascade"><span class="ph uicontrol">Tool</span> &gt; <span class="ph uicontrol">Virtual Device</span></span> to open the Virtual Camera window.</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__FIG_VFG_VRK_RSB">
+                        
+                        <img class="image" style="display:none;" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__IMAGE_WFG_VRK_RSB" src="GUID-00987EF0-5601-4BB2-960C-F83670B3DFB2-high.png" width="1800" />
+                    <div class="fig_caption"><span class="figcap">Figure 1 Virtual Camera</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-21C73AB6-AAF9-4D72-90DB-BE920AAEBB3E">
+                <span class="ph cmd">In the <span class="keyword parmname">Virtual Camera</span> tab, select a camera type and model
+                    you want to simulate.</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-FCD8D975-43F7-44C6-AA14-533A28325121"><span class="notetitle">Note</span> 
+                        <p class="p">The supported virtual camera models are subject to the
+                            displayed options.</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-501E285D-32A3-4E8F-8994-D454EA48E828">
+                <span class="ph cmd">Click <span class="ph uicontrol">Add Virtual Camera</span> to allow the Software to
+                    generate a specified camera.</span>
+                <div class="itemgroup info">
+                    <p class="p">You can create 256 virtual cameras for each type at most.</p>
+
+                </div>
+                <div class="itemgroup stepresult">
+                    <p class="p">The added virtual cameras will be displayed on the
+                            <span class="keyword parmname">Added List</span>.</p>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-215EA7BC-57BF-46BF-A8BB-24344FE88438"><strong>Optional: </strong>
+                <span class="ph cmd">Perform further operations as needed.</span>
+                <div class="itemgroup info">
+                    <dl class="dl">
+                        
+                            <dt class="dt dlterm"><a name="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-6535CAF4-2CD4-4B28-B815-F207C3EB9252"><!-- --></a>Change Online Mode</dt>
+
+                            <dd class="dd">
+                                <p class="p">Right-click the virtual camera and select
+                                        <span class="ph uicontrol">Change Online Mode</span> to switch its
+                                    status between online and offline.</p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt dlterm"><a name="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-319C04BF-FA4A-4BE3-91FD-658F28A77B45"><!-- --></a>Delete Virtual Cameras</dt>
+
+                            <dd class="dd">
+                                <p class="p">Check the required check boxes of the cameras and click
+                                        <span class="ph uicontrol">Delete</span>.</p>
+
+                                <p class="p">You can also right-click a virtual camera and click
+                                        <span class="ph uicontrol">Delete</span> to delete it.</p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt dlterm"><a name="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-272E0F2B-5E8B-4779-8895-F2115A92222C"><!-- --></a>Reset Virtual Cameras</dt>
+
+                            <dd class="dd">
+                                <p class="p">Check the required check boxes of the cameras and click
+                                        <span class="ph uicontrol">Reset</span>.</p>
+
+                            </dd>
+
+                        
+                    </dl>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-D25808C8-4F2F-4AED-9E65-737DFFA973D8">
+                <span class="ph cmd">Go to main window of the Software, and the added virtual cameras will be
+                    displayed in the Device List.</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-9DE88D54-3AB8-4A75-9306-7775DA074C6F"><span class="notetitle">Note</span> 
+                        <ul class="ul" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__UL_VXR_YZL_QDC">
+                            <li class="li" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-7EE3D632-12EB-43E1-9BA7-F1B24A50B3FC">
+                                <p class="p">For Camera Link, CoaXPress, and XoFLink Fiber Optic cameras, you need to bind them to a
+                                    virtual frame grabber to display them in the device list. See
+                                        <a class="xref" href="GUID-6091C976-6C40-47E8-B0F6-9476FB10C923.html#GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC" title="Virtual frame grabber allows you to simulate frame grabbers with different interfaces.">Add a Virtual Frame Grabber</a> for details.</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-9D434BA9-EB50-489F-BD72-DF26DE12F6DF">
+                                <p class="p">If there is no virtual camera displayed, click
+                                        <img class="image icon" style="display:none;" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__IMAGE_PRZ_QYG_CKB" src="GUID-EE689C0E-48C5-40A5-91E9-3548786D6A07-high.png" /> to refresh.</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-A8FD70E4-CC1C-4BD7-B51C-45651B16F660">
+                <span class="ph cmd">Add pictures for simulation.</span>
+                <ol type="a" class="ol substeps" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__SUBSTEPS_S5G_V2M_QDC">
+                    <li class="li substep substepexpand" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-8813CBE9-469B-441A-97F6-543774711941">
+                        <span class="ph cmd">Go to C:\Windows\Temp\VirtualCamera\Cameras, and find the file folder
+                            named by the virtual camera No.</span>
+                    </li>
+
+                    <li class="li substep substepexpand" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-95C4FB12-882E-44A3-99A7-A810F44C5F75">
+                        <span class="ph cmd">Open the file folder, and then put images in the file folder named
+                            Mono8 or RGB24.</span>
+                    </li>
+
+                    <li class="li substep substepexpand" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-277FA46A-1A9D-41CA-ABE2-31473942BD6A">
+                        <span class="ph cmd">Ensure the resolution of imported images is the same as the virtual
+                            camera.</span>
+                        <div class="itemgroup info">
+                            <p class="p">If not, you can adjust the image size or adjust the
+                                camera resolution via <span class="keyword parmname">Height</span> and
+                                    <span class="keyword parmname">Width</span> in the <span class="keyword parmname">Image Format Control</span> of the feature
+                                tree.</p>
+
+                        </div>
+                    </li>
+
+                </ol>
+
+            </li>
+<li class="li step stepexpand" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-C288A20D-5B90-4F43-A6D8-2662BCDAA9E9">
+                <span class="ph cmd">In the <span class="ph menucascade"><span class="ph uicontrol">Feature Tree</span> &gt; <span class="ph uicontrol">Image Format Control</span> &gt; <span class="ph uicontrol">Pixel Format</span></span>, select a pixel format as required.</span>
+                <div class="itemgroup info">
+                    <p class="p">You can configure other available parameters as required.</p>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25__GUID-C3FBAB62-A602-4A8B-A650-8DBCC2256D29">
+                <span class="ph cmd">Connect the virtual camera to the Software and start acquisition.</span>
+            </li>
+</ol>
+
+    </div>
+
+</div>
+<div class="topic task nested1" xml:lang="en-US" lang="en-US" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC">
+    <h2 class="title topictitle2">Add a Virtual Frame Grabber</h2>
+
+
+<div class="body taskbody"><p class="shortdesc">Virtual frame grabber allows you to simulate frame grabbers with different
+        interfaces.</p>
+
+        <div class="section context" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-A2B6C83B-FAFC-4E9A-81F2-4D232DD63F84">
+            <div class="note note" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-23C4AF58-72F5-4B5D-9447-A1649A172329"><span class="notetitle">Note</span> 
+                <p class="p">Virtual frame grabbers only support partial features.</p>
+
+                <ul class="ul" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__UL_J4L_MDG_XDC">
+                    <li class="li" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-EC02C40B-4D8D-4808-B9D2-8F7DBBAAC99D">
+                        <p class="p"><span class="keyword parmname">Camera Type</span>: available for <span class="keyword parmname">Frame
+                                Scan</span> or <span class="keyword parmname">Line Scan</span>.</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-00B28CAE-8D8B-4921-8DE0-D4F09AE3316B">
+                        <p class="p">Trigger: It supports configuring <span class="keyword parmname">Stream Trigger</span>,
+                                <span class="keyword parmname">Link Trigger</span>, and <span class="keyword parmname">Timer
+                                Trigger</span>. The trigger source supports <span class="keyword parmname">Software
+                                Signal</span> or <span class="keyword parmname">QuickSoftwareTrigger</span>.</p>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+<ol class="ol steps" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-C0994DC4-477D-42B5-8E2A-367328982C23"><li class="li step stepexpand" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-01E3F178-EC93-40CA-A028-AE169279EF8A">
+                <span class="ph cmd">Go to <span class="ph menucascade"><span class="ph uicontrol">Tool</span> &gt; <span class="ph uicontrol">Virtual Device</span> &gt; <span class="ph uicontrol">Virtual FrameGrabber</span></span>.</span>
+            </li>
+<li class="li step stepexpand" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-DBC8C501-4D63-4C29-91DC-6B3263C2EE29">
+                <span class="ph cmd">Select a <span class="keyword parmname">Type</span> and <span class="keyword parmname">Model</span> you want to
+                    simulate.</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-B2B7C610-3676-4EC0-80EE-11C93E3D5B5E"><span class="notetitle">Note</span> 
+                        <p class="p">The supported virtual frame grabber models are subject to
+                            the displayed options.</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-C36B9F96-9184-4899-86E4-61BD05C88FC2">
+                <span class="ph cmd">Click <span class="ph uicontrol">Add Virtual Frame Grabber</span>.</span>
+                <div class="itemgroup info">
+                    <p class="p">You can add 64 virtual frame grabbers at most.</p>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-5DEAA1E7-63D0-4836-AF6A-E9FBC07BC1C2">
+                <span class="ph cmd">In the <span class="ph menucascade"><span class="ph uicontrol">Added List</span> &gt; <span class="ph uicontrol">Bind Camera</span></span>, select virtual cameras as required.</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-355C9B72-F077-486A-842C-F2D1F0ECBFE6"><span class="notetitle">Note</span> 
+                        <ul class="ul" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__UL_MMW_2JM_QDC">
+                            <li class="li" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-65946A18-C580-4881-9CF4-9472886312BA">
+                                <p class="p">The maximum number of cameras that can bind to a
+                                    frame grabber depends on the number of interfaces of the
+                                    corresponding model. You can view the number of interfaces
+                                    through the last digit of the <span class="keyword parmname">Model</span>.</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-AFC1E51C-7004-4CFC-8EC0-81646101D883">
+                                <p class="p">You can only bind created virtual cameras. See <a class="xref" href="GUID-6091C976-6C40-47E8-B0F6-9476FB10C923.html#GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25" title="The virtual camera allows you to simulate cameras with different interfaces. After you create a virtual camera, you can connect to it and let it load local images to simulate acquisition.">Add a Virtual Camera</a> for details.</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-21D740C1-F19B-4146-AB79-3058F8739942">
+                                <p class="p">Virtual Camera Link, CoaXPress, and XoFLink Fiber Optic cameras can only be displayed in the
+                                    device list after you have bound them to a virtual frame
+                                    grabber.</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-A592B4EE-8FD8-4E52-B037-8DFBC2B451D4"><strong>Optional: </strong>
+                <span class="ph cmd">Perform further operations as needed.</span>
+                <div class="itemgroup info">
+                    <dl class="dl">
+                        
+                            <dt class="dt dlterm"><a name="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-60CF60BC-3232-4B70-8962-654DA0B98A79"><!-- --></a>Change Online Mode</dt>
+
+                            <dd class="dd">
+                                <p class="p">Right-click the virtual frame grabber and select
+                                        <span class="ph uicontrol">Change Online Mode</span> to switch its mode
+                                    between online and offline.</p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt dlterm"><a name="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-3E3BD816-DBBA-44FE-9D2F-B9F48EB27F65"><!-- --></a>Delete Virtual Frame Grabbers</dt>
+
+                            <dd class="dd">
+                                <p class="p">Check the required check boxes of the frame grabber
+                                    and click <span class="ph uicontrol">Delete</span> to delete virtual
+                                    devices.</p>
+
+                                <p class="p">You can also right-click a virtual frame grabber and
+                                    click <span class="ph uicontrol">Delete</span> to remove it from the added
+                                    list.</p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt dlterm"><a name="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-BD5BB38B-B1DB-407F-9148-2C5536CF6782"><!-- --></a>Reset Virtual Frame Grabbers</dt>
+
+                            <dd class="dd">
+                                <p class="p">Check the required check boxes of the frame grabbers
+                                    and click <span class="ph uicontrol">Reset</span> to initialize the
+                                    selected virtual devices.</p>
+
+                            </dd>
+
+                        
+                    </dl>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-0F20BF96-FD2B-4141-AF05-313F2FA744E0">
+                <span class="ph cmd">Go to the main window of the Software, and the added virtual frame grabbers
+                    will be displayed under the PCIe interface.</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-A454186D-EC16-4EA7-95A2-3156CEC03A6C"><span class="notetitle">Note</span> 
+                        <p class="p">If there is no virtual frame grabber displayed, click <img class="image icon" style="display:none;" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__IMAGE_PRZ_QYG_CKB" src="GUID-EE689C0E-48C5-40A5-91E9-3548786D6A07-high.png" /> to refresh.</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-85FF822D-7211-45F7-8C89-26CBED690359">
+                <span class="ph cmd">Double-click to connect the virtual frame grabber to the Software.</span>
+            </li>
+</ol>
+
+        <div class="section postreq" id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC__GUID-1EB5469F-93F8-4FC9-BB25-C403CEC258B4">
+            <p class="p">To have the virtual cameras bound displaying local images, see <a class="xref" href="GUID-6091C976-6C40-47E8-B0F6-9476FB10C923.html#GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25" title="The virtual camera allows you to simulate cameras with different interfaces. After you create a virtual camera, you can connect to it and let it load local images to simulate acquisition.">Add a Virtual Camera</a>.</p>
+
+        </div>
+
+</div>
+
+</div>
+</div>
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">Share</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>Previous Page</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>Next Page</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>On This Page</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25" class="feature_guide_h2"><span class="link_button">Add a Virtual Camera</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-5987B409-6625-4B76-A9F8-EFF290BAFABC" class="feature_guide_h2"><span class="link_button">Add a Virtual Frame Grabber</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8c01380e02e9eb04798d5"></div>
+		
+	</body>
+</html>

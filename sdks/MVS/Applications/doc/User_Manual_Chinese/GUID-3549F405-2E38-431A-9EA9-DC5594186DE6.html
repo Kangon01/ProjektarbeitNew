@@ -1,0 +1,213 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="ISP" /><meta name="abstract" content="ISP可以设置相机的伽马、锐度、色调、饱和度、Bayer插值方式、白平衡、ISP算法处理模块等功能。" /><meta name="description" content="ISP可以设置相机的伽马、锐度、色调、饱和度、Bayer插值方式、白平衡、ISP算法处理模块等功能。" /><meta name="DC.Relation" scheme="URI" content="GUID-174775E7-C15F-4BB1-8ACE-5119E4787E7B.html" /><meta name="DC.Relation" scheme="URI" content="GUID-582F1FE3-27B2-4959-84D2-45B562A88264.html" /><meta name="DC.Relation" scheme="URI" content="GUID-1EF12ABC-F45E-4465-BC75-8C07D3DB59F0.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6" /><meta name="DC.Language" content="zh-CN" /><title>ISP</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB.html" data-id="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB">相机属性配置</a></span></li><li><span class="topicref"><a href="GUID-174775E7-C15F-4BB1-8ACE-5119E4787E7B.html" data-id="GUID-174775E7-C15F-4BB1-8ACE-5119E4787E7B">常用属性</a></span></li><li class="active"><span class="topicref">ISP</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">ISP</h1>
+
+
+<div class="body conbody"><p class="shortdesc">ISP可以设置相机的伽马、锐度、色调、饱和度、Bayer插值方式、白平衡、ISP算法处理模块等功能。</p>
+
+        <div class="note note" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-7B0625E9-E3B2-4AFA-95A5-B6CB64ECFF3B"><span class="notetitle">说明</span> 
+            <ul class="ul" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__UL_U32_CZR_VRB">
+                <li class="li" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-8DD7E7F7-A9AD-43B3-A95C-EC54380B2A4C">
+                    <p class="p">不同型号、不同像素格式相机加载的基本参数有所差别，具体请以实际参数为准。</p>
+
+                </li>
+
+                <li class="li" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-B5F92202-C41B-4837-A739-D984D2C71E36">
+                    <p class="p">此处仅对相机参数和使用做简要介绍，若需要了解更多信息，请查看相机对应的用户手册。</p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <ul class="ul" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-D050740C-915C-4E70-BB97-11A07096D508">
+            <li class="li" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-49A869A9-62B8-42A8-90E7-A1D32C207E0D">
+                <p class="p">伽马：通常相机图像传感器的输出与照射在图像传感器上的光子是线性的，伽马校正可提供一种输出非线性的映射机制。伽马数值在0.5 ~
+                    1之间，图像暗处亮度提升；数值在1 ~ 4之间时，图像暗处亮度下降。</p>
+
+                <p class="p">相关参数有<span class="keyword parmname">伽马校正使能</span>、<span class="keyword parmname">伽马校正选择器</span>和<span class="keyword parmname">伽马校正</span>。伽马校正默认不开启。</p>
+
+                <p class="p">若需要设置相机的伽马，需要先开启<span class="ph uicontrol">伽马校正使能</span>，再选择<span class="ph uicontrol">伽马校正选择器</span>为“用户”或“sRGB”。选择“用户”时，需要设置<span class="keyword parmname">伽马校正</span>的数值；选择“sRGB”时，无需设置。</p>
+
+            </li>
+
+            <li class="li" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-0E292AEF-F3B0-4687-A6A1-7C974A707B45">
+                <p class="p">锐度：锐度可调整图像边缘的锐利程度，默认不启用。</p>
+
+                <p class="p">若需要设置相机的锐度，需要先开启<span class="ph uicontrol">锐度使能</span>再设置<span class="keyword parmname">锐度</span>的具体数值。</p>
+
+            </li>
+
+            <li class="li" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-A94E7220-1BF4-4A2A-8DB7-7325F7BADEB1">
+                <p class="p">亮度：相机亮度为自动曝光或自动增益时调整图像的参考亮度，若曝光和增益同时为手动模式，则亮度参数不显示。</p>
+
+                <p class="p">根据实际需求设置相机的<span class="keyword parmname">亮度</span>的具体数值，设置亮度值后，相机会自动调整曝光时间或模拟增益，使图像亮度达到目标亮度。亮度值设置的越大，自动曝光或自动增益模式下，
+                    图像调整越亮。 亮度值设置的越小，自动曝光或自动增益模式下， 图像调整越暗。 </p>
+
+            </li>
+
+            <li class="li" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-21BC03EF-8329-4236-8DEA-186E74186973">
+                <p class="p">色调：色调可调整彩色相机YUV或RGB格式下图像的颜色总体倾向。</p>
+
+                <p class="p">若需要设置相机的色调，需要先开启<span class="ph uicontrol">色调使能</span>再设置<span class="keyword parmname">色调</span>的具体数值。</p>
+
+            </li>
+
+            <li class="li" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-77081A4B-AD2C-4660-AECE-D1FCB5F190EE">
+                <p class="p">饱和度：色调可调整彩色相机YUV或RGB格式下图像的颜色鲜艳程度，使图像看上去更饱满艳丽。</p>
+
+                <p class="p">若需要设置相机的饱和度，需要先开启<span class="ph uicontrol">饱和度使能</span>，再设置<span class="keyword parmname">饱和度</span>的具体数值。</p>
+
+            </li>
+
+            <li class="li" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-1F2FC1EB-465E-4164-BE1D-76DD3EBA934D">
+                <p class="p">Bayer插值方式：Bayer可以设置彩色相机Bayer格式下的插值算法，有快速、均衡以及最优三种插值算法可选。</p>
+
+                <p class="p">调整Bayer插值算法可以改善图像效果。最邻近、双线性以及最优插值算法的复杂程度逐步增加，处理图像所耗费的时间以及CPU也逐步增加，但是图像效果逐步提升。</p>
+
+                <div class="note note" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-6DDBDFE2-2A76-46B7-B698-B7C4368495B6"><span class="notetitle">说明</span> 
+                    <p class="p">Bayer插值算法功能仅在连接彩色相机且像素格式为Bayer格式时方可设置。</p>
+
+                </div>
+
+            </li>
+
+            <li class="li" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-B8AD9DB8-520E-493E-9523-70D002B38ED3">
+                <p class="p">白平衡设置：彩色相机有白平衡功能，可根据不同光源照明条件进行颜色校正。白平衡配置通过调整图像中的R、G、B分量使得白色区域在不同色温下都能始终保持白色。理想情况下，白色区域的R、G、B分量比例为1:1:1。不同像素格式的白平衡设置方式有所差别。</p>
+
+                <ul class="ul" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__UL_KLD_PRD_VRB">
+                    <li class="li" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-E003DFDA-E62D-4B09-8AD8-BF6250405C52">
+                        <p class="p">彩色相机的像素格式为Bayer格式时，白平衡的设置方式请见<a class="xref" href="GUID-582F1FE3-27B2-4959-84D2-45B562A88264.html#GUID-582F1FE3-27B2-4959-84D2-45B562A88264" title="彩色相机bayer格式下，可通过客户端的白平衡设置工具进行快速优化。">白平衡设置（Bayer）</a>章节。</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-A10D8297-B41F-4CAD-AB9A-F7C8F502A622">
+                        <p class="p">彩色相机的像素格式为YUV、RGB、BGR格式时，白平衡的设置方式请见<a class="xref" href="GUID-1EF12ABC-F45E-4465-BC75-8C07D3DB59F0.html#GUID-1EF12ABC-F45E-4465-BC75-8C07D3DB59F0" title="彩色相机YUV、RGB、BGR格式下，白平衡设置的方法与Bayer格式有所差别。">白平衡设置（YUV&amp;RGB&amp;BGR）</a>章节。</p>
+
+                    </li>
+
+                </ul>
+
+                <div class="note note" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-9D4C5909-1B66-412C-8A55-33BD46ABE62F"><span class="notetitle">说明</span> 
+                    <ul class="ul" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__UL_OZW_YQD_VRB">
+                        <li class="li" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-7891897C-CC0D-4053-9F8C-7423B8DC3D3A">
+                            <p class="p">彩色相机的Mono格式为黑白图像，无白平衡功能。</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-AAAA8EFB-B929-49C4-BBAE-33C4DF4F0D2F">
+                            <p class="p">彩色相机支持的像素格式和相机型号以及相机固件程序有关，具体请咨询技术支持。</p>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </li>
+
+            <li class="li" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-3B2AE989-7EE3-48F3-AD18-3D481F0D1812">
+                <p class="p">ISP算法处理模块：相机支持导入图像调试工具保存的ISP配置文件，并根据配置文件对客户端采集的图像进行处理。</p>
+
+                <p class="p">导入配置文件后，通过<span class="keyword parmname">开启ISP处理</span>启用配置文件中的ISP算法处理模块。相机开始采集图像后，根据<span class="keyword parmname">已启用的ISP模块</span>对客户端采集的图像进行处理。</p>
+
+                <div class="note note" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-3EA77345-930A-4A6A-A0DF-30009195754E"><span class="notetitle">说明</span> 
+                    <ul class="ul" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__UL_LDC_M5S_XDC">
+                        <li class="li" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-27264E93-B5B4-45B4-B014-7E4F8A95E5DB">
+                            <p class="p">可通过选中设备列表中已连接的相机，右键单击选择<span class="keyword parmname">导入ISP配置</span>导入ISP配置文件，具体介绍请见<a class="xref" href="GUID-4CD4C6DA-E78E-43F5-9553-FB10FE4DF232.html#GUID-4CD4C6DA-E78E-43F5-9553-FB10FE4DF232" title="设备列表GigE接口部分还可对网卡和网口相机进行相关功能的设置，例如网卡配置属性、相机置顶、重命名用户ID等。">其他功能</a>。</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-C3A34925-7623-4C69-90C1-5EAD296085D2">
+                            <p class="p">不同算法处理模块支持的像素格式不同，通过<a class="xref" href="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7.html#GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7" title="感兴趣区域可设置相机的像素格式，绘制ROI。">设置感兴趣区域</a>重新设置相机的像素格式或绘制ROI后，建议使用图像调试工具重新生成ISP配置文件并导入。</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6__GUID-491CF5C9-A473-436B-B55A-45C78764FFD7">
+                            <p class="p">若导入的ISP配置文件中包含<span class="keyword parmname">锐化</span>和<span class="keyword parmname">局部对比度增强</span>算法处理模块，相机开始采集图像后，图像显示帧率和停止采集速度均会明显变慢。</p>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

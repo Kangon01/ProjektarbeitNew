@@ -1,0 +1,241 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="© Hikrobot Co., Ltd. All rights reserved." /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="Configurations before Using GigE Vision Cameras" /><meta name="abstract" content="Before using GigE Vision cameras, you need to check whether the PC and the cameras are on the same subnet, and whether the Jumbo Frame functionality has been enabled in the Windows system." /><meta name="description" content="Before using GigE Vision cameras, you need to check whether the PC and the cameras are on the same subnet, and whether the Jumbo Frame functionality has been enabled in the Windows system." /><meta name="DC.Relation" scheme="URI" content="GUID-720E0348-0A7C-4F5D-A13B-5EE9885F9626.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB" /><meta name="DC.Language" content="en-US" /><title>Configurations before Using GigE Vision Cameras</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">Home Page</a></span></li><li><span class="topicref"><a href="GUID-E78A1255-87E0-4017-B794-5FFE3D7BD320.html" data-id="GUID-E78A1255-87E0-4017-B794-5FFE3D7BD320">Environment Requirements</a></span></li><li><span class="topicref"><a href="GUID-720E0348-0A7C-4F5D-A13B-5EE9885F9626.html" data-id="GUID-720E0348-0A7C-4F5D-A13B-5EE9885F9626">Environment Configuration</a></span></li><li class="active"><span class="topicref">Configurations before Using GigE Vision Cameras</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">Configurations before Using GigE Vision
+        Cameras</h1>
+
+
+<div class="body taskbody"><p class="shortdesc">Before using GigE Vision cameras, you need to check whether the PC and the
+        cameras are on the same subnet, and whether the Jumbo Frame functionality has been enabled
+        in
+        the Windows system.</p>
+
+<div class="section prereq p" id="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__GUID-08034BA8-CD14-4317-B257-0B24BDE40BE0">
+            <p class="p">Make sure that the cameras are powered on and connected to the
+                network.</p>
+
+        </div>
+
+<ol class="ol steps" id="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__GUID-9D54C415-3EBC-493E-9FDC-722A2D2B739E"><li class="li step stepexpand" id="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__GUID-476A069B-62FE-447A-9EDF-A8347395A37D">
+                <span class="ph cmd">Run NIC Configurator.</span>
+                <ul class="ul choices" id="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__CHOICES_OQH_ZTF_PSB">
+                    <li class="li choice" id="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__GUID-99661421-8DC4-44CC-BA3A-C10FE801579C">
+                        <p class="p">Go to <span class="ph menucascade"><span class="ph uicontrol">Start</span> &gt; <span class="ph uicontrol">All Programs</span> &gt; <span class="ph uicontrol">MVS</span> &gt; <span class="ph uicontrol">Tools</span></span>
+                            in
+                            the Windows system, and then click
+                                <span class="ph uicontrol">NIC_Configurator</span>.</p>
+
+                    </li>
+
+                    <li class="li choice" id="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__GUID-46DC167F-794E-47D0-971D-92A1D4B59CB2">
+                        <p class="p">Go to <span class="ph menucascade"><span class="ph uicontrol">Applications</span> &gt; <span class="ph uicontrol">NIC_Configurator</span></span>
+                            in
+                            the Software's installation folder, and then click
+                            NIC_Configurator.exe.</p>
+
+                    </li>
+
+                </ul>
+
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__FIG_PQH_ZTF_PSB">
+                        
+                        
+                        <img class="image" style="display:none;" id="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__IMAGE_QQH_ZTF_PSB" src="GUID-1C49191F-E95C-48B6-BCEA-79A7845242AF-high.png" width="1000" />
+                    <div class="fig_caption"><span class="figcap">Figure 1 NIC
+                            Configurator</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__GUID-80E26222-ACA8-44B9-93C7-EDDE92A32995">
+                <span class="ph cmd">Select the PC's network interface card
+                    (hereafter
+                    simplified as NIC) from the drop-down list. </span>
+            </li>
+<li class="li step stepexpand" id="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__GUID-29B5B31F-FF29-44FF-9ACB-CFA0AE4F2283">
+                <span class="ph cmd">Set the network adapter parameters.</span>
+                <div class="itemgroup info">
+                    <dl class="dl parml">
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__GUID-33FCCADE-27B0-4799-9830-60A413C91204"><!-- --></a>Jumbo Frame</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">Check the <span class="ph uicontrol">Enable</span> checkbox to
+                                    enable the Jumbo Frame functionality of the NIC. Jumbo Frame
+                                    functionality can reduce the CPU usage and improve the data
+                                    transmission efficiency. After
+                                    you
+                                    enable
+                                    this
+                                    feature,
+                                    the Jumbo Frame value will be set to 9 KB or 9014 Bytes
+                                    automatically. </p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__GUID-F2C8EA3A-3787-44E7-82BB-1CCBA8B571E0"><!-- --></a>Receive Buffers</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">Set the size of Receive Buffers. Increasing the
+                                    Receive Buffer size improves
+                                    receiving
+                                    performance while costs more system memory. </p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__GUID-8DD75A57-A2B5-478F-968D-8446FA7276E7"><!-- --></a>Transmit Buffers</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">Set the size of Transmit Buffers. Increasing the Transmit Buffer
+                                    size improves data transmission performance while costs more
+                                    system memory. </p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__GUID-241E2BFA-14DB-4E26-B72A-FC4A631FA843"><!-- --></a>NIC Properties</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">Click <span class="ph uicontrol">Open</span> to open the properties window
+                                    of the selected NIC. </p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__GUID-E42D2BB3-1133-4DC9-8665-02138EB2B1B0"><!-- --></a>Internal Protocol Properties</dt>
+
+                            <dd class="dd pd">
+                                <p class="p"> Click <span class="ph uicontrol">Open</span> to open the Internet Protocol
+                                    Properties window, and then double-click the TCP protocol and
+                                    select <span class="keyword parmname">Obtain an IP address
+                                    automatically</span>.</p>
+
+                                <p class="p">You can also select <span class="keyword parmname">Use the following IP
+                                        address</span> and then set the IP address to the subnet
+                                    on which the camera runs.</p>
+
+                                <div class="fig fignone" id="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__FIG_BTW_LNB_CKB">
+                                    
+                                    <img class="image" style="display:none;" id="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__IMAGE_URK_RQB_CKB" src="GUID-4F7C1A1E-6833-46AE-A7BD-5ADAD4285CBA-high.png" width="1294" />
+                                <div class="fig_caption"><span class="figcap">Figure 2 Internet Protocol Properties Window</span></div></div>
+
+                                <div class="note note" id="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__GUID-D8A771EC-04B3-48C9-95D6-494B83515516"><span class="notetitle">Note</span> 
+                                    <p class="p">The Internet Protocol Properties window
+                                        varies
+                                        with different Windows systems. The picture above is only
+                                        for reference, the actual Internet Protocol Properties
+                                        window shall prevail.</p>
+
+                                </div>
+
+                            </dd>
+
+                        
+                    </dl>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__GUID-02ED8BB8-A712-4D2E-AB16-D108C95AB70E">
+                <span class="ph cmd">Click <span class="ph uicontrol">Apply</span> to save the settings.</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__GUID-DBFA1A47-3F0E-4105-9AAF-D5556509C5AC"><span class="notetitle">Note</span> 
+                        <ul class="ul" id="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__UL_XWJ_LNB_CKB">
+                            <li class="li" id="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__GUID-8A533674-791E-4AA1-92CA-12A10F4F5B04">
+                                <p class="p">You can enable the Jumbo Frame functionality for all the NICs of
+                                    the PC when installing the Software.</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB__GUID-5AFD4B48-8DB5-485C-9511-434C9AF25942">
+                                <p class="p">Some NICs may not support Jumbo Frame. In such cases, you should
+                                    update the NIC driver or change the NIC.</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </li>
+</ol>
+
+</div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">Share</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>Previous Page</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>Next Page</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8c01380e02e9eb04798d5"></div>
+		
+	</body>
+</html>

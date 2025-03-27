@@ -1,0 +1,151 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="导入图像" /><meta name="abstract" content="图像调试工具支持本地图像导入和相机图像导入。" /><meta name="description" content="图像调试工具支持本地图像导入和相机图像导入。" /><meta name="DC.Relation" scheme="URI" content="GUID-6568202E-6FF8-4261-ADD6-50F538AAA490.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-127346B3-39DA-4FD2-835E-6D4D58D6D3BE" /><meta name="DC.Language" content="zh-CN" /><title>导入图像</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-4A707B85-6362-489F-AD0C-12957E57E3F9.html" data-id="GUID-4A707B85-6362-489F-AD0C-12957E57E3F9">图像调试工具</a></span></li><li><span class="topicref"><a href="GUID-6568202E-6FF8-4261-ADD6-50F538AAA490.html" data-id="GUID-6568202E-6FF8-4261-ADD6-50F538AAA490">图像校正</a></span></li><li class="active"><span class="topicref">导入图像</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body "><div class="nested0" id="GUID-127346B3-39DA-4FD2-835E-6D4D58D6D3BE">
+    <h1 class="title topictitle1">导入图像</h1>
+
+<p class="shortdesc">图像调试工具支持本地图像导入和相机图像导入。</p>
+
+
+<div class="topic task nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-7485C4DD-10B7-46AF-A4D2-134548D1F5E1">
+    <h2 class="title topictitle2">本地图像导入</h2>
+
+    
+<div class="body taskbody"><p class="shortdesc">工具支持从PC导入图像。</p>
+
+<div class="section prereq p" id="GUID-7485C4DD-10B7-46AF-A4D2-134548D1F5E1__GUID-3F730D13-0920-4F46-A8C7-461D6EA6E287">
+            <p class="p">需确保导入的bmp图像命名中包含图像的增益值，如image_g0.bmp；确保导入的raw图像命名中包含图像的增益值、图像宽、图像高、图像格式以及拼接序号，如image_g0_w1440_h1080_pBayerRG8_joint20.raw。</p>
+
+            <div class="note note" id="GUID-7485C4DD-10B7-46AF-A4D2-134548D1F5E1__GUID-546FDC51-8CEF-4ED7-9B36-37780A50D07E"><span class="notetitle">说明</span> 
+                <p class="p">拼接序号仅对降噪模块有效。</p>
+
+            </div>
+
+        </div>
+
+<ol class="ol steps" id="GUID-7485C4DD-10B7-46AF-A4D2-134548D1F5E1__GUID-BA5E1D4B-E01F-47B1-B4C5-519D2F8475FE"><li class="li step stepexpand" id="GUID-7485C4DD-10B7-46AF-A4D2-134548D1F5E1__GUID-3837D237-2200-4E2E-AA35-98FE6AD4D6E3">
+                <span class="ph cmd">单击控制工具条的<img class="image icon" style="display:none;" id="GUID-7485C4DD-10B7-46AF-A4D2-134548D1F5E1__IMAGE_VTH_WNF_5QB" src="GUID-F089FBD5-40C5-4053-A355-0F95E2BE7E63-high.png" />。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-7485C4DD-10B7-46AF-A4D2-134548D1F5E1__GUID-1C78D7C5-9D44-4036-AEF3-4A8FAE81A60E">
+                <span class="ph cmd">选择满足命名规则的bmp或raw图片，点击<span class="ph uicontrol">确定</span>。</span>
+                <div class="itemgroup stepresult">
+                    <p class="p">选中图片将在图像操作区域显示，左上方显示当前图片名称，如下图所示。</p>
+
+                    <div class="fig fignone" id="GUID-7485C4DD-10B7-46AF-A4D2-134548D1F5E1__FIG_OTB_FZX_SWB">
+                        
+                        <img class="image" style="display:none;" id="GUID-7485C4DD-10B7-46AF-A4D2-134548D1F5E1__IMAGE_OKV_D2H_DZB" src="GUID-703C0EEF-B3BB-4977-855A-8C86C6E26E1B-high.png" width="2000" />
+                    <div class="fig_caption"><span class="figcap">图 1 导入本地图片</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand optional" id="GUID-7485C4DD-10B7-46AF-A4D2-134548D1F5E1__GUID-8FD81476-4D75-4DE6-8688-194D1389E6CB"><strong>可选操作： </strong>
+                <span class="ph cmd">单击图像右侧的<img class="image icon" style="display:none;" id="GUID-7485C4DD-10B7-46AF-A4D2-134548D1F5E1__IMAGE_SZH_YNF_5QB" src="GUID-C653B8F6-BCB5-47D0-881C-596407F86E10-high.png" />可重新导入一张图片。</span>
+            </li>
+</ol>
+
+</div>
+
+</div>
+<div class="topic task nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9">
+    <h2 class="title topictitle2">相机图像导入</h2>
+
+    
+<div class="body taskbody"><p class="shortdesc">工具支持通过连接相机采集图像。</p>
+
+        <div class="section prereq p" id="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9__GUID-21DAE62F-3BC8-4006-89E1-FFBEFB1B862D">
+            <p class="p">连接相机进行在线校正前，需将相机有关ISP效果的使能节点全部关闭，保证相机采集的图像为不添加处理效果的裸图。</p>
+
+        </div>
+
+        <div class="section context" id="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9__GUID-300532EF-4ADD-494A-AFDE-A252941DE27A">
+            <div class="note note" id="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9__GUID-C3042CEF-B63A-41E9-B8F2-D246AFB1ACD8"><span class="notetitle">说明</span> 
+                <p class="p">工具仅支持部分型号相机，具体请以实际为准。</p>
+
+            </div>
+
+        </div>
+
+<ol class="ol steps" id="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9__GUID-BA5E1D4B-E01F-47B1-B4C5-519D2F8475FE"><li class="li step" id="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9__GUID-3837D237-2200-4E2E-AA35-98FE6AD4D6E3">
+                <span class="ph cmd">单击控制工具条的<img class="image icon" style="display:none;" id="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9__IMAGE_PHY_S4F_5QB" src="GUID-7BD28441-0A2F-49C0-B1A8-050F83A914F0-high.png" />打开设备列表。</span>
+            </li>
+<li class="li step" id="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9__GUID-AC0FAAA6-0A18-4D62-8856-51E374E22727">
+                <span class="ph cmd">在设备列表页面选中需要连接的相机，单击右侧的<img class="image icon" style="display:none;" id="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9__IMAGE_LBR_CTF_5QB" src="GUID-8D84C798-21C9-4429-9618-D681907E6D6A-high.png" />进行连接。</span>
+            </li>
+<li class="li step" id="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9__GUID-DAF93465-E57E-434D-9AE8-D4F22248A77D">
+                <span class="ph cmd">对已连接相机开启预览，可查看相机实时采集图像，具体可参考<a class="xref" href="GUID-FE345ED7-7AE0-4EDA-AC13-7889CCAEEC1E.html#GUID-FE345ED7-7AE0-4EDA-AC13-7889CCAEEC1E" title="对已连接状态的相机，可开启预览，查看相机实时采集图像。">开启预览</a>章节。</span>
+            </li>
+</ol>
+
+</div>
+
+</div>
+</div>
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>本页导航</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-7485C4DD-10B7-46AF-A4D2-134548D1F5E1" class="feature_guide_h2"><span class="link_button">本地图像导入</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9" class="feature_guide_h2"><span class="link_button">相机图像导入</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

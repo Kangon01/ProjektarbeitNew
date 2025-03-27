@@ -1,0 +1,243 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="PCIe设备管理" /><meta name="abstract" content="设备列表区域的PCIe接口可对本公司自研采集卡以及采集卡下连接的相机进行相关操作，例如枚举采集卡和采集卡下的相机、单一采集卡固件升级等。" /><meta name="description" content="设备列表区域的PCIe接口可对本公司自研采集卡以及采集卡下连接的相机进行相关操作，例如枚举采集卡和采集卡下的相机、单一采集卡固件升级等。" /><meta name="DC.Relation" scheme="URI" content="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-B894442B-B4D6-4CC7-BCBE-3801563291DA" /><meta name="DC.Language" content="zh-CN" /><title>PCIe设备管理</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html" data-id="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E">设备管理</a></span></li><li class="active"><span class="topicref">PCIe设备管理</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body "><div class="nested0" id="GUID-B894442B-B4D6-4CC7-BCBE-3801563291DA">
+    <h1 class="title topictitle1">PCIe设备管理</h1>
+
+
+<div class="body conbody"><p class="shortdesc">设备列表区域的PCIe接口可对本公司自研采集卡以及采集卡下连接的相机进行相关操作，例如枚举采集卡和采集卡下的相机、单一采集卡固件升级等。</p>
+
+<p class="p">本节包含如下内容：</p>
+
+        <ul class="ul" id="GUID-B894442B-B4D6-4CC7-BCBE-3801563291DA__UL_KT5_RSW_FCC">
+            <li class="li" id="GUID-B894442B-B4D6-4CC7-BCBE-3801563291DA__GUID-6EF426C0-BC60-484C-950A-2E73DCC01503">
+                <p class="p"><a class="xref" href="GUID-B894442B-B4D6-4CC7-BCBE-3801563291DA.html#GUID-780B8368-AEC0-4E13-B2B2-BC63EE8856BF" title="客户端可自动枚举可搜索到的采集卡设备。">添加PCIe设备</a></p>
+
+            </li>
+
+            <li class="li" id="GUID-B894442B-B4D6-4CC7-BCBE-3801563291DA__GUID-109782BA-3640-426E-9B91-26ECE19521F4">
+                <p class="p"><a class="xref" href="GUID-B894442B-B4D6-4CC7-BCBE-3801563291DA.html#GUID-AABA7CF2-D870-480A-AB99-0EA380F9A234" title="对于不同状态的采集卡，设备列表的采集卡图标有所差别。采集卡的状态说明请见下表。">状态介绍</a></p>
+
+            </li>
+
+            <li class="li" id="GUID-B894442B-B4D6-4CC7-BCBE-3801563291DA__GUID-507C8D0B-5A51-495B-9C5E-35955558B2A4">
+                <p class="p"><a class="xref" href="GUID-B894442B-B4D6-4CC7-BCBE-3801563291DA.html#GUID-27C0377E-0B91-414D-8B0A-D9E2B9990123" title="设备列表的PCIe接口还可对枚举出的采集卡以及采集卡下枚举的相机进行相关操作。">其他功能</a></p>
+
+            </li>
+
+        </ul>
+
+</div>
+
+
+<div class="topic concept nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-780B8368-AEC0-4E13-B2B2-BC63EE8856BF">
+    <h2 class="title topictitle2">添加PCIe设备</h2>
+
+
+<div class="body conbody"><p class="shortdesc">客户端可自动枚举可搜索到的采集卡设备。</p>
+
+        <p class="p">客户端每隔30s自动对PCIe接口下的采集卡进行刷新。同时也可通过设备列表PCIe接口右侧的<img class="image icon" style="display:none;" id="GUID-780B8368-AEC0-4E13-B2B2-BC63EE8856BF__IMAGE_ETH_K2Z_BKB" src="GUID-21129D57-7CF9-4746-88F0-C5EFF4A4C073-high.png" />进行手动刷新。</p>
+
+    </div>
+
+</div>
+<div class="topic concept nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-AABA7CF2-D870-480A-AB99-0EA380F9A234">
+    <h2 class="title topictitle2">状态介绍</h2>
+
+
+<div class="body conbody"><p class="shortdesc">对于不同状态的采集卡，设备列表的采集卡图标有所差别。采集卡的状态说明请见下表。</p>
+
+        <p class="p">采集卡的状态说明请见下表。</p>
+
+        
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-AABA7CF2-D870-480A-AB99-0EA380F9A234__GUID-E7D126B8-DA78-494C-872E-5E49C46B87D1" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 1 采集卡状态介绍</span></caption>
+                
+                
+                
+                <thead class="thead" align="left">
+                    <tr>
+                        <th class="entry" valign="top" width="16.94915254237288%" id="d32386e122">
+                            <p class="p">图标</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="18.64406779661017%" id="d32386e128">
+                            <p class="p">状态</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="64.40677966101694%" id="d32386e134">
+                            <p class="p">含义</p>
+
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody class="tbody">
+                    <tr>
+                        <td class="entry" valign="top" width="16.94915254237288%" headers="d32386e122 "><img class="image" style="display:none;" id="GUID-AABA7CF2-D870-480A-AB99-0EA380F9A234__IMAGE_TRB_WKR_4TB" src="GUID-00F2CB57-CD35-46EA-9BE0-8FBAD9732CC1-high.png" /></td>
+
+                        <td class="entry" valign="top" width="18.64406779661017%" headers="d32386e128 ">
+                            <p class="p">可用</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="64.40677966101694%" headers="d32386e134 ">
+                            <p class="p">采集卡处于可用状态，可正常连接和使用。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="16.94915254237288%" headers="d32386e122 "><img class="image" style="display:none;" id="GUID-AABA7CF2-D870-480A-AB99-0EA380F9A234__IMAGE_VXT_WKR_4TB" src="GUID-E73E2DEB-0370-4C3B-899F-EEC869073A4F-high.png" /></td>
+
+                        <td class="entry" valign="top" width="18.64406779661017%" headers="d32386e128 ">
+                            <p class="p">打开</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="64.40677966101694%" headers="d32386e134 ">
+                            <p class="p">客户端已经打开该采集卡，可进行采集卡参数设置等操作，并枚举采集卡下连接的相机。</p>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+</div>
+
+    </div>
+
+</div>
+<div class="topic concept nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-27C0377E-0B91-414D-8B0A-D9E2B9990123">
+    <h2 class="title topictitle2">其他功能</h2>
+
+
+<div class="body conbody"><p class="shortdesc">设备列表的PCIe接口还可对枚举出的采集卡以及采集卡下枚举的相机进行相关操作。</p>
+
+        <div class="section" id="GUID-27C0377E-0B91-414D-8B0A-D9E2B9990123__GUID-1F517755-1B2E-4BCB-836D-D82DA7E7B977"><h3 class="title sectiontitle">采集卡</h3>
+            
+            <p class="p">设备列表的PCIe会显示枚举到的采集卡并进行相关操作。</p>
+
+            <ul class="ul" id="GUID-27C0377E-0B91-414D-8B0A-D9E2B9990123__UL_C21_41N_PTB">
+                <li class="li" id="GUID-27C0377E-0B91-414D-8B0A-D9E2B9990123__GUID-EF71C496-3B94-4724-9A0D-0DDAD1A30095">
+                    <p class="p">采集卡参数设置：选中设备列表已连接的采集卡，右侧显示采集卡属性树，即可对采集卡进行参数设置，具体介绍请参见采集卡相应接口的用户手册。</p>
+
+                </li>
+
+                <li class="li" id="GUID-27C0377E-0B91-414D-8B0A-D9E2B9990123__GUID-600653B3-FAAD-4067-9316-A64B6F8B9DE3">
+                    <p class="p"><span class="ph uicontrol">通过虚拟串口打开</span>：采集卡支持通过虚拟串口方式打开，右键单击<span class="ph uicontrol">通过虚拟串口打开</span>，可使枚举到的采集卡通过虚拟设备获取相机采集的图像数据。</p>
+
+                </li>
+
+                <li class="li" id="GUID-27C0377E-0B91-414D-8B0A-D9E2B9990123__GUID-607FB1B3-46E0-42C1-9565-44EDEE301EB1">
+                    <p class="p"><span class="ph uicontrol">保存采集卡GenlCam文件</span>：选中设备列表已连接的采集卡，右键单击<span class="ph uicontrol">保存GenlCam
+                            XML</span>，可将当前打开采集卡的GenlCam文件以XML格式保存到本地PC，导出文件名默认为采集卡型号。</p>
+
+                </li>
+
+                <li class="li" id="GUID-27C0377E-0B91-414D-8B0A-D9E2B9990123__GUID-9466CB1B-3408-4A36-9BFC-2FC64FF97BA7">
+                    <p class="p"><span class="ph uicontrol">固件升级</span>：选中设备列表已连接的采集卡，右键单击<span class="ph uicontrol">固件升级</span>，点击<img class="image icon" style="display:none;" id="GUID-27C0377E-0B91-414D-8B0A-D9E2B9990123__IMAGE_MFP_4FD_4SB" src="GUID-63DAD9E8-D5BC-4C8F-82B3-9AF9D55585A9-high.png" />选择固件升级包（dav文件），点击<span class="ph uicontrol">升级</span>按钮即可。</p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="section" id="GUID-27C0377E-0B91-414D-8B0A-D9E2B9990123__GUID-AF9EAD65-42C5-4B9D-B015-D3B47EA7C8BE"><h3 class="title sectiontitle">相机</h3>
+            
+            <p class="p">打开采集卡后，可获取通过采集卡连接的相机，可通过设备列表PCIe右侧的<img class="image icon" style="display:none;" id="GUID-27C0377E-0B91-414D-8B0A-D9E2B9990123__IMAGE_IBD_4QZ_BKB" src="GUID-21129D57-7CF9-4746-88F0-C5EFF4A4C073-high.png" />手动刷新连接的相机。</p>
+
+            <p class="p">双击连接相机，右侧可显示相机的属性树，并对相机进行参数设置和图像预览等操作。</p>
+
+            <div class="note note" id="GUID-27C0377E-0B91-414D-8B0A-D9E2B9990123__GUID-3B4AF9C0-78AE-4C5D-A92B-2FA1ED4EE775"><span class="notetitle">说明</span> 
+                <p class="p">必须先打开采集卡才可枚举通过采集卡连接的相机。</p>
+
+            </div>
+
+            <div class="fig fignone" id="GUID-27C0377E-0B91-414D-8B0A-D9E2B9990123__FIG_WCM_LBN_PTB">
+                
+                <img class="image" style="display:none;" id="GUID-27C0377E-0B91-414D-8B0A-D9E2B9990123__IMAGE_XQP_XZR_4TB" src="GUID-B2134F4C-710B-4E1A-AB6C-A4D7C910742F-high.png" width="1000" />
+            <div class="fig_caption"><span class="figcap">图 1 显示枚举的采集卡及连接的相机</span></div></div>
+
+        </div>
+
+    </div>
+
+</div>
+</div>
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>本页导航</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-780B8368-AEC0-4E13-B2B2-BC63EE8856BF" class="feature_guide_h2"><span class="link_button">添加PCIe设备</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-AABA7CF2-D870-480A-AB99-0EA380F9A234" class="feature_guide_h2"><span class="link_button">状态介绍</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-27C0377E-0B91-414D-8B0A-D9E2B9990123" class="feature_guide_h2"><span class="link_button">其他功能</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-27C0377E-0B91-414D-8B0A-D9E2B9990123__GUID-1F517755-1B2E-4BCB-836D-D82DA7E7B977" class="feature_guide_h3"><span class="link_button">采集卡</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-27C0377E-0B91-414D-8B0A-D9E2B9990123__GUID-AF9EAD65-42C5-4B9D-B015-D3B47EA7C8BE" class="feature_guide_h3"><span class="link_button">相机</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

@@ -1,0 +1,395 @@
+﻿/*
+ * ==============================================
+ * Steps css
+ * ==============================================
+ */
+ 
+/*
+ * --------------------------------------
+ * zh-CN
+ */
+.zh-CN .prereq:before{
+   content:"前提条件"; 
+	font-weight:bold;
+}
+.zh-CN .steps:before{
+   content:"操作步骤"; 
+	font-weight:bold;
+}
+.zh-CN .result:before{
+    content:"结果说明"; 
+	font-weight:bold;
+}
+.zh-CN .stepxmp:before{
+    content:"示例"; 
+	font-weight:bold;
+}
+.zh-CN .example:before{
+    content:"示例"; 
+	font-weight:bold;
+}
+.zh-CN .postreq:before{
+    content:"后续处理"; 
+	font-weight:bold;
+}
+
+
+/*
+ * --------------------------------------
+ * en-US
+ */
+.en-US .prereq:before{
+    content:"Before You Start"; 
+	font-weight:bold;
+}
+.en-US .steps:before{
+    content:"Steps"; 
+	font-weight:bold;
+}
+.en-US .result:before{
+    content:"Result"; 
+	font-weight:bold;
+}
+.en-US .stepxmp:before{
+    content:"Example"; 
+	font-weight:bold;
+}
+.en-US .example:before{
+    content:"Example"; 
+	font-weight:bold;
+}
+.en-US .postreq:before{
+    content:"What to do next"; 
+	font-weight:bold;
+}
+
+
+/*
+ * --------------------------------------
+ * nl-NL
+ */
+.nl-NL .prereq:before{
+   content:"Voordat u begint"; 
+	font-weight:bold;
+}
+.nl-NL .steps:before{
+   content:"Stappen"; 
+	font-weight:bold;
+}
+.nl-NL .result:before{
+    content:"Resultaat"; 
+	font-weight:bold;
+}
+.nl-NL .stepxmp:before{
+    content:"Voorbeeld"; 
+	font-weight:bold;
+}
+.nl-NL .example:before{
+    content:"Voorbeeld"; 
+	font-weight:bold;
+}
+.nl-NL .postreq:before{
+    content:"Wat nu te doen"; 
+	font-weight:bold;
+}
+
+/*
+ * --------------------------------------
+ * fr-FR
+ */
+.fr-FR .prereq:before{
+   content:"Avant de commencer"; 
+	font-weight:bold;
+}
+.fr-FR .steps:before{
+   content:"Procédure"; 
+	font-weight:bold;
+}
+.fr-FR .result:before{
+    content:"Résultat"; 
+	font-weight:bold;
+}
+.fr-FR .stepxmp:before{
+    content:"Exemple"; 
+	font-weight:bold;
+}
+.fr-FR .example:before{
+    content:"Exemple"; 
+	font-weight:bold;
+}
+.fr-FR .postreq:before{
+    content:"Que faire ensuite"; 
+	font-weight:bold;
+}
+
+/*
+ * --------------------------------------
+ * de-DE
+ */
+.de-DE .prereq:before{
+   content:"Bevor Sie beginnen"; 
+	font-weight:bold;
+}
+.de-DE .steps:before{
+   content:"Schritte"; 
+	font-weight:bold;
+}
+.de-DE .result:before{
+    content:"Ergebnis"; 
+	font-weight:bold;
+}
+.de-DE .stepxmp:before{
+    content:"Beispiel"; 
+	font-weight:bold;
+}
+.de-DE .example:before{
+    content:"Beispiel"; 
+	font-weight:bold;
+}
+.de-DE .postreq:before{
+    content:"Was folgt als Nächstes"; 
+	font-weight:bold;
+}
+
+/*
+ * --------------------------------------
+ * hu-HU
+ */
+.hu-HU .prereq:before{
+   content:"A kezdés előtt"; 
+	font-weight:bold;
+}
+.hu-HU .steps:before{
+   content:"Lépések"; 
+	font-weight:bold;
+}
+.hu-HU .result:before{
+    content:"Eredmény"; 
+	font-weight:bold;
+}
+.hu-HU .stepxmp:before{
+    content:"Példa"; 
+	font-weight:bold;
+}
+.hu-HU .example:before{
+    content:"Példa"; 
+	font-weight:bold;
+}
+.hu-HU .postreq:before{
+    content:"Következő lépések"; 
+	font-weight:bold;
+}
+
+/*
+ * --------------------------------------
+ * it-IT
+ */
+.it-IT .prereq:before{
+   content:"Prima di iniziare"; 
+	font-weight:bold;
+}
+.it-IT .steps:before{
+   content:"Procedura"; 
+	font-weight:bold;
+}
+.it-IT .result:before{
+    content:"Risultati"; 
+	font-weight:bold;
+}
+.it-IT .stepxmp:before{
+    content:"Esempio"; 
+	font-weight:bold;
+}
+.it-IT .example:before{
+    content:"Esempio"; 
+	font-weight:bold;
+}
+.it-IT .postreq:before{
+    content:"Come continuare"; 
+	font-weight:bold;
+}
+
+/*
+ * --------------------------------------
+ * pt-BR
+ */
+.pt-BR .prereq:before{
+   content:"Antes de Iniciar"; 
+	font-weight:bold;
+}
+.pt-BR .steps:before{
+   content:"Etapas"; 
+	font-weight:bold;
+}
+.pt-BR .result:before{
+    content:"Resultado"; 
+	font-weight:bold;
+}
+.pt-BR .stepxmp:before{
+    content:"Exemplo"; 
+	font-weight:bold;
+}
+.pt-BR .example:before{
+    content:"Exemplo"; 
+	font-weight:bold;
+}
+.pt-BR .postreq:before{
+    content:"O que fazer em seguida"; 
+	font-weight:bold;
+}
+
+/*
+ * --------------------------------------
+ * es-MX
+ */
+.es-MX .prereq:before{
+   content:"Antes de comenzar"; 
+	font-weight:bold;
+}
+.es-MX .steps:before{
+   content:"Pasos"; 
+	font-weight:bold;
+}
+.es-MX .result:before{
+    content:"Resultado"; 
+	font-weight:bold;
+}
+.es-MX .stepxmp:before{
+    content:"Ejemplo"; 
+	font-weight:bold;
+}
+.es-MX .example:before{
+    content:"Ejemplo"; 
+	font-weight:bold;
+}
+.es-MX .postreq:before{
+    content:"Qué hacer a continuación"; 
+	font-weight:bold;
+}
+
+/*
+ * --------------------------------------
+ * es-ES
+ */
+.es-ES .prereq:before{
+   content:"Antes de comenzar"; 
+	font-weight:bold;
+}
+.es-ES .steps:before{
+   content:"Pasos"; 
+	font-weight:bold;
+}
+.es-ES .result:before{
+    content:"Resultado"; 
+	font-weight:bold;
+}
+.es-ES .stepxmp:before{
+    content:"Ejemplo"; 
+	font-weight:bold;
+}
+.es-ES .example:before{
+    content:"Ejemplo"; 
+	font-weight:bold;
+}
+.es-ES .postreq:before{
+    content:"Qué hacer a continuación"; 
+	font-weight:bold;
+}
+
+/*
+ * --------------------------------------
+ * tr-TR
+ */
+.tr-TR .prereq:before{
+   content:"Başlamadan Önce"; 
+	font-weight:bold;
+}
+.tr-TR .steps:before{
+   content:"Adımlar"; 
+	font-weight:bold;
+}
+.tr-TR .result:before{
+    content:"Sonuç"; 
+	font-weight:bold;
+}
+.tr-TR .stepxmp:before{
+    content:"Örnek"; 
+	font-weight:bold;
+}
+.tr-TR .example:before{
+    content:"Örnek"; 
+	font-weight:bold;
+}
+.tr-TR .postreq:before{
+    content:"Sonra ne yapmalı"; 
+	font-weight:bold;
+}
+
+/*
+ * --------------------------------------
+ * ru-RU
+ */
+.ru-RU .prereq:before{
+   content:"Перед началом работы"; 
+	font-weight:bold;
+}
+.ru-RU .steps:before{
+   content:"Порядок действий"; 
+	font-weight:bold;
+}
+.ru-RU .result:before{
+    content:"Результат"; 
+	font-weight:bold;
+}
+.ru-RU .stepxmp:before{
+    content:"Пример"; 
+	font-weight:bold;
+}
+.ru-RU .example:before{
+    content:"Пример"; 
+	font-weight:bold;
+}
+.ru-RU .postreq:before{
+    content:"Что далее"; 
+	font-weight:bold;
+}
+
+/*
+ * --------------------------------------
+ * pl-PL
+ */
+.pl-PL .prereq:before{
+   content:"Zanim zaczniesz"; 
+	font-weight:bold;
+}
+.pl-PL .steps:before{
+   content:"Kroki"; 
+	font-weight:bold;
+}
+.pl-PL .result:before{
+    content:"Wynik"; 
+	font-weight:bold;
+}
+.pl-PL .stepxmp:before{
+    content:"Przykład"; 
+	font-weight:bold;
+}
+.pl-PL .example:before{
+    content:"Przykład"; 
+	font-weight:bold;
+}
+.pl-PL .postreq:before{
+    content:"Co dalej"; 
+	font-weight:bold;
+}
+
+/*
+ * --------------------------------------
+ * 
+ */
+
+
+/*
+ * --------------------------------------
+ * 
+ */

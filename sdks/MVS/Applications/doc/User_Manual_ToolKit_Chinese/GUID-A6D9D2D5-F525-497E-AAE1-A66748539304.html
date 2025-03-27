@@ -1,0 +1,227 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="相机升级" /><meta name="abstract" content="相机的固件升级过程主要分为三个阶段，即 搜索设备 &gt; 开始升级 &gt; 升级状态 。" /><meta name="description" content="相机的固件升级过程主要分为三个阶段，即 搜索设备 &gt; 开始升级 &gt; 升级状态 。" /><meta name="DC.Relation" scheme="URI" content="GUID-8B84E3BC-2185-4420-A18E-38FA8CF849DD.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304" /><meta name="DC.Language" content="zh-CN" /><title>相机升级</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-8B84E3BC-2185-4420-A18E-38FA8CF849DD.html" data-id="GUID-8B84E3BC-2185-4420-A18E-38FA8CF849DD">固件升级工具</a></span></li><li class="active"><span class="topicref">相机升级</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">相机升级</h1>
+
+
+<div class="body conbody"><p class="shortdesc">相机的固件升级过程主要分为三个阶段，即<span class="ph menucascade"><span class="ph uicontrol">搜索设备</span> &gt; <span class="ph uicontrol">开始升级</span> &gt; <span class="ph uicontrol">升级状态</span></span>。</p>
+
+        <ul class="ul" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__UL_OKY_1RN_HZB">
+            <li class="li" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-FB17878D-F4D2-4BA9-94DA-74B16D4555ED">
+                <p class="p"><a class="xref" href="#GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-125E64A4-A4D9-4A1A-84E8-E93A04EFB4CC">搜索设备</a></p>
+
+            </li>
+
+            <li class="li" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-AB1CF36F-7DE6-46B2-B973-BB83A61F8982">
+                <p class="p"><a class="xref" href="#GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-3D47E892-066A-41B3-B9ED-528FC723D92C">开始升级</a></p>
+
+            </li>
+
+            <li class="li" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-67C367E7-AB5D-4D5F-9298-3878EEDC1456">
+                <p class="p"><a class="xref" href="#GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-05E0F6D4-B257-4B1B-AAB9-417239BB9FF8">升级状态</a></p>
+
+            </li>
+
+        </ul>
+
+        <div class="section" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-125E64A4-A4D9-4A1A-84E8-E93A04EFB4CC"><h2 class="title sectiontitle">搜索设备</h2>
+            
+            <p class="p">打开固件升级工具后，在工具界面上方的<span class="keyword parmname">选择类型</span>处下拉选择<span class="keyword parmname">相机</span>。工具界面左侧显示当前PC上接口的信息，不同接口设备可进行不同操作，如下图所示。</p>
+
+            <div class="fig fignone" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__FIG_VBF_FB1_FZB">
+                
+                <img class="image" style="display:none;" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__IMAGE_KCD_JML_HCC" src="GUID-D6E81A00-B94A-428E-96C2-58B279238A1C-high.png" width="2100" />
+            <div class="fig_caption"><span class="figcap">图 1 相机升级</span></div></div>
+
+            <ul class="ul" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__UL_QFL_XBV_MXB">
+                <li class="li" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-A3859CFE-EE0B-4C96-BC4A-F940CC53D4D2">
+                    <p class="p">GigE和USB接口：</p>
+
+                    <ul class="ul" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__UL_OVJ_YBV_MXB">
+                        <li class="li" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-C4D7B50F-D1A9-40AA-A30F-4703C3751497">
+                            <p class="p">选中GigE或USB，右侧显示GigE或USB下能搜索到的设备。</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-81D76615-8AD3-4077-B309-5FB0A3FFA1AC">
+                            <p class="p">选中GigE或USB下的某个接口，右侧只显示该接口下能搜索到的设备。</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-31900E64-046C-4AF2-A02A-15C5F0684DCB">
+                            <p class="p">工具可自动刷新枚举GigE和USB下的设备，也可通过GigE和USB右侧的<img class="image icon" style="display:none;" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__IMAGE_A3Z_LCV_MXB" src="GUID-21129D57-7CF9-4746-88F0-C5EFF4A4C073-high.png" />手动刷新枚举。</p>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="li" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-59C97EAE-F731-4966-84E4-126DC0D9FB8A">
+                    <p class="p">PCIe接口：</p>
+
+                    <ul class="ul" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__UL_HHG_GDV_MXB">
+                        <li class="li" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-445A01BC-360F-4042-9069-52594555698D">
+                            <p class="p">选中PCIe，右侧显示PCIe下所有采集卡搜索到的相机。</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-A98A2D82-6AB4-403E-9C65-5107EED86191">
+                            <p class="p">工具可自动刷新枚举PCIe下采集卡搜索到的相机，也可通过PCIe右侧的<img class="image icon" style="display:none;" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__IMAGE_ER3_K2V_MXB" src="GUID-21129D57-7CF9-4746-88F0-C5EFF4A4C073-high.png" />手动刷新枚举。</p>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="li" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-2FA1FCC0-E315-4FFC-AE90-BBCDAFDB3502">
+                    <p class="p">Serial Port接口：</p>
+
+                    <ul class="ul" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__UL_SH5_QCV_MXB">
+                        <li class="li" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-E77349FE-C8DC-410F-9F92-8F222201650B">
+                            <p class="p">选中Serial Port，右侧显示Serial Port下能搜索到的设备。</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-63EE9BDE-DD10-4644-B3BA-497CC84D9429">
+                            <p class="p">选中Serial Port下的某个接口，右侧只显示该接口下能搜索到的设备。</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-931D0CF4-6C7D-4D6A-B4BD-172F6026E03F">
+                            <p class="p">工具默认不自动刷新枚举Serial Port下的设备，需通过Serial Port右侧的<img class="image icon" style="display:none;" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__IMAGE_HP3_1DV_MXB" src="GUID-21129D57-7CF9-4746-88F0-C5EFF4A4C073-high.png" />手动刷新枚举。</p>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="section" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-3D47E892-066A-41B3-B9ED-528FC723D92C"><h2 class="title sectiontitle">开始升级</h2>
+            
+            <p class="p">确认需固件升级的相机处于可用状态，在工具右侧进行勾选后，单击工具上方的<img class="image icon" style="display:none;" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__IMAGE_W45_CFV_MXB" src="GUID-774AACC6-E614-4B52-81BA-E562392FD5D0-high.png" />选择固件升级包（dav文件）。</p>
+
+            <p class="p">工具可批量升级多个相机固件，最多可同时勾选20个相机。</p>
+
+            <ul class="ul" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__UL_KCH_HFV_MXB">
+                <li class="li" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-8D2B48E1-6B60-4111-A712-6FAAA1889314">
+                    <p class="p">若使用的升级包是针对某个型号的，则进行批量升级时，只能升级同型号相机。对于其他型号相机，若进行升级操作，升级状态栏提示“升级失败。（错误码：0x900006500）升级固件不匹配”。</p>
+
+                </li>
+
+                <li class="li" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-6370EB47-BD24-4664-A551-4DBBDBCDFCB4">
+                    <p class="p">若使用的升级包是针对多个型号的，则进行批量升级时，可以对升级包中包含的多个型号的相机都进行升级操作。对于不包含在升级包中的其他型号相机，若进行升级操作，升级状态栏提示“升级失败。（错误码：0x900006500）升级固件不匹配”。</p>
+
+                </li>
+
+            </ul>
+
+            <p class="p">完成固件升级包选择后，单击<span class="ph uicontrol">升级</span>按钮即可。</p>
+
+            <div class="note note" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-07CFCCEC-3184-4D3F-8953-CC820177A547"><span class="notetitle">说明</span> 
+                <ul class="ul" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__UL_YYB_RGV_MXB">
+                    <li class="li" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-D70C00AB-FAF9-4636-BC9F-4FDBEF033F4E">
+                        <p class="p">升级固件过程中，请勿断开设备与PC的连接，并保证设备处于工作状态。</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-51CD8888-225D-47E7-805F-765281AAFED4">
+                        <p class="p">相机升级成功后将自动重启。</p>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-05E0F6D4-B257-4B1B-AAB9-417239BB9FF8"><h2 class="title sectiontitle">升级状态</h2>
+            
+            <p class="p">工具左上角会显示当前升级相机的升级情况，如下图所示。可通过工具上方的<span class="ph uicontrol">返回</span>按钮返回工具的初始界面。工具右侧选中的相机也会显示具体的升级状态。</p>
+
+            <div class="fig fignone" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__FIG_GZR_FHV_MXB">
+                
+                <img class="image" style="display:none;" id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__IMAGE_G5R_W4L_HCC" src="GUID-2B05D44A-16C4-4BB0-8133-470406BC0DB5-high.png" width="2100" />
+            <div class="fig_caption"><span class="figcap">图 2 相机固件升级</span></div></div>
+
+        </div>
+
+    </div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>本页导航</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-125E64A4-A4D9-4A1A-84E8-E93A04EFB4CC" class="feature_guide_h2"><span class="link_button">搜索设备</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-3D47E892-066A-41B3-B9ED-528FC723D92C" class="feature_guide_h2"><span class="link_button">开始升级</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-A6D9D2D5-F525-497E-AAE1-A66748539304__GUID-05E0F6D4-B257-4B1B-AAB9-417239BB9FF8" class="feature_guide_h2"><span class="link_button">升级状态</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

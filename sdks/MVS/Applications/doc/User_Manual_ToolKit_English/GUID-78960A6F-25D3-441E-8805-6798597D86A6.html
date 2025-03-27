@@ -1,0 +1,447 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="© Hikrobot Co., Ltd. All rights reserved." /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="PCIe Diagnostics Tool" /><meta name="abstract" content="The PCIe Diagnostics Tool can read the memory value of the frame grabber's debugging status in real time." /><meta name="description" content="The PCIe Diagnostics Tool can read the memory value of the frame grabber's debugging status in real time." /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-78960A6F-25D3-441E-8805-6798597D86A6" /><meta name="DC.Language" content="en-US" /><title>PCIe Diagnostics Tool</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">Home Page</a></span></li><li class="active"><span class="topicref">PCIe Diagnostics Tool</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body "><div class="nested0" id="GUID-78960A6F-25D3-441E-8805-6798597D86A6">
+    <h1 class="title topictitle1">PCIe Diagnostics Tool</h1>
+
+    
+<div class="body conbody"><p class="shortdesc">The <span class="ph uicontrol">PCIe Diagnostics Tool</span> can read the memory
+        value of the frame grabber's debugging status in real time.</p>
+
+        <p class="p">The Tool supports the following types of frame grabbers:</p>
+
+        <ul class="ul" id="GUID-78960A6F-25D3-441E-8805-6798597D86A6__UL_B5W_DY1_KCC">
+            <li class="li" id="GUID-78960A6F-25D3-441E-8805-6798597D86A6__GUID-1127DE89-C524-4664-A78A-94F9009AFCFA">
+                <p class="p">Camera Link frame grabber</p>
+
+            </li>
+
+            <li class="li" id="GUID-78960A6F-25D3-441E-8805-6798597D86A6__GUID-FBAADD12-F351-4DBF-8A5C-99F01BD488F5">
+                <p class="p">Coax Press frame grabber</p>
+
+            </li>
+
+            <li class="li" id="GUID-78960A6F-25D3-441E-8805-6798597D86A6__GUID-07D2E954-4A86-4EFE-91D6-D1AB38A91603">
+                <p class="p">GigE frame grabber</p>
+
+            </li>
+
+            <li class="li" id="GUID-78960A6F-25D3-441E-8805-6798597D86A6__GUID-F60F49B6-C6DA-46F7-9625-B7F90E52404F">
+                <p class="p">10 GigE frame grabber (support some models)</p>
+
+            </li>
+
+            <li class="li" id="GUID-78960A6F-25D3-441E-8805-6798597D86A6__GUID-6994C566-9BED-47BB-A16C-7831F8582A1D">
+                <p class="p">XoFLink Fiber Optic frame grabber</p>
+
+            </li>
+
+        </ul>
+
+</div>
+
+<div class="topic concept nested1" xml:lang="en-US" lang="en-US" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A">
+    <h2 class="title topictitle2">Main Window
+        Introduction</h2>
+
+
+<div class="body conbody"><p class="shortdesc">This section introduces the <span class="ph uicontrol">PCIe Diagnositc Tool</span>'s
+        main window.</p>
+
+        <div class="fig fignone" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__FIG_RQ5_34Z_VXB">
+            
+            <img class="image" style="display:none;" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__IMAGE_SLR_HSM_SDC" src="GUID-77E47EF9-5DA0-49DB-9BC3-6D097A27A5D7-high.png" width="2067" />
+        <div class="fig_caption"><span class="figcap">Figure 1 Main Interface</span></div></div>
+
+        
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__TABLE_OCM_44Z_VXB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">Table 1 Main Interface Description</span></caption>
+                
+                
+                
+                <thead class="thead" align="left">
+                    <tr>
+                        <th class="entry" valign="top" width="14.662756598240467%" id="d10022e101">
+                            <p class="p">No.</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="19.501466275659823%" id="d10022e107">
+                            <p class="p">Item</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="65.8357771260997%" id="d10022e113">
+                            <p class="p">Description</p>
+
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody class="tbody">
+                    <tr>
+                        <td class="entry" valign="top" width="14.662756598240467%" headers="d10022e101 ">
+                            <p class="p">1</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="19.501466275659823%" headers="d10022e107 ">
+                            <p class="p">Menu Bar</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="65.8357771260997%" headers="d10022e113 ">
+                            <p class="p">The menu bar provides functions of importing/exporting
+                                data files, setting general parameters, and other operations for
+                                help.</p>
+
+                            <ul class="ul" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__UL_OF4_1PZ_VXB">
+                                <li class="li" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__GUID-63A51A0D-C113-49E4-9B57-4F8AF429005A">
+                                    <p class="p"><span class="keyword parmname">File</span>: You can
+                                        import external data files or export diagnosis files.</p>
+
+                                    <ul class="ul" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__UL_JBC_CPZ_VXB">
+                                        <li class="li" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__GUID-480699C7-B881-41FF-8B28-7C96A1B07A06">
+                                            <p class="p">Click <span class="ph menucascade"><span class="ph uicontrol">File</span> &gt; <span class="ph uicontrol">Import</span></span> to import external data files to the
+                                                tool.</p>
+
+                                        </li>
+
+                                        <li class="li" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__GUID-BAF54033-BB20-4328-AC82-12BC13C0A6AA">
+                                            <p class="p">Click <span class="ph menucascade"><span class="ph uicontrol">File</span> &gt; <span class="ph uicontrol">Export</span></span> to export the diagnosis files to the
+                                                local PC.</p>
+
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+
+                                <li class="li" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__GUID-CED6040A-EA75-49E5-8E34-D891708DD4F0">
+                                    <p class="p"><span class="keyword parmname">Settings</span>: You
+                                        can configure parameters for the diagnosis files to be
+                                        exported.</p>
+
+                                    <ul class="ul" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__UL_OYQ_WYB_5XB">
+                                        <li class="li" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__GUID-C3F6A869-825F-4870-B304-D60C3DA9678E">
+                                            <p class="p"><span class="keyword parmname">Auto
+                                                  Export</span>: If enabled, the diagnosis files
+                                                will be exported automatically.</p>
+
+                                        </li>
+
+                                        <li class="li" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__GUID-1D5C97A1-08A3-4B4A-BD71-921F796265DD">
+                                            <p class="p"><span class="keyword parmname">Export
+                                                  Path</span>: You can configure the saving path
+                                                for the diagnosis files to be exported.</p>
+
+                                        </li>
+
+                                        <li class="li" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__GUID-5A26A5FD-B564-4643-B0E7-0FA18E17D4AA">
+                                            <p class="p"><span class="keyword parmname">File
+                                                  Count</span>: You can configure the number of
+                                                diagnosis files to be exported automatically.</p>
+
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+
+                                <li class="li" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__GUID-16ABEBF2-F5F8-475D-ABDA-4842F55A0B4A">
+                                    <p class="p"><span class="keyword parmname">Help</span>: You can
+                                        select the language (Chinese or English) for the use of the
+                                        tool, view the user manual, and view the tool version
+                                        information.</p>
+
+                                </li>
+
+                            </ul>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="14.662756598240467%" headers="d10022e101 ">
+                            <p class="p">2</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="19.501466275659823%" headers="d10022e107 ">
+                            <p class="p">Frame Grabber Settings</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="65.8357771260997%" headers="d10022e113 ">
+                            <p class="p">You can select a frame grabber for real-time frame
+                                grabbing and perform the following operations in the setting
+                                area.</p>
+
+                            <ul class="ul" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__UL_VNZ_CRH_5WB">
+                                <li class="li" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__GUID-AC6D87D8-5B10-4C96-A3A0-7560C90FA589">
+                                    <p class="p">Refresh Frame Grabber: Click <img class="image icon" style="display:none;" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__IMAGE_FPD_PRH_5WB" src="GUID-DD417A08-2461-451F-87D7-9D483C067086-high.png" /> to refresh the frame grabber.</p>
+
+                                </li>
+
+                                <li class="li" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__GUID-A9E1DA19-896D-4CD3-9A48-BBBF15973178">
+                                    <p class="p">View Frame Grabber: Click <img class="image icon" style="display:none;" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__IMAGE_A5D_5RH_5WB" src="GUID-7F3C029A-6E56-4DD6-A60E-FE934780BFA2-high.png" /> to view the frame grabber
+                                        information.</p>
+
+                                </li>
+
+                                <li class="li" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__GUID-0A85EC15-FFBE-46A0-9AA3-75E227976DE5">
+                                    <p class="p">Check Memory and CPU: Click <img class="image icon" style="display:none;" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__IMAGE_NZQ_TRH_5WB" src="GUID-FFCCA9E7-5EB3-4F1C-99A9-E2B1BCD50CEA-high.png" /> in the upper-right corner to check
+                                        the memory and CPU usage.</p>
+
+                                </li>
+
+                                <li class="li" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__GUID-5C5993F0-383B-435D-8540-FCCA7C806F87">
+                                    <p class="p">XoF-X8: Enable this when the connected frame
+                                        grabber is of the XoF-X8 type.</p>
+
+                                </li>
+
+                                <li class="li" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__GUID-4B48E37A-B6EE-45C7-B98B-2DFD08ADB187">
+                                    <p class="p">Set Refresh Interval: You can set the interval
+                                        for refreshing the debugging status after the frame grabber
+                                        starts working. The unit is "ms" and the default interval
+                                        (5,000 ms) is recommended.</p>
+
+                                </li>
+
+                                <li class="li" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__GUID-ED54ED90-42D3-40C6-89F5-7BC701A40E16">
+                                    <p class="p">Set Number System: You can set the number system
+                                        to <span class="ph uicontrol">Binary</span>,
+                                            <span class="ph uicontrol">Decimal</span>, or
+                                            <span class="ph uicontrol">Hexadecimal</span> for displaying
+                                        debugging status.</p>
+
+                                </li>
+
+                            </ul>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="14.662756598240467%" headers="d10022e101 ">
+                            <p class="p">3</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="19.501466275659823%" headers="d10022e107 ">
+                            <p class="p">Diagnostic Monitoring</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="65.8357771260997%" headers="d10022e113 ">
+                            <p class="p">You can monitor the memory value of the frame grabber's
+                                PCIe debugging status in real time in the diagnostic monitoring
+                                area. See details in <a class="xref" href="GUID-78960A6F-25D3-441E-8805-6798597D86A6.html#GUID-5E0273D2-BBB1-4722-A8DD-E5FBE2B8B873" title="By connecting frame grabbers with the tool to grab frames, you can monitor the memory value of the frame grabber's PCIe debugging status in real time.">Diagnostic Monitoring</a>.</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="14.662756598240467%" headers="d10022e101 ">
+                            <p class="p">4</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="19.501466275659823%" headers="d10022e107 ">
+                            <p class="p">Streaming Monitoring</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="65.8357771260997%" headers="d10022e113 ">
+                            <p class="p">By selecting a stream type from the drop-down list in
+                                the <span class="keyword parmname">Switch Stream</span> area, you can
+                                monitor the streaming status of the frame grabber in real time,
+                                including the stream status and stream transmit status.</p>
+
+                            <ul class="ul" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__UL_ADB_QQH_5WB">
+                                <li class="li" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__GUID-6CAA46AD-C352-43E0-ACB9-7117C52BDF55">
+                                    <p class="p"><span class="keyword parmname">Stream Transmit
+                                            Enable</span>: It refers to the streaming status of
+                                        the frame grabber and it can be 0 (streaming is disabled) or
+                                        1 (streaming is enabled).</p>
+
+                                </li>
+
+                                <li class="li" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__GUID-303349D4-CF3C-481D-9AF3-94582CB2868A">
+                                    <p class="p"><span class="keyword parmname">GVSP Packet Input Sof
+                                            Cnt</span>: It refers to the number of lost frames
+                                        of the frame grabber.</p>
+
+                                </li>
+
+                                <li class="li" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__GUID-B825EC28-93AA-411F-B2EC-67CE66347463">
+                                    <p class="p"><span class="keyword parmname">GVSP Packet Input
+                                            Data_last Cnt</span>: It refers to the number of
+                                        frames transmitted to the tool.</p>
+
+                                </li>
+
+                            </ul>
+
+                            <div class="p">
+                                <div class="note note" id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A__GUID-15B10A39-3821-4C6F-B482-1C37CAAA4FE3"><span class="notetitle">Note</span> 
+                                    <p class="p">The interface may vary with the frame grabber
+                                        types. The actual interface shall prevail.</p>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+</div>
+
+    </div>
+
+</div>
+<div class="topic concept nested1" xml:lang="en-US" lang="en-US" id="GUID-5E0273D2-BBB1-4722-A8DD-E5FBE2B8B873">
+    <h2 class="title topictitle2">Diagnostic Monitoring</h2>
+
+    
+    <div class="body conbody"><p class="shortdesc">By connecting frame grabbers with the tool to grab frames, you can
+        monitor the memory value of the frame grabber's PCIe debugging status in real
+        time.</p>
+
+        <p class="p">Select a frame grabber model from the drop-down list in the upper-left
+            corner and click <span class="ph uicontrol">Open FrameGrabber</span> in the upper-right corner.</p>
+
+        <p class="p">You can enter keywords of debugging status or address in the search box on
+            the left and click
+                <img class="image icon" style="display:none;" id="GUID-5E0273D2-BBB1-4722-A8DD-E5FBE2B8B873__IMAGE_FQ4_KVH_5WB" src="GUID-08F338A7-7241-4AE5-A262-4D9EDCC96393-high.png" /> to search for the target
+            information. The Common page displays the frequent debugging status information.</p>
+
+        <p class="p">The tool can monitor 4 types of debugging status for the frame grabber,
+            including <span class="keyword parmname">Link</span>, <span class="keyword parmname">Stream</span>,
+                <span class="keyword parmname">Soft</span>, and <span class="keyword parmname">PCIe</span>.</p>
+
+        <ul class="ul" id="GUID-5E0273D2-BBB1-4722-A8DD-E5FBE2B8B873__UL_M11_XL4_WWB">
+            <li class="li" id="GUID-5E0273D2-BBB1-4722-A8DD-E5FBE2B8B873__GUID-C71784B0-EC4A-438A-9EC9-E6671663DCE3">
+                <p class="p"><span class="keyword parmname">Link</span>: Transmitted register data.</p>
+
+            </li>
+
+            <li class="li" id="GUID-5E0273D2-BBB1-4722-A8DD-E5FBE2B8B873__GUID-E64D3743-8BEE-4FEF-B2FE-0E72D13B2DDD">
+                <p class="p"><span class="keyword parmname">Stream</span>: Data stream, etc.</p>
+
+            </li>
+
+            <li class="li" id="GUID-5E0273D2-BBB1-4722-A8DD-E5FBE2B8B873__GUID-85DF1DC4-CFB4-411E-85AE-0D2BE396E23F">
+                <p class="p"><span class="keyword parmname">Soft</span>: Registers related with Soft software, SDK,
+                    serial port configuration, etc.</p>
+
+            </li>
+
+            <li class="li" id="GUID-5E0273D2-BBB1-4722-A8DD-E5FBE2B8B873__GUID-08998F6D-3094-4F1F-BBB9-0C430820D1CB">
+                <p class="p"><span class="keyword parmname">PCIe</span>: Transmission protocols, APIs, status,
+                    counting, etc.</p>
+
+            </li>
+
+        </ul>
+
+        <div class="p">
+            <div class="fig fignone" id="GUID-5E0273D2-BBB1-4722-A8DD-E5FBE2B8B873__FIG_RGN_4VH_5WB">
+                
+                <img class="image" style="display:none;" src="GUID-EB327C15-D4E3-4FAA-92F9-A9EE020CCC2A-high.png" width="2067" />
+            <div class="fig_caption"><span class="figcap">Figure 2 Diagnostic Monitoring</span></div></div>
+
+        </div>
+
+        <div class="p">
+            <div class="note note" id="GUID-5E0273D2-BBB1-4722-A8DD-E5FBE2B8B873__GUID-2B02A8D2-5190-403A-B336-39E64ADC4F89"><span class="notetitle">Note</span> 
+                <p class="p">Click <span class="ph uicontrol">Close FrameGrabber</span> to stop grabbing
+                    frames.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</div>
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">Share</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>Previous Page</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>Next Page</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>On This Page</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-EB9DFCCF-C551-4F39-8B7A-5D7BAB88BB2A" class="feature_guide_h2"><span class="link_button">Main Window
+        Introduction</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-5E0273D2-BBB1-4722-A8DD-E5FBE2B8B873" class="feature_guide_h2"><span class="link_button">Diagnostic Monitoring</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8c01380e02e9eb04798d5"></div>
+		
+	</body>
+</html>

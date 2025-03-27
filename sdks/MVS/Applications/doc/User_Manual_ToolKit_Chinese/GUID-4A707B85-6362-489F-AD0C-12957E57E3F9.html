@@ -1,0 +1,106 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="图像调试工具" /><meta name="abstract" content="图像调试工具（本节简称为“工具”）是配合工业相机SDK使用的工具，可生成各种算法的标定文件和配置参数。通过自行调用SDK中的ISP处理接口（MV_CC_ISPProcess）实现图像ISP算法处理。" /><meta name="description" content="图像调试工具（本节简称为“工具”）是配合工业相机SDK使用的工具，可生成各种算法的标定文件和配置参数。通过自行调用SDK中的ISP处理接口（MV_CC_ISPProcess）实现图像ISP算法处理。" /><meta name="DC.Relation" scheme="URI" content="GUID-98D6E9F3-379B-4846-8379-D8603E34CC32.html" /><meta name="DC.Relation" scheme="URI" content="GUID-5C10AD07-BE3A-42B2-8BDB-D63EFFFBA0B7.html" /><meta name="DC.Relation" scheme="URI" content="GUID-25FC4626-5C11-4EBB-917E-446BD2802B7A.html" /><meta name="DC.Relation" scheme="URI" content="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html" /><meta name="DC.Relation" scheme="URI" content="GUID-6568202E-6FF8-4261-ADD6-50F538AAA490.html" /><meta name="DC.Relation" scheme="URI" content="GUID-4175955D-4EA6-459D-B215-E80FAB72DDB3.html" /><meta name="DC.Relation" scheme="URI" content="GUID-C6D0DF51-44C7-4906-B4F6-B43A4BE43EB1.html#GUID-C6D0DF51-44C7-4906-B4F6-B43A4BE43EB1" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-4A707B85-6362-489F-AD0C-12957E57E3F9" /><meta name="DC.Language" content="zh-CN" /><title>图像调试工具</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-4A707B85-6362-489F-AD0C-12957E57E3F9" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li class="active"><span class="topicref">图像调试工具</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">图像调试工具</h1>
+
+    
+    <div class="body conbody"><p class="shortdesc">图像调试工具（本节简称为“工具”）是配合工业相机SDK使用的工具，可生成各种算法的标定文件和配置参数。通过自行调用SDK中的ISP处理接口（MV_CC_ISPProcess）实现图像ISP算法处理。</p>
+
+        <p class="p">工具主要功能如下：</p>
+
+        <ul class="ul" id="GUID-4A707B85-6362-489F-AD0C-12957E57E3F9__UL_D21_3VD_D3B">
+            <li class="li" id="GUID-4A707B85-6362-489F-AD0C-12957E57E3F9__GUID-A71854E9-556D-4953-ABD1-FCB265425689">
+                <p class="p">支持对图像进行算法标定和校正，并预览校正效果。</p>
+
+            </li>
+
+            <li class="li" id="GUID-4A707B85-6362-489F-AD0C-12957E57E3F9__GUID-2072F130-91C0-401A-80F4-44E09E7B4172">
+                <p class="p">支持多个型号相机，满足不同功能需要。</p>
+
+            </li>
+
+            <li class="li" id="GUID-4A707B85-6362-489F-AD0C-12957E57E3F9__GUID-D0197E24-A794-46D3-9642-2836A870436A">
+                <p class="p">支持相机/本地取图模式，适应不同场景需求。</p>
+
+            </li>
+
+            <li class="li" id="GUID-4A707B85-6362-489F-AD0C-12957E57E3F9__GUID-89567BD7-9782-4B99-9A73-CAE3A9B00066">
+                <p class="p">配合工业相机SDK使用，通过自行调用SDK中的ISP处理接口（MV_CC_ISPProcess）实现图像ISP算法处理。</p>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

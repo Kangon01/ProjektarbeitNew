@@ -1,0 +1,139 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="© Hikrobot Co., Ltd. All rights reserved." /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="Algorithm Introduction" /><meta name="abstract" content="The Software supports correcting an image by the following algorithms: lens shading correction (LSC), denoise, bayer interpolation (demosaic, DDS), color correction (CCM, CLUT, super palette, purple fringe correction), image enhancement (sharpness, LUT, contrast), and image scaling." /><meta name="description" content="The Software supports correcting an image by the following algorithms: lens shading correction (LSC), denoise, bayer interpolation (demosaic, DDS), color correction (CCM, CLUT, super palette, purple fringe correction), image enhancement (sharpness, LUT, contrast), and image scaling." /><meta name="DC.Relation" scheme="URI" content="GUID-69DC65C8-2E6C-4BDF-B4C9-00969538C2CA.html" /><meta name="DC.Relation" scheme="URI" content="GUID-50952F87-E453-4F0D-88CD-8096C764ABB7.html" /><meta name="DC.Relation" scheme="URI" content="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5.html" /><meta name="DC.Relation" scheme="URI" content="GUID-ED8344D6-4992-4264-AB48-698E7A86834F.html#GUID-ED8344D6-4992-4264-AB48-698E7A86834F" /><meta name="DC.Relation" scheme="URI" content="GUID-CE8A3C25-C448-4DAD-9847-A50BC1C5F551.html#GUID-CE8A3C25-C448-4DAD-9847-A50BC1C5F551" /><meta name="DC.Relation" scheme="URI" content="GUID-37148F2E-5C98-4B45-BA43-6F29B777666C.html#GUID-37148F2E-5C98-4B45-BA43-6F29B777666C" /><meta name="DC.Relation" scheme="URI" content="GUID-DEAB2E1B-63AC-4789-B73A-775EE689BCBD.html#GUID-DEAB2E1B-63AC-4789-B73A-775EE689BCBD" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00" /><meta name="DC.Language" content="en-US" /><title>Algorithm Introduction</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">Home Page</a></span></li><li><span class="topicref"><a href="GUID-69DC65C8-2E6C-4BDF-B4C9-00969538C2CA.html" data-id="GUID-69DC65C8-2E6C-4BDF-B4C9-00969538C2CA">ISP Tool</a></span></li><li class="active"><span class="topicref">Algorithm Introduction</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">Algorithm Introduction</h1>
+
+
+<div class="body conbody"><p class="shortdesc">The Software supports correcting an image by the following algorithms: lens
+        shading correction (LSC), denoise, bayer interpolation (demosaic, DDS), color correction
+        (CCM, CLUT, super palette, purple fringe correction), image enhancement (sharpness, LUT,
+        contrast), and image scaling.</p>
+
+        <div class="note note" id="GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00__GUID-5B513D2B-6B9D-4123-910E-DDDA8A777100"><span class="notetitle">Note</span> 
+            <p class="p">The algorithms should be supported by the camera. If an algorithm is not
+                supported by a camera, there will be a blue "Sim" tag in the upper right corner of
+                the algorithm icon as is shown in the figure below.</p>
+
+        </div>
+
+        <div class="fig fignone" id="GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00__FIG_RV3_1DN_5QB">
+            
+            <img class="image" style="display:none;" id="GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00__IMAGE_LSY_BDN_5QB" src="GUID-C413205C-BCB9-4ED5-90BF-712BD6BD0867-high.png" width="2067" />
+        <div class="fig_caption"><span class="figcap">Figure 1 Pipeline Pane</span></div></div>
+
+        <p class="p">Some algorithms supports encrypted cameras, while some supports unencrypted cameras. See
+            the following table.</p>
+
+        
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00__TABLE_OFQ_LW2_YQB" class="table" frame="border" border="1" rules="all">
+                
+                
+                <thead class="thead" align="left">
+                    <tr>
+                        <th class="entry" valign="top" width="50%" id="d2467e45">
+                            <p class="p">Algorithms Supporting Encrypted Cameras</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="50%" id="d2467e51">
+                            <p class="p">Algorithms Supporting Unencrypted Cameras</p>
+
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody class="tbody">
+                    <tr>
+                        <td class="entry" valign="top" width="50%" headers="d2467e45 ">
+                            <p class="p">DDS, CCM, CLUT, Purple Fringe, Super Palette, Noise Estimation,
+                                Denoise, SuperBinning</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="50%" headers="d2467e51 ">
+                            <p class="p">CFA, Sharpness, Contrast, LUT, LSC, Rotate, Flip</p>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+</div>
+
+</div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">Share</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>Previous Page</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>Next Page</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8c01380e02e9eb04798d5"></div>
+		
+	</body>
+</html>

@@ -1,0 +1,350 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="© Hikrobot Co., Ltd. All rights reserved." /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="Image Enhancement" /><meta name="abstract" content="The image enhancement algorithms include LUT, sharpness correction, and contrast correction." /><meta name="description" content="The image enhancement algorithms include LUT, sharpness correction, and contrast correction." /><meta name="DC.Relation" scheme="URI" content="GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-37148F2E-5C98-4B45-BA43-6F29B777666C" /><meta name="DC.Language" content="en-US" /><title>Image Enhancement</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">Home Page</a></span></li><li><span class="topicref"><a href="GUID-69DC65C8-2E6C-4BDF-B4C9-00969538C2CA.html" data-id="GUID-69DC65C8-2E6C-4BDF-B4C9-00969538C2CA">ISP Tool</a></span></li><li><span class="topicref"><a href="GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00.html" data-id="GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00">Algorithm Introduction</a></span></li><li class="active"><span class="topicref">Image Enhancement</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body "><div class="nested0" id="GUID-37148F2E-5C98-4B45-BA43-6F29B777666C">
+    <h1 class="title topictitle1">Image Enhancement</h1>
+
+<p class="shortdesc">The image enhancement algorithms include LUT, sharpness correction, and
+        contrast correction.</p>
+
+
+<div class="topic concept nested1" xml:lang="en-US" lang="en-US" id="GUID-C5C9BE3E-EDB2-4BE6-8118-BBCBBEF80118">
+    <h2 class="title topictitle2">LUT</h2>
+
+    
+    
+    
+    <div class="body conbody"><p class="shortdesc">You can use Look-Up Table (LUT) to map the input gray scale values to
+        corresponding output values based on a predefined gray scale mapping. </p>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-C5C9BE3E-EDB2-4BE6-8118-BBCBBEF80118__GUID-9FC1D265-845D-4BE2-BCDF-0DC6BB27E6EB"><!-- --></a>Gamma</dt>
+
+                
+                <dd class="dd pd">
+                    <p class="p">Set the Gamma value to achieve nonlinear color mapping. The
+                        value ranges from 0 to 100.</p>
+
+                </dd>
+
+                
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-C5C9BE3E-EDB2-4BE6-8118-BBCBBEF80118__GUID-73440415-B2DD-4C6C-8025-06B59AEE2C52"><!-- --></a>Contrast</dt>
+
+                <dd class="dd pd">
+                    <p class="p">It ranges from <kbd class="ph userinput">-1</kbd> to
+                            <kbd class="ph userinput">1</kbd>. <kbd class="ph userinput">0</kbd> indicates that the
+                        contrast does not change. The value less than 0 indicates that the contrast
+                        is lowering. The value greater than 0 indicates that the contrast is
+                        increasing.</p>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-C5C9BE3E-EDB2-4BE6-8118-BBCBBEF80118__GUID-9F6321F3-8D11-4FCB-9457-812D9CD37B40"><!-- --></a>Brightness</dt>
+
+                <dd class="dd pd">
+                    <p class="p">It ranges from <kbd class="ph userinput">-1</kbd> to
+                            <kbd class="ph userinput">1</kbd>. <kbd class="ph userinput">0</kbd> indicates that the
+                        brightness does not change. The value less than 0 indicates that the reduced
+                        brightness. The value greater than 0 indicates that the increased
+                        brightness.</p>
+
+                </dd>
+
+            
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-C5C9BE3E-EDB2-4BE6-8118-BBCBBEF80118__GUID-630ADE67-392B-40FB-B5E3-6ECC07D58671"><!-- --></a>LUT Line Type</dt>
+
+                <dd class="dd pd">There are four LUT line types: Adaptive, Fold Line, Curve, and Free
+                    Line. For the Adaptive type, a LUT line will be generated according to <span class="keyword parmname">Gamma</span>, <span class="keyword parmname">Contrast</span>,
+                        <span class="keyword parmname">Brightness</span> you enter, and you cannot
+                    customize the adaptive LUT line. For the Fold Line and Curve types, double click
+                    on the point you want to edit and drag. For the Free Line type, simply click on
+                    the desired point and drag.</dd>
+
+            
+            
+        </dl>
+
+        <div class="fig fignone" id="GUID-C5C9BE3E-EDB2-4BE6-8118-BBCBBEF80118__FIG_BCQ_FHS_2ZB">
+            
+            
+            <img class="image" style="display:none;" id="GUID-C5C9BE3E-EDB2-4BE6-8118-BBCBBEF80118__IMAGE_CCQ_FHS_2ZB" height="1417" src="GUID-257AD4EA-DA37-4020-913A-91BC296C4A34-high.png" />
+            
+        <div class="fig_caption"><span class="figcap">Figure 1 Correction Parameters</span></div></div>
+
+    </div>
+
+</div>
+<div class="topic concept nested1" xml:lang="en-US" lang="en-US" id="GUID-EC9028FF-B6BB-4AFC-B677-2E5A2C76DE39">
+    <h2 class="title topictitle2">Contrast</h2>
+
+
+<div class="body conbody"><p class="shortdesc">You can correct the contrast of an image.</p>
+
+<p class="p">Click <span class="ph uicontrol">Import Local Parameters</span> to set the following
+            parameter.</p>
+
+        <div class="fig fignone" id="GUID-EC9028FF-B6BB-4AFC-B677-2E5A2C76DE39__FIG_ERL_YL5_5QB">
+            
+            <img class="image" style="display:none;" id="GUID-EC9028FF-B6BB-4AFC-B677-2E5A2C76DE39__IMAGE_P5G_JMC_YQB" src="GUID-978C7CFB-9084-44EC-9613-138CFEAF0C35-high.png" width="770" />
+        <div class="fig_caption"><span class="figcap">Figure 2 Contrast Correction</span></div></div>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-EC9028FF-B6BB-4AFC-B677-2E5A2C76DE39__GUID-E5A34D54-A53B-4AAE-BFA9-905144A4AA36"><!-- --></a>Factor</dt>
+
+                <dd class="dd pd">
+                    <p class="p">The value of this parameter ranges from 1 to 10,000. The greater the value,
+                        the stronger the contrast.</p>
+
+                </dd>
+
+            
+        </dl>
+
+</div>
+
+</div>
+<div class="topic concept nested1" xml:lang="en-US" lang="en-US" id="GUID-CD8FF87A-09E6-4236-92B8-A956BB0BA323">
+    <h2 class="title topictitle2">Sharpness</h2>
+
+
+<div class="body conbody"><p class="shortdesc">You can correct the sharpness of an image.</p>
+
+<p class="p">Click <span class="ph uicontrol">Import Local Parameters</span> to set the following
+            parameters.</p>
+
+        <div class="fig fignone" id="GUID-CD8FF87A-09E6-4236-92B8-A956BB0BA323__FIG_AP5_245_5QB">
+            
+            <img class="image" style="display:none;" id="GUID-CD8FF87A-09E6-4236-92B8-A956BB0BA323__IMAGE_I5N_TMC_YQB" src="GUID-9CFBAB96-7A03-4804-BF19-852745F7034D-high.png" width="770" />
+        <div class="fig_caption"><span class="figcap">Figure 3 Sharpness Correction</span></div></div>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-CD8FF87A-09E6-4236-92B8-A956BB0BA323__GUID-62001C41-4CB8-4419-92A1-D465C1F315B3"><!-- --></a>Sharpness Radius</dt>
+
+                <dd class="dd pd">
+                    <p class="p">The value of this parameter ranges from 1 to 21. The greater the
+                        value, the longer it takes for correction.</p>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-CD8FF87A-09E6-4236-92B8-A956BB0BA323__GUID-536C24E7-E56B-4829-B21F-6A9EE90C1FE7"><!-- --></a>Sharpness Threshold</dt>
+
+                <dd class="dd pd">
+                    <p class="p">The value of this parameter ranges from 0 to 255. Any value exceeding this
+                        range will not be processed.</p>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-CD8FF87A-09E6-4236-92B8-A956BB0BA323__GUID-651050BD-6C52-4474-926E-B3AB82455FE7"><!-- --></a>Positive Sharpness Strength / Negative Sharpness Strength</dt>
+
+                <dd class="dd pd">
+                    <p class="p">The intensity level of positive/negative sharpness correction.</p>
+
+                </dd>
+
+            
+        </dl>
+
+</div>
+
+</div>
+<div class="topic concept nested1" xml:lang="en-US" lang="en-US" id="GUID-9F0CE16E-A605-46EB-A954-A36F61CC64DD">
+    
+    <h2 class="title topictitle2">Local Contrast Enhancement</h2>
+
+    
+    
+    <div class="body conbody"><p class="shortdesc">To improve the overall balance of light and dark tones in an image in
+        low-light and uneven lighting situations, you can use adaptive local contrast enhancement to
+        enhance the brightness of darker areas while maintaining the brightness of brighter areas
+        unchanged.  </p>
+
+        <p class="p">The parameters of Local Contrast Enhancement (LCE) are as follows.</p>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-9F0CE16E-A605-46EB-A954-A36F61CC64DD__GUID-E29D8FF7-702E-4F29-9929-762BA6D96F4A"><!-- --></a>Bilateral Filtering Size</dt>
+
+                <dd class="dd pd">
+                    <p class="p">This parameter is a technique used for local contrast
+                        enhancement by combining bilateral filtering with contrast enhancement. In
+                        this method, a filter is applied to each pixel of the image, taking into
+                        account both spatial distance and intensity similarity. The filter
+                        calculates the average contrast of the pixels within a defined window around
+                        each pixel and adjusts the brightness of the pixels based on this average
+                        contrast value. The value ranges from 3 to 41.</p>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-9F0CE16E-A605-46EB-A954-A36F61CC64DD__GUID-57722F2D-611E-4EE5-8F92-CB9258481822"><!-- --></a>LCE SigmaD</dt>
+
+                <dd class="dd pd">
+                    <p class="p">It refers to the standard deviation of Gaussian blur, which
+                        ranges from 100 to 10,000. It means the amount of blur or smoothing applied
+                        to an image when using a Gaussian filter. It controls the size of the blur
+                        kernel and determines how much neighboring pixels contribute to each pixel
+                        during the blurring process. A higher standard deviation leads to a more
+                        pronounced blurring effect, which can be useful in reducing noise or
+                        creating a softer appearance. Conversely, a lower standard deviation
+                        preserves more image details and produces a less pronounced blur.</p>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-9F0CE16E-A605-46EB-A954-A36F61CC64DD__GUID-F2F86566-7FC0-41D0-8B67-A60016DF7779"><!-- --></a>LCE SigmaR</dt>
+
+                <dd class="dd pd">
+                    <p class="p">A larger standard deviation makes the bilateral filter's range
+                        weights more expansive, considering a wider range of color differences.
+                        Conversely, a smaller standard deviation makes the filter's weights more
+                        localized to nearby colors. This value ranges from 1,000 to 20,0000. </p>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-9F0CE16E-A605-46EB-A954-A36F61CC64DD__GUID-4C920659-06B3-4730-8307-2CAAC34D45FD"><!-- --></a>Gamma</dt>
+
+                <dd class="dd pd">
+                    <p class="p">A higher gamma value may be suitable for images with low contrast
+                        or dull appearance, while a lower gamma value can be useful for reducing
+                        harsh contrast or preserving fine details in high-contrast images. This
+                        value ranges from 1 to 10,000.</p>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-9F0CE16E-A605-46EB-A954-A36F61CC64DD__GUID-88DC5568-7728-4C6C-98B1-94610BFD4773"><!-- --></a>Texture Enhancement Level</dt>
+
+                <dd class="dd pd">
+                    <p class="p">This parameter is used to control the degree of texture
+                        enhancement when applying the LCE algorithm on a texture image. A higher
+                        value will enhance the contrast of the texture, making the details more
+                        distinct and prominent. Conversely, a lower value will weaken the
+                        enhancement effect, resulting in a more soft and natural image. This value
+                        ranges from 0 to 1,280.</p>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-9F0CE16E-A605-46EB-A954-A36F61CC64DD__GUID-D6E66997-793F-40F4-9426-0062350D5391"><!-- --></a>LCE FuseSP</dt>
+
+                <dd class="dd pd">
+                    <p class="p">This parameter refers to a point on a curve where the left and
+                        right sides have the same weight value and are symmetrically positioned. In
+                        brightness adjustment, if the weight value of a symmetric point increases,
+                        the pixel values on the left and right sides of that point will be enhanced
+                        with weighted value, thereby increasing the brightness of the image. The
+                        value ranges from 0 to 4,095.</p>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-9F0CE16E-A605-46EB-A954-A36F61CC64DD__GUID-89A858BD-D1F9-4E5E-BC27-DDEB9DE2EB08"><!-- --></a>Brightness Enhancement Level</dt>
+
+                <dd class="dd pd">
+                    <p class="p">This parameter is used to control the level of brightness
+                        enhancement in an image. A smaller value will result in a greater increase
+                        in image brightness. The value ranges from 0 to 256.</p>
+
+                </dd>
+
+            
+        </dl>
+
+        <div class="fig fignone" id="GUID-9F0CE16E-A605-46EB-A954-A36F61CC64DD__FIG_YD3_HXH_DZB">
+            
+            <img class="image" style="display:none;" id="GUID-9F0CE16E-A605-46EB-A954-A36F61CC64DD__IMAGE_VWT_3XH_DZB" src="GUID-4FE34B43-C049-4C0F-BCAB-6277F61427D7-high.png" width="1000" />
+        <div class="fig_caption"><span class="figcap">Figure 4 LCE Parameters</span></div></div>
+
+    </div>
+
+</div>
+</div>
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">Share</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>Previous Page</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>Next Page</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>On This Page</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-C5C9BE3E-EDB2-4BE6-8118-BBCBBEF80118" class="feature_guide_h2"><span class="link_button">LUT</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-EC9028FF-B6BB-4AFC-B677-2E5A2C76DE39" class="feature_guide_h2"><span class="link_button">Contrast</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-CD8FF87A-09E6-4236-92B8-A956BB0BA323" class="feature_guide_h2"><span class="link_button">Sharpness</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-9F0CE16E-A605-46EB-A954-A36F61CC64DD" class="feature_guide_h2"><span class="link_button">Local Contrast Enhancement</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8c01380e02e9eb04798d5"></div>
+		
+	</body>
+</html>

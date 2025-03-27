@@ -1,0 +1,217 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="description" content="MVS客户端支持通过如下三种方法添加网口相机： 自动枚举网口相机 CMD命令方式添加相机 添加远程相机 客户端可自动枚举局域网内可搜索到的网口相机。 客户端可通过 通用设置 的 设备列表自动刷新 每隔固定时间对PC网口下的相机进行刷新。同时也可通过设备列表GigE接口右侧的 进行手动刷新。 客户端支持通过CMD命令的方式打开客户端并连接相机。 通过系统菜单打开CMD命令框。 在命令框中输入 cd ..." /><meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="添加网口相机" /><meta name="DC.Relation" scheme="URI" content="GUID-E0446878-1682-4778-909C-ED5D1E79EBAE.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-2CA46A86-22E7-4ADB-8EE7-4D32A85568EA" /><meta name="DC.Language" content="zh-CN" /><title>添加网口相机</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html" data-id="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E">设备管理</a></span></li><li><span class="topicref"><a href="GUID-E0446878-1682-4778-909C-ED5D1E79EBAE.html" data-id="GUID-E0446878-1682-4778-909C-ED5D1E79EBAE">网口相机管理</a></span></li><li class="active"><span class="topicref">添加网口相机</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body "><div class="nested0" id="GUID-2CA46A86-22E7-4ADB-8EE7-4D32A85568EA">
+    <h1 class="title topictitle1">添加网口相机</h1>
+
+    <div class="body conbody">
+        <p class="p">MVS客户端支持通过如下三种方法添加网口相机：</p>
+
+        <ul class="ul" id="GUID-2CA46A86-22E7-4ADB-8EE7-4D32A85568EA__UL_QJQ_YJF_2CC">
+            <li class="li" id="GUID-2CA46A86-22E7-4ADB-8EE7-4D32A85568EA__GUID-E8FAB404-9FAE-4BFF-B142-988B66671F5C">
+                <p class="p"><a class="xref" href="GUID-2CA46A86-22E7-4ADB-8EE7-4D32A85568EA.html#GUID-C942979D-C9BB-47C9-B084-7968CD470372" title="客户端可自动枚举局域网内可搜索到的网口相机。">自动枚举网口相机</a></p>
+
+            </li>
+
+            <li class="li" id="GUID-2CA46A86-22E7-4ADB-8EE7-4D32A85568EA__GUID-394BDDC3-76B5-4078-A98B-E668A0430627">
+                <p class="p"><a class="xref" href="GUID-2CA46A86-22E7-4ADB-8EE7-4D32A85568EA.html#GUID-5A68BD31-9A6B-4F0E-94B5-101D93615F68" title="客户端支持通过CMD命令的方式打开客户端并连接相机。">CMD命令方式添加相机</a></p>
+
+            </li>
+
+            <li class="li" id="GUID-2CA46A86-22E7-4ADB-8EE7-4D32A85568EA__GUID-365BBAE2-0CEF-484A-99C3-5398DDBF7A7C">
+                <p class="p"><a class="xref" href="GUID-2CA46A86-22E7-4ADB-8EE7-4D32A85568EA.html#GUID-18343163-BE0A-433A-A9F0-FE19111E20A1" title="若已知晓相机IP地址，但客户端搜索不到该相机，可通过该功能添加相机。">添加远程相机</a></p>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+
+<div class="topic concept nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-C942979D-C9BB-47C9-B084-7968CD470372">
+    <h2 class="title topictitle2">自动枚举网口相机</h2>
+
+
+<div class="body conbody"><p class="shortdesc">客户端可自动枚举局域网内可搜索到的网口相机。</p>
+
+        <p class="p">客户端可通过<a class="xref" href="GUID-2383E3DD-B04B-41B9-B212-8B58699242B3.html#GUID-A3AA723F-F997-4E4E-B4EB-D693AF25A027__GUID-131F4CAF-EBD0-480E-BFBA-45881AB5C4F0">通用设置</a>的<span class="ph uicontrol">设备列表自动刷新</span>每隔固定时间对PC网口下的相机进行刷新。同时也可通过设备列表GigE接口右侧的<img class="image icon" style="display:none;" id="GUID-C942979D-C9BB-47C9-B084-7968CD470372__IMAGE_ETH_K2Z_BKB" src="GUID-21129D57-7CF9-4746-88F0-C5EFF4A4C073-high.png" />进行手动刷新。</p>
+
+    </div>
+
+</div>
+<div class="topic task nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-5A68BD31-9A6B-4F0E-94B5-101D93615F68">
+    <h2 class="title topictitle2">CMD命令方式添加相机</h2>
+
+
+<div class="body taskbody"><p class="shortdesc">客户端支持通过CMD命令的方式打开客户端并连接相机。</p>
+
+<ol class="ol steps" id="GUID-5A68BD31-9A6B-4F0E-94B5-101D93615F68__GUID-87C279F3-1B0B-4419-A3EC-1640FA24A1B4"><li class="li step stepexpand" id="GUID-5A68BD31-9A6B-4F0E-94B5-101D93615F68__GUID-55DEF04D-6E43-4461-B3FF-C54C0E740002">
+                <span class="ph cmd">通过系统菜单打开CMD命令框。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-5A68BD31-9A6B-4F0E-94B5-101D93615F68__GUID-778CD31F-9B44-4FC7-9767-3439E84F7205">
+                <span class="ph cmd">在命令框中输入<em class="ph i">cd</em>+<em class="ph i"><span class="ph">MVS.exe </span></em>所在路径，并回车。</span>
+                <div class="itemgroup stepxmp">
+                    <p class="p"><span class="ph">若MVS.exe所在路径为“C:\Program Files
+                                (x86)\MVS\Applications\Win64”，则输入内容为<kbd class="ph userinput">cd /d C:\Program
+                                Files (x86)\MVS\Applications\Win64</kbd>，如下图所示。 </span></p>
+
+                    <p class="p"></p>
+
+                    
+                    <div class="fig fignone" id="GUID-5A68BD31-9A6B-4F0E-94B5-101D93615F68__GUID-680E2F2E-2D33-41BD-B8A8-EB5ACD5BC59B">
+                        
+                        <img class="image" style="display:none;" id="GUID-5A68BD31-9A6B-4F0E-94B5-101D93615F68__IMAGE_H3Y_3YN_FZB" src="GUID-6518531D-967E-4921-A7B0-AD79D78C4A43-high.png" width="1200" />
+                    <div class="fig_caption"><span class="figcap">图 1 通过CMD连接客户端</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-5A68BD31-9A6B-4F0E-94B5-101D93615F68__GUID-6CD40AAC-5EA4-4383-8644-49CAA63F99CA">
+                <span class="ph cmd">通过CMD连接相机有四种方式。</span>
+                <ol type="a" class="ol substeps" id="GUID-5A68BD31-9A6B-4F0E-94B5-101D93615F68__SUBSTEPS_WM4_5PT_BKB">
+                    <li class="li substep" id="GUID-5A68BD31-9A6B-4F0E-94B5-101D93615F68__GUID-E2495403-56CA-4E17-B080-3788D980CA82">
+                        <span class="ph cmd">通过相机IP地址连接：输入<span class="ph"><kbd class="ph userinput">MVS.exe/IP
+                                    xx.xx.xx.xx</kbd></span>。</span>
+                    </li>
+
+                    <li class="li substep" id="GUID-5A68BD31-9A6B-4F0E-94B5-101D93615F68__GUID-B8F58213-5269-4F93-9D0A-AFC36720C128">
+                        <span class="ph cmd">通过相机MAC地址连接：输入<span class="ph"><kbd class="ph userinput">MVS.exe/Mac
+                                    xx.xx.xx.xx.xx.xx</kbd></span>。</span>
+                    </li>
+
+                    <li class="li substep" id="GUID-5A68BD31-9A6B-4F0E-94B5-101D93615F68__GUID-63E409FC-BDF2-48B3-8E7C-A466141C121D">
+                        <span class="ph cmd">通过相机序列号连接：输入<span class="ph"><kbd class="ph userinput">MVS.exe/SN
+                                    xxxxxxxx</kbd></span>。</span>
+                    </li>
+
+                    <li class="li substep" id="GUID-5A68BD31-9A6B-4F0E-94B5-101D93615F68__GUID-27A12E03-20F2-41E0-825E-C41470D5E123">
+                        <span class="ph cmd">通过客户端的mcfg文件打开：输入<span class="ph"><kbd class="ph userinput">MVS.exe/mcfg</kbd>+<kbd class="ph userinput">mcfg文件所在路径</kbd>+<kbd class="ph userinput">mcfg文件名称.mcfg</kbd></span>。</span>
+                    </li>
+
+                </ol>
+
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-5A68BD31-9A6B-4F0E-94B5-101D93615F68__GUID-44A7A067-9DB6-4375-9E3D-59711AA3E417"><span class="notetitle">说明</span> 
+                        <p class="p">通过相机IP地址和MAC地址连接的方式只适用于网口相机，不支持U3V相机和Camera Link相机。</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-5A68BD31-9A6B-4F0E-94B5-101D93615F68__GUID-7C40AE18-58DB-4751-8B65-E36F35193668">
+                <span class="ph cmd">回车。</span>
+            </li>
+</ol>
+
+        <div class="section result" id="GUID-5A68BD31-9A6B-4F0E-94B5-101D93615F68__GUID-B20F4DE8-A9A2-4AA8-BDEA-EB5870B295B4">通过以上操作，可打开客户端软件同时连接指定的相机。</div>
+
+</div>
+
+</div>
+<div class="topic task nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1">
+    <h2 class="title topictitle2">添加远程相机</h2>
+
+
+<div class="body taskbody"><p class="shortdesc">若已知晓相机IP地址，但客户端搜索不到该相机，可通过该功能添加相机。</p>
+
+<div class="section prereq p" id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1__GUID-5BB8FABF-9F97-4E26-8DEB-1A138B6F8145">
+            <p class="p">确保相机和PC的网络可以互相ping通。</p>
+
+        </div>
+
+<ol class="ol steps" id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1__GUID-FA7CD030-896B-4FE6-92F5-8CD805D0A758"><li class="li step stepexpand" id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1__GUID-CEE8368F-1504-4205-9E97-873483695806">
+                <span class="ph cmd">在设备列表选中需要添加相机的网口右键单击，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1__FIG_YC2_5NT_BKB">
+                        
+                        <img class="image" style="display:none;" id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1__IMAGE_ZC2_5NT_BKB" src="GUID-4C53C98F-9145-48CE-B85F-5B1D0C2EADCA-high.png" width="1400" />
+                    <div class="fig_caption"><span class="figcap">图 2 网卡右键单击</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1__GUID-0243B3CA-013E-4638-9590-167F21EE0342">
+                <span class="ph cmd">选择<span class="ph uicontrol">添加远程相机</span>，弹出添加远程相机的窗口，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1__FIG_ECP_VNT_BKB">
+                        
+                        <img class="image" style="display:none;" id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1__IMAGE_FCP_VNT_BKB" src="GUID-53A58688-33CD-48B2-9000-40DA19DFCA5D-high.png" width="1400" />
+                    <div class="fig_caption"><span class="figcap">图 3 添加远程相机</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1__GUID-906D4E97-0F35-4DDD-8964-B8AF0D010A9C">
+                <span class="ph cmd">输入相机的IP地址并点击<span class="ph uicontrol">确定</span>。</span>
+            </li>
+</ol>
+
+</div>
+
+</div>
+</div>
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>本页导航</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-C942979D-C9BB-47C9-B084-7968CD470372" class="feature_guide_h2"><span class="link_button">自动枚举网口相机</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-5A68BD31-9A6B-4F0E-94B5-101D93615F68" class="feature_guide_h2"><span class="link_button">CMD命令方式添加相机</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1" class="feature_guide_h2"><span class="link_button">添加远程相机</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

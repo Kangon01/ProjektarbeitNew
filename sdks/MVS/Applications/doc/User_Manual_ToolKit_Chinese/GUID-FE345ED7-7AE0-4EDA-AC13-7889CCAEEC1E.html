@@ -1,0 +1,187 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="开启预览" /><meta name="abstract" content="对已连接状态的相机，可开启预览，查看相机实时采集图像。" /><meta name="description" content="对已连接状态的相机，可开启预览，查看相机实时采集图像。" /><meta name="DC.Relation" scheme="URI" content="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-FE345ED7-7AE0-4EDA-AC13-7889CCAEEC1E" /><meta name="DC.Language" content="zh-CN" /><title>开启预览</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-FE345ED7-7AE0-4EDA-AC13-7889CCAEEC1E" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-4A707B85-6362-489F-AD0C-12957E57E3F9.html" data-id="GUID-4A707B85-6362-489F-AD0C-12957E57E3F9">图像调试工具</a></span></li><li><span class="topicref"><a href="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html" data-id="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E">相机管理</a></span></li><li class="active"><span class="topicref">开启预览</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">开启预览</h1>
+
+
+<div class="body conbody"><p class="shortdesc">对已连接状态的相机，可开启预览，查看相机实时采集图像。</p>
+
+        <p class="p">连接相机后回到主界面，预览窗口底部可实时查看分辨率、RGB数值、色调以及饱和度等预览状态信息。</p>
+
+        <p class="p">通过点击图像操作区域的控制按钮可对相机及其采集的图像进行相关操作，各控制按钮具体功能介绍请见下表。</p>
+
+        
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-FE345ED7-7AE0-4EDA-AC13-7889CCAEEC1E__TABLE_KMK_GWT_BKB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 1 控制按钮介绍</span></caption>
+                
+                
+                <thead class="thead" align="left">
+                    <tr>
+                        <th class="entry" valign="top" width="34.96503496503497%" id="d26172e37">
+                            <p class="p">图标</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="65.03496503496503%" id="d26172e43">
+                            <p class="p">作用</p>
+
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody class="tbody">
+                    <tr>
+                        <td class="entry" valign="top" width="34.96503496503497%" headers="d26172e37 "><img class="image icon" style="display:none;" id="GUID-FE345ED7-7AE0-4EDA-AC13-7889CCAEEC1E__IMAGE_HKQ_QGF_5QB" src="GUID-835807E7-371B-4324-AAE7-8786243DD1EA-high.png" /></td>
+
+                        <td class="entry" valign="top" width="65.03496503496503%" headers="d26172e43 ">
+                            <p class="p">使相机开始采集图像。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="34.96503496503497%" headers="d26172e37 "><img class="image icon" style="display:none;" id="GUID-FE345ED7-7AE0-4EDA-AC13-7889CCAEEC1E__IMAGE_HJK_TGF_5QB" src="GUID-CDD03E6E-6808-412B-AA49-BBCD228E6D4A-high.png" /></td>
+
+                        <td class="entry" valign="top" width="65.03496503496503%" headers="d26172e43 ">
+                            <p class="p">采集图像过程中进行抓图，单击一次抓取一张图片，并保存至默认路径。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="34.96503496503497%" headers="d26172e37 "><img class="image icon" style="display:none;" id="GUID-FE345ED7-7AE0-4EDA-AC13-7889CCAEEC1E__IMAGE_MYQ_VGF_5QB" src="GUID-2D7F88A0-9E85-4B49-B8C5-6D947198F772-high.png" /></td>
+
+                        <td class="entry" valign="top" width="65.03496503496503%" headers="d26172e43 ">
+                            <p class="p">单击使相机开始录像，再次单击可结束录像，并将视频文件保存至默认路径。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="34.96503496503497%" headers="d26172e37 "><img class="image icon" style="display:none;" id="GUID-FE345ED7-7AE0-4EDA-AC13-7889CCAEEC1E__IMAGE_CTB_TBG_DZB" src="GUID-07C2260D-65C7-4183-AD30-CAA7A017F81A-high.png" /></td>
+
+                        <td class="entry" valign="top" width="65.03496503496503%" headers="d26172e43 ">
+                            <p class="p">可自定义区域，并计算自定义区域内图像的RGB、色调以及饱和度的平均值，并显示在自定义区域内。</p>
+
+                            <ul class="ul" id="GUID-FE345ED7-7AE0-4EDA-AC13-7889CCAEEC1E__UL_NDN_TVG_DZB">
+                                <li class="li" id="GUID-FE345ED7-7AE0-4EDA-AC13-7889CCAEEC1E__GUID-0C0BA12B-AA5D-45A8-8EE3-2908D43788FF">
+                                    <p class="p">单击后鼠标旁出现可跟随移动的矩形框，再单击图像内任意区域即可选择自定义区域，矩形框大小可点击图标右侧的<img class="image icon" style="display:none;" id="GUID-FE345ED7-7AE0-4EDA-AC13-7889CCAEEC1E__IMAGE_XTY_45G_DZB" src="GUID-295879FD-84A9-49D4-B094-94F3E0AD0D31-high.png" />进行自定义设置。</p>
+
+                                </li>
+
+                                <li class="li" id="GUID-FE345ED7-7AE0-4EDA-AC13-7889CCAEEC1E__GUID-049714BB-7635-4432-B341-4C36B4329F9E">
+                                    <p class="p">计算后的RGB、色调以及饱和度的平均值显示在矩形框内。</p>
+
+                                </li>
+
+                            </ul>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="34.96503496503497%" headers="d26172e37 ">
+                            <p class="p"><img class="image icon" style="display:none;" id="GUID-FE345ED7-7AE0-4EDA-AC13-7889CCAEEC1E__IMAGE_WNX_ZGF_5QB" src="GUID-A7DBED41-2291-40E4-A3A4-C87B6A806F50-high.png" />/<img class="image icon" style="display:none;" id="GUID-FE345ED7-7AE0-4EDA-AC13-7889CCAEEC1E__IMAGE_PVY_BHF_5QB" src="GUID-41F4EA31-A8CC-4D6B-8E0C-18375462D12A-high.png" /></p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="65.03496503496503%" headers="d26172e43 ">
+                            <p class="p">缩小/放大图像，图标中间的数字显示当前放大比例。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="34.96503496503497%" headers="d26172e37 "><img class="image icon" style="display:none;" id="GUID-FE345ED7-7AE0-4EDA-AC13-7889CCAEEC1E__IMAGE_RGR_XGF_5QB" src="GUID-45487DAC-3E9D-4B86-ADC3-F23E71EFBA0A-high.png" /></td>
+
+                        <td class="entry" valign="top" width="65.03496503496503%" headers="d26172e43 ">
+                            <p class="p">对当前预览的图像以原始分辨率在预览窗口显示。</p>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+</div>
+
+</div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

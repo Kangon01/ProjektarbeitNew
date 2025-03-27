@@ -1,0 +1,181 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="设置AOI区域" /><meta name="abstract" content="AOI功能可使得相机根据被选中的AOI区域调整整个画面的亮度或者白平衡。" /><meta name="description" content="AOI功能可使得相机根据被选中的AOI区域调整整个画面的亮度或者白平衡。" /><meta name="DC.Relation" scheme="URI" content="GUID-A49E183B-E790-47BB-AD38-E32914274316.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD" /><meta name="DC.Language" content="zh-CN" /><title>设置AOI区域</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB.html" data-id="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB">相机属性配置</a></span></li><li><span class="topicref"><a href="GUID-A49E183B-E790-47BB-AD38-E32914274316.html" data-id="GUID-A49E183B-E790-47BB-AD38-E32914274316">高级属性</a></span></li><li class="active"><span class="topicref">设置AOI区域</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">设置AOI区域</h1>
+
+
+<div class="body taskbody"><p class="shortdesc">AOI功能可使得相机根据被选中的AOI区域调整整个画面的亮度或者白平衡。</p>
+
+        <div class="section prereq p" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-06FC9924-E0DA-43C0-B0E1-220014F84A39">
+            <p class="p">客户端已连接相机，且相机的曝光或白平衡为连续模式。</p>
+
+        </div>
+
+        <ol class="ol steps" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-4308C8B4-BC21-47F5-8584-E3E5312B568C"><li class="li step stepexpand" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-6AD43432-F02B-40F2-AF5C-C405D801884B">
+                <span class="ph cmd">进入属性设置区域的高级属性Tab页。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-06EF499B-C416-4093-902E-97EF6ADE376D">
+                <span class="ph cmd">找到<span class="ph uicontrol">AOI</span>参数并展开。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-EC22AADB-D41D-45E1-816B-4505DB774E6E">
+                <span class="ph cmd"><span class="keyword parmname">自动功能AOI选择器</span>参数根据需求下拉选择。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-38F0555B-7C06-453F-A13E-1CAED272CEDF"><span class="notetitle">说明</span> 
+                        <ul class="ul" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__UL_IVF_RNC_CKB">
+                            <li class="li" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-21D573C1-0EA5-4961-8FC8-1EAC2F02DCA0">
+                                <p class="p">黑白相机只有感兴趣区域1，彩色相机有感兴趣区域1和感兴趣区域2。</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-71554A96-5156-4FEA-B9F6-EAE2C03CC1BD">
+                                <p class="p">感兴趣区域1用于调整图像的亮度，感兴趣区域2用于调整图像的白平衡。</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-66531BBA-4653-4679-AF7F-47581FC3C30A">
+                <span class="ph cmd">有三种方式可绘制AOI区域。</span>
+                <ul class="ul choices" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__CHOICES_GSD_HJC_CKB">
+                    <li class="li choice" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-ADFC62E0-1114-475B-8D99-71538D822FD9">通过<span class="keyword parmname">绘制AOI</span>的<span class="ph uicontrol">重绘</span>进行ROI区域的绘制。<div class="note note" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-F94ED65C-5798-430D-951C-BDFB164F810E"><span class="notetitle">说明</span> 
+                            <p class="p">点击<span class="ph uicontrol">重绘</span>后，AOI区域需要通过鼠标在预览窗口自行绘制。</p>
+
+                        </div>
+</li>
+
+                    <li class="li choice" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-64F3281D-D4AF-489D-BD77-45450884E5BD">通过<span class="keyword parmname">绘制AOI</span>的<span class="ph uicontrol">编辑</span>进行ROI区域的绘制。<div class="note note" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-639E4749-AB2F-4A6C-AFFA-AFC99F5B807D"><span class="notetitle">说明</span> 
+                            <p class="p">点击<span class="ph uicontrol">编辑</span>后，默认AOI区域为整副图像，需要通过鼠标在预览窗口调整四条边的位置。</p>
+
+                        </div>
+</li>
+
+                    <li class="li choice" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-EF0956EC-9B91-4955-8027-F8D3A5727548">通过<span class="keyword parmname">自动功能AOI水平偏移</span>、<span class="keyword parmname">自动功能AOI垂直偏移</span>、<span class="keyword parmname">自动功能AOI宽度</span>和<span class="keyword parmname">自动功能AOI高度</span>参数进行设置。<div class="note note" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-3C61B8DB-4B36-4D35-BBF4-583384A59220"><span class="notetitle">说明</span> 
+                            <ul class="ul" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__UL_O5N_HLC_CKB">
+                                <li class="li" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-92FE7CD6-A198-4B48-A34E-5F173E2D11F3">
+                                    <p class="p">不同型号相机的参数步进值有所不同，具体请以实际为准。当设置的数值不符合步进要求时，客户端自动调整为符合要求且离目标值最接近的数值。</p>
+
+                                </li>
+
+                                <li class="li" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-4C84D2B3-65E0-4F50-A9E1-EC226995175D">
+                                    <p class="p">在使用前两种方法时，以上四个参数的数值会根据绘制的AOI区域实时变化。</p>
+
+                                </li>
+
+                                <li class="li" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-92122669-CE8E-4760-AAE4-28A26DA48DAB">
+                                    <p class="p">该方法操作后实时生效，无需进行第3步和第4步操作。</p>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+</li>
+
+                </ul>
+
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-681CDF35-9486-45B0-AC41-46D10A23817F"><span class="notetitle">说明</span> 
+                        <p class="p">以上三种方法，前两种需要在相机开启预览后方可使用，最后一种方法只能在不采集图像的情况下使用。</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-49571E38-A2EA-41A2-8BA1-CAEB0703B4F3"><strong>可选操作： </strong>
+                <span class="ph cmd">若需要将AOI区域居中，可通过<img class="image icon" style="display:none;" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__IMAGE_RYZ_JVC_CKB" src="GUID-EC366A71-2C2A-422C-9415-7D311314E128-high.png" />实现。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-B134D2C7-A5D1-4503-8AA5-2B7BDE0DEA6D">
+                <span class="ph cmd">点击<img class="image icon" style="display:none;" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__IMAGE_RKP_KVC_CKB" src="GUID-6FEAD602-EE8B-411F-8013-161CA7DE568E-high.png" />即可完成AOI区域绘制。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-401B0F22-736B-4449-BA76-040B6196151B"><strong>可选操作： </strong>
+                <span class="ph cmd">点击<span class="keyword parmname">恢复至最大AOI</span>的<span class="ph uicontrol">执行</span>可将AOI区域设置为相机的整副图像。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-6E36A6E4-BAA1-49C0-BDD8-3C9DE7163765">
+                <span class="ph cmd">启用<span class="ph uicontrol">自动功能AOI使用强度</span>或<span class="ph uicontrol">自动功能AOI使用白平衡。</span></span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD__GUID-6BD6F42E-AE74-4C48-91A1-821F412AE2DD"><span class="notetitle">说明</span> 
+                        <p class="p"><span class="ph uicontrol">自动功能AOI使用强度</span>对应感兴趣区域1，<span class="ph uicontrol">自动功能AOI使用白平衡</span>对应感兴趣区域2。</p>
+
+                    </div>
+
+                </div>
+            </li>
+</ol>
+
+    </div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

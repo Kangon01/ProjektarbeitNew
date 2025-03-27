@@ -1,0 +1,23 @@
+<Root>
+    <Group extend="false" ui_param_show="1" ui_param_name="BaseParams" ui_display_name="" id="0">
+	    <Node ui_display_cn_name="Gamma类型" ui_param_display_type="ComboBox" ui_param_name="GammaType" ui_display_en_name="Gamma Type" ui_display_name="Gamma Type" Value="0" ui_param_type="Enumeration">
+            <RelationList>GammaValue,GammaCurve_Command</RelationList>
+			<EnumEntry DisplayName="None" DisplayNameCN="不启用" Value="0"/>
+            <EnumEntry DisplayName="User Value" DisplayNameCN="Gamma值" Value="1"/>
+            <EnumEntry DisplayName="User Curve" DisplayNameCN="Gamma曲线" Value="2"/>
+            <EnumEntry DisplayName="LRGB2SRGB" Value="3"/>
+        </Node>
+        <Node ui_display_cn_name="Gamma值" ui_param_show="0" ui_param_display_type="float_lineedit" ui_param_name="GammaValue" ui_display_en_name="Gamma Value" ui_display_name="Gamma Value" ui_param_type="Float"/>
+        <Node ui_display_cn_name="Gamma曲线" ui_param_show="0" ui_param_display_type="button" ui_param_button_name="Import Curve" ui_param_button_cn_name="导入曲线" ui_param_name="GammaCurve_Command" ui_display_en_name="Gamma Curve" ui_display_name="Gamma Curve" ui_param_type="Command"/>
+        <Node ui_param_name="GammaCurve" ui_param_show="0" ui_param_display_type="lineedit" ui_param_type="String"/>
+		<Node ui_display_cn_name="量化系数" ui_param_show="0" ui_param_display_type="ComboBox" ui_param_name="CLUTScale" ui_display_en_name="Scale" ui_display_name="Scale" Value="1024" ui_param_type="Enumeration">
+            <EnumEntry DisplayName="256" Value="256"/>
+            <EnumEntry DisplayName="512" Value="512"/>
+            <EnumEntry DisplayName="1024" Value="1024"/>
+            <EnumEntry DisplayName="2048" Value="2048"/>
+		</Node>
+		<Node ui_display_cn_name="CLUT" ui_param_show="0" ui_param_display_type="lineedit" ui_param_name="CLUT" ui_display_en_name="CLUT" ui_display_name="CLUT" ui_param_type="String"/>
+        <Node ui_display_cn_name="CLUTSize" ui_param_show="0" ui_param_display_type="SpinBox" ui_param_name="CLUTSize" ui_display_en_name="CLUTSize" ui_display_name="CLUTSize" ui_param_type="Integer"/>
+        <Node ui_display_cn_name="ImageBit" ui_param_show="0" ui_param_display_type="SpinBox" ui_param_name="ImageBit" ui_display_en_name="ImageBit" ui_display_name="ImageBit" ui_param_type="Integer"/>        
+    </Group>
+</Root>

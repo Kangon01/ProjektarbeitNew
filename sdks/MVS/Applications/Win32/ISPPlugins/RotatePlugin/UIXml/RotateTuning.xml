@@ -1,0 +1,10 @@
+<Root>
+    <Group ui_param_show="1" ui_display_name="" id="0" ui_param_name="BaseParams" extend="false">
+        <Node ui_display_cn_name="旋转角度" ui_param_display_type="ComboBox" ui_param_name="RotationAngle" ui_display_en_name="Rotation Angle" ui_display_name="Rotation Angle" Value="0" ui_param_type="Enumeration">
+            <RelationList></RelationList>
+			<EnumEntry DisplayName="Rotate 90 degree" DisplayNameCN="旋转90度" Value="1"/>
+            <EnumEntry DisplayName="Rotate 180 degree" DisplayNameCN="旋转180度" Value="2"/>
+            <EnumEntry DisplayName="Rotate 270 degree" DisplayNameCN="旋转270度" Value="3"/>
+        </Node>
+    </Group>
+</Root>

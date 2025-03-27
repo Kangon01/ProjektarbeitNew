@@ -1,0 +1,9 @@
+<Root>
+    <Group ui_param_show="1" ui_display_name="" id="0" ui_param_name="BaseParams" extend="false">
+        <Node ui_display_cn_name="镜像类型" ui_param_display_type="ComboBox" ui_param_name="FlipType" ui_display_en_name="Flip Type" ui_display_name="Flip Type" Value="0" ui_param_type="Enumeration">
+            <RelationList></RelationList>
+			<EnumEntry DisplayName="Flip Vertical" DisplayNameCN="垂直镜像" Value="1"/>
+            <EnumEntry DisplayName="Flip Horizontal" DisplayNameCN="水平镜像" Value="2"/>
+        </Node>
+    </Group>
+</Root>

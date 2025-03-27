@@ -1,0 +1,835 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="事件配置工具" /><meta name="abstract" content="事件配置工具（本节简称为“工具”）可查看和配置采集卡的事件信息。" /><meta name="description" content="事件配置工具（本节简称为“工具”）可查看和配置采集卡的事件信息。" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-9F67AB81-ED49-47BD-89CE-A3462C8DBAB0" /><meta name="DC.Language" content="zh-CN" /><title>事件配置工具</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li class="active"><span class="topicref">事件配置工具</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body "><div class="nested0" id="GUID-9F67AB81-ED49-47BD-89CE-A3462C8DBAB0">
+    <h1 class="title topictitle1">事件配置工具</h1>
+
+
+<div class="body conbody"><p class="shortdesc">事件配置工具（本节简称为“工具”）可查看和配置采集卡的事件信息。</p>
+
+        <p class="p">工具支持的采集卡类型请见下表：</p>
+
+        
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-9F67AB81-ED49-47BD-89CE-A3462C8DBAB0__TABLE_AM3_GD3_WWB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 1 支持采集卡类型</span></caption>
+                
+                
+                <thead class="thead" align="left">
+                    <tr>
+                        <th class="entry" valign="top" width="36.66666666666667%" id="d15375e36">
+                            <p class="p">采集卡类型</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="63.33333333333334%" id="d15375e42">
+                            <p class="p">采集卡接口</p>
+
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody class="tbody">
+                    <tr>
+                        <td class="entry" valign="top" width="36.66666666666667%" headers="d15375e36 ">
+                            <p class="p">图像采集卡</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="63.33333333333334%" headers="d15375e42 ">
+                            <p class="p">Camera Link采集卡、CoaXPress采集卡、GigE采集卡、10
+                                    GigE采集卡（部分型号支持）、XoFLink光口采集卡</p>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+</div>
+
+</div>
+
+<div class="topic concept nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-3DD15FD3-76FA-4322-8A68-61BD96857B7D">
+    <h2 class="title topictitle2">主界面介绍</h2>
+
+
+<div class="body conbody"><p class="shortdesc">工具主界面如下图所示，相关说明请见下表。</p>
+
+        <div class="fig fignone" id="GUID-3DD15FD3-76FA-4322-8A68-61BD96857B7D__FIG_KYT_HTK_SXB">
+            
+            <img class="image" style="display:none;" id="GUID-3DD15FD3-76FA-4322-8A68-61BD96857B7D__IMAGE_SVN_BXM_HCC" src="GUID-370B74BF-6056-46BB-9E5E-AF277E0C147A-high.png" width="2100" />
+        <div class="fig_caption"><span class="figcap">图 1 事件配置工具</span></div></div>
+
+        
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-3DD15FD3-76FA-4322-8A68-61BD96857B7D__TABLE_EDY_2G5_MXB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 2 主界面说明</span></caption>
+                
+                
+                
+                <thead class="thead" align="left">
+                    <tr>
+                        <th class="entry" valign="top" width="18.181818181818183%" id="d15375e112">
+                            <p class="p">序号</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="27.27272727272727%" id="d15375e118">
+                            <p class="p">区域</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="54.54545454545454%" id="d15375e124">
+                            <p class="p">说明</p>
+
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody class="tbody">
+                    <tr>
+                        <td class="entry" valign="top" width="18.181818181818183%" headers="d15375e112 ">
+                            <p class="p">1</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="27.27272727272727%" headers="d15375e118 ">
+                            <p class="p">菜单栏</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="54.54545454545454%" headers="d15375e124 ">
+                            <p class="p">菜单栏可提供文件和帮助操作。</p>
+
+                            <ul class="ul" id="GUID-3DD15FD3-76FA-4322-8A68-61BD96857B7D__UL_DBK_RBQ_DZB">
+                                <li class="li" id="GUID-3DD15FD3-76FA-4322-8A68-61BD96857B7D__GUID-367FB00F-53D7-42F6-9089-FEA092A61D23">
+                                    <p class="p">文件：支持对采集卡事件进行导入导出操作。</p>
+
+                                </li>
+
+                                <li class="li" id="GUID-3DD15FD3-76FA-4322-8A68-61BD96857B7D__GUID-9E944C38-63B8-4561-8D67-C02791DC785B">
+                                    <p class="p">帮助：可对工具的语言（中英文）进行选择，并查看本用户手册和工具版本信息。</p>
+
+                                </li>
+
+                            </ul>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="18.181818181818183%" headers="d15375e112 ">
+                            <p class="p">2</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="27.27272727272727%" headers="d15375e118 ">
+                            <p class="p">相关配置</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="54.54545454545454%" headers="d15375e124 ">
+                            <ul class="ul" id="GUID-3DD15FD3-76FA-4322-8A68-61BD96857B7D__UL_YM4_VTK_SXB">
+                                <li class="li" id="GUID-3DD15FD3-76FA-4322-8A68-61BD96857B7D__GUID-C0E7601F-E14C-4259-9AD7-66529309384B">
+                                    <p class="p">可对需要配置事件的设备进行选择。</p>
+
+                                </li>
+
+                                <li class="li" id="GUID-3DD15FD3-76FA-4322-8A68-61BD96857B7D__GUID-C0B5CC46-4DD0-43CE-9596-0EA90D56100A">
+                                    <p class="p">可设置工具的用户等级，可选<span class="keyword parmname">推荐</span>或<span class="keyword parmname">大师</span>，默认选择<span class="keyword parmname">大师</span>。</p>
+
+                                </li>
+
+                            </ul>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="18.181818181818183%" headers="d15375e112 ">
+                            <p class="p">3</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="27.27272727272727%" headers="d15375e118 ">
+                            <p class="p">事件类型</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="54.54545454545454%" headers="d15375e124 ">
+                            <p class="p">显示所选设备的所有事件类型。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="18.181818181818183%" headers="d15375e112 ">
+                            <p class="p">4</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="27.27272727272727%" headers="d15375e118 ">
+                            <p class="p">事件详情</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="54.54545454545454%" headers="d15375e124 ">
+                            <p class="p">显示不同事件类型下所有Channel及其所有事件。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="18.181818181818183%" headers="d15375e112 ">
+                            <p class="p">5</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="27.27272727272727%" headers="d15375e118 ">
+                            <p class="p">配置操作</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="54.54545454545454%" headers="d15375e124 ">
+                            <p class="p">可进行<span class="ph uicontrol">全部勾选</span>、<span class="ph uicontrol">全部取消</span>、<span class="ph uicontrol">应用</span>或<span class="ph uicontrol">事件监视</span>等配置操作。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="18.181818181818183%" headers="d15375e112 ">
+                            <p class="p">6</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="27.27272727272727%" headers="d15375e118 ">
+                            <p class="p">配置结果</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="54.54545454545454%" headers="d15375e124 ">
+                            <p class="p">可显示事件配置结果。</p>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+</div>
+
+    </div>
+
+</div>
+<div class="topic task nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F">
+    <h2 class="title topictitle2">事件配置</h2>
+
+
+<div class="body taskbody"><p class="shortdesc">工具可对需要查看的采集卡事件进行勾选配置或导入导出操作。</p>
+
+<ol class="ol steps" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-B2C0745F-5E22-4FDA-B9CF-6F731EE74253"><li class="li step stepexpand" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-CDFB96A1-4FBD-4A35-B57F-45073E5F7CB1">
+                <span class="ph cmd">打开工具后，通过工具上方的<span class="keyword parmname">选择设备</span>下拉选择需要配置事件信息的采集卡。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-7DB4019E-FE56-4FCF-866C-A8E28ACFE755"><strong>可选操作： </strong>
+                <span class="ph cmd">通过工具上方的<span class="keyword parmname">用户等级</span>下拉选择<span class="keyword parmname">推荐</span>或<span class="keyword parmname">大师</span>，<span class="keyword parmname">大师</span>可显示更多的事件。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-41C1CAB7-963D-464F-867E-4E1BFA8E5608">
+                <span class="ph cmd">设备连接成功后，工具左侧显示所有的事件类型，默认选中<span class="keyword parmname">Soft</span>，右侧显示显示不同事件类型下所有Channel的具体事件，事件可进行多种勾选操作。</span>
+                <div class="itemgroup info">
+                    <ul class="ul" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__UL_F3G_TY1_5XB">
+                        <li class="li" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-503C6874-13E8-4273-A52E-AB3EC7749DFA">
+                            <p class="p">可勾选或取消勾选单个事件。</p>
+
+                            <div class="fig fignone" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__FIG_BBW_CP1_5XB">
+                                
+                                <img class="image" style="display:none;" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__IMAGE_I15_HP1_5XB" src="GUID-3B2BD603-076F-46BA-9CF3-0D6FB50EC960-high.jpg" width="2000" />
+                            <div class="fig_caption"><span class="figcap">图 2 单个事件勾选</span></div></div>
+
+                        </li>
+
+                        <li class="li" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-A64512CA-6A26-48E1-ACAD-2EC34C545F42">
+                            <p class="p">勾选某一事件类型下的单个Channel，可自动勾选当前Channel下的所有事件。再次点击后可取消所有勾选。</p>
+
+                            <div class="fig fignone" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__FIG_EMT_ZP1_5XB">
+                                
+                                <img class="image" style="display:none;" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__IMAGE_VTC_CQ1_5XB" src="GUID-3A43C99A-9B79-4222-8B56-5727D900825B-high.jpg" width="2000" />
+                            <div class="fig_caption"><span class="figcap">图 3 勾选Channel下的所有事件</span></div></div>
+
+                        </li>
+
+                        <li class="li" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-2158878C-868A-4B60-93AE-B03A82F636FC">
+                            <p class="p">勾选某一事件类型，可自动勾选其所有Channel下的所有事件，再次点击后取消所有勾选。</p>
+
+                            <div class="fig fignone" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__FIG_OH1_MQ1_5XB">
+                                
+                                <img class="image" style="display:none;" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__IMAGE_AKF_4Q1_5XB" src="GUID-06C01C52-40E9-4173-B607-7E9113E8D85A-high.jpg" width="2000" />
+                            <div class="fig_caption"><span class="figcap">图 4 勾选事件类型下所有事件</span></div></div>
+
+                        </li>
+
+                        <li class="li" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-710ACAC0-59D1-4CA0-973B-EE1081FC2352">
+                            <p class="p">单击工具右下角的<span class="ph uicontrol">全部勾选</span>，可勾选该采集卡的所有事件，点击<span class="ph uicontrol">全部取消</span>后取消所有勾选。</p>
+
+                        </li>
+
+                    </ul>
+
+                    <p class="p">事件类型与事件源的相关介绍请见下表。</p>
+
+                    
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__TABLE_GSL_Y34_YXB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 3 事件配置介绍</span></caption>
+                            
+                            
+                            
+                            
+                            <thead class="thead" align="left">
+                                <tr>
+                                    <th class="entry" valign="top" width="20%" id="d15375e445">
+                                        <p class="p">事件类型</p>
+
+                                    </th>
+
+                                    <th class="entry" valign="top" width="20%" id="d15375e451">
+                                        <p class="p">事件名称</p>
+
+                                    </th>
+
+                                    <th class="entry" valign="top" width="30%" id="d15375e457">
+                                        <p class="p">事件节点</p>
+
+                                    </th>
+
+                                    <th class="entry" valign="top" width="30%" id="d15375e463">
+                                        <p class="p">事件说明</p>
+
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody class="tbody">
+                                <tr>
+                                    <td class="entry" rowspan="4" valign="top" width="20%" headers="d15375e445 ">
+                                        <p class="p">Soft</p>
+
+                                    </td>
+
+                                    <td class="entry" rowspan="4" valign="top" width="20%" headers="d15375e451 ">
+                                        <p class="p">软触发事件</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">Card Cmd Packet Received(From PC)</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">数据包接收通道</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">Card Cmd Packet Transmitted(To Card)</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">数据包读取完成通道</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">Card Ack Packet Received(From Card)</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">数据应答包接收通道</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">Card Ack Packet  Transmitted(To PC)</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">数据应答包读取完成通道</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" rowspan="6" valign="top" width="20%" headers="d15375e445 ">
+                                        <p class="p">Link</p>
+
+                                    </td>
+
+                                    <td class="entry" rowspan="6" valign="top" width="20%" headers="d15375e451 ">
+                                        <p class="p">通道事件</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">Locked Event</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">设备连接通道</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">Unlocked Event</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">设备断开连接通道</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">CC1 Rising/Falling Edge</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">CC1上升沿/下降沿通道</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">CC2 Rising/Falling Edge</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">CC2上升沿/下降沿通道</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">CC3 Rising/Falling Edge</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">CC3上升沿/下降沿通道</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">CC4 Rising/Falling Edge</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">CC4上升沿/下降沿通道</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" rowspan="6" valign="top" width="20%" headers="d15375e445 ">
+                                        <p class="p">Stream</p>
+
+                                    </td>
+
+                                    <td class="entry" rowspan="6" valign="top" width="20%" headers="d15375e451 ">
+                                        <p class="p">帧事件</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">Receive Image Frame Start(From Camera)</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">接收图像帧开始通道</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">Receive Image Frame End(From Camera)</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">接收图像帧结束通道</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">Transmit Image Block Start(To PC)</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">传输图像帧开始通道</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">Transmit Image Block End(To PC)</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">传输图像帧结束通道</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">The First Line In Frame</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">图像帧第一行通道</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">The Last Line In Frame</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">图像帧最后一行通道</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" rowspan="2" valign="top" width="20%" headers="d15375e445 ">
+                                        <p class="p">PCIE</p>
+
+                                    </td>
+
+                                    <td class="entry" rowspan="2" valign="top" width="20%" headers="d15375e451 ">
+                                        <p class="p">PCIE事件</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">PCIe DMA Start</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">PCIe DMA传输开始通道</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">PCIe DMA Start</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">PCIe DMA传输结束通道</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="20%" headers="d15375e445 ">
+                                        <p class="p">IO_Timer</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="20%" headers="d15375e451 ">
+                                        <p class="p">定时器事件</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">Rising/Falling Edge</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">上升沿/下降沿</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="20%" headers="d15375e445 ">
+                                        <p class="p">IO_Encoder</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="20%" headers="d15375e451 ">
+                                        <p class="p">轴编码器事件</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">Rising/Falling Edge</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">上升沿/下降沿</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" rowspan="2" valign="top" width="20%" headers="d15375e445 ">
+                                        <p class="p">IO_D485</p>
+
+                                    </td>
+
+                                    <td class="entry" rowspan="2" valign="top" width="20%" headers="d15375e451 ">
+                                        <p class="p">差分输入输出事件</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">In Rising/Falling Edge</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">差分输入上升沿/下降沿</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="30%" headers="d15375e457 ">
+                                        <p class="p">Out Rising/Falling Edge</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="30%" headers="d15375e463 ">
+                                        <p class="p">差分输出上升沿/下降沿</p>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+</div>
+
+                    <div class="note note" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-726F6C42-806B-418F-B9A4-D3419F4BF0E4"><span class="notetitle">说明</span> 
+                        <p class="p">不同采集卡支持的事件不同，请以实际设备为准。</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-84AEF6D6-FFDA-4BDC-B0F8-9CB04B7D9F05"><strong>可选操作： </strong>
+                <span class="ph cmd">鼠标悬浮在任一事件上时，可显示该事件对应的具体节点名称和枚举值，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__FIG_TKP_YYM_HCC">
+                        
+                        <img class="image" style="display:none;" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__IMAGE_UKP_YYM_HCC" src="GUID-A9A1A023-32D1-4546-8503-318351B55661-high.png" width="2100" />
+                    <div class="fig_caption"><span class="figcap">图 5 显示节点和枚举值</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-1689D496-B127-4C06-B4A1-3C8F5B456C8B"><strong>可选操作： </strong>
+                <span class="ph cmd">单击任一事件名称，使用ctrl+c快捷键，可快速复制该事件对应的具体节点名称。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-4F614041-00E6-403E-BF07-F1CC3FD7F9D2">
+                <span class="ph cmd">完成勾选后，单击工具右下角的<span class="ph uicontrol">应用</span>即可。</span>
+                <div class="itemgroup stepresult">全部应用成功后，弹窗提示应用成功；若应用失败，则弹窗提示具体的错误节点。<div class="fig fignone" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-B0F3A6F1-F633-473D-8F99-6C233E57B553">
+                        
+                        <img class="image" style="display:none;" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__IMAGE_W3R_V4G_5XB" src="GUID-3B341766-0609-4B67-9203-660363DAA81C-high.png" width="2000" />
+                    <div class="fig_caption"><span class="figcap">图 6 应用失败</span></div></div>
+</div>
+            </li>
+<li class="li step stepexpand" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-A21065FE-C2E7-4708-8C5D-6C02D3B72339"><strong>可选操作： </strong>
+                <span class="ph cmd">点击工具右上角的<span class="ph uicontrol">已激活事件列表</span>，可查看成功勾选并应用的事件。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__FIG_CM4_11B_5XB">
+                        
+                        <img class="image" style="display:none;" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__IMAGE_RFT_C1B_5XB" src="GUID-A1C0839D-89EA-4E84-AD39-7F884A2A61C7-high.jpg" width="2000" />
+                    <div class="fig_caption"><span class="figcap">图 7 已激活事件列表</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-EBE474DE-FC0B-4EB1-A19D-8E6253E0435F"><strong>可选操作： </strong>
+                <span class="ph cmd">通过菜单栏的<span class="ph uicontrol">文件</span>，可对采集卡的事件进行导入或导出操作。</span>
+                <ul class="ul choices" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__CHOICES_VQP_3TV_DZB">
+                    <li class="li choice" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-A354B741-C189-4CF5-99DF-25FA83AA9765">
+                        <p class="p">单击<span class="ph menucascade"><span class="ph uicontrol">文件</span> &gt; <span class="ph uicontrol">导入</span></span>，选择需要导入的etc文件并<span class="ph uicontrol">打开</span>。</p>
+
+                        <div class="note note" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-9F2BD087-ABE0-46B9-8855-E72B4CAF5906"><span class="notetitle">说明</span> 
+                            <ul class="ul" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__UL_UGJ_55V_DZB">
+                                <li class="li" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-8E5C24BF-C966-40FE-AB03-A738F8A5D021">
+                                    <p class="p">工具仅支持同型号采集卡的etc文件导入，若etc文件与待导入的采集卡型号不匹配，则提示“导入失败”。</p>
+
+                                </li>
+
+                                <li class="li" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-8548F373-4677-442F-8000-89C50D0888F1">
+                                    <p class="p">导入成功后，工具中的事件将自动更新勾选状态并应用。</p>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </li>
+
+                    <li class="li choice" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-46E1B160-2B39-4919-AB26-E8DB5711AE01">
+                        <p class="p">单击<span class="ph menucascade"><span class="ph uicontrol">文件</span> &gt; <span class="ph uicontrol">导出</span></span>，选择etc文件需要保存的路径，单击<span class="ph uicontrol">保存</span>即可，默认保存路径为C:\Users\Administrator\<span class="ph">MVS</span>\Data\EventTool。</p>
+
+                    </li>
+
+                </ul>
+
+            </li>
+<li class="li step stepexpand" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-03C2A10A-D788-4ADF-940E-191E3250F7DF">
+                <span class="ph cmd">单击工具右下角的<span class="ph uicontrol">事件监视</span>，可打开事件监视界面查看事件监视结果。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F__GUID-D9142243-5605-4A0A-9B74-5AA90BF47441"><span class="notetitle">说明</span> 
+                        <p class="p">事件监视结果还可通过<span class="ph">MVS</span>客户端查看，具体操作步骤请查看<span class="ph">MVS</span>客户端用户手册事件监视章节。</p>
+
+                    </div>
+
+                </div>
+            </li>
+</ol>
+
+</div>
+
+</div>
+</div>
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>本页导航</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-3DD15FD3-76FA-4322-8A68-61BD96857B7D" class="feature_guide_h2"><span class="link_button">主界面介绍</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-43A39315-BA6E-4D21-AAF5-DADBCAA5C66F" class="feature_guide_h2"><span class="link_button">事件配置</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

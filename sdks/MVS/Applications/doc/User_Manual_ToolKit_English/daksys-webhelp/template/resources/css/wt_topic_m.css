@@ -1,0 +1,195 @@
+﻿
+@media only screen and (max-width: 768px) {
+    .body {
+        font-size: 14px;
+		line-height: 24px;
+    }
+	.wt_pc_only{
+		display: none;
+	}
+}
+@media only screen and (max-width: 768px) {
+	ul {
+		padding-inline-start: 20px;
+	}
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Breadcrumb
+ *  
+ */
+	
+	.wt_breadcrumb {
+		display: block;
+		padding: 8px 32px 8px 16px;
+		background-color: var(--background-color-breadcrumb);
+		width: 100%;
+	}
+	.wt_breadcrumb ol {
+		padding: 0px;
+		margin:0;
+		border-radius: 0;
+		font-size: 12px;
+		line-height: 8px;  /** 必须小于 字号，才不影响 li 的 line-height **/
+		list-style: none;
+		background:none;
+	}
+	.wt_breadcrumb li{
+		display:inline-block;
+		overflow: auto;
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.wt_breadcrumb_ellipsis{
+		position: absolute;
+		float: right;
+		top: 8px;
+		right: 16px;
+		width: 16px;
+		height: 16px;
+	}
+	
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Topic content_area
+ * 
+ */
+	
+	.content_box {
+		padding: 0px;
+		overflow-x: hidden;
+	}
+	.middle_view{
+		padding: 0px 0px 2px 0px;
+		width: 100%;
+		
+	}
+	.container {
+		padding: 0px 16px;
+	}
+	.wt_topic_content .title.topictitle1 {
+		width: 100%;
+	}
+	.body_footer {
+		font-size: 13px;
+		line-height: 20px;
+		height: 36px;
+		width: unset;
+		padding: 16px 0px 0px 0px;
+		margin: 16px;
+
+	}
+	
+	.note{
+		padding: 12px;
+	}
+	.note.danger,
+	.note.caution,
+	.note.warning{
+		padding: 12px;
+	}
+	h1.title{
+		font-size: 26px;
+		line-height: 34px;
+		width: 100%;
+	}
+	h2.title{
+		color: #000000;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 25px; /* 定义行框的高度 */
+		border-bottom: 0.5px solid silver;
+		margin-bottom: 9px;
+		padding-bottom: 15px;
+		margin:13px 0;
+	}
+	h3.title{
+		color: #333333;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 20px; /* 定义行框的高度 */
+		border-bottom: none;
+		margin-bottom: 1px;
+	}
+/*
+ * ------------------------------------------------------------------
+ *  
+ * fig carousel
+ * 
+ */
+	.wt_fig_carousel_text_content{
+		margin-bottom: 10px;
+                                margin-top: 10px;
+                                min-height: 100px;
+	}
+	.wt_fig_carousel_title {
+		font-size: 14px;
+                                font-weight: bold;
+		line-height: 24px;
+		color: var(--font-color-topic-title);
+	}
+	
+	.wt_fig_carousel_para{
+		font-size: 13px;
+		line-height: 24px;
+		color: var(--font-color-topic-content);
+		height: auto;
+	}
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * WPP 点赞 浏览量
+ * 
+ */
+	.body_wpp{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 26px;
+		width: unset;
+		padding: 0px 0px 0px 0px;
+		margin: 16px;
+		text-align: center;
+	}
+	.wt_body_mobile_like{
+		display: inline-block;
+		width: 30%;
+		padding-left: 8px; 
+		padding-right: 8px;
+	}
+	.wt_body_mobile_like:before{
+		content: "";
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-image: url("../images_m/未点赞@2x.png");
+		background-size: 20px 20px;
+		position: relative;
+		top: 4px;
+		margin-right: 4px;
+	}
+	.wt_body_mobile_view{
+		display: inline-block;
+		width: 30%;
+		padding-left: 8px; 
+		padding-right: 8px;
+	}
+	.wt_body_mobile_view:before {
+		content: "";
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-image: url("../images_m/查看@2x.png");
+		background-size: 20px 20px;
+		position: relative;
+		top: 4px;
+		margin-right: 4px;
+	}
+
+	
+}
+
+
+

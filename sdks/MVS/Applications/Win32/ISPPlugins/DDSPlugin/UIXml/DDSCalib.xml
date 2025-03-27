@@ -1,0 +1,17 @@
+<Root>
+    <Group extend="false" ui_param_show="1" ui_param_name="CalibParams" id="0">
+        <Node ui_display_cn_name="ROI宽度" ui_param_show="1" ui_param_display_type="SpinBox" ui_param_name="ROIWidth" ui_display_en_name="ROI Width" ui_display_name="ROI Width" ui_param_type="Integer"/>
+        <Node ui_display_cn_name="ROI高度" ui_param_show="1" ui_param_display_type="SpinBox" ui_param_name="ROIHeight" ui_display_en_name="ROI Height" ui_display_name="ROI Height" ui_param_type="Integer"/>
+        <Node ui_param_level="0" ui_display_cn_name="ROI绘制" ui_param_polling="0" ui_param_lock="0" ui_param_show="1" ui_param_display_type="find_roi" ui_param_name="" ui_type="config_param" ui_display_en_name="Draw ROI" ui_display_name="roi_edit">
+            <SubNode ui_param_level="0" ui_param_polling="0" ui_param_lock="0" ui_param_show="1" ui_param_display_type="find_roi" ui_param_name="Roi" ui_roi_param_type="24 ROIs,140 ROIs,Custom ROI,m * n ROIs" ui_type="roi_param" ui_roi_seek_type="0" ui_display_name="" ui_roi_num_max="1" ui_roi_num_min="1"/>
+        </Node>
+        <Node ui_display_cn_name="增益" ui_param_show="0" ui_param_display_type="button" ui_param_button_name="Edit Gain" ui_param_button_cn_name="编辑" ui_param_name="GainEdit_Command" ui_display_en_name="Gain" ui_display_name="Gain" ui_param_type="Command">
+		    <RelationList>Params_Gain_Exposure</RelationList>
+		</Node>
+        <Node ui_param_display_type="group_spinbox" ui_param_name="Params_Gain_Exposure" ui_param_type="GroupParams" ui_param_show="0">
+		    <RelationList>GainEdit_Command</RelationList>
+		    <SubNode ui_display_cn_name="增益" ui_param_display_type="" ui_param_name="Gain" ui_display_en_name="Gain" ui_display_name="" ui_param_type="FloatArray"/>
+            <SubNode ui_display_cn_name="曝光时间" ui_param_display_type="" ui_param_name="Exposure" ui_display_en_name="Exposure Time" ui_display_name="" ui_param_type="FloatArray"/>
+        </Node>
+    </Group>
+</Root>

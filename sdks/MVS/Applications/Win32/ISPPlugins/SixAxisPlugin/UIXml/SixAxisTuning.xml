@@ -1,0 +1,8 @@
+<Root>
+    <Group extend="false" ui_param_show="1" ui_param_name="SixAxisParams" ui_display_name="" id="1">
+        <Node ui_param_show="1" ui_param_display_type="sixaxis" ui_param_name="SixAxis" ui_display_name="" ui_param_type="SixAxis">
+            <SubNode ui_display_cn_name="色调" ui_param_show="1" ui_param_display_type="" ui_param_name="Tonal" ui_display_en_name="Hue" ui_display_name="" ui_param_type="FloatArray"/>
+            <SubNode ui_display_cn_name="饱和度" ui_param_show="1" ui_param_display_type="" ui_param_name="Saturation" ui_display_en_name="Saturation" ui_display_name="" ui_param_type="FloatArray"/>
+        </Node>
+    </Group>
+</Root>

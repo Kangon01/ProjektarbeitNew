@@ -1,0 +1,2836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ISPParam>
+    <Category Name="Pipeline" NameSpace="Standard"/>
+    <Category Name="SpatialDenoise" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>降噪算法版本号</Description>
+            <DisplayName>SpatialDenoise_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>SpatialDenoise_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Enumeration Name="DenoiseMethod" NameSpace="Standard">
+            <Description>降噪方法</Description>
+            <DisplayName>SpatialDenoise_DenoiseMethod</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03020501</AlgorithmIndex>
+            <CurValue>3</CurValue>
+            <DefaultValue>3</DefaultValue>
+            <EnumEntry Name="SWDCT" NameSpace="Standard">
+                <Description>SWDCT算法(Mono8/RGB)</Description>
+                <Value>1</Value>
+            </EnumEntry>
+            <EnumEntry Name="SWWALSH" NameSpace="Standard">
+                <Description>SWWALSH算法(Bayer)</Description>
+                <Value>2</Value>
+            </EnumEntry>
+            <EnumEntry Name="BF" NameSpace="Standard">
+                <Description>BF算法(Mono8/RGB/Bayer)</Description>
+                <Value>3</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Float Name="Gain" NameSpace="Standard">
+            <Description>增益</Description>
+            <DisplayName>SpatialDenoise_Gain</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>0</CurValue>
+            <MinValue>0.0</MinValue>
+            <MaxValue>24.0</MaxValue>
+        </Float>
+        <Integer Name="RGBNoiseCorrectLumSD" NameSpace="Standard">
+            <Description>亮度校正系数(SWDCT算法,Mono8/RGB域空域降噪)</Description>
+            <DisplayName>SpatialDenoise_RGBNoiseCorrectLumSD</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03020201</AlgorithmIndex>
+            <CurValue>100</CurValue>
+            <DefaultValue>100</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>10000</MaxValue>
+        </Integer>
+        <Integer Name="RGBNoiseCorrectChromSD" NameSpace="Standard">
+            <Description>色度校正系数(SWDCT算法,Mono8/RGB域空域降噪)</Description>
+            <DisplayName>SpatialDenoise_RGBNoiseCorrectChromSD</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03020202</AlgorithmIndex>
+            <CurValue>100</CurValue>
+            <DefaultValue>100</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>10000</MaxValue>
+        </Integer>
+        <Integer Name="RGBStrengthLumSD" NameSpace="Standard">
+            <Description>亮度降噪强度(SWDCT算法,Mono8/RGB域空域降噪)</Description>
+            <DisplayName>SpatialDenoise_RGBStrengthLumSD</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03020203</AlgorithmIndex>
+            <CurValue>100</CurValue>
+            <DefaultValue>100</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>100</MaxValue>
+        </Integer>
+        <Integer Name="RGBStrengthChromSD" NameSpace="Standard">
+            <Description>色度降噪强度(SWDCT算法,Mono8/RGB域空域降噪)</Description>
+            <DisplayName>SpatialDenoise_RGBStrengthChromSD</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03020204</AlgorithmIndex>
+            <CurValue>100</CurValue>
+            <DefaultValue>100</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>100</MaxValue>
+        </Integer>
+        <Integer Name="RGBStrengthSharpenSD" NameSpace="Standard">
+            <Description>锐化强度(SWDCT算法,Mono8/RGB域空域降噪)</Description>
+            <DisplayName>SpatialDenoise_RGBStrengthSharpenSD</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03020205</AlgorithmIndex>
+            <CurValue>100</CurValue>
+            <DefaultValue>100</DefaultValue>
+            <MinValue>1</MinValue>
+            <MaxValue>1000</MaxValue>
+        </Integer>
+        <Integer Name="RGBNoiseCorrectLumBF" NameSpace="Standard">
+            <Description>亮度校正系数(BF算法,Mono8/RGB域空域降噪)</Description>
+            <DisplayName>SpatialDenoise_RGBNoiseCorrectLumBF</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03020301</AlgorithmIndex>
+            <CurValue>1280</CurValue>
+            <DefaultValue>1280</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>12800</MaxValue>
+        </Integer>
+        <Integer Name="RGBNoiseCorrectChromBF" NameSpace="Standard">
+            <Description>色度校正系数(BF算法,Mono8/RGB域空域降噪)</Description>
+            <DisplayName>SpatialDenoise_RGBNoiseCorrectChromBF</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03020302</AlgorithmIndex>
+            <CurValue>1280</CurValue>
+            <DefaultValue>1280</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>12800</MaxValue>
+        </Integer>
+        <Integer Name="RGBStrengthLumBF" NameSpace="Standard">
+            <Description>亮度降噪强度(BF算法,Mono8/RGB域空域降噪)</Description>
+            <DisplayName>SpatialDenoise_RGBStrengthLumBF</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03020303</AlgorithmIndex>
+            <CurValue>128</CurValue>
+            <DefaultValue>128</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>128</MaxValue>
+        </Integer>
+        <Integer Name="RGBStrengthChromBF" NameSpace="Standard">
+            <Description>色度降噪强度(BF算法,Mono8/RGB域空域降噪)</Description>
+            <DisplayName>SpatialDenoise_RGBStrengthChromBF</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03020304</AlgorithmIndex>
+            <CurValue>128</CurValue>
+            <DefaultValue>128</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>128</MaxValue>
+        </Integer>
+        <Integer Name="BayerDenoiseStrength" NameSpace="Standard">
+            <Description>降噪强度(Bayer域空域降噪算法参数)</Description>
+            <DisplayName>SpatialDenoise_BayerDenoiseStrength</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03020101</AlgorithmIndex>
+            <CurValue>128</CurValue>
+            <DefaultValue>128</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>128</MaxValue>
+        </Integer>
+        <Integer Name="BayerSharpenStrength" NameSpace="Standard">
+            <Description>锐化强度(Bayer域空域降噪算法参数)</Description>
+            <DisplayName>SpatialDenoise_BayerSharpenStrength</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03020102</AlgorithmIndex>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>32</MaxValue>
+        </Integer>
+        <Integer Name="BayerNoiseCorrect" NameSpace="Standard">
+            <Description>噪声校正系数(Bayer域空域降噪算法参数)</Description>
+            <DisplayName>SpatialDenoise_BayerNoiseCorrect</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03020103</AlgorithmIndex>
+            <CurValue>1280</CurValue>
+            <DefaultValue>1280</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>12800</MaxValue>
+        </Integer>
+        <Integer Name="SpatialDenoiseType" NameSpace="Standard">
+            <Description>空域降噪算法的类型</Description>
+            <DisplayName>SpatialDenoise_SpatialDenoiseType</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <!--自定义参数，用于区分两种降噪算法-->
+            <CurValue>1</CurValue>
+            <DefaultValue>1</DefaultValue>
+            <MinValue>1</MinValue>
+            <MaxValue>2</MaxValue>
+        </Integer>
+        <String Name="NoiseProfile" NameSpace="Standard">
+            <Description>噪声特性</Description>
+            <DisplayName>SpatialDenoise_NoiseProfile</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <FileName>C:/Windows/Temp/ISPTool/NoiseProfile.bin</FileName>
+        </String>
+        <String Name="NoiseCurve" NameSpace="Standard">
+            <Description>噪声曲线</Description>
+            <DisplayName>SpatialDenoise_NoiseCurve</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <FileName>NoiseCurve.bin</FileName>
+        </String>
+    </Category>
+    <Category Name="CCM" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>CCM算法版本号</Description>
+            <DisplayName>CCM_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>CCM_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Enumeration Name="GammaType" NameSpace="Standard">
+            <Description>Gamma类型</Description>
+            <DisplayName>CCM_GammaType</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <EnumEntry Name="None" NameSpace="Standard">
+                <Description>不启用</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="UserValue" NameSpace="Standard">
+                <Description>Gamma值</Description>
+                <Value>1</Value>
+            </EnumEntry>
+            <EnumEntry Name="UserCurve" NameSpace="Standard">
+                <Description>Gamma曲线</Description>
+                <Value>2</Value>
+            </EnumEntry>
+            <EnumEntry Name="LRGB2SRGB" NameSpace="Standard">
+                <Description>linear RGB to sRGB</Description>
+                <Value>3</Value>
+            </EnumEntry>
+            <EnumEntry Name="SRGB2LRGB" NameSpace="Standard">
+                <Description>sRGB to linear RGB</Description>
+                <Value>4</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Float Name="GammaValue" NameSpace="Standard">
+            <Description>Gamma值</Description>
+            <DisplayName>CCM_GammaValue</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <MinValue>0.1</MinValue>
+            <MaxValue>3.9</MaxValue>
+        </Float>
+        <String Name="GammaCurve" NameSpace="Standard">
+            <!--8位,Length:256*sizeof(unsigned char)-->
+            <!--10位,Length:1024*sizeof(unsigned short)-->
+            <!--12位,Length:4096*sizeof(unsigned short)-->
+            <!--16位,Length:65536*sizeof(unsigned short)-->
+            <Description>Gamma曲线</Description>
+            <DisplayName>CCM_GammaCurve</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <FileName>C:/Windows/Temp/ISPTool/gamma_curve_bak.bin</FileName>
+        </String>
+        <Enumeration Name="CCMType" NameSpace="Standard">
+            <Description>CCM类型</Description>
+            <DisplayName>CCM_CCMType</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <EnumEntry Name="None" NameSpace="Standard">
+                <Description>不启用</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="量化3x3矩阵 " NameSpace="Standard">
+                <Description>量化3x3矩阵</Description>
+                <Value>2</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Integer Name="CCMScale" NameSpace="Standard">
+            <Description>量化系数(2的整数幂)</Description>
+            <DisplayName>CCM_CCMScale</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>1024</CurValue>
+            <DefaultValue>1024</DefaultValue>
+            <MinValue>2</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+        <IntegerArray Name="CCMat" NameSpace="Standard">
+            <Description>CCM 量化3x3矩阵值</Description>
+            <DisplayName>CCM_CCMat</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <Length>9</Length>
+            <MinValue>-65536</MinValue>
+            <MaxValue>65536</MaxValue>
+            <Value>1024</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>1024</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>1024</Value>
+        </IntegerArray>
+        <Enumeration Name="ImageBit" NameSpace="Standard">
+            <Description>图像位数</Description>
+            <DisplayName>CCM_ImageBit</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>8</CurValue>
+            <DefaultValue>8</DefaultValue>
+            <EnumEntry Name="Bpp8" NameSpace="Standard">
+                <Description>8位</Description>
+                <Value>8</Value>
+            </EnumEntry>
+            <EnumEntry Name="Bpp10" NameSpace="Standard">
+                <Description>10位</Description>
+                <Value>10</Value>
+            </EnumEntry>
+            <EnumEntry Name="Bpp12" NameSpace="Standard">
+                <Description>12位</Description>
+                <Value>12</Value>
+            </EnumEntry>
+            <EnumEntry Name="Bpp16" NameSpace="Standard">
+                <Description>16位</Description>
+                <Value>16</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Float Name="ColorSaturation" NameSpace="Standard">
+            <Description>色彩饱和度</Description>
+            <DisplayName>CCM_ColorSaturation</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>1</CurValue>
+            <MinValue>0</MinValue>
+            <MaxValue>2</MaxValue>
+        </Float>
+    </Category>
+    <Category Name="CLUT" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>CLUT算法版本号</Description>
+            <DisplayName>CLUT_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>CLUT_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Enumeration Name="Method" NameSpace="Standard">
+            <Description>校正方法</Description>
+            <DisplayName>CLUT_Method</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>1</CurValue>
+            <DefaultValue>1</DefaultValue>
+            <EnumEntry Name="Calculate" NameSpace="Standard">
+                <Description>计算</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="Lookup" NameSpace="Standard">
+                <Description>查表</Description>
+                <Value>1</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Enumeration Name="GammaType" NameSpace="Standard">
+            <Description>Gamma类型</Description>
+            <DisplayName>CLUT_GammaType</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <EnumEntry Name="None" NameSpace="Standard">
+                <Description>不启用</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="UserValue" NameSpace="Standard">
+                <Description>Gamma值</Description>
+                <Value>1</Value>
+            </EnumEntry>
+            <EnumEntry Name="UserCurve" NameSpace="Standard">
+                <Description>Gamma曲线</Description>
+                <Value>2</Value>
+            </EnumEntry>
+            <EnumEntry Name="LRGB2SRGB" NameSpace="Standard">
+                <Description>linear RGB to sRGB</Description>
+                <Value>3</Value>
+            </EnumEntry>
+            <EnumEntry Name="SRGB2LRGB" NameSpace="Standard">
+                <Description>sRGB to linear RGB</Description>
+                <Value>4</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Float Name="GammaValue" NameSpace="Standard">
+            <Description>Gamma值</Description>
+            <DisplayName>CLUT_GammaValue</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>1</CurValue>
+            <MinValue>0.1</MinValue>
+            <MaxValue>3.9</MaxValue>
+        </Float>
+        <String Name="GammaCurve" NameSpace="Standard">
+            <!--8位,Length:256*sizeof(unsigned char)-->
+            <!--10位,Length:1024*sizeof(unsigned short)-->
+            <!--12位,Length:4096*sizeof(unsigned short)-->
+            <!--16位,Length:65536*sizeof(unsigned short)-->
+            <Description>Gamma曲线</Description>
+            <DisplayName>CLUT_GammaCurve</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <FileName>C:/Windows/Temp/ISPTool/gamma_curve_bak.bin</FileName>
+        </String>
+        <Enumeration Name="CCMType" NameSpace="Standard">
+            <Description>CLUT CCM类型</Description>
+            <DisplayName>CLUT_CCMType</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <EnumEntry Name="None" NameSpace="Standard">
+                <Description>不启用</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="量化3x3矩阵 " NameSpace="Standard">
+                <Description>量化3x3矩阵</Description>
+                <Value>2</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Integer Name="CCMScale" NameSpace="Standard">
+            <!--2的整数幂-->
+            <Description>CCM量化系数</Description>
+            <DisplayName>CLUT_CCMScale</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>1024</CurValue>
+            <DefaultValue>1024</DefaultValue>
+            <MinValue>2</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+        <IntegerArray Name="CCMat" NameSpace="Standard">
+            <Description>CCM矩阵</Description>
+            <DisplayName>CLUT_CCMat</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <Length>9</Length>
+            <MinValue>-65536</MinValue>
+            <MaxValue>65536</MaxValue>
+            <Value>1024</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>1024</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>1024</Value>
+        </IntegerArray>
+        <Boolean Name="CLUTEnable" NameSpace="Standard">
+            <Description>CLUT矫正使能</Description>
+            <DisplayName>CLUT_CLUTEnable</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>1</CurValue>
+            <DefaultValue>1</DefaultValue>
+            <OnValue>1</OnValue>
+            <OffValue>0</OffValue>
+        </Boolean>
+        <Integer Name="CLUTScale" NameSpace="Standard">
+            <!--2的整数幂-->
+            <Description>CLUT量化系数</Description>
+            <DisplayName>CLUT_CLUTScale</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>1024</CurValue>
+            <DefaultValue>1024</DefaultValue>
+            <MinValue>2</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+        <Integer Name="CLUTSize" NameSpace="Standard">
+            <!--建议值:17-->
+            <Description>CLUT大小</Description>
+            <DisplayName>CLUT_CLUTSize</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>17</CurValue>
+            <DefaultValue>17</DefaultValue>
+            <MinValue>17</MinValue>
+            <MaxValue>33</MaxValue>
+        </Integer>
+        <String Name="CLUT" NameSpace="Standard">
+            <!--Length:CLUTSize3*sizeof(int)*3-->
+            <Description>量化CLUT表</Description>
+            <DisplayName>CLUT_CLUT</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <FileName>C:/Windows/Temp/ISPTool/CLUT.bin</FileName>
+        </String>
+        <Enumeration Name="ImageBit" NameSpace="Standard">
+            <Description>图像位数</Description>
+            <DisplayName>CLUT_ImageBit</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>8</CurValue>
+            <DefaultValue>8</DefaultValue>
+            <EnumEntry Name="Bpp8" NameSpace="Standard">
+                <Description>8位</Description>
+                <Value>8</Value>
+            </EnumEntry>
+            <EnumEntry Name="Bpp10" NameSpace="Standard">
+                <Description>10位</Description>
+                <Value>10</Value>
+            </EnumEntry>
+            <EnumEntry Name="Bpp12" NameSpace="Standard">
+                <Description>12位</Description>
+                <Value>12</Value>
+            </EnumEntry>
+            <EnumEntry Name="Bpp16" NameSpace="Standard">
+                <Description>16位</Description>
+                <Value>16</Value>
+            </EnumEntry>
+        </Enumeration>
+    </Category>
+    <Category Name="SixAxis" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>六轴算法版本号</Description>
+            <DisplayName>SixAxis_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>SixAxis_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Enumeration Name="Method" NameSpace="Standard">
+            <Description>校正方法</Description>
+            <DisplayName>SixAxis_Method</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>1</CurValue>
+            <DefaultValue>1</DefaultValue>
+            <EnumEntry Name="Calculate" NameSpace="Standard">
+                <Description>计算</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="Lookup" NameSpace="Standard">
+                <Description>查表</Description>
+                <Value>1</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Enumeration Name="GammaType" NameSpace="Standard">
+            <Description>Gamma类型</Description>
+            <DisplayName>SixAxis_GammaType</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <EnumEntry Name="None" NameSpace="Standard">
+                <Description>不启用</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="UserValue" NameSpace="Standard">
+                <Description>Gamma值</Description>
+                <Value>1</Value>
+            </EnumEntry>
+            <EnumEntry Name="UserCurve" NameSpace="Standard">
+                <Description>Gamma曲线</Description>
+                <Value>2</Value>
+            </EnumEntry>
+            <EnumEntry Name="LRGB2SRGB" NameSpace="Standard">
+                <Description>linear RGB to sRGB</Description>
+                <Value>3</Value>
+            </EnumEntry>
+            <EnumEntry Name="SRGB2LRGB" NameSpace="Standard">
+                <Description>sRGB to linear RGB</Description>
+                <Value>4</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Float Name="GammaValue" NameSpace="Standard">
+            <Description>Gamma值</Description>
+            <DisplayName>SixAxis_GammaValue</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0.4</CurValue>
+            <MinValue>0.1</MinValue>
+            <MaxValue>3.9</MaxValue>
+        </Float>
+        <String Name="GammaCurve" NameSpace="Standard">
+            <!--8位,Length:256*sizeof(unsigned char)-->
+            <!--10位,Length:1024*sizeof(unsigned short)-->
+            <!--12位,Length:4096*sizeof(unsigned short)-->
+            <!--16位,Length:65536*sizeof(unsigned short)-->
+            <Description>Gamma曲线</Description>
+            <DisplayName>SixAxis_GammaCurve</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <FileName>GammaCurve.bin</FileName>
+        </String>
+        <Enumeration Name="CCMType" NameSpace="Standard">
+            <Description>SixAxis CCM类型</Description>
+            <DisplayName>SixAxis_CCMType</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <EnumEntry Name="None" NameSpace="Standard">
+                <Description>不启用</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="量化3x3矩阵 " NameSpace="Standard">
+                <Description>量化3x3矩阵</Description>
+                <Value>2</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Integer Name="CCMScale" NameSpace="Standard">
+            <!--2的整数幂-->
+            <Description>CCM量化系数</Description>
+            <DisplayName>SixAxis_CCMScale</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>1024</CurValue>
+            <DefaultValue>1024</DefaultValue>
+            <MinValue>2</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+        <IntegerArray Name="CCMat" NameSpace="Standard">
+            <Description>CCM矩阵</Description>
+            <DisplayName>SixAxis_CCMat</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <Length>9</Length>
+            <MinValue>-65536</MinValue>
+            <MaxValue>65536</MaxValue>
+            <Value>1024</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>1024</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>1024</Value>
+        </IntegerArray>
+        <Boolean Name="SixAxisEnable" NameSpace="Standard">
+            <Description>平滑使能</Description>
+            <DisplayName>SixAxis_SixAxisEnable</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>1</CurValue>
+            <DefaultValue>1</DefaultValue>
+            <OnValue>1</OnValue>
+            <OffValue>0</OffValue>
+        </Boolean>
+        <FloatArray Name="Tonal" NameSpace="Standard">
+            <Description>色调 值顺序：Red Green Blue Cyan Magenta Yellow</Description>
+            <DisplayName>SixAxis_Tonal</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <Length>6</Length>
+            <MinValue>-1</MinValue>
+            <MaxValue>1</MaxValue>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+        </FloatArray>
+        <FloatArray Name="Saturation" NameSpace="Standard">
+            <Description>饱和度 值顺序：Red Green Blue Cyan Magenta Yellow</Description>
+            <DisplayName>SixAxis_Saturation</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <Length>6</Length>
+            <MinValue>0</MinValue>
+            <MaxValue>2</MaxValue>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+        </FloatArray>
+        <Enumeration Name="ImageBit" NameSpace="Standard">
+            <Description>图像位数</Description>
+            <DisplayName>SixAxis_ImageBit</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>8</CurValue>
+            <DefaultValue>8</DefaultValue>
+            <EnumEntry Name="Bpp8" NameSpace="Standard">
+                <Description>8位</Description>
+                <Value>8</Value>
+            </EnumEntry>
+            <EnumEntry Name="Bpp10" NameSpace="Standard">
+                <Description>10位</Description>
+                <Value>10</Value>
+            </EnumEntry>
+            <EnumEntry Name="Bpp12" NameSpace="Standard">
+                <Description>12位</Description>
+                <Value>12</Value>
+            </EnumEntry>
+            <EnumEntry Name="Bpp16" NameSpace="Standard">
+                <Description>16位</Description>
+                <Value>16</Value>
+            </EnumEntry>
+        </Enumeration>
+    </Category>
+    <Category Name="PurpleFringingCorrect" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>去紫边算法版本号</Description>
+            <DisplayName>PurpleFringingCorrect_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>PurpleFringingCorrect_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Integer Name="KernelSize" NameSpace="Standard">
+            <Description>滤波核尺寸</Description>
+            <DisplayName>PurpleFringingCorrect_KernelSize</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03050100</AlgorithmIndex>
+            <CurValue>5</CurValue>
+            <DefaultValue>5</DefaultValue>
+            <MinValue>3</MinValue>
+            <MaxValue>101</MaxValue>
+        </Integer>
+        <Enumeration Name="MethodType" NameSpace="Standard">
+            <Description>处理方法</Description>
+            <DisplayName>PurpleFringingCorrect_MethodType</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03050101</AlgorithmIndex>
+            <CurValue>2</CurValue>
+            <DefaultValue>2</DefaultValue>
+            <EnumEntry Name="ChromaDenoise" NameSpace="Standard">
+                <Description>色度降噪法</Description>
+                <Value>1</Value>
+            </EnumEntry>
+            <EnumEntry Name="DropSaturation" NameSpace="Standard">
+                <Description>降饱和度法</Description>
+                <Value>2</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Integer Name="EdgeThreshold" NameSpace="Standard">
+            <Description>边缘阈值</Description>
+            <DisplayName>PurpleFringingCorrect_EdgeThreshold</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03050102</AlgorithmIndex>
+            <CurValue>180</CurValue>
+            <DefaultValue>180</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>2040</MaxValue>
+        </Integer>
+        <IntegerArray Name="ROIRect" NameSpace="Standard">
+            <Description>感兴趣区域(矩形) 值顺序：X Y Width Height</Description>
+            <DisplayName>PurpleFringingCorrect_ROIRect</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <Length>4</Length>
+            <MinValue>8</MinValue>
+            <MaxValue>65535</MaxValue>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+        </IntegerArray>
+    </Category>
+    <Category Name="CFA" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>插值算法版本号</Description>
+            <DisplayName>CFA_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>CFA_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Enumeration Name="Method" NameSpace="Standard">
+            <Description>色彩插值方法</Description>
+            <DisplayName>CFA_Method</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03010001</AlgorithmIndex>
+            <CurValue>3</CurValue>
+            <DefaultValue>3</DefaultValue>
+            <EnumEntry Name="NEAREST" NameSpace="Standard">
+                <Description>最近邻</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="BILINEAR" NameSpace="Standard">
+                <Description>双线性</Description>
+                <Value>1</Value>
+            </EnumEntry>
+            <EnumEntry Name="CFA_H" NameSpace="Standard">
+                <Description>CFA_H</Description>
+                <Value>2</Value>
+            </EnumEntry>
+            <EnumEntry Name="CFA_NH" NameSpace="Standard">
+                <Description>CFA_NH</Description>
+                <Value>3</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Boolean Name="FilterType" NameSpace="Standard">
+            <Description>平滑使能</Description>
+            <DisplayName>CFA_FilterType</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03010004</AlgorithmIndex>
+            <CurValue>1</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <OnValue>1</OnValue>
+            <OffValue>0</OffValue>
+        </Boolean>
+        <Enumeration Name="DstPixelType" NameSpace="Standard">
+            <Description>目的像素格式类型</Description>
+            <DisplayName>CFA_DstPixelType</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <EnumEntry Name="RGB8" NameSpace="Standard">
+                <Description>RGB8</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="RGBA8" NameSpace="Standard">
+                <Description>RGBA8</Description>
+                <Value>1</Value>
+            </EnumEntry>
+            <EnumEntry Name="RGB16" NameSpace="Standard">
+                <Description>RGB16</Description>
+                <Value>2</Value>
+            </EnumEntry>
+            <EnumEntry Name="RGBA16" NameSpace="Standard">
+                <Description>RGBA16</Description>
+                <Value>3</Value>
+            </EnumEntry>
+            <EnumEntry Name="BGR8" NameSpace="Standard">
+                <Description>BGR8</Description>
+                <Value>4</Value>
+            </EnumEntry>
+            <EnumEntry Name="BGRA8" NameSpace="Standard">
+                <Description>BGRA8</Description>
+                <Value>5</Value>
+            </EnumEntry>
+            <EnumEntry Name="BGR16" NameSpace="Standard">
+                <Description>BGR16</Description>
+                <Value>6</Value>
+            </EnumEntry>
+            <EnumEntry Name="BGRA16" NameSpace="Standard">
+                <Description>BGRA16</Description>
+                <Value>7</Value>
+            </EnumEntry>
+        </Enumeration>
+    </Category>
+    <Category Name="DDS" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>DDS算法版本号</Description>
+            <DisplayName>DDS_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>DDS_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Integer Name="NoiseCorrect" NameSpace="Standard">
+            <Description>噪声校正系数</Description>
+            <DisplayName>DDS_NoiseCorrect</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03010101</AlgorithmIndex>
+            <CurValue>128</CurValue>
+            <DefaultValue>128</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>12800</MaxValue>
+        </Integer>
+        <Integer Name="DenoiseStrength" NameSpace="Standard">
+            <Description>降噪强度</Description>
+            <DisplayName>DDS_DenoiseStrength</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03010102</AlgorithmIndex>
+            <CurValue>128</CurValue>
+            <DefaultValue>128</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>128</MaxValue>
+        </Integer>
+        <String Name="NoiseCurve" NameSpace="Standard">
+            <Description>噪声曲线</Description>
+            <DisplayName>DDS_NoiseCurve</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <FileName>C:/Windows/Temp/ISPTool/NoiseCurve.bin</FileName>
+        </String>
+        <Integer Name="PointNum" NameSpace="Standard">
+            <Description>噪声曲线点数</Description>
+            <DisplayName>DDS_PointNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>100</CurValue>
+            <DefaultValue>100</DefaultValue>
+            <MinValue>1</MinValue>
+            <MaxValue>256</MaxValue>
+        </Integer>
+        <Enumeration Name="DstPixelType" NameSpace="Standard">
+            <Description>目的像素格式类型</Description>
+            <DisplayName>DDS_DstPixelType</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <EnumEntry Name="RGB8" NameSpace="Standard">
+                <Description>RGB8</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="RGBA8" NameSpace="Standard">
+                <Description>RGBA8</Description>
+                <Value>1</Value>
+            </EnumEntry>
+            <EnumEntry Name="RGB16" NameSpace="Standard">
+                <Description>RGB16</Description>
+                <Value>2</Value>
+            </EnumEntry>
+            <EnumEntry Name="RGBA16" NameSpace="Standard">
+                <Description>RGBA16</Description>
+                <Value>3</Value>
+            </EnumEntry>
+            <EnumEntry Name="BGR8" NameSpace="Standard">
+                <Description>BGR8</Description>
+                <Value>4</Value>
+            </EnumEntry>
+            <EnumEntry Name="BGRA8" NameSpace="Standard">
+                <Description>BGRA8</Description>
+                <Value>5</Value>
+            </EnumEntry>
+            <EnumEntry Name="BGR16" NameSpace="Standard">
+                <Description>BGR16</Description>
+                <Value>6</Value>
+            </EnumEntry>
+            <EnumEntry Name="BGRA16" NameSpace="Standard">
+                <Description>BGRA16</Description>
+                <Value>7</Value>
+            </EnumEntry>
+        </Enumeration>
+    </Category>
+    <Category Name="Contrast" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>对比度算法版本号</Description>
+            <DisplayName>Contrast_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>Contrast_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Integer Name="Factor" NameSpace="Standard">
+            <Description>对比度调节强度</Description>
+            <DisplayName>Contrast_Factor</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03060101</AlgorithmIndex>
+            <CurValue>100</CurValue>
+            <DefaultValue>100</DefaultValue>
+            <MinValue>1</MinValue>
+            <MaxValue>10000</MaxValue>
+        </Integer>
+        <IntegerArray Name="ROIRect" NameSpace="Standard">
+            <Description>感兴趣区域(矩形) 值顺序：X Y Width Height</Description>
+            <DisplayName>Contrast_ROIRect</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <Length>4</Length>
+            <MinValue>8</MinValue>
+            <MaxValue>65535</MaxValue>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+        </IntegerArray>
+    </Category>
+    <Category Name="Sharpen" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>锐化算法版本号</Description>
+            <DisplayName>Sharpen_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>Sharpen_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Integer Name="Amount" NameSpace="Standard">
+            <Description>锐度调节强度（V1.0.2废弃）</Description>
+            <DisplayName>Sharpen_Amount</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03060001</AlgorithmIndex>
+            <CurValue>50</CurValue>
+            <DefaultValue>50</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>500</MaxValue>
+        </Integer>
+        <Integer Name="Radius" NameSpace="Standard">
+            <Description>锐度调节半径(半径越大，耗时越长)</Description>
+            <DisplayName>Sharpen_Radius</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03060002</AlgorithmIndex>
+            <CurValue>3</CurValue>
+            <DefaultValue>1</DefaultValue>
+            <MinValue>1</MinValue>
+            <MaxValue>21</MaxValue>
+        </Integer>
+        <Integer Name="Threshold" NameSpace="Standard">
+            <Description>锐度调节阈值</Description>
+            <DisplayName>Sharpen_Threshold</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03060003</AlgorithmIndex>
+            <CurValue>255</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>255</MaxValue>
+        </Integer>
+        <Integer Name="PosAmount" NameSpace="Standard">
+            <Description>锐度调节正向强度（V1.0.2新增）</Description>
+            <DisplayName>Sharpen_PosAmount</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03060004</AlgorithmIndex>
+            <CurValue>50</CurValue>
+            <DefaultValue>50</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>500</MaxValue>
+        </Integer>
+        <Integer Name="NegAmount" NameSpace="Standard">
+            <Description>锐度调节负向强度（V1.0.2新增）</Description>
+            <DisplayName>Sharpen_NegAmount</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03060005</AlgorithmIndex>
+            <CurValue>50</CurValue>
+            <DefaultValue>50</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>500</MaxValue>
+        </Integer>
+        <IntegerArray Name="ROIRect" NameSpace="Standard">
+            <Description>感兴趣区域(矩形) 值顺序：X Y Width Height</Description>
+            <DisplayName>Sharpen_ROIRect</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <Length>4</Length>
+            <MinValue>8</MinValue>
+            <MaxValue>65535</MaxValue>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+        </IntegerArray>
+    </Category>
+    <Category Name="LUT" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>LUT算法版本号</Description>
+            <DisplayName>LUT_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>LUT_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <String Name="LUT" NameSpace="Standard">
+            <Description>LUT表</Description>
+            <DisplayName>LUT_LUT</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <FileName>C:/Windows/Temp/ISPTool/LUT.bin</FileName>
+        </String>
+        <IntegerArray Name="ROIRect" NameSpace="Standard">
+            <Description>感兴趣区域(矩形) 值顺序：X Y Width Height</Description>
+            <DisplayName>LUT_ROIRect</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <Length>4</Length>
+            <MinValue>8</MinValue>
+            <MaxValue>65535</MaxValue>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+        </IntegerArray>
+        <Float Name="Gamma" NameSpace="Standard">
+            <Description>Gamma值</Description>
+            <DisplayName>Gamma Value</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>21</CurValue>
+            <MinValue>0.0</MinValue>
+            <MaxValue>100</MaxValue>
+        </Float>
+        <Float Name="Contrast" NameSpace="Standard">
+            <Description>对比度</Description>
+            <DisplayName>Contrast</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>1</CurValue>
+            <MinValue>-1</MinValue>
+            <MaxValue>1</MaxValue>
+        </Float>
+        <Float Name="Lum" NameSpace="Standard">
+            <Description>亮度</Description>
+            <DisplayName>Lum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>0</CurValue>
+            <MinValue>-1</MinValue>
+            <MaxValue>1</MaxValue>
+        </Float>
+    </Category>
+    <Category Name="LCE" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>局部对比度增强算法版本号</Description>
+            <DisplayName>LCE_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>LCE_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Integer Name="WinSize" NameSpace="Standard">
+            <Description>LCE双边滤波窗口</Description>
+            <DisplayName>LCE_WinSize</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03060201</AlgorithmIndex>
+            <CurValue>11</CurValue>
+            <DefaultValue>11</DefaultValue>
+            <MinValue>3</MinValue>
+            <MaxValue>41</MaxValue>
+        </Integer>
+        <Integer Name="SigmaD" NameSpace="Standard">
+            <Description>LCE高斯空域标准差</Description>
+            <DisplayName>LCE_SigmaD</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03060202</AlgorithmIndex>
+            <CurValue>500</CurValue>
+            <DefaultValue>500</DefaultValue>
+            <MinValue>100</MinValue>
+            <MaxValue>10000</MaxValue>
+        </Integer>
+        <Integer Name="SigmaR" NameSpace="Standard">
+            <Description>LCE高斯值域标准差</Description>
+            <DisplayName>LCE_SigmaR</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03060203</AlgorithmIndex>
+            <CurValue>7000</CurValue>
+            <DefaultValue>7000</DefaultValue>
+            <MinValue>1000</MinValue>
+            <MaxValue>20000</MaxValue>
+        </Integer>
+        <Integer Name="Gammalog" NameSpace="Standard">
+            <Description>LCE Gamma值</Description>
+            <DisplayName>LCE_Gammalog</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03060204</AlgorithmIndex>
+            <CurValue>5</CurValue>
+            <DefaultValue>5</DefaultValue>
+            <MinValue>1</MinValue>
+            <MaxValue>10000</MaxValue>
+        </Integer>
+        <Integer Name="DetailScale" NameSpace="Standard">
+            <Description>LCE纹理图像比例系数</Description>
+            <DisplayName>LCE_DetailScale</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03060205</AlgorithmIndex>
+            <CurValue>128</CurValue>
+            <DefaultValue>128</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>1280</MaxValue>
+        </Integer>
+        <Integer Name="FuseSP" NameSpace="Standard">
+            <Description>LCE加权曲线对称点</Description>
+            <DisplayName>LCE_FuseSP</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03060206</AlgorithmIndex>
+            <CurValue>2048</CurValue>
+            <DefaultValue>2048</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>4095</MaxValue>
+        </Integer>
+        <Integer Name="FuseWL" NameSpace="Standard">
+            <Description>LCE加权曲线左段曲率强度</Description>
+            <DisplayName>LCE_FuseWL</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03060207</AlgorithmIndex>
+            <CurValue>96</CurValue>
+            <DefaultValue>96</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>255</MaxValue>
+        </Integer>
+        <Integer Name="FuseWR" NameSpace="Standard">
+            <Description>LCE加权曲线右段曲率强度</Description>
+            <DisplayName>LCE_FuseWR</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03060208</AlgorithmIndex>
+            <CurValue>96</CurValue>
+            <DefaultValue>96</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>255</MaxValue>
+        </Integer>
+        <Integer Name="FuseBRSlope" NameSpace="Standard">
+            <Description>LCE提亮控制系数比率</Description>
+            <DisplayName>LCE_FuseBRSlope</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03060209</AlgorithmIndex>
+            <CurValue>50</CurValue>
+            <DefaultValue>50</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>256</MaxValue>
+        </Integer>
+        <Integer Name="FuseBROffset" NameSpace="Standard">
+            <Description>LCE提亮控制系数偏移</Description>
+            <DisplayName>LCE_FuseBROffset</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x0306020A</AlgorithmIndex>
+            <CurValue>14000</CurValue>
+            <DefaultValue>14000</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>65535</MaxValue>
+        </Integer>
+        <Boolean Name="FuseDKEnable" NameSpace="Standard">
+            <Description>LCE压暗控制使能</Description>
+            <DisplayName>LCE_FuseDKEnable</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x0306020B</AlgorithmIndex>
+            <CurValue>1</CurValue>
+            <DefaultValue>1</DefaultValue>
+            <OnValue>1</OnValue>
+            <OffValue>0</OffValue>
+        </Boolean>
+        <Integer Name="FuseDKCoef" NameSpace="Standard">
+            <Description>LCE压暗控制系数</Description>
+            <DisplayName>LCE_FuseDKCoef</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x0306020C</AlgorithmIndex>
+            <CurValue>3276</CurValue>
+            <DefaultValue>3276</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>4095</MaxValue>
+        </Integer>
+        <IntegerArray Name="ROIRect" NameSpace="Standard">
+            <Description>感兴趣区域(矩形) 值顺序：X Y Width Height</Description>
+            <DisplayName>Sharpen_ROIRect</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <Length>4</Length>
+            <MinValue>8</MinValue>
+            <MaxValue>65535</MaxValue>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+        </IntegerArray>
+    </Category>
+    <Category Name="SuperBinning" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>超级像素合并算法版本号</Description>
+            <DisplayName>SuperBinning_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>SuperBinning_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Integer Name="InterMethod" NameSpace="Standard">
+            <Description>插值算法</Description>
+            <DisplayName>SuperBinning_InterMethod</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03070001</AlgorithmIndex>
+            <CurValue>1</CurValue>
+            <DefaultValue>1</DefaultValue>
+            <MinValue>1</MinValue>
+            <MaxValue>2</MaxValue>
+        </Integer>
+        <Integer Name="Scale" NameSpace="Standard">
+            <Description>缩放比例系数</Description>
+            <DisplayName>SuperBinning_Scale</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03070002</AlgorithmIndex>
+            <CurValue>1000</CurValue>
+            <DefaultValue>1000</DefaultValue>
+            <MinValue>200</MinValue>
+            <MaxValue>2800</MaxValue>
+        </Integer>
+        <IntegerArray Name="ROIRect" NameSpace="Standard">
+            <Description>感兴趣区域(矩形) 值顺序：X Y Width Height</Description>
+            <DisplayName>SuperBinning_ROIRect</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <Length>4</Length>
+            <MinValue>8</MinValue>
+            <MaxValue>65535</MaxValue>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+        </IntegerArray>
+    </Category>
+    <Category Name="LSC" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>LSC算法版本号</Description>
+            <DisplayName>LSC_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <String Name="LSCCalib" NameSpace="Standard">
+            <!--Length:Width*Height*sizeof(unsigned short)-->
+            <Description>LSC校正表</Description>
+            <DisplayName>LSC_LSCCalib</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <FileName>C:/Windows/Temp/ISPTool/LSCCalib.bin</FileName>
+        </String>
+    </Category>
+    <Category Name="WhiteBalance" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>WhiteBalance算法版本号</Description>
+            <DisplayName>WhiteBalance_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>ColorCorrectPipeLine_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Enumeration Name="WB_CCMType" NameSpace="Standard">
+            <Description>WhiteBalance CCM类型</Description>
+            <DisplayName>WhiteBalance_CCMType</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <EnumEntry Name="None" NameSpace="Standard">
+                <Description>不启用</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="量化3x3矩阵 " NameSpace="Standard">
+                <Description>量化3x3矩阵</Description>
+                <Value>2</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Integer Name="WB_CCMScale" NameSpace="Standard">
+            <!--2的整数幂-->
+            <Description>CCM量化系数</Description>
+            <DisplayName>WhiteBalance_CCMScale</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>1024</CurValue>
+            <DefaultValue>1024</DefaultValue>
+            <MinValue>2</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+        <IntegerArray Name="WB_CCMat" NameSpace="Standard">
+            <Description>CCM矩阵</Description>
+            <DisplayName>WhiteBalance_CCMat</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <Length>9</Length>
+            <MinValue>-65536</MinValue>
+            <MaxValue>65536</MaxValue>
+            <Value>1024</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>1024</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>1024</Value>
+        </IntegerArray>
+    </Category>
+    <Category Name="Gamma" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>Gamma算法版本号</Description>
+            <DisplayName>Gamma_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>CLUT_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Enumeration Name="GammaType" NameSpace="Standard">
+            <Description>Gamma类型</Description>
+            <DisplayName>Gamma_GammaType</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <EnumEntry Name="None" NameSpace="Standard">
+                <Description>不启用</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="UserValue" NameSpace="Standard">
+                <Description>Gamma值</Description>
+                <Value>1</Value>
+            </EnumEntry>
+            <EnumEntry Name="UserCurve" NameSpace="Standard">
+                <Description>Gamma曲线</Description>
+                <Value>2</Value>
+            </EnumEntry>
+            <EnumEntry Name="LRGB2SRGB" NameSpace="Standard">
+                <Description>linear RGB to sRGB</Description>
+                <Value>3</Value>
+            </EnumEntry>
+            <EnumEntry Name="SRGB2LRGB" NameSpace="Standard">
+                <Description>sRGB to linear RGB</Description>
+                <Value>4</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Enumeration Name="GammaDirection" NameSpace="Standard">
+            <Description>Gamma处理方向</Description>
+            <DisplayName>Gamma_GammaDirection</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <EnumEntry Name="POS" NameSpace="Standard">
+                <Description>正向处理</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="NEG" NameSpace="Standard">
+                <Description>逆向处理</Description>
+                <Value>1</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Float Name="GammaValue" NameSpace="Standard">
+            <Description>Gamma值</Description>
+            <DisplayName>Gamma_GammaValue</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>2</CurValue>
+            <MinValue>0.1</MinValue>
+            <MaxValue>3.9</MaxValue>
+        </Float>
+        <String Name="GammaCurve" NameSpace="Standard">
+            <!--8位,Length:256*sizeof(unsigned char)-->
+            <!--10位,Length:1024*sizeof(unsigned short)-->
+            <!--12位,Length:4096*sizeof(unsigned short)-->
+            <!--16位,Length:65536*sizeof(unsigned short)-->
+            <Description>Gamma曲线</Description>
+            <DisplayName>Gamma_GammaCurve</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <FileName>C:/Windows/Temp/ISPTool/gamma_curve_bak.bin</FileName>
+        </String>
+        <Enumeration Name="ImageBit" NameSpace="Standard">
+            <Description>图像位数</Description>
+            <DisplayName>Gamma_ImageBit</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>8</CurValue>
+            <DefaultValue>8</DefaultValue>
+            <EnumEntry Name="Bpp8" NameSpace="Standard">
+                <Description>8位</Description>
+                <Value>8</Value>
+            </EnumEntry>
+            <EnumEntry Name="Bpp10" NameSpace="Standard">
+                <Description>10位</Description>
+                <Value>10</Value>
+            </EnumEntry>
+            <EnumEntry Name="Bpp12" NameSpace="Standard">
+                <Description>12位</Description>
+                <Value>12</Value>
+            </EnumEntry>
+            <EnumEntry Name="Bpp16" NameSpace="Standard">
+                <Description>16位</Description>
+                <Value>16</Value>
+            </EnumEntry>
+        </Enumeration>
+    </Category>
+    <Category Name="ColorCorrectPipeLine" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>ColorCorrectPipeLine算法版本号</Description>
+            <DisplayName>ColorCorrectPipeLine_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>ColorCorrectPipeLine_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Enumeration Name="ImageBit" NameSpace="Standard">
+            <Description>图像位数</Description>
+            <DisplayName>ColorCorrectPipeLine_ImageBit</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>8</CurValue>
+            <DefaultValue>8</DefaultValue>
+            <EnumEntry Name="Bpp8" NameSpace="Standard">
+                <Description>8位</Description>
+                <Value>8</Value>
+            </EnumEntry>
+            <EnumEntry Name="Bpp10" NameSpace="Standard">
+                <Description>10位</Description>
+                <Value>10</Value>
+            </EnumEntry>
+            <EnumEntry Name="Bpp12" NameSpace="Standard">
+                <Description>12位</Description>
+                <Value>12</Value>
+            </EnumEntry>
+            <EnumEntry Name="Bpp16" NameSpace="Standard">
+                <Description>16位</Description>
+                <Value>16</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Enumeration Name="GammaType" NameSpace="Standard">
+            <Description>Gamma类型</Description>
+            <DisplayName>ColorCorrectPipeLine_GammaType</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <EnumEntry Name="None" NameSpace="Standard">
+                <Description>不启用</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="UserValue" NameSpace="Standard">
+                <Description>Gamma值</Description>
+                <Value>1</Value>
+            </EnumEntry>
+            <EnumEntry Name="UserCurve" NameSpace="Standard">
+                <Description>Gamma曲线</Description>
+                <Value>2</Value>
+            </EnumEntry>
+            <EnumEntry Name="LRGB2SRGB" NameSpace="Standard">
+                <Description>linear RGB to sRGB</Description>
+                <Value>3</Value>
+            </EnumEntry>
+            <EnumEntry Name="SRGB2LRGB" NameSpace="Standard">
+                <Description>sRGB to linear RGB</Description>
+                <Value>4</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Float Name="GammaValue" NameSpace="Standard">
+            <Description>Gamma值</Description>
+            <DisplayName>ColorCorrectPipeLine_GammaValue</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>1</CurValue>
+            <MinValue>0.1</MinValue>
+            <MaxValue>3.9</MaxValue>
+        </Float>
+        <String Name="GammaCurve" NameSpace="Standard">
+            <!--8位,Length:256*sizeof(unsigned char)-->
+            <!--10位,Length:1024*sizeof(unsigned short)-->
+            <!--12位,Length:4096*sizeof(unsigned short)-->
+            <!--16位,Length:65536*sizeof(unsigned short)-->
+            <Description>Gamma曲线</Description>
+            <DisplayName>ColorCorrectPipeLine_GammaCurve</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <FileName>GammaCurve.bin</FileName>
+        </String>
+        <Enumeration Name="GammaDirection" NameSpace="Standard">
+            <Description>Gamma处理方向</Description>
+            <DisplayName>ColorCorrectPipeLine_GammaDirection</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <EnumEntry Name="POS" NameSpace="Standard">
+                <Description>正向处理</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="NEG" NameSpace="Standard">
+                <Description>逆向处理</Description>
+                <Value>1</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Enumeration Name="CCMType" NameSpace="Standard">
+            <Description>ColorCorrectPipeLine CCM类型</Description>
+            <DisplayName>ColorCorrectPipeLine_CCMType</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <EnumEntry Name="None" NameSpace="Standard">
+                <Description>不启用</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="量化3x3矩阵 " NameSpace="Standard">
+                <Description>量化3x3矩阵</Description>
+                <Value>2</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Integer Name="CCMScale" NameSpace="Standard">
+            <!--2的整数幂-->
+            <Description>CCM量化系数</Description>
+            <DisplayName>ColorCorrectPipeLine_CCMScale</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>1024</CurValue>
+            <DefaultValue>1024</DefaultValue>
+            <MinValue>2</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+        <IntegerArray Name="CCMat" NameSpace="Standard">
+            <Description>CCM矩阵</Description>
+            <DisplayName>ColorCorrectPipeLine_CCMat</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <Length>9</Length>
+            <MinValue>-65536</MinValue>
+            <MaxValue>65536</MaxValue>
+            <Value>1024</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>1024</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>1024</Value>
+        </IntegerArray>
+        <Enumeration Name="WB_CCMType" NameSpace="Standard">
+            <Description>ColorCorrectPipeLine CCM类型</Description>
+            <DisplayName>ColorCorrectPipeLine_CCMType</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <EnumEntry Name="None" NameSpace="Standard">
+                <Description>不启用</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="量化3x3矩阵 " NameSpace="Standard">
+                <Description>量化3x3矩阵</Description>
+                <Value>2</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Integer Name="WB_CCMScale" NameSpace="Standard">
+            <!--2的整数幂-->
+            <Description>CCM量化系数</Description>
+            <DisplayName>ColorCorrectPipeLine_CCMScale</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>1024</CurValue>
+            <DefaultValue>1024</DefaultValue>
+            <MinValue>2</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+        <IntegerArray Name="WB_CCMat" NameSpace="Standard">
+            <Description>CCM矩阵</Description>
+            <DisplayName>ColorCorrectPipeLine_CCMat</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <Length>9</Length>
+            <MinValue>-65536</MinValue>
+            <MaxValue>65536</MaxValue>
+            <Value>1024</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>1024</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>1024</Value>
+        </IntegerArray>
+        <Boolean Name="SixAxisEnable" NameSpace="Standard">
+            <Description>平滑使能</Description>
+            <DisplayName>SixAxis_SixAxisEnable</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>1</CurValue>
+            <DefaultValue>1</DefaultValue>
+            <OnValue>1</OnValue>
+            <OffValue>0</OffValue>
+        </Boolean>
+        <FloatArray Name="Tonal" NameSpace="Standard">
+            <Description>色调 值顺序：Red Green Blue Cyan Magenta Yellow</Description>
+            <DisplayName>SixAxis_Tonal</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <Length>6</Length>
+            <MinValue>-1</MinValue>
+            <MaxValue>1</MaxValue>
+            <Value>0.2978723</Value>
+            <Value>-0.78723407</Value>
+            <Value>0.01829486</Value>
+            <Value>-0.05426909</Value>
+            <Value>-0.098605908</Value>
+            <Value>0.023547633</Value>
+        </FloatArray>
+        <FloatArray Name="Saturation" NameSpace="Standard">
+            <Description>饱和度 值顺序：Red Green Blue Cyan Magenta Yellow</Description>
+            <DisplayName>SixAxis_Saturation</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <Length>6</Length>
+            <MinValue>0</MinValue>
+            <MaxValue>2</MaxValue>
+            <Value>0.32978722</Value>
+            <Value>0.26595744</Value>
+            <Value>0.64951551</Value>
+            <Value>0.75670278</Value>
+            <Value>0.5378418</Value>
+            <Value>0.60944021</Value>
+        </FloatArray>
+    </Category>
+    <Category Name="Rotate" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>旋转算法版本号</Description>
+            <DisplayName>Rotate_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>Rotate_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Enumeration Name="RotationAngle" NameSpace="Standard">
+            <Description>旋转角度</Description>
+            <DisplayName>RotationAngle</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>1</CurValue>
+            <DefaultValue>1</DefaultValue>
+            <EnumEntry Name="ImageRotate_90" NameSpace="Standard">
+                <Description>ImageRotate_90</Description>
+                <Value>1</Value>
+            </EnumEntry>
+            <EnumEntry Name="ImageRotate_180" NameSpace="Standard">
+                <Description>ImageRotate_180</Description>
+                <Value>2</Value>
+            </EnumEntry>
+            <EnumEntry Name="ImageRotate_270" NameSpace="Standard">
+                <Description>ImageRotate_270</Description>
+                <Value>3</Value>
+            </EnumEntry>
+        </Enumeration>
+    </Category>
+    <Category Name="Flip" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>镜像算法版本号</Description>
+            <DisplayName>Flip_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>Flip_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Enumeration Name="FlipType" NameSpace="Standard">
+            <Description>镜像类型</Description>
+            <DisplayName>FlipType</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>1</CurValue>
+            <DefaultValue>1</DefaultValue>
+            <EnumEntry Name="Flip_Vertical" NameSpace="Standard">
+                <Description>Flip_Vertical</Description>
+                <Value>1</Value>
+            </EnumEntry>
+            <EnumEntry Name="Flip_Horizontal" NameSpace="Standard">
+                <Description>Flip_Horizontal</Description>
+                <Value>2</Value>
+            </EnumEntry>
+        </Enumeration>
+    </Category>
+    <!--以下是标定算法的参数-->
+    <Category Name="Calib" NameSpace="Standard">
+        <pFeature>NoiseEstimate</pFeature>
+        <pFeature>CLUTCalib</pFeature>
+    </Category>
+    <Category Name="NoiseEstimate" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>噪声估计算法版本号</Description>
+            <DisplayName>NoiseEstimate_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>NoiseEstimate_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Integer Name="BayerNoiseThreshold" NameSpace="Standard">
+            <!--Default:8位,0xE0;10位,0x380;12位,0xE00-->
+            <Description>噪声阈值(Bayer域噪声估计参数)</Description>
+            <DisplayName>NoiseEstimate_BayerNoiseThreshold</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03020001</AlgorithmIndex>
+            <CurValue>100</CurValue>
+            <DefaultValue>100</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>4095</MaxValue>
+        </Integer>
+        <Integer Name="ROIWidth" NameSpace="Standard">
+            <Description>ROI宽度</Description>
+            <DisplayName>ROI Width</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>50</CurValue>
+            <DefaultValue>50</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>8</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+        <Integer Name="ROIHeight" NameSpace="Standard">
+            <Description>ROI高度</Description>
+            <DisplayName>ROI Height</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>63</CurValue>
+            <DefaultValue>50</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>8</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+        <Boolean Name="CalibJoin" NameSpace="Standard">
+            <Description>标定拼接</Description>
+            <DisplayName>Calib Join</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <OnValue>1</OnValue>
+            <OffValue>0</OffValue>
+        </Boolean>
+        <Float Name="GainValue" NameSpace="Standard">
+            <Description>增益</Description>
+            <DisplayName>Gain Value</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>0</CurValue>
+            <MinValue>0.0</MinValue>
+            <MaxValue>24.0</MaxValue>
+        </Float>
+        <FloatArray Name="Gain" NameSpace="Standard">
+            <Description>增益</Description>
+            <DisplayName>Noise_Gain</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <Length>1</Length>
+            <MinValue>0</MinValue>
+            <MaxValue>15.0062</MaxValue>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>2</Value>
+            <Value>16</Value>
+            <Value>23</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+        </FloatArray>
+        <FloatArray Name="Exposure" NameSpace="Standard">
+            <Description>曝光</Description>
+            <DisplayName>Noise_Exposure</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <Length>1</Length>
+            <MinValue>40</MinValue>
+            <MaxValue>9999838</MaxValue>
+            <Value>2313</Value>
+            <Value>6</Value>
+            <Value>5000</Value>
+            <Value>2000</Value>
+            <Value>2000</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+        </FloatArray>
+    </Category>
+    <Category Name="NoiseprofileTrans" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>噪声特性转换</Description>
+            <DisplayName>Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Integer Name="DeviceType" NameSpace="Standard">
+            <Description>输入特性文件的相机类型（0代表网口，1代表U口）</Description>
+            <DisplayName>DeviceType</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>1</MaxValue>
+        </Integer>
+    </Category>
+    <Category Name="CCMCalib" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>CCM标定算法版本号</Description>
+            <DisplayName>CCMCalib_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>CCMCalib_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Integer Name="ROIWidth" NameSpace="Standard">
+            <Description>ROI宽度</Description>
+            <DisplayName>ROI Width</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>141</CurValue>
+            <DefaultValue>50</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>8</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+        <Integer Name="ROIHeight" NameSpace="Standard">
+            <Description>ROI高度</Description>
+            <DisplayName>ROI Height</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>133</CurValue>
+            <DefaultValue>50</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>8</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+        <Enumeration Name="GammaType" NameSpace="Standard">
+            <Description>Gamma类型</Description>
+            <DisplayName>CCM_GammaType</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <EnumEntry Name="None" NameSpace="Standard">
+                <Description>不启用</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="UserValue" NameSpace="Standard">
+                <Description>Gamma值</Description>
+                <Value>1</Value>
+            </EnumEntry>
+            <EnumEntry Name="UserCurve" NameSpace="Standard">
+                <Description>Gamma曲线</Description>
+                <Value>2</Value>
+            </EnumEntry>
+            <EnumEntry Name="LRGB2SRGB" NameSpace="Standard">
+                <Description>linear RGB to sRGB</Description>
+                <Value>3</Value>
+            </EnumEntry>
+            <EnumEntry Name="SRGB2LRGB" NameSpace="Standard">
+                <Description>sRGB to linear RGB</Description>
+                <Value>4</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Float Name="GammaValue" NameSpace="Standard">
+            <Description>Gamma值</Description>
+            <DisplayName>Gamma Value</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>0.5</CurValue>
+            <MinValue>0.0</MinValue>
+            <MaxValue>3.9</MaxValue>
+        </Float>
+        <String Name="GammaCurve" NameSpace="Standard">
+            <!--8位,Length:256*sizeof(unsigned char)-->
+            <!--10位,Length:1024*sizeof(unsigned short)-->
+            <!--12位,Length:4096*sizeof(unsigned short)-->
+            <!--16位,Length:65536*sizeof(unsigned short)-->
+            <Description>Gamma曲线</Description>
+            <DisplayName>Gamma Curve</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <FileName>C:/Windows/Temp/ISPTool/gamma_curve_bak.bin</FileName>
+        </String>
+        <Boolean Name="KeepWhiteBalance" NameSpace="Standard">
+            <Description>白平衡</Description>
+            <DisplayName>Keep WhiteBalance</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>1</CurValue>
+            <DefaultValue>1</DefaultValue>
+            <OnValue>1</OnValue>
+            <OffValue>0</OffValue>
+        </Boolean>
+        <FloatArray Name="ColorWeights" NameSpace="Standard">
+            <Description>颜色权重</Description>
+            <DisplayName>Color Weights</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <Length>24</Length>
+            <MinValue>1</MinValue>
+            <MaxValue>1</MaxValue>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+            <Value>1</Value>
+        </FloatArray>
+    </Category>
+    <Category Name="CLUTCalib" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>CLUT标定算法版本号</Description>
+            <DisplayName>CLUTCalib_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>CLUTCalib_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Integer Name="SmoothFactor" NameSpace="Standard">
+            <Description>CLUT平滑因子</Description>
+            <DisplayName>CLUTCalib_SmoothFactor</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x03050000</AlgorithmIndex>
+            <CurValue>25</CurValue>
+            <DefaultValue>25</DefaultValue>
+            <MinValue>1</MinValue>
+            <MaxValue>100</MaxValue>
+        </Integer>
+        <Integer Name="ROIWidth" NameSpace="Standard">
+            <Description>ROI宽度</Description>
+            <DisplayName>ROI Width</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>141</CurValue>
+            <DefaultValue>50</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>8</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+        <Integer Name="ROIHeight" NameSpace="Standard">
+            <Description>ROI高度</Description>
+            <DisplayName>ROI Height</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>135</CurValue>
+            <DefaultValue>50</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>8</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+        <Enumeration Name="GammaType" NameSpace="Standard">
+            <Description>Gamma类型</Description>
+            <DisplayName>CCM_GammaType</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <EnumEntry Name="None" NameSpace="Standard">
+                <Description>不启用</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="UserValue" NameSpace="Standard">
+                <Description>Gamma值</Description>
+                <Value>1</Value>
+            </EnumEntry>
+            <EnumEntry Name="UserCurve" NameSpace="Standard">
+                <Description>Gamma曲线</Description>
+                <Value>2</Value>
+            </EnumEntry>
+            <EnumEntry Name="LRGB2SRGB" NameSpace="Standard">
+                <Description>linear RGB to sRGB</Description>
+                <Value>3</Value>
+            </EnumEntry>
+            <EnumEntry Name="SRGB2LRGB" NameSpace="Standard">
+                <Description>sRGB to linear RGB</Description>
+                <Value>4</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Float Name="GammaValue" NameSpace="Standard">
+            <Description>Gamma值</Description>
+            <DisplayName>Gamma Value</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>0.5</CurValue>
+            <MinValue>0.0</MinValue>
+            <MaxValue>3.9</MaxValue>
+        </Float>
+        <String Name="GammaCurve" NameSpace="Standard">
+            <!--8位,Length:256*sizeof(unsigned char)-->
+            <!--10位,Length:1024*sizeof(unsigned short)-->
+            <!--12位,Length:4096*sizeof(unsigned short)-->
+            <!--16位,Length:65536*sizeof(unsigned short)-->
+            <Description>Gamma曲线</Description>
+            <DisplayName>Gamma Curve</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <FileName>C:/Windows/Temp/ISPTool/gamma_curve_bak.bin</FileName>
+        </String>
+        <Integer Name="CLUTScale" NameSpace="Standard">
+            <!--2的整数幂-->
+            <Description>CCM量化系数</Description>
+            <DisplayName>CLUTScale</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>1024</CurValue>
+            <DefaultValue>1024</DefaultValue>
+            <MinValue>2</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+    </Category>
+    <Category Name="SixAxisCalib" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>六轴标定算法版本号</Description>
+            <DisplayName>SixAxisCalib_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>SixAxisCalib_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Integer Name="ROIWidth" NameSpace="Standard">
+            <Description>ROI宽度</Description>
+            <DisplayName>ROI Width</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>127</CurValue>
+            <DefaultValue>50</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>8</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+        <Integer Name="ROIHeight" NameSpace="Standard">
+            <Description>ROI高度</Description>
+            <DisplayName>ROI Height</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>122</CurValue>
+            <DefaultValue>50</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>8</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+    </Category>
+    <Category Name="LUTGen" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>LUTGen算法版本号</Description>
+            <DisplayName>LUTGen_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>LUTGen_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Integer Name="ROIWidth" NameSpace="Standard">
+            <Description>ROI宽度</Description>
+            <DisplayName>ROI Width</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>50</CurValue>
+            <DefaultValue>50</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>8</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+        <Integer Name="ROIHeight" NameSpace="Standard">
+            <Description>ROI高度</Description>
+            <DisplayName>ROI Height</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>50</CurValue>
+            <DefaultValue>50</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>8</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+    </Category>
+    <Category Name="LSCCalib" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>LSC标定算法版本号</Description>
+            <DisplayName>LSCCalib_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="PadCoef" NameSpace="Standard">
+            <Description>边缘填充系数</Description>
+            <DisplayName>LSCCalib_PadCoef</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x00000018</AlgorithmIndex>
+            <CurValue>2</CurValue>
+            <DefaultValue>2</DefaultValue>
+            <MinValue>1</MinValue>
+            <MaxValue>5</MaxValue>
+        </Integer>
+        <Enumeration Name="Method" NameSpace="Standard">
+            <Description>标定方式</Description>
+            <DisplayName>LSCCalib_Method</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x00000014</AlgorithmIndex>
+            <CurValue>2</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <EnumEntry Name="Centre" NameSpace="Standard">
+                <Description>中心为基准</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="BrightestArea" NameSpace="Standard">
+                <Description>最亮区域为基准</Description>
+                <Value>1</Value>
+            </EnumEntry>
+            <EnumEntry Name="TargetGray" NameSpace="Standard">
+                <Description>目标亮度</Description>
+                <Value>2</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Integer Name="TargetGray" NameSpace="Standard">
+            <Description>目标亮度（8bits，范围0~255；10bits，范围0~1023；12bits，范围0~4095)</Description>
+            <DisplayName>LSCCalib_TargetGray</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <AlgorithmIndex>0x00000015</AlgorithmIndex>
+            <CurValue>128</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>255</MaxValue>
+        </Integer>
+        <Integer Name="SecNum_Width" NameSpace="Standard">
+            <Description>宽度分块数</Description>
+            <DisplayName>LSCCalib_SecNum_Width</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>11</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>4095</MaxValue>
+        </Integer>
+        <Integer Name="SecNum_Height" NameSpace="Standard">
+            <Description>高度分块数</Description>
+            <DisplayName>LSCCalib_SecNum_Height</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>8</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <MinValue>0</MinValue>
+            <MaxValue>4095</MaxValue>
+        </Integer>
+    </Category>
+    <Category Name="DDSCalib" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>DDS标定算法版本号</Description>
+            <DisplayName>DDSCalib_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>DDSCalib_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Integer Name="ROIWidth" NameSpace="Standard">
+            <Description>ROI宽度</Description>
+            <DisplayName>ROI Width</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>63</CurValue>
+            <DefaultValue>50</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>8</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+        <Integer Name="ROIHeight" NameSpace="Standard">
+            <Description>ROI高度</Description>
+            <DisplayName>ROI Height</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>61</CurValue>
+            <DefaultValue>50</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>8</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+        <FloatArray Name="Gain" NameSpace="Standard">
+            <Description>增益</Description>
+            <DisplayName>DDS_Gain</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <Length>1</Length>
+            <MinValue>0</MinValue>
+            <MaxValue>15.0062</MaxValue>
+            <Value>0</Value>
+            <Value>-4.3160208e+008</Value>
+            <Value>-4.3160208e+008</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+        </FloatArray>
+        <FloatArray Name="Exposure" NameSpace="Standard">
+            <Description>曝光</Description>
+            <DisplayName>DDS_Exposure</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <Length>1</Length>
+            <MinValue>40</MinValue>
+            <MaxValue>9999838</MaxValue>
+            <Value>2313</Value>
+            <Value>-4.3160208e+008</Value>
+            <Value>-4.3160208e+008</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+            <Value>0</Value>
+        </FloatArray>
+    </Category>
+    <Category Name="WhiteBalanceCalib" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>白平衡标定算法版本号</Description>
+            <DisplayName>WhiteBalanceCalib_Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>WhiteBalanceCalib_ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Integer Name="ROIWidth" NameSpace="Standard">
+            <Description>ROI宽度</Description>
+            <DisplayName>ROI Width</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>132</CurValue>
+            <DefaultValue>50</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>8</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+        <Integer Name="ROIHeight" NameSpace="Standard">
+            <Description>ROI高度</Description>
+            <DisplayName>ROI Height</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>126</CurValue>
+            <DefaultValue>50</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>8</MinValue>
+            <MaxValue>65536</MaxValue>
+        </Integer>
+        <Enumeration Name="CalibType" NameSpace="Standard">
+            <Description>标定类型</Description>
+            <DisplayName>CalibType</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <EnumEntry Name="STD" NameSpace="Standard">
+                <Description>标准白平衡标定类型</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="REF" NameSpace="Standard">
+                <Description>参考目标值白平衡标定类型</Description>
+                <Value>1</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Enumeration Name="CalibMethod" NameSpace="Standard">
+            <Description>标定方式</Description>
+            <DisplayName>CalibMethod</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>1</DefaultValue>
+            <EnumEntry Name="AVG" NameSpace="Standard">
+                <Description>求平均白平衡标定方法</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="SOLVE" NameSpace="Standard">
+                <Description>求解析解白平衡标定方法</Description>
+                <Value>1</Value>
+            </EnumEntry>
+        </Enumeration>
+        <Integer Name="CalibScale" NameSpace="Standard">
+            <Description>白平衡量化系数</Description>
+            <DisplayName>Scale</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>1024</CurValue>
+            <DefaultValue>1024</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>65535</MaxValue>
+        </Integer>
+    </Category>
+    <Category Name="ColorErrorCalculate" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>颜色误差计算</Description>
+            <DisplayName>Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Integer Name="SRGBFlag" NameSpace="Standard">
+            <Description>是否是SRGB</Description>
+            <DisplayName>SRGBFlag</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>1</MaxValue>
+        </Integer>
+    </Category>
+    <Category Name="ImgRGBStatistics" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>图像RGB值统计</Description>
+            <DisplayName>Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+        <Enumeration Name="Method" NameSpace="Standard">
+            <Description>统计方法</Description>
+            <DisplayName>Method</DisplayName>
+            <Visibility>Expert</Visibility>
+            <AccessMode>RW</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <EnumEntry Name="MEDIAN" NameSpace="Standard">
+                <Description>中值统计方法</Description>
+                <Value>0</Value>
+            </EnumEntry>
+            <EnumEntry Name="MEAN" NameSpace="Standard">
+                <Description>均值统计方法</Description>
+                <Value>1</Value>
+            </EnumEntry>
+        </Enumeration>
+    </Category>
+    <Category Name="ColorParamsMerge" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>颜色参数合并</Description>
+            <DisplayName>Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+    </Category>
+    <Category Name="ExposureTimeRecommend" NameSpace="Standard">
+        <Integer Name="Version" NameSpace="Standard">
+            <Description>曝光值推荐</Description>
+            <DisplayName>Version</DisplayName>
+            <Visibility>Guru</Visibility>
+            <AccessMode>R</AccessMode>
+        </Integer>
+        <Integer Name="ThreadNum" NameSpace="Standard">
+            <Description>线程数量</Description>
+            <DisplayName>ThreadNum</DisplayName>
+            <Visibility>Beginner</Visibility>
+            <AccessMode>W</AccessMode>
+            <CurValue>0</CurValue>
+            <DefaultValue>0</DefaultValue>
+            <!--0:表示算法库根据硬件自适应-->
+            <MinValue>0</MinValue>
+            <MaxValue>64</MaxValue>
+        </Integer>
+    </Category>
+</ISPParam>

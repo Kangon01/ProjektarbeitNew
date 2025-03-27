@@ -1,0 +1,362 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="description" content="图像增强模块包含LUT、对比度、锐化和局部对比度增强算法模块。 说明 图像增强类算法统一对图像第一行不进行处理，此为正常现象。 LUT是一个可供用户自定义的灰度映射表，可对感兴趣的灰度范围进行拉伸、凸显等操作。 使用LUT模块可直接进行校正，相关参数如下： Gamma 设置Gamma值可以实现图像的非线性色调映射，参数范围为[0，100]。 对比度 ..." /><meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="图像增强" /><meta name="DC.Relation" scheme="URI" content="GUID-4175955D-4EA6-459D-B215-E80FAB72DDB3.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-90089F44-464C-4842-839D-039C49D1D22A" /><meta name="DC.Language" content="zh-CN" /><title>图像增强</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-4A707B85-6362-489F-AD0C-12957E57E3F9.html" data-id="GUID-4A707B85-6362-489F-AD0C-12957E57E3F9">图像调试工具</a></span></li><li><span class="topicref"><a href="GUID-4175955D-4EA6-459D-B215-E80FAB72DDB3.html" data-id="GUID-4175955D-4EA6-459D-B215-E80FAB72DDB3">算法模块介绍</a></span></li><li class="active"><span class="topicref">图像增强</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body "><div class="nested0" id="GUID-90089F44-464C-4842-839D-039C49D1D22A">
+    <h1 class="title topictitle1">图像增强</h1>
+
+    <div class="body conbody">
+        <p class="p">图像增强模块包含LUT、对比度、锐化和局部对比度增强算法模块。</p>
+
+        <div class="note note" id="GUID-90089F44-464C-4842-839D-039C49D1D22A__GUID-7F3C48FB-0C89-4456-85F4-6640CCE7A617"><span class="notetitle">说明</span> 
+            <p class="p">图像增强类算法统一对图像第一行不进行处理，此为正常现象。</p>
+
+        </div>
+
+    </div>
+
+
+<div class="topic concept nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB">
+    <h2 class="title topictitle2">LUT</h2>
+
+    
+<div class="body conbody"><p class="shortdesc">LUT是一个可供用户自定义的灰度映射表，可对感兴趣的灰度范围进行拉伸、凸显等操作。</p>
+
+<p class="p">使用LUT模块可直接进行校正，相关参数如下：</p>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB__GUID-EA2EE558-735A-43AB-9A0F-BEC1936815B5"><!-- --></a>Gamma</dt>
+
+                <dd class="dd pd">
+                    <p class="p">设置Gamma值可以实现图像的非线性色调映射，参数范围为[0，100]。</p>
+
+                </dd>
+
+            
+        </dl>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB__GUID-4B33427F-C96C-4FAF-A903-68716B5B263B"><!-- --></a>对比度</dt>
+
+                <dd class="dd pd">
+                    <p class="p">参数范围为[-1，1]，当值为0时，表示对比度保持不变，小于0表示对比度降低，大于0表示对比度提高。</p>
+
+                </dd>
+
+            
+        </dl>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB__GUID-C05AD5BD-16B5-4E12-89FE-FD1A682C2AC5"><!-- --></a>亮度</dt>
+
+                <dd class="dd pd">
+                    <p class="p">参数范围为[-1，1]，当值为0时，表示亮度保持不变，小于0表示亮度降低，大于0表示亮度提高。</p>
+
+                </dd>
+
+            
+        </dl>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB__GUID-898D201F-392A-438D-83CE-76C6A7BC51C0"><!-- --></a>LUT线型</dt>
+
+                <dd class="dd pd">对LUT线型进行选择，有如下几种线型：<dl class="dl parml">
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB__GUID-FB976F97-B002-4082-AB82-D0AD3367D940"><!-- --></a>Adaptive</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">自适应线。根据输入的<span class="keyword parmname">Gamma</span>、<span class="keyword parmname">对比度</span>以及<span class="keyword parmname">亮度</span>数值自适应生成LUT曲线，不可自定义更改。</p>
+
+                            </dd>
+
+                        
+                    </dl>
+<dl class="dl parml">
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB__GUID-CA1949A0-EDF0-48A7-9ED8-50A01DF8EF95"><!-- --></a>Fold Line</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">折线。可自定义更改，双击折线中需要更改的位置，拖动即可。</p>
+
+                            </dd>
+
+                        
+                    </dl>
+<dl class="dl parml">
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB__GUID-98E7E5E1-802A-4C7C-9503-357E0024C4A2"><!-- --></a>Curve</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">曲线。可自定义更改，双击曲线中需要更改的位置，拖动即可。</p>
+
+                            </dd>
+
+                        
+                    </dl>
+<dl class="dl parml">
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB__GUID-23622481-E54E-4A95-AE9F-9EBED8A92439"><!-- --></a>Free Line</dt>
+
+                            <dd class="dd pd">自由线。可自定义绘制，单击界面拖动绘制即可。</dd>
+
+                        
+                    </dl>
+</dd>
+
+            
+        </dl>
+
+        <div class="fig fignone" id="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB__FIG_UQT_YDG_5QB">
+            
+            <img class="image" style="display:none;" id="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB__IMAGE_TSL_BWH_DZB" src="GUID-DB7FA5F4-D57A-4DC3-8C1D-9C01775724C0-high.png" width="1000" />
+        <div class="fig_caption"><span class="figcap">图 1 LUT校正参数</span></div></div>
+
+</div>
+
+</div>
+<div class="topic concept nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-ADE4840F-BFC9-417F-855B-86336CA0A42F">
+    <h2 class="title topictitle2">对比度</h2>
+
+    
+<div class="body conbody"><p class="shortdesc">通过提升对比度可使图像更加清晰，色彩鲜明。</p>
+
+<p class="p">使用对比度模块时可直接进行校正，相关参数如下：</p>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-ADE4840F-BFC9-417F-855B-86336CA0A42F__GUID-635C114D-F01E-4ED2-BF9A-139547A9BC73"><!-- --></a>对比度调节强度</dt>
+
+                <dd class="dd pd">
+                    <p class="p">范围为[1，10000]，数值越大，对比度越强。</p>
+
+                </dd>
+
+            
+        </dl>
+
+        <div class="fig fignone" id="GUID-ADE4840F-BFC9-417F-855B-86336CA0A42F__FIG_PFZ_D2G_5QB">
+            
+            <img class="image" style="display:none;" id="GUID-ADE4840F-BFC9-417F-855B-86336CA0A42F__IMAGE_QKK_F2G_5QB" src="GUID-3757ACAD-F723-4270-8539-6FCFF6B8C196-high.png" width="1000" />
+        <div class="fig_caption"><span class="figcap">图 2 对比度校正参数</span></div></div>
+
+</div>
+
+</div>
+<div class="topic concept nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-42F36AE3-7DC9-473D-8C35-AADD8C229521">
+    <h2 class="title topictitle2">锐化</h2>
+
+    
+<div class="body conbody"><p class="shortdesc">锐化模块可使图像纹理边缘更加清晰。</p>
+
+<p class="p">使用锐化模块时可直接进行校正，相关参数如下：</p>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-42F36AE3-7DC9-473D-8C35-AADD8C229521__GUID-27E243FB-64C8-43D3-A230-21867CD7C438"><!-- --></a>锐度调节半径</dt>
+
+                <dd class="dd pd">
+                    <p class="p">即锐度调节滤波核半径，取值范围为[1，21]。设置半径越大，耗时越长。</p>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-42F36AE3-7DC9-473D-8C35-AADD8C229521__GUID-D79019EE-21D0-4FAF-949C-1D4C4C039D25"><!-- --></a>锐度调节阈值</dt>
+
+                <dd class="dd pd">
+                    <p class="p">用于进行锐化边缘选择的阈值，取值范围为[0，255]。设置阈值越小，锐化处理的像素越多。</p>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-42F36AE3-7DC9-473D-8C35-AADD8C229521__GUID-C5603929-18F4-407C-90BB-D66AA453612D"><!-- --></a>锐度调节正向/负向强度</dt>
+
+                <dd class="dd pd">
+                    <p class="p">用于控制锐化强度，取值范围为[0，500]。设置数值越大，锐化强度越高。</p>
+
+                </dd>
+
+            
+        </dl>
+
+        <div class="fig fignone" id="GUID-42F36AE3-7DC9-473D-8C35-AADD8C229521__FIG_IC3_32G_5QB">
+            
+            <img class="image" style="display:none;" id="GUID-42F36AE3-7DC9-473D-8C35-AADD8C229521__IMAGE_M1Z_J2G_5QB" src="GUID-846DE4D3-A134-4804-A982-6AA6D53FB855-high.png" width="1000" />
+        <div class="fig_caption"><span class="figcap">图 3 锐化校正参数</span></div></div>
+
+</div>
+
+</div>
+<div class="topic concept nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-C850EE30-051B-4955-8395-11F3021F1FAE">
+    <h2 class="title topictitle2">局部对比度增强</h2>
+
+
+<div class="body conbody"><p class="shortdesc">在低光照或光照不均的场景下，通过自适应提高图像的局部对比度，可使图像暗区亮度提高的同时保持亮区的亮度不变。</p>
+
+        <p class="p">使用局部对比度模块时可直接进行校正，相关参数如下：</p>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-C850EE30-051B-4955-8395-11F3021F1FAE__GUID-E29D8FF7-702E-4F29-9929-762BA6D96F4A"><!-- --></a>LCE双边滤波窗口</dt>
+
+                <dd class="dd pd">
+                    <p class="p">设置双边滤波窗口的大小，参数范围为[3，41]。</p>
+
+                </dd>
+
+            
+        </dl>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-C850EE30-051B-4955-8395-11F3021F1FAE__GUID-57722F2D-611E-4EE5-8F92-CB9258481822"><!-- --></a>LCE高斯空域标准差</dt>
+
+                <dd class="dd pd">
+                    <p class="p">设置双边滤波空间域高斯函数的标准差，参数范围为[100，10000]。</p>
+
+                </dd>
+
+            
+        </dl>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-C850EE30-051B-4955-8395-11F3021F1FAE__GUID-F2F86566-7FC0-41D0-8B67-A60016DF7779"><!-- --></a>LCE高斯值域标准差</dt>
+
+                <dd class="dd pd">
+                    <p class="p">设置双边滤波值域高斯函数的标准差，参数范围为[1000，20000]。</p>
+
+                </dd>
+
+            
+        </dl>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-C850EE30-051B-4955-8395-11F3021F1FAE__GUID-4C920659-06B3-4730-8307-2CAAC34D45FD"><!-- --></a>LCE Gamma值</dt>
+
+                <dd class="dd pd">
+                    <p class="p">设置图像的Gamma值大小，参数范围为[1，10000]。</p>
+
+                </dd>
+
+            
+        </dl>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-C850EE30-051B-4955-8395-11F3021F1FAE__GUID-88DC5568-7728-4C6C-98B1-94610BFD4773"><!-- --></a>LCE纹理图像比例系数</dt>
+
+                <dd class="dd pd">
+                    <p class="p">设置图像纹理细节的融合比例，数值越大，纹理细节增强越明显，参数范围为[0，1280]</p>
+
+                </dd>
+
+            
+        </dl>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-C850EE30-051B-4955-8395-11F3021F1FAE__GUID-D6E66997-793F-40F4-9426-0062350D5391"><!-- --></a>LCE加权曲线对称点</dt>
+
+                <dd class="dd pd">
+                    <p class="p">设置图像暗区和亮区的像素灰度值分段点，参数范围为[0，4095]。</p>
+
+                </dd>
+
+            
+        </dl>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-C850EE30-051B-4955-8395-11F3021F1FAE__GUID-89A858BD-D1F9-4E5E-BC27-DDEB9DE2EB08"><!-- --></a>LCE提亮控制系数比率</dt>
+
+                <dd class="dd pd">
+                    <p class="p">设置图像提亮程度，数值越小，图像提亮越明显，参数范围为[0，256]。</p>
+
+                </dd>
+
+            
+        </dl>
+
+        <div class="fig fignone" id="GUID-C850EE30-051B-4955-8395-11F3021F1FAE__FIG_YD3_HXH_DZB">
+            
+            <img class="image" style="display:none;" id="GUID-C850EE30-051B-4955-8395-11F3021F1FAE__IMAGE_VWT_3XH_DZB" src="GUID-08A54746-6356-41F6-8672-6421433272DA-high.png" width="1000" />
+        <div class="fig_caption"><span class="figcap">图 4 局部对比度增强校正参数</span></div></div>
+
+    </div>
+
+</div>
+</div>
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>本页导航</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB" class="feature_guide_h2"><span class="link_button">LUT</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-ADE4840F-BFC9-417F-855B-86336CA0A42F" class="feature_guide_h2"><span class="link_button">对比度</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-42F36AE3-7DC9-473D-8C35-AADD8C229521" class="feature_guide_h2"><span class="link_button">锐化</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-C850EE30-051B-4955-8395-11F3021F1FAE" class="feature_guide_h2"><span class="link_button">局部对比度增强</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

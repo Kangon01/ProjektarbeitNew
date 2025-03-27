@@ -1,0 +1,195 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="查看直方图" /><meta name="abstract" content="窗口预览工具预览相机图像或本地图像时，可查看图像的直方图信息。" /><meta name="description" content="窗口预览工具预览相机图像或本地图像时，可查看图像的直方图信息。" /><meta name="DC.Relation" scheme="URI" content="GUID-D866AD57-3D2C-4B81-B0B9-8914BFFEB25E.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-CC7A4BA9-55B6-470E-904E-9C325FA9E2F8" /><meta name="DC.Language" content="zh-CN" /><title>查看直方图</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-CC7A4BA9-55B6-470E-904E-9C325FA9E2F8" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-D866AD57-3D2C-4B81-B0B9-8914BFFEB25E.html" data-id="GUID-D866AD57-3D2C-4B81-B0B9-8914BFFEB25E">图像数据采集与预览</a></span></li><li class="active"><span class="topicref">查看直方图</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">查看直方图</h1>
+
+
+<div class="body conbody"><p class="shortdesc">窗口预览工具预览相机图像或本地图像时，可查看图像的直方图信息。</p>
+
+        <p class="p">直方图可体现图像的灰度值或R/G/B各通道数值是像素排布情况。黑白图像的直方图显示灰度值信息，彩色图像的直方图显示R/G/B各通道信息。</p>
+
+        <p class="p">图像预览窗口通过相机实时图像或打开本地图像时，点击<img class="image icon" style="display:none;" src="GUID-006800C5-5072-4979-B3D0-92F4B4C9F0CA-high.png" />可进入直方图窗口。该窗口可查看图像的直方图相关信息并进行其他操作。彩色图像的直方图如下图所示。</p>
+
+        <p class="p">坐标系显示的数据为下方表格勾选的灰度值或R/G/B数值，可根据实际需求勾选需要显示的通道。</p>
+
+        <p class="p">当鼠标移动到坐标系时，可显示当前选中列的X/Y轴的数据信息；选中某一列后长按鼠标可移动坐标系；也可通过鼠标的滚轮对坐标系进行放大或缩小。</p>
+
+        <div class="fig fignone" id="GUID-CC7A4BA9-55B6-470E-904E-9C325FA9E2F8__GUID-F92DBA33-74C2-4465-A62B-53AD47E005CA">
+            
+            <img class="image" style="display:none;" src="GUID-32BD72F6-891E-4E18-9BC5-7F8EDD45FD7A-high.png" width="2067" />
+        <div class="fig_caption"><span class="figcap">图 1 彩色图像直方图</span></div></div>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-CC7A4BA9-55B6-470E-904E-9C325FA9E2F8__GUID-DC68C52B-5078-4E35-AC99-B6E744138CED"><!-- --></a>选择视图</dt>
+
+                <dd class="dd pd">择视图类型，分为Histogram、Line Profile和Column Profile三种。<dl class="dl parml">
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-CC7A4BA9-55B6-470E-904E-9C325FA9E2F8__GUID-93F530FA-697D-4544-ADF0-3B87DB18D659"><!-- --></a>Histogram</dt>
+
+                            <dd class="dd pd">显示整副图像的灰度值或R/G/B各通道数值。坐标系的X轴表示灰度值或R/G/B通道数值，Y轴表示像素个数。<dl class="dl parml">
+                                    
+                                        <dt class="dt pt dlterm"><a name="GUID-CC7A4BA9-55B6-470E-904E-9C325FA9E2F8__GUID-4C4EFBD0-E14A-4A7A-B062-8816765AEE16"><!-- --></a>X轴</dt>
+
+                                        <dd class="dd pd">可调整直方图横坐标的范围。</dd>
+
+                                    
+                                </dl>
+</dd>
+
+                        
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-CC7A4BA9-55B6-470E-904E-9C325FA9E2F8__GUID-68DE82CF-172E-4D5A-A279-52BAAD66FDA8"><!-- --></a>Line Profile</dt>
+
+                            <dd class="dd pd">显示图像中鼠标选中行的灰度值或R/G/B各通道数值。坐标系的X轴表示像素的横坐标位置，Y轴表示灰度值或R/G/B通道数值。<dl class="dl parml">
+                                    
+                                        <dt class="dt pt dlterm"><a name="GUID-CC7A4BA9-55B6-470E-904E-9C325FA9E2F8__GUID-15968209-C408-4951-A2F9-0053DBE8CB19"><!-- --></a>位置</dt>
+
+                                        <dd class="dd pd">显示图像中鼠标所处点的横纵坐标信息。</dd>
+
+                                    
+                                    
+                                        <dt class="dt pt dlterm"><a name="GUID-CC7A4BA9-55B6-470E-904E-9C325FA9E2F8__GUID-5976ACAA-8141-4622-8C05-269C72029AF9"><!-- --></a>行</dt>
+
+                                        <dd class="dd pd">可调整直方图横坐标的范围，最大范围为0~图像的横向分辨率。</dd>
+
+                                    
+                                </dl>
+</dd>
+
+                        
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-CC7A4BA9-55B6-470E-904E-9C325FA9E2F8__GUID-786BC78C-20EC-45D5-8D56-3CBBDC065195"><!-- --></a>Column Profile</dt>
+
+                            <dd class="dd pd">显示图像中鼠标选中列的灰度值或R/G/B各通道数值。坐标系的X轴表示像素的纵坐标位置，Y轴表示灰度值或R/G/B通道数值。<dl class="dl parml">
+                                    
+                                        <dt class="dt pt dlterm"><a name="GUID-CC7A4BA9-55B6-470E-904E-9C325FA9E2F8__GUID-2BC9D0FA-6688-4BFA-BC07-4E91AACFC8D8"><!-- --></a>位置</dt>
+
+                                        <dd class="dd pd">显示图像中鼠标所处点的横纵坐标信息。</dd>
+
+                                    
+                                    
+                                        <dt class="dt pt dlterm"><a name="GUID-CC7A4BA9-55B6-470E-904E-9C325FA9E2F8__GUID-E55C9C6C-D216-4BA8-855A-7832C8C396EF"><!-- --></a>列</dt>
+
+                                        <dd class="dd pd">可调整直方图横坐标的范围，最大范围为0~图像的纵向分辨率。</dd>
+
+                                    
+                                </dl>
+</dd>
+
+                        
+                    </dl>
+</dd>
+
+            
+        </dl>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-CC7A4BA9-55B6-470E-904E-9C325FA9E2F8__GUID-7FED627F-7576-45CA-AB29-5FCC5EB3CF15"><!-- --></a>ROI形状</dt>
+
+                <dd class="dd pd">可通过<img class="image icon" style="display:none;" src="GUID-A2821BCF-3136-4843-A408-FB18202C8B9B-high.png" />设置ROI区域，此时仅显示ROI区域的直方图；通过<img class="image icon" style="display:none;" src="GUID-C47866A5-F616-4494-8FC3-564643D80D8E-high.png" />可取消ROI绘制。</dd>
+
+            
+        </dl>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-CC7A4BA9-55B6-470E-904E-9C325FA9E2F8__GUID-A57B32A9-A204-467F-9652-8B3B8F7EED51"><!-- --></a>对数刻度</dt>
+
+                <dd class="dd pd">可根据实际数值分布调整纵坐标的范围。</dd>
+
+            
+        </dl>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-CC7A4BA9-55B6-470E-904E-9C325FA9E2F8__GUID-BF8E0DEA-7B16-44A5-9AE1-B4B5644B4004"><!-- --></a>重置轴</dt>
+
+                <dd class="dd pd">直方图被放大或缩小后，可通过<span class="ph uicontrol">重置轴</span>快速恢复默认。</dd>
+
+            
+        </dl>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-CC7A4BA9-55B6-470E-904E-9C325FA9E2F8__GUID-164EC1C3-D2EF-4A40-B367-1436AA5269E1"><!-- --></a>导出</dt>
+
+                <dd class="dd pd">以csv格式文件将直方图信息导出。</dd>
+
+            
+        </dl>
+
+    </div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

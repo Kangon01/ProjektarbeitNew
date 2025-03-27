@@ -1,0 +1,307 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="相机带宽管理" /><meta name="abstract" content="相机带宽管理用于调节网口相机和U3V相机的使用带宽。" /><meta name="description" content="相机带宽管理用于调节网口相机和U3V相机的使用带宽。" /><meta name="DC.Relation" scheme="URI" content="GUID-49ADF167-5FCB-4A42-9EDD-59690BE91937.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-DAECD382-D164-4086-84F1-7CB17B336B77" /><meta name="DC.Language" content="zh-CN" /><title>相机带宽管理</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-49ADF167-5FCB-4A42-9EDD-59690BE91937.html" data-id="GUID-49ADF167-5FCB-4A42-9EDD-59690BE91937">工具应用</a></span></li><li class="active"><span class="topicref">相机带宽管理</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">相机带宽管理</h1>
+
+
+<div class="body conbody"><p class="shortdesc">相机带宽管理用于调节网口相机和U3V相机的使用带宽。</p>
+
+        <p class="p">当多相机共用同一个接口采集图像时，通过工具调节带宽可避免出现丢包或丢图的问题，使设备都能稳定运行。</p>
+
+        <div class="note note" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__GUID-ECF93D83-6BB0-4E61-AEF7-8A8E76899196"><span class="notetitle">说明</span> 
+            <ul class="ul" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__UL_YB1_3GK_G3B">
+                <li class="li" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__GUID-CAE645DB-2439-47AC-8BB2-D2B96CEA6821">
+                    <p class="p">本公司网口相机都支持通过带宽管理器调节带宽，与之对应的参数为GEV SCPS数据包大小和GEV SCPD。</p>
+
+                </li>
+
+                <li class="li" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__GUID-8E90B430-FD31-460B-9789-6E71E747F4BD">
+                    <p class="p">我司U3V相机需固件支持带宽调节功能，才可通过带宽管理器调节带宽。与之对应的参数为Device Link Throughput
+                        Limit Enable和Device Link Throughput Limit。具体是否支持以及如何设置请咨询技术支持。 </p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <p class="p">带宽管理器通过菜单栏的<span class="ph menucascade"><span class="ph uicontrol">工具</span> &gt; <span class="ph uicontrol">相机带宽管理</span></span>进入，界面如下图所示。</p>
+
+        <div class="note note" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__GUID-4A47CC3A-47B0-461B-BA46-6FB339FE76E5"><span class="notetitle">说明</span> 
+            <p class="p">使用相机带宽管理工具前，须确保相机为可用状态且相机触发模式未开启。工具仅连接可用状态的相机进行分析。</p>
+
+        </div>
+
+        <div class="fig fignone" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__FIG_BB3_BH3_CKB">
+            
+            <img class="image" style="display:none;" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__IMAGE_XZX_KGM_XDC" src="GUID-E64FD668-B180-4525-8A03-9F6256E23AAB-high.png" width="2100" />
+        <div class="fig_caption"><span class="figcap">图 1 相机带宽管理工具</span></div></div>
+
+        <p class="p">上图的左侧显示当前PC上GigE和USB接口的信息，相关操作如下：</p>
+
+        <ul class="ul" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__UL_I4G_ZNK_G3B">
+            <li class="li" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__GUID-66BC0158-ACC6-4933-B5BB-888ABB97DBFE">
+                <p class="p">选中<span class="ph uicontrol">ALL</span>时，右侧显示当前能搜索到的所有网口相机和U3V相机。</p>
+
+            </li>
+
+            <li class="li" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__GUID-EFB4715D-9D96-4D39-BA09-2B95CF8E5D21">
+                <p class="p">选中<span class="ph uicontrol">GigE</span>或<span class="ph uicontrol">USB</span>时，右侧显示当前该类型接口下能搜索到的相机。</p>
+
+            </li>
+
+            <li class="li" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__GUID-03D543C8-8A42-4DC7-BC57-8F86F4B0CCDD">
+                <p class="p">选中某个接口时，右侧只显示该接口下能搜索到的相机。 </p>
+
+            </li>
+
+        </ul>
+
+        <p class="p">开始带宽分析和优化带宽前，需在右侧<span class="ph uicontrol">连接</span>并勾选相机。</p>
+
+        <div class="note note" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__GUID-7DEAAF03-A13A-4E4D-A5EC-29A998F63499"><span class="notetitle">说明</span> 
+            <p class="p">工具显示设备相关信息，可通过工具右上角的<img class="image icon" style="display:none;" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__IMAGE_LS4_VW2_CKB" src="GUID-95E0BD30-17CA-4516-948A-58D48FA48C14-high.png" />设置显示项内容。</p>
+
+        </div>
+
+        <ul class="ul" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__UL_EPC_N4K_G3B">
+            <li class="li" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__GUID-36C0EFD2-B997-4432-B5BF-6367E26DC1C8">
+                <p class="p">勾选相机后，可通过单击左上角的<span class="ph uicontrol">开始分析</span>按钮进行分析。此时勾选的相机会同时开始采集图像，右侧会显示采集图像过程中的数据信息。具体数据信息请见下表。</p>
+
+                
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__TABLE_QWH_XPK_G3B" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 1 数据信息</span></caption>
+                        
+                        
+                        <thead class="thead" align="left">
+                            <tr>
+                                <th class="entry" valign="top" width="44.44444444444444%" id="d37694e136">
+                                    <p class="p">带宽管理器关于分析的显示项</p>
+
+                                </th>
+
+                                <th class="entry" valign="top" width="55.55555555555556%" id="d37694e142">
+                                    <p class="p">具体含义</p>
+
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody class="tbody">
+                            <tr>
+                                <td class="entry" valign="top" width="44.44444444444444%" headers="d37694e136 ">
+                                    <p class="p">发送数据量（Mbps）</p>
+
+                                </td>
+
+                                <td class="entry" valign="top" width="55.55555555555556%" headers="d37694e142 ">
+                                    <p class="p">分析过程中相机发送给PC的数据量</p>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td class="entry" valign="top" width="44.44444444444444%" headers="d37694e136 ">
+                                    <p class="p">接收数据量（Mbps）</p>
+
+                                </td>
+
+                                <td class="entry" valign="top" width="55.55555555555556%" headers="d37694e142 ">
+                                    <p class="p">分析过程中PC从相机处接收的数据量</p>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td class="entry" valign="top" width="44.44444444444444%" headers="d37694e136 ">
+                                    <p class="p">发送帧率（fps）</p>
+
+                                </td>
+
+                                <td class="entry" valign="top" width="55.55555555555556%" headers="d37694e142 ">
+                                    <p class="p">分析过程中相机发送给PC的帧率</p>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td class="entry" valign="top" width="44.44444444444444%" headers="d37694e136 ">
+                                    <p class="p">接收帧率（fps）</p>
+
+                                </td>
+
+                                <td class="entry" valign="top" width="55.55555555555556%" headers="d37694e142 ">
+                                    <p class="p">分析过程中PC接收到的相机的帧率</p>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td class="entry" valign="top" width="44.44444444444444%" headers="d37694e136 ">
+                                    <p class="p">图像数</p>
+
+                                </td>
+
+                                <td class="entry" valign="top" width="55.55555555555556%" headers="d37694e142 ">
+                                    <p class="p">分析过程中PC接收到的相机发出的图像数</p>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td class="entry" valign="top" width="44.44444444444444%" headers="d37694e136 ">
+                                    <p class="p">丢包数</p>
+
+                                </td>
+
+                                <td class="entry" valign="top" width="55.55555555555556%" headers="d37694e142 ">
+                                    <p class="p">分析过程中PC未能成功从相机处接收到的数据包</p>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td class="entry" valign="top" width="44.44444444444444%" headers="d37694e136 ">
+                                    <p class="p">错误数</p>
+
+                                </td>
+
+                                <td class="entry" valign="top" width="55.55555555555556%" headers="d37694e142 ">
+                                    <p class="p">分析过程中该相机发送给PC帧率时的错误数</p>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+</div>
+
+                <p class="p">在不分析以及分析过程中，可通过右上角的<span class="ph uicontrol">重置数据</span>清空上次或此次分析的数据。</p>
+
+                <div class="note note" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__GUID-26BD2EF3-F776-48C8-971D-E956CF042DCE"><span class="notetitle">说明</span> 
+                    <p class="p">带宽分析的时长可手动设置，可以自动设置。</p>
+
+                    <ul class="ul" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__UL_JXW_GZ2_CKB">
+                        <li class="li" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__GUID-FAC0815D-4AE9-469D-82AD-D716F68A7768">
+                            <p class="p">手动设置：手动单击<span class="ph uicontrol">开始分析</span>后开始进行分析，手动单击<span class="ph uicontrol">停止分析</span>后停止分析。</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__GUID-F0AD05C0-1AC8-46F1-9EE1-F6ECE8316FE0">
+                            <p class="p">自动设置：勾选左上角的<span class="ph uicontrol">分析时长</span>后设置时间，时间单位分别有秒（s）、分（m）、小时（h）和天（d）四种可选。分析时长最短为1s，最长为24d。设置结束后，单击<span class="ph uicontrol">开始分析</span>即可。到设定的分析时长后，带宽管理器自动停止分析。分析过程中，若需要提前结束，也可手动单击<span class="ph uicontrol">停止分析</span>来结束。</p>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </li>
+
+        </ul>
+
+        <p class="p">一键优化功能可对已勾选的网口相机根据情况调整带宽。保证合理利用带宽的同时，避免出现相机丢包或丢图的问题。</p>
+
+        <div class="note note" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__GUID-E0EB2362-2B5F-4FBF-BEE2-7F0BA7A1DD97"><span class="notetitle">说明</span> 
+            <ul class="ul" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__UL_ESL_H2L_G3B">
+                <li class="li" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__GUID-0E3E06D2-E384-4648-8E2D-21028653F61B">
+                    <p class="p">一键优化功能仅支持网口相机。 </p>
+
+                </li>
+
+                <li class="li" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__GUID-B4C50461-8F1C-46C5-B0E3-6BAFC80648F3">
+                    <p class="p">一键优化功能仅在选中GigE接口下的单张网卡时才生效。</p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="note note" id="GUID-DAECD382-D164-4086-84F1-7CB17B336B77__GUID-C28B514E-2325-4767-8703-845F11F8399D"><span class="notetitle">说明</span> 
+            <p class="p">通过带宽管理器调整后的带宽需要在属性模块进行保存属性以及设置默认属性的操作，才能保证设置的带宽参数在相机断电重启后依然生效。如何保存并设置默认属性请查看<a class="xref" href="GUID-20B2ED4F-3F33-43A6-9DC4-2CD80957480D.html#GUID-20B2ED4F-3F33-43A6-9DC4-2CD80957480D__GUID-B136602C-400F-466B-9D0A-E23CECFF71D5">保存相机属性</a>章节的介绍。</p>
+
+        </div>
+
+</div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

@@ -1,0 +1,284 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="PC诊断工具" /><meta name="abstract" content="PC诊断工具（本节简称为“工具”）可在使用客户端及配套SDK时，提供诊断和修复软件使用环境的功能。" /><meta name="description" content="PC诊断工具（本节简称为“工具”）可在使用客户端及配套SDK时，提供诊断和修复软件使用环境的功能。" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-AAB876F3-D1ED-4664-A94D-56CA4C6FE275" /><meta name="DC.Language" content="zh-CN" /><title>PC诊断工具</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li class="active"><span class="topicref">PC诊断工具</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body "><div class="nested0" id="GUID-AAB876F3-D1ED-4664-A94D-56CA4C6FE275">
+    <h1 class="title topictitle1">PC诊断工具</h1>
+
+    <p class="shortdesc">PC诊断工具（本节简称为“工具”）可在使用客户端及配套SDK时，提供诊断和修复软件使用环境的功能。</p>
+
+<div class="topic concept nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-35BFBBAD-5B32-4ED2-8637-3AA0D7235D98">
+    <h2 class="title topictitle2">主界面介绍</h2>
+
+
+<div class="body conbody"><p class="shortdesc">工具主界面如下图所示，相关说明请见下表。</p>
+
+        <div class="fig fignone" id="GUID-35BFBBAD-5B32-4ED2-8637-3AA0D7235D98__FIG_DC5_WD3_WWB">
+            
+            <img class="image" style="display:none;" id="GUID-35BFBBAD-5B32-4ED2-8637-3AA0D7235D98__IMAGE_PCK_W43_WWB" src="GUID-50D7C723-87DC-43D5-8756-0E1E11E9A068-high.png" width="1800" />
+        <div class="fig_caption"><span class="figcap">图 1 主界面</span></div></div>
+
+        
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-35BFBBAD-5B32-4ED2-8637-3AA0D7235D98__TABLE_R3W_PFH_WWB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 1 主界面说明</span></caption>
+                
+                
+                
+                <thead class="thead" align="left">
+                    <tr>
+                        <th class="entry" valign="top" width="19.065420560747665%" id="d19753e54">
+                            <p class="p">序号</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="18.691588785046733%" id="d19753e60">
+                            <p class="p">区域</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="62.24299065420561%" id="d19753e66">
+                            <p class="p">说明</p>
+
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody class="tbody">
+                    <tr>
+                        <td class="entry" valign="top" width="19.065420560747665%" headers="d19753e54 ">
+                            <p class="p">1</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="18.691588785046733%" headers="d19753e60 ">
+                            <p class="p">菜单栏</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="62.24299065420561%" headers="d19753e66 ">
+                            <div class="p">菜单栏可提供日志文件进行导出和帮助操作。<ul class="ul" id="GUID-35BFBBAD-5B32-4ED2-8637-3AA0D7235D98__UL_U3L_CPV_WWB">
+                                    <li class="li" id="GUID-35BFBBAD-5B32-4ED2-8637-3AA0D7235D98__GUID-96A47C11-E16B-406F-A806-1DD253B9D1BF">
+                                        <p class="p">文件：单击<span class="ph menucascade"><span class="ph uicontrol">文件</span> &gt; <span class="ph uicontrol">导出</span></span>，可对PC诊断的日志文件进行导出操作。</p>
+
+                                    </li>
+
+                                    <li class="li" id="GUID-35BFBBAD-5B32-4ED2-8637-3AA0D7235D98__GUID-B6CE6311-8CA2-4FA3-B2A4-6B4CA8A6977D">
+                                        <p class="p">帮助：可对工具的语言（中英文）进行选择，查看本用户手册和工具版本信息。</p>
+
+                                    </li>
+
+                                </ul>
+</div>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="19.065420560747665%" headers="d19753e54 ">
+                            <p class="p">2</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="18.691588785046733%" headers="d19753e60 ">
+                            <p class="p">实时监测</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="62.24299065420561%" headers="d19753e66 ">
+                            <p class="p">针对诊断内容，可将诊断结果按照等级程度进行划分，并对诊断过程中正常、警告和异常的数量进行实时显示，具体请见<a class="xref" href="GUID-AAB876F3-D1ED-4664-A94D-56CA4C6FE275.html#GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030" title="工具可对诊断结果为非正常的内容可针对性进行处理，主要分为三个阶段，即 开始诊断 &gt; 诊断结果 &gt; 诊断复查">诊断过程</a>章节。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="19.065420560747665%" headers="d19753e54 ">
+                            <p class="p">3</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="18.691588785046733%" headers="d19753e60 ">
+                            <p class="p">诊断详情</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="62.24299065420561%" headers="d19753e66 ">
+                            <p class="p">可对PC的SDK、驱动以及系统包含的内容进行诊断，通过该区域可根据诊断结果对优化项进行针对性处理，具体请见<a class="xref" href="GUID-AAB876F3-D1ED-4664-A94D-56CA4C6FE275.html#GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030" title="工具可对诊断结果为非正常的内容可针对性进行处理，主要分为三个阶段，即 开始诊断 &gt; 诊断结果 &gt; 诊断复查">诊断过程</a>章节。</p>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+</div>
+
+        <p class="p">点击工具右上角的<img class="image icon" style="display:none;" id="GUID-35BFBBAD-5B32-4ED2-8637-3AA0D7235D98__IMAGE_QD4_P1B_5XB" src="GUID-778F406E-36FA-4696-8F15-98008802E0B6-high.png" />还可观察当前PC的内存和CPU占用情况。</p>
+
+    </div>
+
+</div>
+<div class="topic concept nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030">
+    <h2 class="title topictitle2">诊断过程</h2>
+
+
+<div class="body conbody"><p class="shortdesc">工具可对诊断结果为非正常的内容可针对性进行处理，主要分为三个阶段，即<span class="ph menucascade"><span class="ph uicontrol">开始诊断</span> &gt; <span class="ph uicontrol">诊断结果</span> &gt; <span class="ph uicontrol">诊断复查</span></span></p>
+
+        <div class="section" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__GUID-F2F61A24-A1AB-4210-A5DD-7C1AA08A2C0B"><h3 class="title sectiontitle">开始诊断</h3>
+            
+            <p class="p">当采集卡出现异常时，通过工具可对SDK、驱动以及系统包含的内容逐个进行检测，单击<span class="ph uicontrol">开始诊断</span>，如下图所示。</p>
+
+            <div class="p">
+                <ul class="ul" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__UL_UD3_D4H_5WB">
+                    <li class="li" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__GUID-F27C27EB-1840-4D10-B9FB-9F0BC2C34520">
+                        <p class="p">SDK检测：检测C:\Windows\SysWoW64和C:\Windows\System32系统路径下是否存在多余的SDK文件，以及环境变量是否正常；</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__GUID-36BDEDDD-A99C-40F0-B5A3-60B7ED40C74B">
+                        <p class="p">驱动检测：检测GEV以及U3V驱动安装是否正常，查看USB3.0控制器驱动版本信息；</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__GUID-D4638BD6-05B9-4777-8402-D0096F368C6D">
+                        <p class="p">系统检测：检测系统防火墙的状态以及网络线路速度，查看USB控制器、网卡巨帧以及系统的相关信息。</p>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="p">
+                <div class="fig fignone" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__FIG_OZ2_2QG_5WB">
+                    
+                    <img class="image" style="display:none;" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__IMAGE_E4G_J23_WWB" src="GUID-6D6E7AEC-1C3F-4E4F-8DAB-BCFFCEB74D74-high.png" width="1800" />
+                <div class="fig_caption"><span class="figcap">图 2 开始诊断</span></div></div>
+
+                <div class="note note" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__GUID-B7F3659B-72D1-4846-B212-48D440CAE3DE"><span class="notetitle">说明</span> 
+                    <p class="p">单击<span class="ph uicontrol">停止诊断</span>，即停止当前的诊断操作。</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__GUID-701FE65A-3197-462D-8760-CBE1AF3CB3A1"><h3 class="title sectiontitle">诊断结果</h3>
+            
+            <p class="p">完成诊断后，工具可对诊断内容进行判断，诊断结果如下图所示。按照严重程度由高到低可分为异常、警告、正常3种状态。</p>
+
+            <p class="p">若有需要优化的检测项，可单击相应内容的<span class="ph uicontrol"><img class="image" style="display:none;" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__IMAGE_D2J_4NH_5WB" src="GUID-C96B3B76-D8AA-4E18-9B6B-45FF1FB55A34-high.png" />查看</span>或<span class="ph uicontrol"><img class="image" style="display:none;" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__IMAGE_E2J_4NH_5WB" src="GUID-C96B3B76-D8AA-4E18-9B6B-45FF1FB55A34-high.png" />查看解决办法</span>等内容可进行逐一优化。</p>
+
+            <div class="p">
+                <div class="fig fignone" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__FIG_LLV_LQG_5WB">
+                    
+                    <img class="image" style="display:none;" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__IMAGE_IKQ_XMH_5WB" src="GUID-8F73BD92-278F-4FA8-BD89-760CBE29A749-high.png" width="1800" />
+                <div class="fig_caption"><span class="figcap">图 3 诊断结果</span></div></div>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__GUID-823C8072-B3A6-446F-8F54-EC1AD8A99363"><h3 class="title sectiontitle">诊断复查</h3>
+            
+            <p class="p">处理警告和异常的信息后，工具提供对非正常状态的内容或全部内容进行诊断复查，分为<span class="ph uicontrol">优化诊断</span>和<span class="ph uicontrol">重新诊断</span>，处理异常后诊断的结果如下图所示。</p>
+
+            <div class="p">
+                <ul class="ul" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__UL_OJ1_HNH_5WB">
+                    <li class="li" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__GUID-C9873FC4-53BC-423E-92AA-26ABCFFC11D1">
+                        <p class="p">优化诊断：单击<span class="ph uicontrol">优化诊断</span>，系统可对出现警告和异常状态的内容进行诊断，也可对部分优化项进行优化修复；</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__GUID-573D1566-7D16-4023-9DE0-F89FCDE72E48">
+                        <p class="p">重新诊断：单击<span class="ph uicontrol">重新诊断</span>，系统可对所有内容重新进行诊断。</p>
+
+                    </li>
+
+                </ul>
+
+                <div class="fig fignone" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__FIG_IZW_CNH_5WB">
+                    
+                    <img class="image" style="display:none;" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__IMAGE_JZW_CNH_5WB" src="GUID-69E4C412-F781-4F68-8B8F-B2AF90C06BA4-high.png" width="1800" />
+                <div class="fig_caption"><span class="figcap">图 4 诊断复查</span></div></div>
+
+            </div>
+
+        </div>
+
+</div>
+
+</div>
+</div>
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>本页导航</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-35BFBBAD-5B32-4ED2-8637-3AA0D7235D98" class="feature_guide_h2"><span class="link_button">主界面介绍</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030" class="feature_guide_h2"><span class="link_button">诊断过程</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__GUID-F2F61A24-A1AB-4210-A5DD-7C1AA08A2C0B" class="feature_guide_h3"><span class="link_button">开始诊断</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__GUID-701FE65A-3197-462D-8760-CBE1AF3CB3A1" class="feature_guide_h3"><span class="link_button">诊断结果</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__GUID-823C8072-B3A6-446F-8F54-EC1AD8A99363" class="feature_guide_h3"><span class="link_button">诊断复查</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

@@ -1,0 +1,412 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="添加虚拟设备" /><meta name="abstract" content="在无法搭建真实调试环境的情况下，可使用虚拟设备工具生成虚拟采集卡和虚拟相机，以进行开发和调试。" /><meta name="description" content="在无法搭建真实调试环境的情况下，可使用虚拟设备工具生成虚拟采集卡和虚拟相机，以进行开发和调试。" /><meta name="DC.Relation" scheme="URI" content="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-2148F185-ADF7-4A98-A469-66AE5F133AEF" /><meta name="DC.Language" content="zh-CN" /><title>添加虚拟设备</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html" data-id="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E">设备管理</a></span></li><li class="active"><span class="topicref">添加虚拟设备</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body "><div class="nested0" id="GUID-2148F185-ADF7-4A98-A469-66AE5F133AEF">
+    <h1 class="title topictitle1">添加虚拟设备</h1>
+
+
+    <div class="body conbody"><p class="shortdesc">在无法搭建真实调试环境的情况下，可使用虚拟设备工具生成虚拟采集卡和虚拟相机，以进行开发和调试。</p>
+
+        <p class="p">不同虚拟相机在设备列表中的显示和连接方式有所不同：</p>
+
+        <ul class="ul" id="GUID-2148F185-ADF7-4A98-A469-66AE5F133AEF__UL_FWF_RNQ_YDC">
+            <li class="li" id="GUID-2148F185-ADF7-4A98-A469-66AE5F133AEF__GUID-6A233010-04B2-40B9-95BF-C13EEC8DDF7F">
+                <p class="p">U3V虚拟相机：添加后可直接在设备列表中的USB接口下显示并连接；</p>
+
+            </li>
+
+            <li class="li" id="GUID-2148F185-ADF7-4A98-A469-66AE5F133AEF__GUID-EB9C4FA0-8BF9-47F0-B424-A71299B9C55C">
+                <p class="p">网口虚拟相机：未添加网口虚拟采集卡时，在设备列表中的GigE接口下显示并连接；添加网口虚拟采集卡并绑定后，可同时在设备列表中的GigE接口和PCIe接口下显示，但仅支持在其中一个接口下连接。</p>
+
+            </li>
+
+            <li class="li" id="GUID-2148F185-ADF7-4A98-A469-66AE5F133AEF__GUID-096F2A2B-31A7-45B3-9004-60AA0BA27818">
+                <p class="p">Camera Link、CoaXPress以及XoFLink光口虚拟相机：未添加相应接口采集卡不显示；添加相应接口采集卡并绑定后，在设备列表中的PCIe接口下显示并连接。</p>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+
+<div class="topic task nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628">
+    <h2 class="title topictitle2">添加虚拟采集卡</h2>
+
+
+<div class="body taskbody"><p class="shortdesc">虚拟采集卡可根据实际需求选择采集卡型号进行模拟打开操作，并通过属性树对部分参数设置。通过绑定对应接口下的虚拟相机，实现虚拟采集卡下虚拟相机的图像预览和循环播放功能。</p>
+
+<div class="section context" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-A515FCB3-F7EB-4E48-A907-B0388521D25D">
+            <div class="note note" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-D9C177C1-40BC-4853-AD80-6BE80D6E5AA2"><span class="notetitle">说明</span> 
+                <p class="p">虚拟采集卡仅支持设置如下参数，其余参数设置后均会报错：</p>
+
+                <ul class="ul" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__UL_D41_FDV_YDC">
+                    <li class="li" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-A0D7FBA8-5182-449C-993A-C45FF883BB5E">
+                        <p class="p">出图方式：支持设置为Frame Scan或Line Scan。</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-C2F4F8A3-68D9-48CA-8DDD-B69F09E03B07">
+                        <p class="p">触发设置：支持设置Stream触发、Link Trigger触发以及定时器控制相关参数，触发源仅可设置为软触发或快速软触发。</p>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+<ol class="ol steps" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-3610E715-F899-41AE-B74F-CDFAD2275D0C"><li class="li step stepexpand" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-F8966ED8-5590-40AF-8CAA-8D18B7CFB187">
+                <span class="ph cmd">通过客户端的<span class="ph menucascade"><span class="ph uicontrol">工具</span> &gt; <span class="ph uicontrol">虚拟设备</span> &gt; <span class="ph uicontrol">虚拟采集卡</span></span>进入添加虚拟采集卡页面。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-32D56598-DFE7-487C-9E93-4983CCA8E824">
+                <span class="ph cmd">根据实际需求下拉选择需要添加的虚拟采集卡<span class="keyword parmname">类型</span>和<span class="keyword parmname">型号</span>。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-2A53E48D-2985-42D9-8F17-85AA80380336"><span class="notetitle">说明</span> 
+                        <p class="p">支持添加的虚拟采集卡型号以实际显示的型号为准。</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-2C713C48-D568-4769-AC53-4484F5E9FC37">
+                <span class="ph cmd">单击<span class="ph uicontrol">添加虚拟采集卡</span>，可对选择的虚拟采集卡型号进行添加，最多支持添加64个虚拟采集卡。</span>
+                <div class="itemgroup stepresult">
+                    <p class="p">添加完成的虚拟采集卡将显示在<span class="keyword parmname">已添加列表</span>中。</p>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-8C5BF79C-935E-4868-9508-4BF07FE6886E">
+                <span class="ph cmd">通过<span class="keyword parmname">已添加列表</span>中的<span class="keyword parmname">绑定相机</span>，下拉选择虚拟采集卡下需要枚举的虚拟相机。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-35E2B90A-9A5A-4D53-B778-547EE34725E5"><span class="notetitle">说明</span> 
+                        <ul class="ul" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__UL_A32_RWR_SDC">
+                            <li class="li" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-18F1F53C-EB67-4663-8C9E-9D3926E39E4A">
+                                <p class="p">虚拟采集卡下可绑定的虚拟相机数量，与虚拟采集卡的接口数量有关，可通过采集卡型号的最后一位数字进行判断。</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-1A224F26-1F87-47C3-A484-A8E6BEC06F87">
+                                <p class="p">虚拟采集卡仅支持绑定已添加的虚拟相机，虚拟相机的添加方式具体请见<a class="xref" href="GUID-2148F185-ADF7-4A98-A469-66AE5F133AEF.html#GUID-BC64DBA7-8896-4F88-9E34-463C469F5719" title="虚拟相机可根据实际需求选择相机型号进行模拟打开操作，通过将本地图片存放至指定路径，使用属性树可对其进行部分参数设置，可实现图像预览和循环播放。">添加虚拟相机</a>。</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-6AF889D5-FFDC-4632-B054-272C2B9680F3">
+                                <p class="p">Camera Link、CoaXPress以及XoFLink光口虚拟相机需添加相应接口采集卡并绑定后，在可设备列表中的PCIe接口下显示。</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-7EA459B1-3623-4AF2-8DF1-69063B1D3BCE"><strong>可选操作： </strong>
+                <span class="ph cmd">通过<span class="keyword parmname">已添加列表</span>可对已添加的虚拟采集卡进行相关操作。</span>
+                <div class="itemgroup info">
+                    <dl class="dl">
+                        
+                            <dt class="dt dlterm"><a name="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-6535CAF4-2CD4-4B28-B815-F207C3EB9252"><!-- --></a>切换在线状态</dt>
+
+                            <dd class="dd">
+                                <p class="p">选择已添加的虚拟采集卡，右键单击<span class="keyword parmname">切换在线状态</span>可断开已连接的采集卡或连接断开的采集卡。</p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt dlterm"><a name="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-319C04BF-FA4A-4BE3-91FD-658F28A77B45"><!-- --></a>删除虚拟采集卡</dt>
+
+                            <dd class="dd">
+                                <p class="p">若需要删除单个采集卡，选中已添加的虚拟采集卡，右键单击<span class="ph uicontrol">删除</span>可删除添加的虚拟采集卡。</p>
+
+                                <p class="p">若需要删除多个采集卡，在<span class="keyword parmname">采集卡名称</span>前勾选需要删除的虚拟采集卡，单击<span class="keyword parmname">已添加列表</span>右上角的<span class="ph uicontrol">删除</span>即可。</p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt dlterm"><a name="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-272E0F2B-5E8B-4779-8895-F2115A92222C"><!-- --></a>重置虚拟采集卡</dt>
+
+                            <dd class="dd">
+                                <p class="p">在<span class="keyword parmname">采集卡名称</span>前勾选已断开的虚拟采集卡，单击<span class="keyword parmname">已添加列表</span>右上角的<span class="ph uicontrol">重置</span>可设置采集卡的连接状态为已连接。</p>
+
+                            </dd>
+
+                        
+                    </dl>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-24F32341-D4F4-4998-BD71-FEDAFF79CEC1">
+                <span class="ph cmd">添加完成的虚拟采集卡可在设备列表中的PCIe接口下显示。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-B5E0FA31-E78F-4EBE-BD74-F5EFCA7CE547"><span class="notetitle">说明</span> 
+                        <p class="p">若设备列表未显示虚拟采集卡，单击PCIe接口右侧的<img class="image icon" style="display:none;" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__IMAGE_ETH_K2Z_BKB" src="GUID-21129D57-7CF9-4746-88F0-C5EFF4A4C073-high.png" />手动刷新。</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-CD162D82-7706-4162-B5B8-71478DF90681">
+                <span class="ph cmd">双击连接采集卡，虚拟采集卡下显示已绑定的虚拟相机。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-217E955F-7906-40DB-B8CD-A49C0D627709">
+                <span class="ph cmd">导入需要使用的图片。</span>
+                <ol type="a" class="ol substeps" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__SUBSTEPS_CTM_1V5_YDC">
+                    <li class="li substep substepexpand" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-DE8BBBC2-CD6A-47D6-BCBC-8249917BB638">
+                        <span class="ph cmd">根据添加的相机名即Vir********，在C:\Windows\Temp\VirtualCamera\Cameras路径下找到对应型号的文件夹。</span>
+                    </li>
+
+                    <li class="li substep substepexpand" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-A98154BB-DA50-4E25-B643-24EC56D3B8EB">
+                        <span class="ph cmd">根据实际像素格式的使用需求，将需要使用的图片导入Mono或RGB24文件夹内。</span>
+                        <div class="itemgroup info">
+                            <div class="note note" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-79EF090D-97DA-4BA4-ADDD-8F3D2401EC9B"><span class="notetitle">说明</span> 
+                                <p class="p">使用的图片分辨率必须与相机分辨率保持一致。</p>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                </ol>
+
+            </li>
+<li class="li step stepexpand" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-ED0F1F33-1C2E-4BF8-BD2C-C854DEC8AF1C">
+                <span class="ph cmd">双击连接虚拟采集卡下的虚拟相机，通过<span class="ph menucascade"><span class="ph uicontrol">Feature Tree</span> &gt; <span class="ph uicontrol">Image Format Control</span> &gt; <span class="ph uicontrol">Pixel Format</span></span>设置与图片路径对应的像素格式，也可通过属性树进行其他参数设置操作。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-CCEDA594-60A1-40D0-9FE9-473F9060302B"><span class="notetitle">说明</span> 
+                        <p class="p">若设置的像素格式与图片路径的像素格式不一致，则预览图像时图片不显示，请根据实际需求统一进行设置。</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__GUID-D52C1614-BBCD-4EDE-923F-EB22DB24B783">
+                <span class="ph cmd">点击<img class="image icon" style="display:none;" id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628__IMAGE_XHM_155_YDC" src="GUID-59474AEF-8205-4E4E-B5F6-A9A8C030AB35-high.png" width="31" />开始采集，可对导入的图片进行循环播放操作。</span>
+            </li>
+</ol>
+
+</div>
+
+</div>
+<div class="topic task nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719">
+    <h2 class="title topictitle2">添加虚拟相机</h2>
+
+
+<div class="body taskbody"><p class="shortdesc">虚拟相机可根据实际需求选择相机型号进行模拟打开操作，通过将本地图片存放至指定路径，使用属性树可对其进行部分参数设置，可实现图像预览和循环播放。</p>
+
+        <div class="section context" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-A515FCB3-F7EB-4E48-A907-B0388521D25D"></div>
+
+        <ol class="ol steps" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-E2DA0533-DD03-4578-953B-DD537CD9AF71"><li class="li step stepexpand" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-14FA6D8A-54E4-4246-9DBA-73032102A905">
+                <span class="ph cmd">通过客户端的<span class="ph menucascade"><span class="ph uicontrol">工具</span> &gt; <span class="ph uicontrol">虚拟设备</span></span>进入虚拟设备工具，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__FIG_KJR_V1Q_4SB">
+                        
+                        <img class="image" style="display:none;" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__IMAGE_CV2_Z1R_SDC" src="GUID-85F97434-697B-412B-AD7D-D586FB62ED6D" width="1800" />
+                    <div class="fig_caption"><span class="figcap">图 1 虚拟设备</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-253F98F5-2E8A-487A-81BC-EC73D968D37C">
+                <span class="ph cmd">选择<span class="keyword parmname">虚拟相机</span>页面，根据实际需求下拉选择需要添加的虚拟相机<span class="keyword parmname">类型</span>和<span class="keyword parmname">型号</span>。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-299AA90F-7F99-4401-BABF-BEAC3CF33B12"><span class="notetitle">说明</span> 
+                        <p class="p">支持添加的虚拟相机型号以实际显示的型号为准。</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-2C713C48-D568-4769-AC53-4484F5E9FC37">
+                <span class="ph cmd">单击<span class="ph uicontrol">添加虚拟相机</span>，可对选择的虚拟相机型号进行添加，最多支持添加256个虚拟相机。</span>
+                <div class="itemgroup stepresult">
+                    <p class="p">添加完成的虚拟相机将显示在<span class="keyword parmname">已添加列表</span>中。</p>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-0F71ADC5-D567-4634-AA8A-359DD9642BAB"><strong>可选操作： </strong>
+                <span class="ph cmd">通过<span class="keyword parmname">已添加列表</span>可对已添加的虚拟相机进行相关操作。</span>
+                <div class="itemgroup info">
+                    <dl class="dl">
+                        
+                            <dt class="dt dlterm"><a name="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-6535CAF4-2CD4-4B28-B815-F207C3EB9252"><!-- --></a>切换在线状态</dt>
+
+                            <dd class="dd">
+                                <p class="p">选择已添加的虚拟相机，右键单击<span class="keyword parmname">切换在线状态</span>可断开已连接的相机或连接断开的相机。</p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt dlterm"><a name="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-319C04BF-FA4A-4BE3-91FD-658F28A77B45"><!-- --></a>删除虚拟相机</dt>
+
+                            <dd class="dd">
+                                <p class="p">若需要删除单个相机，选中已添加的虚拟相机，右键单击<span class="ph uicontrol">删除</span>可删除添加的虚拟相机。</p>
+
+                                <p class="p">若需要删除多个相机，在<span class="keyword parmname">相机名称</span>前勾选需要删除的虚拟相机，单击<span class="keyword parmname">已添加列表</span>右上角的<span class="ph uicontrol">删除</span>即可。</p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt dlterm"><a name="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-272E0F2B-5E8B-4779-8895-F2115A92222C"><!-- --></a>重置虚拟相机</dt>
+
+                            <dd class="dd">
+                                <p class="p">在<span class="keyword parmname">相机名称</span>前勾选已断开的虚拟相机，单击<span class="keyword parmname">已添加列表</span>右上角的<span class="ph uicontrol">重置</span>可设置相机的连接状态为已连接。</p>
+
+                            </dd>
+
+                        
+                    </dl>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-88687925-128B-42B2-8D59-F0BDCAC0C4D6">
+                <span class="ph cmd">添加完成的虚拟相机可在设备列表中的相应接口下显示，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__FIG_SMF_C2Q_4SB">
+                        
+                        <img class="image" style="display:none;" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__IMAGE_YLW_D2Q_4SB" src="GUID-4208EE2E-55C7-4FAA-8D7E-0B313F729F58-high.png" width="950" />
+                    <div class="fig_caption"><span class="figcap">图 2 添加虚拟相机</span></div></div>
+
+                    <div class="note note" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-13D6FA64-1297-4EDB-944C-E6B191733443"><span class="notetitle">说明</span> 
+                        <ul class="ul" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__UL_S4Z_KFR_SDC">
+                            <li class="li" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-AFFFBD9B-8349-43A4-B1D0-4B69DCB07784">
+                                <p class="p">Camera Link、CoaXPress以及XoFLink光口虚拟相机需添加对应接口的虚拟采集卡后，才可在设备列表中的PCIe接口下显示。虚拟采集卡的添加方式具体请见<a class="xref" href="GUID-2148F185-ADF7-4A98-A469-66AE5F133AEF.html#GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628" title="虚拟采集卡可根据实际需求选择采集卡型号进行模拟打开操作，并通过属性树对部分参数设置。通过绑定对应接口下的虚拟相机，实现虚拟采集卡下虚拟相机的图像预览和循环播放功能。">添加虚拟采集卡</a>。</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-4D94A07D-0E13-4387-AFF7-507862C6DB04">
+                                <p class="p">若设备列表未显示虚拟相机，单击对应接口右侧的<img class="image icon" style="display:none;" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__IMAGE_ETH_K2Z_BKB" src="GUID-21129D57-7CF9-4746-88F0-C5EFF4A4C073-high.png" />手动刷新。</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-217E955F-7906-40DB-B8CD-A49C0D627709">
+                <span class="ph cmd">导入需要使用的图片。</span>
+                <ol type="a" class="ol substeps" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__SUBSTEPS_CTM_1V5_YDC">
+                    <li class="li substep substepexpand" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-F4CCBDA3-17E5-4E87-B3CB-DF17174F0AEF">
+                        <span class="ph cmd">根据添加的相机名即Vir********，在C:\Windows\Temp\VirtualCamera\Cameras路径下找到对应型号的文件夹。</span>
+                    </li>
+
+                    <li class="li substep substepexpand" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-33D45DBA-53D2-4D52-97A2-005AAC214A2F">
+                        <span class="ph cmd">根据实际像素格式的使用需求，将需要使用的图片导入Mono或RGB24文件夹内。</span>
+                        <div class="itemgroup info">
+                            <div class="note note" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-63A1E5B9-02F5-4D1D-84C3-6AA9EB8D8711"><span class="notetitle">说明</span> 
+                                <p class="p">使用的图片分辨率必须与相机分辨率保持一致。</p>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                </ol>
+
+            </li>
+<li class="li step stepexpand" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-ED0F1F33-1C2E-4BF8-BD2C-C854DEC8AF1C">
+                <span class="ph cmd">双击连接相机，通过<span class="ph menucascade"><span class="ph uicontrol">Feature Tree</span> &gt; <span class="ph uicontrol">Image Format Control</span> &gt; <span class="ph uicontrol">Pixel Format</span></span>设置与图片路径对应的像素格式，也可通过属性树进行其他参数设置操作。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-CCEDA594-60A1-40D0-9FE9-473F9060302B"><span class="notetitle">说明</span> 
+                        <ul class="ul" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__UL_CD3_D55_YDC">
+                            <li class="li" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-CB2FCBCF-4E9D-49D1-B792-2F4E0017FA15">
+                                <p class="p">若设置的像素格式与图片路径的像素格式不一致，则预览图像时图片不显示，请根据实际需求统一进行设置。</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-1195699F-D56F-4196-A4D2-787D18240E3C">
+                                <p class="p">虚拟相机仅支持设置其宽度、高度以及像素格式参数，并且相机触发源仅支持设置为软触发或采集卡触发，其余参数设置后均会报错。</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-CD162D82-7706-4162-B5B8-71478DF90681">
+                <span class="ph cmd">点击<img class="image icon" style="display:none;" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__IMAGE_QTV_RFQ_4SB" src="GUID-59474AEF-8205-4E4E-B5F6-A9A8C030AB35-high.png" width="31" />开始采集，可对导入的图片进行循环播放操作。</span>
+            </li>
+</ol>
+
+    </div>
+
+</div>
+</div>
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>本页导航</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-0E2C99C0-9DA5-46AF-93B8-3171A9C40628" class="feature_guide_h2"><span class="link_button">添加虚拟采集卡</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719" class="feature_guide_h2"><span class="link_button">添加虚拟相机</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

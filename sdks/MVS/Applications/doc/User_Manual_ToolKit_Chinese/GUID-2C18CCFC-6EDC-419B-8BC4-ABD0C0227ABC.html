@@ -1,0 +1,300 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="设备诊断工具" /><meta name="abstract" content="设备诊断工具（本节简称为“工具”）可实时对设备的运行状态进行监测，包括IO波形、事件和日志消息记录等。" /><meta name="description" content="设备诊断工具（本节简称为“工具”）可实时对设备的运行状态进行监测，包括IO波形、事件和日志消息记录等。" /><meta name="DC.Relation" scheme="URI" content="GUID-7155C681-2BB3-45AB-967E-E81206A88BC1.html" /><meta name="DC.Relation" scheme="URI" content="GUID-499500D7-5DD0-44D5-BE15-B1DE3197EE34.html" /><meta name="DC.Relation" scheme="URI" content="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC.html" /><meta name="DC.Relation" scheme="URI" content="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC" /><meta name="DC.Language" content="zh-CN" /><title>设备诊断工具</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li class="active"><span class="topicref">设备诊断工具</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">设备诊断工具</h1>
+
+
+<div class="body conbody"><p class="shortdesc">设备诊断工具（本节简称为“工具”）可实时对设备的运行状态进行监测，包括IO波形、事件和日志消息记录等。</p>
+
+        <p class="p">工具支持的采集卡类型请见下表：</p>
+
+        
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC__TABLE_AM3_GD3_WWB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 1 支持采集卡类型</span></caption>
+                
+                
+                <thead class="thead" align="left">
+                    <tr>
+                        <th class="entry" valign="top" width="36.66666666666667%" id="d5020e34">
+                            <p class="p">采集卡类型</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="63.33333333333334%" id="d5020e40">
+                            <p class="p">采集卡接口</p>
+
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody class="tbody">
+                    <tr>
+                        <td class="entry" valign="top" width="36.66666666666667%" headers="d5020e34 ">
+                            <p class="p">图像采集卡</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="63.33333333333334%" headers="d5020e40 ">
+                            <p class="p">Camera Link采集卡、CoaXPress采集卡、GigE采集卡、10
+                                    GigE采集卡（部分型号支持）、XoFLink光口采集卡</p>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+</div>
+
+        <p class="p">打开工具后，弹出选择设备界面，如下图所示。</p>
+
+        <div class="fig fignone" id="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC__FIG_MHB_341_KCC">
+            
+            <img class="image" style="display:none;" id="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC__IMAGE_NHB_341_KCC" src="GUID-6290C350-D670-43B3-979B-AE636A0B213E-high.png" width="1400" />
+        <div class="fig_caption"><span class="figcap">图 1 选择设备</span></div></div>
+
+        <p class="p">勾选需要进行运行状态监测的设备后进入工具主界面，主界面如下图所示，相关说明请见下表。</p>
+
+        <div class="fig fignone" id="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC__FIG_G1J_MWH_5WB">
+            
+            <img class="image" style="display:none;" id="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC__IMAGE_Z13_PM1_KCC" src="GUID-5F3B867D-BD97-466B-807E-7A9927F83A7E-high.png" width="2100" />
+        <div class="fig_caption"><span class="figcap">图 2 主界面</span></div></div>
+
+        
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC__TABLE_TSR_4WH_5WB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 2 主界面说明</span></caption>
+                
+                
+                
+                <thead class="thead" align="left">
+                    <tr>
+                        <th class="entry" valign="top" width="11.160714285714285%" id="d5020e111">
+                            <p class="p">序号</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="16.517857142857142%" id="d5020e117">
+                            <p class="p">区域</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="72.32142857142857%" id="d5020e123">
+                            <p class="p">说明</p>
+
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody class="tbody">
+                    <tr>
+                        <td class="entry" valign="top" width="11.160714285714285%" headers="d5020e111 ">
+                            <p class="p">1</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="16.517857142857142%" headers="d5020e117 ">
+                            <p class="p">菜单栏</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="72.32142857142857%" headers="d5020e123 ">
+                            <div class="p">菜单栏可提供日志文件进行导入/导出、日志的通用设置和帮助操作。<ul class="ul" id="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC__UL_U3L_CPV_WWB">
+                                    <li class="li" id="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC__GUID-08BB70D4-33AD-490F-BF2D-6AE23AD04148">
+                                        <p class="p">文件：支持将外部日志文件进行导入或将诊断文件进行导出操作；</p>
+
+                                        <div class="p">
+                                            <ul class="ul" id="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC__UL_YBK_3QM_WWB">
+                                                <li class="li" id="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC__GUID-A70E08EC-4698-45CA-9063-AD329EFE63A0">
+                                                  <p class="p">单击<span class="ph menucascade"><span class="ph uicontrol">文件</span> &gt; <span class="ph uicontrol">导入</span></span>，将外部日志文件导入至工具；</p>
+
+                                                </li>
+
+                                                <li class="li" id="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC__GUID-05A40A16-D632-4348-9E6B-C747EE25D66C">
+                                                  <p class="p">单击<span class="ph menucascade"><span class="ph uicontrol">文件</span> &gt; <span class="ph uicontrol">导出</span></span>，将日志文件导出至本地。</p>
+
+                                                  <div class="p">
+                                                  <div class="note note" id="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC__GUID-2581EE9C-5C09-4787-86CB-520DAB6CE871"><span class="notetitle">说明</span> 
+                                                  <p class="p">若日志开启文件自动保存功能，则日志文件不可导出，文件自动保存功能请见<a class="xref" href="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5.html#GUID-D322DAFE-41F8-4123-98B8-220CED7429D5" title="工具对采集卡/相机事件进行检测后，可通过日志对异常信息进行排查和精准定位，有利于对异常事件的监测和解析。">日志管理</a>章节。</p>
+
+                                                  </div>
+
+                                                  </div>
+
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+
+                                    </li>
+
+                                    <li class="li" id="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC__GUID-3DEE7060-FBCB-4A96-A8E0-8B3AB381E915">
+                                        <p class="p">设置：可对日志的基本操作进行相应设置，具体请见<a class="xref" href="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5.html#GUID-D322DAFE-41F8-4123-98B8-220CED7429D5" title="工具对采集卡/相机事件进行检测后，可通过日志对异常信息进行排查和精准定位，有利于对异常事件的监测和解析。">日志管理</a>章节；</p>
+
+                                    </li>
+
+                                    <li class="li" id="GUID-2C18CCFC-6EDC-419B-8BC4-ABD0C0227ABC__GUID-449AA81A-AEB5-453D-A4A9-C10D4F903A7F">
+                                        <p class="p">帮助：可对工具的语言（中英文）进行选择，查看本用户手册和工具版本信息。</p>
+
+                                    </li>
+
+                                </ul>
+</div>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="11.160714285714285%" headers="d5020e111 ">
+                            <p class="p">2</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="16.517857142857142%" headers="d5020e117 ">
+                            <p class="p">事件总览</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="72.32142857142857%" headers="d5020e123 ">
+                            <p class="p">可对采集卡/相机事件按照时间进行计数，具体请见<a class="xref" href="GUID-7155C681-2BB3-45AB-967E-E81206A88BC1.html#GUID-7155C681-2BB3-45AB-967E-E81206A88BC1" title="事件总览可对采集卡/相机的事件根据时间推移进行实时统计，单位为“分钟（min）”。">事件总览</a>章节。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="11.160714285714285%" headers="d5020e111 ">
+                            <p class="p">3</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="16.517857142857142%" headers="d5020e117 ">
+                            <p class="p">事件诊断</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="72.32142857142857%" headers="d5020e123 ">
+                            <p class="p">可对事件总览处采集卡/相机事件中的任意“6秒钟”时间区域进行放大显示，具体请见<a class="xref" href="GUID-499500D7-5DD0-44D5-BE15-B1DE3197EE34.html#GUID-499500D7-5DD0-44D5-BE15-B1DE3197EE34" title="总览图处选择的事件可通过事件图进行解析，可清楚查看该事件“6秒钟”时间区域内的事件等级分类情况。">事件诊断</a>章节。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="11.160714285714285%" headers="d5020e111 ">
+                            <p class="p">4</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="16.517857142857142%" headers="d5020e117 ">
+                            <p class="p">IO波形监测</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="72.32142857142857%" headers="d5020e123 ">
+                            <p class="p">可对相机指定输入源的脉冲信号状态进行实时监测和统计，具体请见<a class="xref" href="GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC.html#GUID-BD4DD799-6380-4F1F-AC77-80BCAF778BFC" title="事件图处解析后的事件通过IO波形图可查看相应IO的响应波形图，可对该事件下的脉冲数量进行实时统计。">IO波形监测</a>章节。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="11.160714285714285%" headers="d5020e111 ">
+                            <p class="p">5</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="16.517857142857142%" headers="d5020e117 ">
+                            <p class="p">日志管理</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="72.32142857142857%" headers="d5020e123 ">
+                            <p class="p">可实时查看采集卡/相机的日志消息和事件信息，具体请见<a class="xref" href="GUID-D322DAFE-41F8-4123-98B8-220CED7429D5.html#GUID-D322DAFE-41F8-4123-98B8-220CED7429D5" title="工具对采集卡/相机事件进行检测后，可通过日志对异常信息进行排查和精准定位，有利于对异常事件的监测和解析。">日志管理</a>章节。</p>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+</div>
+
+    </div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

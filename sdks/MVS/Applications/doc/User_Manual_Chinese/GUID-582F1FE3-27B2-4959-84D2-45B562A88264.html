@@ -1,0 +1,182 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="白平衡设置（Bayer）" /><meta name="abstract" content="彩色相机bayer格式下，可通过客户端的白平衡设置工具进行快速优化。" /><meta name="description" content="彩色相机bayer格式下，可通过客户端的白平衡设置工具进行快速优化。" /><meta name="DC.Relation" scheme="URI" content="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-582F1FE3-27B2-4959-84D2-45B562A88264" /><meta name="DC.Language" content="zh-CN" /><title>白平衡设置（Bayer）</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB.html" data-id="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB">相机属性配置</a></span></li><li><span class="topicref"><a href="GUID-174775E7-C15F-4BB1-8ACE-5119E4787E7B.html" data-id="GUID-174775E7-C15F-4BB1-8ACE-5119E4787E7B">常用属性</a></span></li><li><span class="topicref"><a href="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6.html" data-id="GUID-3549F405-2E38-431A-9EA9-DC5594186DE6">ISP</a></span></li><li class="active"><span class="topicref">白平衡设置（Bayer）</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">白平衡设置（Bayer）</h1>
+
+
+<div class="body taskbody"><p class="shortdesc">彩色相机bayer格式下，可通过客户端的白平衡设置工具进行快速优化。</p>
+
+<div class="section prereq p" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__GUID-70FC0D73-F903-4254-A387-2BA318B036F3">
+            <p class="p">已连接相机的像素格式为Bayer格式，且未开启<span class="ph uicontrol">伽马校正使能</span>和<span class="ph uicontrol">颜色转换使能</span>。</p>
+
+            <div class="note note" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__GUID-33A060AB-5D18-4057-B4D8-FD0413F953F3"><span class="notetitle">说明</span> 
+                <p class="p">彩色是否支持颜色转换功能与相机型号以及固件程序有关，具体请咨询技术支持。</p>
+
+            </div>
+
+        </div>
+
+<ol class="ol steps" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__GUID-BB45DDCF-4C28-4E96-B1B6-417DCE52221A"><li class="li step stepexpand" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__GUID-C822662D-CED2-4CBA-AAB4-9744522D5B51">
+                <span class="ph cmd"><span class="keyword parmname">自动白平衡</span>参数选择“关闭”，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__FIG_UDD_2HC_CKB">
+                        
+                        <img class="image" style="display:none;" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__IMAGE_VDD_2HC_CKB" src="GUID-271E787E-87F7-4057-9F93-FA4F6B01056E-high.png" width="1153" />
+                    <div class="fig_caption"><span class="figcap">图 1 关闭自动白平衡</span></div></div>
+
+                    <div class="note note" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__GUID-A159C2BB-3F35-4F3A-B32D-0060E9D0458D"><span class="notetitle">说明</span> 
+                        <p class="p">若选择“一次”或“关闭”之外的选项，则无需进行以下操作。相机根据当前画面，自动进行白平衡调整。</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__GUID-B5323A42-630D-4541-BB97-BB4CB1B14DDF">
+                <span class="ph cmd">点击<span class="keyword parmname">白平衡</span>的<span class="ph uicontrol">执行</span>，进入白平衡设置窗口，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__FIG_GSW_FHC_CKB">
+                        
+                        <img class="image" style="display:none;" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__IMAGE_HSW_FHC_CKB" src="GUID-189B0025-D391-4ED8-ABA9-23575EA77C28-high.png" width="2067" />
+                    <div class="fig_caption"><span class="figcap">图 2 白平衡设置</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__GUID-CE15DF52-6FA1-4B8E-99BB-246887E447A5">
+                <span class="ph cmd"><span class="ph uicontrol">关闭</span>提示窗口。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__GUID-F30B0428-3CB6-485E-976F-A6D36B8792C7"><span class="notetitle">说明</span> 
+                        <p class="p">可根据需求选择后续是否<span class="ph uicontrol">忽略</span>提示窗口。</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__GUID-99925B03-2F63-4295-AC7C-32C5A7799A4D">
+                <span class="ph cmd">点击<span class="ph uicontrol">截图</span>，截取未经过白平衡优化的图像。</span>
+                <div class="itemgroup stepresult">窗口左侧显示白平衡优化前的图像，图像的R/G/B各分量数值均为1024。</div>
+            </li>
+<li class="li step stepexpand" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__GUID-92CC6AED-975B-4759-802B-707C57279B2A"><strong>可选操作： </strong>
+                <span class="ph cmd">点击<img class="image icon" style="display:none;" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__IMAGE_OKD_NW3_2KB" src="GUID-D7DC6E71-96AA-4231-A127-1A6DC24D1577-high.png" />在左侧图像进行ROI绘制。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__GUID-15DE6073-67D7-4A45-BFB6-55E587A75E79"><span class="notetitle">说明</span> 
+                        <ul class="ul" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__UL_UKJ_D1C_CKB">
+                            <li class="li" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__GUID-A22230DD-39C2-4E48-87F1-CF7BED253AF0">
+                                <p class="p">ROI框选区域需包含白色区域，可提高白平衡优化效果。</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__GUID-52563D16-8BA6-4D83-8242-7E2C29ED79FB">
+                                <p class="p">可通过<img class="image icon" style="display:none;" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__IMAGE_YKG_HW3_2KB" src="GUID-0FF31218-5A55-4922-8E9C-AE4D5392C532-high.png" />取消ROI区域的框选。</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__GUID-6FED40A3-836A-4EA1-939A-0CADD6E2D7B4">
+                <span class="ph cmd">对图像白平衡进行优化，共有三种方式。</span>
+                <ul class="ul choices" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__CHOICES_SRX_2BC_CKB">
+                    <li class="li choice" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__GUID-BC4D7FF8-46B0-4DF5-9385-C71FFB0F19D2">
+                        <p class="p">直接点击<span class="ph uicontrol">开始优化</span>。</p>
+
+                    </li>
+
+                    <li class="li choice" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__GUID-6977DC3E-FD98-4A13-A1F6-98197C0ADE99">
+                        <p class="p">手动修改R/G/B各分量的推荐值，点击<span class="ph uicontrol">开始优化</span>。</p>
+
+                    </li>
+
+                    <li class="li choice" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__GUID-30804F66-B930-4069-8D22-56CA3978C5A3">
+                        <p class="p">先点击<span class="ph uicontrol">恢复默认值</span>，再点击<span class="ph uicontrol">开始优化</span>。</p>
+
+                    </li>
+
+                </ul>
+
+                <div class="itemgroup stepresult">白平衡设置工具计算R/G/B各分量的推荐值，且窗口右侧显示白平衡优化后的图像以及此时图像的R/G/B各分量数值，如下图所示。<div class="fig fignone" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__FIG_P4X_Z23_2KB">
+                        
+                        <img class="image" style="display:none;" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__IMAGE_Q4X_Z23_2KB" src="GUID-570A2197-681A-413B-933C-DF0963948F4F-high.png" width="2067" />
+                    <div class="fig_caption"><span class="figcap">图 3 白平衡设置效果</span></div></div>
+</div>
+            </li>
+<li class="li step stepexpand" id="GUID-582F1FE3-27B2-4959-84D2-45B562A88264__GUID-58AC1C5E-8C44-4850-A8AA-ADF4FADA8762">
+                <span class="ph cmd">点击<span class="ph uicontrol">应用</span>将数值保存到相机参数中。</span>
+            </li>
+</ol>
+
+</div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

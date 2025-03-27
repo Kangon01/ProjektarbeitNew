@@ -1,0 +1,279 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="IO输入" /><meta name="abstract" content="IO输入可设置相机的触发相关功能。相机收到触发信号时会采集图像。" /><meta name="description" content="IO输入可设置相机的触发相关功能。相机收到触发信号时会采集图像。" /><meta name="DC.Relation" scheme="URI" content="GUID-B5B0E554-FCFA-4A40-B8AC-62739E53B270.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-EC9823B7-4DD1-4232-A524-31A802680424" /><meta name="DC.Language" content="zh-CN" /><title>IO输入</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-EC9823B7-4DD1-4232-A524-31A802680424" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB.html" data-id="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB">相机属性配置</a></span></li><li><span class="topicref"><a href="GUID-B5B0E554-FCFA-4A40-B8AC-62739E53B270.html" data-id="GUID-B5B0E554-FCFA-4A40-B8AC-62739E53B270">触发</a></span></li><li class="active"><span class="topicref">IO输入</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">IO输入</h1>
+
+
+<div class="body conbody"><p class="shortdesc">IO输入可设置相机的触发相关功能。相机收到触发信号时会采集图像。</p>
+
+        <div class="note note" id="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-5566F13C-220D-4F5B-84C5-2BD1F9B618DE"><span class="notetitle">说明</span> 
+            <p class="p">不同型号相机支持的IO输入参数有所差别，请以实际显示为准。</p>
+
+        </div>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-FA641B07-725B-4625-B5E8-9598190EB17F"><!-- --></a>触发器选择器</dt>
+
+                <dd class="dd pd">
+                    <p class="p">选择触发器</p>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-C5F87CA6-273B-416B-9128-E1A9FA3ED235"><!-- --></a>触发模式</dt>
+
+                <dd class="dd pd">
+                    <p class="p">设置相机触发模式是否开启；若关闭，相机通过内部机制出图；若开启，相机通过信号触发出图。</p>
+
+                    <div class="note note" id="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-BC53A0E8-A581-43BB-AE10-B51FA1642B5A"><span class="notetitle">说明</span> 
+                        <p class="p">以下参数均在<span class="keyword parmname">触发模式</span>开启后有效。</p>
+
+                    </div>
+
+                </dd>
+
+            
+            
+                <dt class="dt pt dlterm"><a name="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-1F37222F-A8F2-4E9B-8734-A902AE2486D1"><!-- --></a>触发源</dt>
+
+                <dd class="dd pd">
+                    <p class="p">可选择相机触发模式的信号源，分为以下几种。</p>
+
+                    <dl class="dl parml">
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-5B24057D-ABDA-474E-962E-101B75305874"><!-- --></a>软触发</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">通过连接相机的PC给信号进行触发。需要设置的相关参数如下：</p>
+
+                                <dl class="dl parml">
+                                    
+                                        <dt class="dt pt dlterm"><a name="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-D32858C9-82AC-4343-940B-B7B4807D60BC"><!-- --></a>触发延迟</dt>
+
+                                        <dd class="dd pd">
+                                            <p class="p">相机收到触发信号后延迟采图的时间。</p>
+
+                                        </dd>
+
+                                    
+                                    
+                                        <dt class="dt pt dlterm"><a name="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-6DDF85D0-FE26-410F-AFE1-77D3B8100FC7"><!-- --></a>自动触发时间</dt>
+
+                                        <dd class="dd pd">
+                                            <p class="p">PC循环给相机软触发信号的间隔时间。</p>
+
+                                        </dd>
+
+                                    
+                                    
+                                        <dt class="dt pt dlterm"><a name="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-8BD3DF0E-F013-4C49-B908-3D7F765986C1"><!-- --></a>自动触发使能</dt>
+
+                                        <dd class="dd pd">
+                                            <p class="p">控制PC是否循环给相机软触发信号。</p>
+
+                                        </dd>
+
+                                    
+                                    
+                                        <dt class="dt pt dlterm"><a name="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-FF17B5AD-BAF6-4A0D-BDC0-293D4B3F78C0"><!-- --></a>软触发</dt>
+
+                                        <dd class="dd pd">
+                                            <p class="p">点击<span class="ph uicontrol">软触发</span>一次，相机触发一次。</p>
+
+                                            <div class="note note" id="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-E5CCA22C-4C6B-4AE5-93DB-3493C4A74160"><span class="notetitle">说明</span> 
+                                                <p class="p"><span class="ph uicontrol">自动触发使能</span>和<span class="ph uicontrol">软触发</span>功能只能二选一使用。</p>
+
+                                            </div>
+
+                                        </dd>
+
+                                    
+                                </dl>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-A8408A8C-05A1-4401-880E-A343B2EB63E5"><!-- --></a>线路0/1/2/3/4/5</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">通过相机的I/O接口连接外部设备，信号由外部设备提供。需要设置的相关参数除<span class="keyword parmname">触发延迟</span>外还有<span class="keyword parmname">触发极性</span>。</p>
+
+                                <div class="note note" id="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-5EA400F2-4913-43FC-ABB6-C8273659A66C"><span class="notetitle">说明</span> 
+                                    <ul class="ul" id="GUID-EC9823B7-4DD1-4232-A524-31A802680424__UL_FWF_NRK_4VB">
+                                        <li class="li" id="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-3A13AA08-4132-4D63-94A4-11EBB33D0201">
+                                            <p class="p">外部设备给的信号一般为电平脉冲。</p>
+
+                                        </li>
+
+                                        <li class="li" id="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-75FF5F27-5299-4C13-ADE1-F7B2271B0D15">
+                                            <p class="p">面阵相机支持线路0、线路1和线路2。</p>
+
+                                        </li>
+
+                                        <li class="li" id="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-CE570028-16A2-45C0-826B-7B5CC5B64EED">
+                                            <p class="p">线阵相机支持线路0、线路1、线路3和线路4。</p>
+
+                                        </li>
+
+                                        <li class="li" id="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-5A8FE0B0-F33C-434C-92F0-6D5FCA6389AA">
+                                            <p class="p">板级相机支持线路2和线路5。</p>
+
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                                <dl class="dl parml">
+                                    
+                                        <dt class="dt pt dlterm"><a name="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-61E5B877-35FE-4D74-B237-D60473DD3C48"><!-- --></a>触发极性</dt>
+
+                                        <dd class="dd pd">
+                                            <p class="p">设置相机在外部设备给的电平脉冲的何种极性下触发。主要用高电平、低电平、上升沿和下降沿四种极性。</p>
+
+                                        </dd>
+
+                                    
+                                </dl>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-6A692FE8-11A4-4A03-9E09-192E21A537F6"><!-- --></a>计数器0</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">通过相机的计数器信号进行触发。需要设置的参数为<span class="keyword parmname">触发延迟</span>和<span class="keyword parmname">触发极性</span>。</p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-5B2DBD5E-5B25-4750-9BDF-6A6E206F6623"><!-- --></a>动作1</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">对应相机GigE Vision动作命令功能，具体请查看<a class="xref" href="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134.html#GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134__GUID-857F8160-DA32-46D0-8E49-E764F3687BB2">GigE
+                                        Vision动作命令</a>章节。可设置<span class="keyword parmname">触发延迟</span>参数。</p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-C6A4C40A-E5D1-456F-8DEB-FBD7BBAAABAD"><!-- --></a>编码器模块输出</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">将两路有相位差的硬件触发信号A和B，通过轴编码器模块处理后作为线阵相机的行触发信号进行触发。需要设置的参数为<span class="keyword parmname">触发延迟</span>和<span class="keyword parmname">触发极性</span>。</p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-DBA8A696-A7F5-42B7-B738-529CE8B745C4"><!-- --></a>变频器</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">通过频率转换模块将输入的信号频率转换为线阵相机所需要的信号频率进行触发。需要设置的参数为<span class="keyword parmname">触发延迟</span>和<span class="keyword parmname">触发极性</span>。</p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-5BE25322-99E0-4592-8E0E-E210C6C25586"><!-- --></a>CC1/2/3/4</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">通过Camera Link采集卡给出信号进行触发。需要设置的参数为<span class="keyword parmname">触发延迟</span>和<span class="keyword parmname">触发极性</span>。</p>
+
+                            </dd>
+
+                        
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-EC9823B7-4DD1-4232-A524-31A802680424__GUID-ECE09377-C48E-48A8-9F5F-CE36511B4BB0"><!-- --></a>多路</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">可同时接收软触发信号和线路0/2信号。<span class="keyword parmname">触发延迟</span>参数对两种信号均有效，<span class="keyword parmname">触发极性</span>参数对线路0/2信号有效，<span class="keyword parmname">自动触发时间</span>、<span class="ph uicontrol">自动触发使能</span>和<span class="ph uicontrol">软触发</span>参数对软触发信号有效。</p>
+
+                            </dd>
+
+                        
+                    </dl>
+
+                </dd>
+
+            
+        </dl>
+
+    </div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

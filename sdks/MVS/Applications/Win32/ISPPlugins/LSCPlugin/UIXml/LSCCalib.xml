@@ -1,0 +1,14 @@
+<Root>
+    <Group extend="false" ui_param_show="1" ui_param_name="CalibParams" ui_display_name="" id="0">
+        <Node ui_display_cn_name="边缘填充系数" ui_param_display_type="SpinBox" ui_param_name="PadCoef" ui_display_en_name="Edge Filling Factor" ui_display_name="PadCoef" ui_param_type="Integer"/>
+        <Node ui_display_cn_name="标定方式" ui_param_display_type="ComboBox" ui_param_name="Method" ui_display_en_name="Calibration Mode" ui_display_name="Method" Value="0" ui_param_type="Enumeration">
+            <RelationList>TargetGray</RelationList>
+			<EnumEntry DisplayName="Centre" DisplayNameCN="中心为基准" Value="0"/>
+            <EnumEntry DisplayName="BrightestArea" DisplayNameCN="最亮区域为基准" Value="1"/>
+            <EnumEntry DisplayName="TargetGray" DisplayNameCN="目标亮度" Value="2"/>
+        </Node>
+        <Node ui_display_cn_name="目标亮度" ui_param_display_type="SpinBox" ui_param_name="TargetGray" ui_display_en_name="Target Brightness" ui_display_name="TargetGray" ui_param_type="Integer"/>
+        <Node ui_display_cn_name="宽度分块数" ui_param_display_type="SpinBox" ui_param_name="SecNum_Width" ui_display_en_name="Number of Width Tile" ui_display_name="SecNum_Width" ui_param_type="Integer"/>
+        <Node ui_display_cn_name="高度分块数" ui_param_display_type="SpinBox" ui_param_name="SecNum_Height" ui_display_en_name="Number of Height Tile" ui_display_name="SecNum_Height" ui_param_type="Integer"/>
+    </Group>
+</Root>

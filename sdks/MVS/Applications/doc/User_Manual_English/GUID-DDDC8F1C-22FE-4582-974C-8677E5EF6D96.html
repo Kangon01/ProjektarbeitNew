@@ -1,0 +1,320 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="© Hikrobot Co., Ltd. All rights reserved." /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="PCIe Device Management" /><meta name="abstract" content="The PCIe interface supports frame grabbers developed by our company. Once connected them to the Software, you can perform further operations, including enumerating frame grabbers and cameras that are connected to the frame grabber, and upgrading frame grabber firmware." /><meta name="description" content="The PCIe interface supports frame grabbers developed by our company. Once connected them to the Software, you can perform further operations, including enumerating frame grabbers and cameras that are connected to the frame grabber, and upgrading frame grabber firmware." /><meta name="DC.Relation" scheme="URI" content="GUID-7807DA4F-CEC8-422D-94C0-36A6BCAF6255.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-DDDC8F1C-22FE-4582-974C-8677E5EF6D96" /><meta name="DC.Language" content="en-US" /><title>PCIe Device Management</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">Home Page</a></span></li><li><span class="topicref"><a href="GUID-7807DA4F-CEC8-422D-94C0-36A6BCAF6255.html" data-id="GUID-7807DA4F-CEC8-422D-94C0-36A6BCAF6255">Device Management</a></span></li><li class="active"><span class="topicref">PCIe Device Management</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body "><div class="nested0" id="GUID-DDDC8F1C-22FE-4582-974C-8677E5EF6D96">
+    <h1 class="title topictitle1">PCIe Device Management</h1>
+
+
+<div class="body conbody"><p class="shortdesc">The PCIe interface supports frame grabbers developed by our company.
+        Once
+        connected them to the Software, you can perform further operations,
+        including enumerating frame grabbers and cameras that are connected to the frame grabber,
+        and
+        upgrading frame grabber firmware.</p>
+
+        <ul class="ul" id="GUID-DDDC8F1C-22FE-4582-974C-8677E5EF6D96__UL_QB2_ZY2_2CC">
+            <li class="li" id="GUID-DDDC8F1C-22FE-4582-974C-8677E5EF6D96__GUID-5129AB5D-1D22-43E7-AF8D-4D0E61185972">
+                <p class="p"><a class="xref" href="GUID-DDDC8F1C-22FE-4582-974C-8677E5EF6D96.html#GUID-3F0DD213-D296-4B5B-80E7-08C264B4E5D0" title="The software automatically enumerates all PCIe devices on the same local subnet and displays them in the device list.">Add PCIe Device</a></p>
+
+            </li>
+
+            <li class="li" id="GUID-DDDC8F1C-22FE-4582-974C-8677E5EF6D96__GUID-B137EC6F-2D94-49BC-A1EB-B18DFDBC6631">
+                <p class="p"><a class="xref" href="GUID-DDDC8F1C-22FE-4582-974C-8677E5EF6D96.html#GUID-9D3560D1-FC4A-4787-B603-709CE0E84B05" title="When the device is available, you can connect them to the Software. Once connected, you can configure parameters and enumerate cameras connected to the device.">Status of PCIe Device</a></p>
+
+            </li>
+
+            <li class="li" id="GUID-DDDC8F1C-22FE-4582-974C-8677E5EF6D96__GUID-3FA23163-34EC-4DE9-A568-DDAC12D068AD">
+                <p class="p"><a class="xref" href="GUID-DDDC8F1C-22FE-4582-974C-8677E5EF6D96.html#GUID-A24C78D3-BE59-4309-992B-56F635B6AE3F" title="The PCIe device list provides other features, including opening the device via a virtual port, saving GenICam XML files, etc.">Other Features</a></p>
+
+            </li>
+
+        </ul>
+
+</div>
+
+
+<div class="topic concept nested1" xml:lang="en-US" lang="en-US" id="GUID-3F0DD213-D296-4B5B-80E7-08C264B4E5D0">
+    <h2 class="title topictitle2">Add PCIe Device</h2>
+
+
+<div class="body conbody"><p class="shortdesc">The software automatically enumerates all PCIe devices
+        on
+        the same local subnet and displays them in the device list.</p>
+
+        <p class="p">You can enumerate the device in the following ways:</p>
+
+        <ul class="ul" id="GUID-3F0DD213-D296-4B5B-80E7-08C264B4E5D0__UL_GWP_ZBF_2CC">
+            <li class="li" id="GUID-3F0DD213-D296-4B5B-80E7-08C264B4E5D0__GUID-AD1F482C-EBFD-43BF-9F11-F17DB07BF4EC">
+                <p class="p">In
+                    the device list, hover the cursor over the <span class="keyword parmname">PCIe</span> interface, and click <img class="image icon" style="display:none;" id="GUID-3F0DD213-D296-4B5B-80E7-08C264B4E5D0__IMAGE_FH2_3Y5_BKB" src="GUID-EE689C0E-48C5-40A5-91E9-3548786D6A07-high.png" /> to refresh the enumerated cameras on the same local
+                    subnet with the current PC.</p>
+
+            </li>
+
+            <li class="li" id="GUID-3F0DD213-D296-4B5B-80E7-08C264B4E5D0__GUID-8B2DBD3A-513D-4432-8DFF-8D3542B9F95F">
+                <p class="p">In
+                        <span class="ph uicontrol">Settings</span>, enable the <span class="keyword parmname">Camera List Auto-Refresh</span>. The software automatically
+                    refreshes every 30 seconds to enumerate all
+                    devices
+                    with which it connects. For details, see <a class="xref" href="GUID-91B2A9B3-C38B-4059-81A9-0250322A0174.html#GUID-2219FC70-9A9F-4404-8D22-968E484E6182" title="You can set the general settings, including user level, auto-refresh settings of the device list, character encoding type, Bayer interpolation, and other related configurations.">General Settings</a>.</p>
+
+            </li>
+
+        </ul>
+
+        <p class="p">Once
+            the
+            device is enumerated and the device status is
+                <span class="keyword parmname">Available</span>, in the device list, you can
+            double
+            click the device or click <img class="image icon" style="display:none;" id="GUID-3F0DD213-D296-4B5B-80E7-08C264B4E5D0__IMAGE_EMY_CFW_HJB" src="GUID-AA8E455C-D4E7-4659-8C73-9B22C3663B14-high.png" /> to connect the
+            device.</p>
+
+</div>
+
+</div>
+<div class="topic concept nested1" xml:lang="en-US" lang="en-US" id="GUID-9D3560D1-FC4A-4787-B603-709CE0E84B05">
+    <h2 class="title topictitle2">Status of PCIe Device</h2>
+
+
+<div class="body conbody"><p class="shortdesc">When
+        the device is available, you can connect them to the Software. Once connected, you can
+        configure parameters and enumerate cameras connected to the device.
+        </p>
+
+        <div class="section" id="GUID-9D3560D1-FC4A-4787-B603-709CE0E84B05__GUID-694AF49B-339A-417D-95A8-CB8EF738D04B">
+            
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-9D3560D1-FC4A-4787-B603-709CE0E84B05__TABLE_UXG_TNL_4TB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">Table 1 Frame Grabber Status</span></caption>
+                    
+                    
+                    
+                    <thead class="thead" align="left">
+                        <tr>
+                            <th class="entry" valign="top" width="20%" id="d34190e197">
+                                <p class="p">Icon</p>
+
+                            </th>
+
+                            <th class="entry" valign="top" width="20%" id="d34190e203">
+                                <p class="p">Status</p>
+
+                            </th>
+
+                            <th class="entry" valign="top" width="60%" id="d34190e209">
+                                <p class="p">Description</p>
+
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody class="tbody">
+                        <tr>
+                            <td class="entry" valign="top" width="20%" headers="d34190e197 ">
+                                <p class="p"><img class="image" style="display:none;" id="GUID-9D3560D1-FC4A-4787-B603-709CE0E84B05__IMAGE_TRB_WKR_4TB" src="GUID-00F2CB57-CD35-46EA-9BE0-8FBAD9732CC1-high.png" /></p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="20%" headers="d34190e203 ">
+                                <p class="p">Available</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="60%" headers="d34190e209 ">
+                                <p class="p">The
+                                    frame grabber can be connected for further operations.</p>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="20%" headers="d34190e197 ">
+                                <p class="p"><img class="image" style="display:none;" id="GUID-9D3560D1-FC4A-4787-B603-709CE0E84B05__IMAGE_VXT_WKR_4TB" src="GUID-E73E2DEB-0370-4C3B-899F-EEC869073A4F-high.png" /></p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="20%" headers="d34190e203 ">
+                                <p class="p">Connected</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="60%" headers="d34190e209 ">
+                                <p class="p">The
+                                    Software has been connected to the frame
+                                    grabber. You can configure parameters of the
+                                    frame grabber and enumerate cameras connected to the frame
+                                    grabber.</p>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+</div>
+
+        </div>
+
+</div>
+
+</div>
+<div class="topic concept nested1" xml:lang="en-US" lang="en-US" id="GUID-A24C78D3-BE59-4309-992B-56F635B6AE3F">
+    <h2 class="title topictitle2">Other Features</h2>
+
+
+<div class="body conbody"><p class="shortdesc">The PCIe device list provides other features, including opening the device
+        via a virtual port, saving GenICam XML files, etc.</p>
+
+        <div class="section" id="GUID-A24C78D3-BE59-4309-992B-56F635B6AE3F__GUID-A38935C0-CFD8-4283-995F-D68780EAC33B"><h3 class="title sectiontitle">Frame Grabber</h3>
+            
+            <p class="p">Once connected, you can:</p>
+
+            <ul class="ul" id="GUID-A24C78D3-BE59-4309-992B-56F635B6AE3F__UL_GTQ_ZGF_2CC">
+                <li class="li" id="GUID-A24C78D3-BE59-4309-992B-56F635B6AE3F__GUID-2F43CF69-644A-4C1E-B01A-3927458C9423">
+                    <p class="p">Configure Frame Grabber Features: Select one connected frame
+                        grabber, and configure the features of the frame grabber on the right pane.
+                        For details, see user manual of the corresponding frame grabber.</p>
+
+                </li>
+
+                <li class="li" id="GUID-A24C78D3-BE59-4309-992B-56F635B6AE3F__GUID-711E9A36-31FC-4DF1-A815-04677781F3BB">
+                    <p class="p">Open By Virtual Port: Right-click one enumerated PCIe device and select
+                            <span class="keyword parmname">Open By Virtual Port</span> to connect it via
+                        a virtual port, which ensures stable image acquisition.</p>
+
+                </li>
+
+                <li class="li" id="GUID-A24C78D3-BE59-4309-992B-56F635B6AE3F__GUID-5B5C1CA7-653D-4914-84EA-BBE29C286E83">
+                    <p class="p">Save GenICam XML: Right click the connected frame grabber and
+                        select <span class="ph uicontrol">Save GenlCam XML</span> to save the GenlCam file
+                        (.xml) to
+                        local.</p>
+
+                    <div class="note note" id="GUID-A24C78D3-BE59-4309-992B-56F635B6AE3F__GUID-AD4BB846-7490-45FA-AECD-D2A956C3B63F"><span class="notetitle">Note</span> 
+                        <p class="p">You can only save the device information when the device is
+                            connected.</p>
+
+                    </div>
+
+                </li>
+
+                <li class="li" id="GUID-A24C78D3-BE59-4309-992B-56F635B6AE3F__GUID-2ADB32A8-B925-4EBA-8452-49B3C433D361">
+                    <p class="p">Upgrade Firmware:
+                        Disconnect
+                        the frame grabber, right click and select
+                            <span class="ph uicontrol">Upgrade Firmware</span> to upgrade its firmware. </p>
+
+                    <p class="p">Click <img class="image icon" style="display:none;" id="GUID-A24C78D3-BE59-4309-992B-56F635B6AE3F__IMAGE_VSP_QJF_2CC" src="GUID-63DAD9E8-D5BC-4C8F-82B3-9AF9D55585A9-high.png" /> to select an upgrade package
+                        (a dav file), and then click <span class="ph uicontrol">Upgrade</span>.</p>
+
+                    <div class="note note" id="GUID-A24C78D3-BE59-4309-992B-56F635B6AE3F__GUID-4E8B773A-86D6-48C0-AC73-E3479ADAC48C"><span class="notetitle">Note</span> 
+                        <p class="p">Reboot the frame grabber after upgrade,
+                            or
+                            the upgrade will not take effect.</p>
+
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="section" id="GUID-A24C78D3-BE59-4309-992B-56F635B6AE3F__GUID-82C83556-634E-4883-8E91-640A3B6F5892"><h3 class="title sectiontitle">Cameras</h3>
+            
+            <p class="p">Once the frame grabber is connected, you can view cameras to which the
+                frame grabber connects.
+                Double
+                click the camera in the device list to
+                connect
+                the camera, and the feature tree displays on the right pane. You can configure
+                features and preview the acquisition.</p>
+
+            <div class="note note" id="GUID-A24C78D3-BE59-4309-992B-56F635B6AE3F__GUID-FF2A3A2F-4ACB-48FB-93C5-6475EA770653"><span class="notetitle">Note</span> 
+                <p class="p">Ensure the frame grabber status is "connected." Otherwise, the
+                    Software cannot enumerate the camera connected through the frame grabber.</p>
+
+            </div>
+
+            <p class="p">You can click <img class="image icon" style="display:none;" id="GUID-A24C78D3-BE59-4309-992B-56F635B6AE3F__IMAGE_PRZ_QYG_CKB" src="GUID-EE689C0E-48C5-40A5-91E9-3548786D6A07-high.png" /> to refresh the
+                camera
+                list.</p>
+
+        </div>
+
+    </div>
+
+</div>
+</div>
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">Share</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>Previous Page</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>Next Page</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>On This Page</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-3F0DD213-D296-4B5B-80E7-08C264B4E5D0" class="feature_guide_h2"><span class="link_button">Add PCIe Device</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-9D3560D1-FC4A-4787-B603-709CE0E84B05" class="feature_guide_h2"><span class="link_button">Status of PCIe Device</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-A24C78D3-BE59-4309-992B-56F635B6AE3F" class="feature_guide_h2"><span class="link_button">Other Features</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-A24C78D3-BE59-4309-992B-56F635B6AE3F__GUID-A38935C0-CFD8-4283-995F-D68780EAC33B" class="feature_guide_h3"><span class="link_button">Frame Grabber</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-A24C78D3-BE59-4309-992B-56F635B6AE3F__GUID-82C83556-634E-4883-8E91-640A3B6F5892" class="feature_guide_h3"><span class="link_button">Cameras</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8c01380e02e9eb04798d5"></div>
+		
+	</body>
+</html>

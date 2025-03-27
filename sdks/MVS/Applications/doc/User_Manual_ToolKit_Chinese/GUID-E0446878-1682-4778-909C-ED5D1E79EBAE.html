@@ -1,0 +1,364 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="网口相机管理" /><meta name="abstract" content="设备列表的GigE接口可对网口相机进行相关操作，例如添加相机、显示相机、修改IP地址等。" /><meta name="description" content="设备列表的GigE接口可对网口相机进行相关操作，例如添加相机、显示相机、修改IP地址等。" /><meta name="DC.Relation" scheme="URI" content="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-E0446878-1682-4778-909C-ED5D1E79EBAE" /><meta name="DC.Language" content="zh-CN" /><title>网口相机管理</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-4A707B85-6362-489F-AD0C-12957E57E3F9.html" data-id="GUID-4A707B85-6362-489F-AD0C-12957E57E3F9">图像调试工具</a></span></li><li><span class="topicref"><a href="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html" data-id="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E">相机管理</a></span></li><li class="active"><span class="topicref">网口相机管理</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body "><div class="nested0" id="GUID-E0446878-1682-4778-909C-ED5D1E79EBAE">
+    <h1 class="title topictitle1">网口相机管理</h1>
+
+    <p class="shortdesc">设备列表的GigE接口可对网口相机进行相关操作，例如添加相机、显示相机、修改IP地址等。</p>
+
+
+<div class="topic concept nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-2CA46A86-22E7-4ADB-8EE7-4D32A85568EA">
+    <h2 class="title topictitle2">添加网口相机</h2>
+
+<p class="shortdesc">网口相机可通过自动枚举本地相机和添加远程相机两种方法添加。</p>
+
+<div class="topic concept nested2" xml:lang="zh-CN" lang="zh-CN" id="GUID-C942979D-C9BB-47C9-B084-7968CD470372">
+    <h3 class="title topictitle3">自动枚举网口相机</h3>
+
+
+<div class="body conbody"><p class="shortdesc">图像调试工具可自动枚举局域网内可搜索到的网口相机。</p>
+
+        <p class="p">图像调试工具支持每隔30秒对PC网口下的相机进行刷新，同时也可通过设备列表GigE接口右侧的<img class="image icon" style="display:none;" id="GUID-C942979D-C9BB-47C9-B084-7968CD470372__IMAGE_M5V_K2F_5QB" src="GUID-B76DD606-B5BB-4178-8613-FD0EB76BB6C5-high.png" />进行手动刷新。</p>
+
+    </div>
+
+</div>
+<div class="topic task nested2" xml:lang="zh-CN" lang="zh-CN" id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1">
+    <h3 class="title topictitle3">添加远程相机</h3>
+
+
+<div class="body taskbody"><p class="shortdesc">若已知晓相机IP地址，但图像调试工具搜索不到该相机，可通过该功能添加相机。</p>
+
+<div class="section prereq p" id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1__GUID-5BB8FABF-9F97-4E26-8DEB-1A138B6F8145">
+            <p class="p">确保相机和PC的网络可以互相ping通。</p>
+
+        </div>
+
+<ol class="ol steps" id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1__GUID-FA7CD030-896B-4FE6-92F5-8CD805D0A758"><li class="li step stepexpand" id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1__GUID-CEE8368F-1504-4205-9E97-873483695806">
+                <span class="ph cmd">在设备列表选中需要添加相机的网口右键单击，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1__FIG_YC2_5NT_BKB">
+                        
+                        <img class="image" style="display:none;" id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1__IMAGE_NNL_R2F_5QB" src="GUID-3B950034-547E-4A10-A9C0-7A260DEADF31-high.png" width="623" />
+                    <div class="fig_caption"><span class="figcap">图 1 网卡右键单击</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1__GUID-0243B3CA-013E-4638-9590-167F21EE0342">
+                <span class="ph cmd">选择<span class="ph uicontrol">添加远程相机</span>，弹出添加远程相机的窗口，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1__FIG_ECP_VNT_BKB">
+                        
+                        <img class="image" style="display:none;" id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1__IMAGE_HZ1_V2F_5QB" src="GUID-96350151-DF8C-4524-AAAA-344260917B76-high.png" width="775" />
+                    <div class="fig_caption"><span class="figcap">图 2 添加远程相机</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1__GUID-906D4E97-0F35-4DDD-8964-B8AF0D010A9C">
+                <span class="ph cmd">输入相机的IP地址并点击<span class="ph uicontrol">确定</span>。</span>
+            </li>
+</ol>
+
+</div>
+
+</div>
+</div>
+<div class="topic concept nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-BFB2F07F-34C3-4936-9302-81213212B257">
+    <h2 class="title topictitle2">状态介绍</h2>
+
+
+<div class="body conbody"><p class="shortdesc">对于不同状态的网口相机，设备列表的相机图标有所差别。</p>
+
+        <p class="p">网口相机的状态说明请见下表。</p>
+
+        
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-BFB2F07F-34C3-4936-9302-81213212B257__TABLE_RDW_T5T_BKB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 1 网口相机状态介绍</span></caption>
+                
+                
+                
+                <thead class="thead" align="left">
+                    <tr>
+                        <th class="entry" valign="top" width="9.041591320072333%" id="d22983e163">
+                            <p class="p">图标</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="23.146473779385172%" id="d22983e169">
+                            <p class="p">状态</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="67.8119349005425%" id="d22983e175">
+                            <p class="p">含义</p>
+
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody class="tbody">
+                    <tr>
+                        <td class="entry" valign="top" width="9.041591320072333%" headers="d22983e163 ">
+                            <p class="p"><img class="image icon" style="display:none;" id="GUID-BFB2F07F-34C3-4936-9302-81213212B257__IMAGE_DCW_YGH_SQB" src="GUID-B216AF9D-F003-4566-BDDF-EE5483813D7A-high.png" /></p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="23.146473779385172%" headers="d22983e169 ">
+                            <p class="p">可用</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="67.8119349005425%" headers="d22983e175 ">
+                            <p class="p">相机处于可连接状态，双击相机可以正常连接和使用。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="9.041591320072333%" headers="d22983e163 ">
+                            <p class="p"><img class="image icon" style="display:none;" id="GUID-BFB2F07F-34C3-4936-9302-81213212B257__IMAGE_YXD_1HH_SQB" src="GUID-51D1D885-8B2F-4157-9698-97EACE06558C-high.png" /></p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="23.146473779385172%" headers="d22983e169 ">
+                            <p class="p">已连接</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="67.8119349005425%" headers="d22983e175 ">
+                            <p class="p">客户端已经连接该相机并可以进行相关操作。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="9.041591320072333%" headers="d22983e163 ">
+                            <p class="p"><img class="image icon" style="display:none;" id="GUID-BFB2F07F-34C3-4936-9302-81213212B257__IMAGE_HKD_CHH_SQB" src="GUID-54D0EA7E-4095-46C8-9641-3F175D20357E-high.png" /></p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="23.146473779385172%" headers="d22983e169 ">
+                            <p class="p">占用</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="67.8119349005425%" headers="d22983e175 ">
+                            <p class="p">该相机当前被其他软件或进程连接，不能通过当前的客户端再次连接。需要先通过其他软件或进程断开连接才能通过当前客户端连接。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="9.041591320072333%" headers="d22983e163 ">
+                            <p class="p"><img class="image icon" style="display:none;" id="GUID-BFB2F07F-34C3-4936-9302-81213212B257__IMAGE_BCJ_DHH_SQB" src="GUID-08022227-0FC9-4DCE-BD47-945C0CF020D8-high.png" /></p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="23.146473779385172%" headers="d22983e169 ">
+                            <p class="p">不可达</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="67.8119349005425%" headers="d22983e175 ">
+                            <p class="p">该相机在此局域网内不可达，需要修改IP地址到同一网段才能正常连接和使用相机。</p>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+</div>
+
+    </div>
+
+</div>
+<div class="topic task nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-8D56A683-67C7-4B7F-80F4-EA284568B662">
+    <h2 class="title topictitle2">修改IP地址</h2>
+
+
+<div class="body taskbody"><p class="shortdesc">网口相机可在设备列表区域修改相机的IP地址。</p>
+
+        <div class="section prereq p" id="GUID-8D56A683-67C7-4B7F-80F4-EA284568B662__GUID-40CCF2EA-C293-455F-AA77-684D6F979833">
+            <p class="p">确认相机为可用或不可达状态。</p>
+
+        </div>
+
+        <ol class="ol steps" id="GUID-8D56A683-67C7-4B7F-80F4-EA284568B662__GUID-38FD3890-18B9-4854-90FD-4C4DABBD2109"><li class="li step stepexpand" id="GUID-8D56A683-67C7-4B7F-80F4-EA284568B662__GUID-BC9401C1-69DD-4285-AA7F-9D29CCC4EF97">
+                <span class="ph cmd">在设备列表选择需要设置IP地址的相机。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-8D56A683-67C7-4B7F-80F4-EA284568B662__GUID-8EED05AA-7AA7-4465-8543-A5DA9053EF46">
+                <span class="ph cmd">右键单击选择<span class="ph uicontrol">修改IP</span>进入IP配置界面，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-8D56A683-67C7-4B7F-80F4-EA284568B662__FIG_CNX_525_BKB">
+                        
+                        <img class="image" style="display:none;" id="GUID-8D56A683-67C7-4B7F-80F4-EA284568B662__IMAGE_ZRD_K1R_XQB" src="GUID-CF2EEBDF-BBD3-4966-8814-E961A12341A7-high.png" width="610" />
+                    <div class="fig_caption"><span class="figcap">图 3 进入修改IP地址</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-8D56A683-67C7-4B7F-80F4-EA284568B662__GUID-FE64107E-6346-416F-B41E-5052D5044BDC">
+                <span class="ph cmd">根据需求选择IP配置类型，可选静态IP、自动分配IP（DHCP）、自动分配IP（LLA）。</span>
+                <div class="itemgroup info">
+                    
+<div class="div_table"><table cellpadding="4" cellspacing="0" summary="" style="display:none;" id="tbl_rowfixed" class="table wt_table_rowfixed" frame="border" border="1" rules="all"></table><table cellpadding="4" cellspacing="0" summary="" id="GUID-8D56A683-67C7-4B7F-80F4-EA284568B662__TABLE_IL3_PKH_WWB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 2 IP配置</span></caption>
+                            
+                            
+                            <thead class="thead" align="left">
+                                <tr>
+                                    <th class="entry" valign="top" width="24.752475247524753%" id="d22983e342">
+                                        <p class="p">IP配置类型</p>
+
+                                    </th>
+
+                                    <th class="entry" valign="top" width="75.24752475247524%" id="d22983e348">
+                                        <p class="p">说明</p>
+
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody class="tbody">
+                                <tr>
+                                    <td class="entry" valign="top" width="24.752475247524753%" headers="d22983e342 ">
+                                        <p class="p">静态IP</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="75.24752475247524%" headers="d22983e348 ">
+                                        <p class="p">需设置相机的IP地址、子网掩码和默认网关。</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="24.752475247524753%" headers="d22983e342 ">
+                                        <p class="p">自动分配IP（DHCP）</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="75.24752475247524%" headers="d22983e348 ">
+                                        <p class="p">相机的IP地址与PC进行自动协商，从而获取可用IP。</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="24.752475247524753%" headers="d22983e342 ">
+                                        <p class="p">自动分配IP（LLA）</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="75.24752475247524%" headers="d22983e348 ">
+                                        <p class="p">在静态IP和自动分配（DHCP）不生效的情况下选择自动分配（LLA），相机IP将以固定网段与PC进行协商。</p>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+</div>
+
+                    <div class="fig fignone" id="GUID-8D56A683-67C7-4B7F-80F4-EA284568B662__FIG_GNG_Z25_BKB">
+                        
+                        <img class="image" style="display:none;" id="GUID-8D56A683-67C7-4B7F-80F4-EA284568B662__IMAGE_ELG_2FF_5QB" src="GUID-A8E6CAB1-621D-4B69-917E-BD3468357547-high.png" width="858" />
+                    <div class="fig_caption"><span class="figcap">图 4 修改IP</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-8D56A683-67C7-4B7F-80F4-EA284568B662__GUID-ACF4F363-5CA0-4FB5-98AD-322ECB743BFD">
+                <span class="ph cmd">点击<span class="ph uicontrol">确定</span>。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-8D56A683-67C7-4B7F-80F4-EA284568B662__GUID-1FF4F14C-0C33-41BF-AC8B-B51FB35F9765"><span class="notetitle">说明</span> 
+                        <p class="p">若切换设备的IP配置类型，建议重启相机生效；若相机仅是静态IP类型的修改，无需重启相机。</p>
+
+                    </div>
+
+                </div>
+            </li>
+</ol>
+
+    </div>
+
+</div>
+</div>
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "><div class=" right_fixed_container "><div class="right_guide"><div class="feature_guide"><div>本页导航</div><ul><li onclick="scrollToAnchor($(this))" data-id="GUID-2CA46A86-22E7-4ADB-8EE7-4D32A85568EA" class="feature_guide_h2"><span class="link_button">添加网口相机</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-C942979D-C9BB-47C9-B084-7968CD470372" class="feature_guide_h3"><span class="link_button">自动枚举网口相机</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-18343163-BE0A-433A-A9F0-FE19111E20A1" class="feature_guide_h3"><span class="link_button">添加远程相机</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-BFB2F07F-34C3-4936-9302-81213212B257" class="feature_guide_h2"><span class="link_button">状态介绍</span></li><li onclick="scrollToAnchor($(this))" data-id="GUID-8D56A683-67C7-4B7F-80F4-EA284568B662" class="feature_guide_h2"><span class="link_button">修改IP地址</span></li></ul></div></div></div></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>

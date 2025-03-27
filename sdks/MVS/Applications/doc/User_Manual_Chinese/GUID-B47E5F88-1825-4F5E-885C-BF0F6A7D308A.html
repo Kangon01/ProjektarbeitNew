@@ -1,0 +1,172 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="©  杭州海康机器人股份有限公司。保留一切权利。" /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="网口相机环境配置" /><meta name="abstract" content="网口相机通过客户端使用前需确保PC和相机的IP地址处于同一个局域网，且PC的网口已开启巨帧。" /><meta name="description" content="网口相机通过客户端使用前需确保PC和相机的IP地址处于同一个局域网，且PC的网口已开启巨帧。" /><meta name="DC.Relation" scheme="URI" content="GUID-54A55433-D514-4840-8685-74397F74D0E3.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A" /><meta name="DC.Language" content="zh-CN" /><title>网口相机环境配置</title><!-- Generated with dksgen version 1.0, build number 2023071300.  --><meta viewport="Content-Type" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<!-- commonltr css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		
+		<!-- Template css  -->
+		<link href="daksys-webhelp/template/resources/css/document_color.css?buildId=2023071300" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_topic_m.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_note.css?buildId=2023071300" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_steps.css?buildId=2023071300" />
+		
+		<!-- jquery js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js"></script>
+		
+		<!-- common js  -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/base64.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js"></script>
+		<!-- Template js -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_topic.js?buildId=2023071300"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2023071300"></script>
+	</head>
+	<body class="wt_topic_page frmBody" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		
+		<div class="content_box">
+			<div class="middle_view content_area col-sm-9" id="content_area">
+				<div class=" wt_breadcrumb "><ol><li><span class="home topicref"><a href="javascript:void(0)" onclick="gotoFirstPage()">首页</a></span></li><li><span class="topicref"><a href="GUID-EAEB4BC3-7328-468A-9E39-8AB38649BC22.html" data-id="GUID-EAEB4BC3-7328-468A-9E39-8AB38649BC22">环境要求</a></span></li><li><span class="topicref"><a href="GUID-54A55433-D514-4840-8685-74397F74D0E3.html" data-id="GUID-54A55433-D514-4840-8685-74397F74D0E3">环境配置</a></span></li><li class="active"><span class="topicref">网口相机环境配置</span></li></ol><div class="wt_breadcrumb_ellipsis" onclick="expandBreadcrumbDiv()"></div><div class="wt_breadcrumb_collapse" style="display: none;"><div class="wt_breadcrumb_collapse_button" onclick="collapseBreadcrumbDiv()"></div></div></div>
+				
+				<div id="container_body" class="container">
+					<div id="contentArea">
+						<div class=" wt_topic_content body ">
+    <h1 class="title topictitle1">网口相机环境配置</h1>
+
+
+<div class="body taskbody"><p class="shortdesc">网口相机通过客户端使用前需确保PC和相机的IP地址处于同一个局域网，且PC的网口已开启巨帧。</p>
+
+<div class="section prereq p" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__GUID-1C2B4513-DC53-4C82-9F79-8075BD4D9CC0">
+            <p class="p">确保网口相机供电以及网络传输正常。</p>
+
+        </div>
+
+<ol class="ol steps" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__GUID-F6274074-92C1-4B22-8B43-0F1686197B48"><li class="li step stepexpand" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__GUID-BB0F3822-443A-444C-A0DA-05DF8E791464">
+                <span class="ph cmd">通过系统开始菜单搜索客户端的网卡配置工具NIC_Configurator并打开，工具界面如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__FIG_ATW_3TR_BKB">
+                        
+                        <img class="image" style="display:none;" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__IMAGE_BTW_3TR_BKB" src="GUID-DD329477-D448-4C56-A2AB-3C752600EF06-high.png" width="1175" />
+                    <div class="fig_caption"><span class="figcap">图 1 网卡配置工具</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__GUID-E27E8AFF-D593-4E08-95D0-6DB1981D5B47">
+                <span class="ph cmd">确认巨型包是否已启用。若已启用，则进行下一步；若未启用，需要开启。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__GUID-D9B37E4D-7265-43FA-9D36-94C435E0B181"><span class="notetitle">说明</span> 
+                        <div class="p">
+                            <ul class="ul" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__UL_D1P_RNR_BKB">
+                                <li class="li" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__GUID-A8B28D0E-3707-45AB-BED2-F9488CE24984">客户端安装时，可以设置是否打开所有网卡的巨型包。</li>
+
+                                <li class="li" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__GUID-F1FBCEFA-82B2-472D-A00B-CA4F357CD7D5">若通过网卡配置工具设置巨型包失败，可以打开网卡属性，选择高级菜单，确认是否有关于巨帧的参数，如下图所示。若有，则设置为9014字节或9
+                                        KB；若不能成功设置，此时可以通过更新网卡驱动或者更换网卡，查看是否含有巨帧这个参数。<div class="fig fignone" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__FIG_YX1_NTR_BKB">
+                                        
+                                        <img class="image" style="display:none;" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__IMAGE_ZX1_NTR_BKB" src="GUID-0E04E6A1-0F58-4B83-A833-97A33A1371D5-high.png" width="1297" />
+                                    <div class="fig_caption"><span class="figcap">图 2 设置巨帧</span></div></div>
+</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__GUID-27432A47-70EC-4769-BA7E-E2CA1DD0F9BC">
+                <span class="ph cmd">设置PC网口的IP地址。</span>
+                <ol type="a" class="ol substeps" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__SUBSTEPS_YPG_WJR_BKB">
+                    <li class="li substep" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__GUID-CF4B4D3B-64FD-4EE8-9B5F-0E8D9179CD4B">
+                        <span class="ph cmd">在工具的<span class="keyword parmname">网卡</span>处选择对应的网卡，点击<span class="keyword parmname">网卡协议属性</span>处的<span class="ph uicontrol">打开</span>，进入PC的IP配置窗口。</span>
+                    </li>
+
+                    <li class="li substep" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__GUID-9C5854C4-2824-476F-AD28-358E432CD1AE">
+                        <span class="ph cmd">在IP配置窗口设置PC的IP地址并点击<span class="ph uicontrol">确定</span>。</span>
+                    </li>
+
+                </ol>
+
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__GUID-E1E60A86-6C5A-49BF-B261-8807BD29AC61"><span class="notetitle">说明</span> 
+                        <p class="p">为确保相机的稳定运行，建议将PC网口的IP地址设置为静态IP。</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__GUID-D5D4F1C2-F09D-4EFE-9447-3B0DBF58C37C">
+                <span class="ph cmd">通过客户端的设备列表搜索GigE接口相机，选中需要设置的网口相机。</span>
+                <ul class="ul choices" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__CHOICES_RLF_XLR_BKB">
+                    <li class="li choice" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__GUID-0A5D6069-821B-4B46-90EC-F866633B3BA8">若相机为不可达状态，则双击相机后弹出修改IP地址窗口，如下图所示。</li>
+
+                </ul>
+
+                <ul class="ul choices" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__CHOICES_FV4_HMR_BKB">
+                    <li class="li choice" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__GUID-42AEB6AA-62A9-4210-9840-BE7A0E4D3DAF">若相机为可达状态，可直接双击连接相机；也可单击右键选择<span class="ph uicontrol">修改IP</span>弹出修改IP地址窗口，如下图所示。</li>
+
+                </ul>
+
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__FIG_PNJ_RTR_BKB">
+                        
+                        <img class="image" style="display:none;" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__IMAGE_QNJ_RTR_BKB" src="GUID-928BA39B-972A-4AB8-923D-C2F12B456684-high.png" width="1219" />
+                    <div class="fig_caption"><span class="figcap">图 3 修改IP地址</span></div></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__GUID-27A4B29C-8475-420C-A851-BC738B790576">
+                <span class="ph cmd">根据修改IP地址窗口提示的有效IP地址进行设置。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-B47E5F88-1825-4F5E-885C-BF0F6A7D308A__GUID-BBFC57C9-028D-4883-A6D4-AD8E6C9D6AE3"><span class="notetitle">说明</span> 
+                        <p class="p">为确保相机的稳定运行，建议网口相机的IP地址设置为静态IP。</p>
+
+                    </div>
+
+                </div>
+            </li>
+</ol>
+
+</div>
+
+
+</div>
+						<div class=" wt_topic_wpp_content wt_pc_only "><div class=" wt_topic_wpp_content_flex "><div class="wt_topic_wpp_item like"></div><div class="wt_topic_wpp_item view"></div><div class="wt_topic_wpp_item share">分享</div></div></div>
+						
+						
+						
+					</div>
+				</div><!-- container_body -->
+				
+				<div class=" body_footer "><div onclick="prevTopic()" class=" body_footer_left link_button "><span>上一页</span></div><div onclick="nextTopic()" class=" body_footer_right link_button "><span>下一页</span></div></div>
+				<div class=" body_wpp mobile_only"><div class="wt_body_mobile_like"></div><div class="wt_body_mobile_view"></div></div>
+				<!-- <whc:webhelp_side_toc /> -->
+				
+			</div> <!-- middle_view content_area -->
+			<div class=" right_content wt_pc_only "></div>
+		</div> <!-- content_box -->
+		
+		<!-- 置顶按钮 -->
+		<div class="body_to_top" onclick="scrollTopicTop()"></div> 
+		<!-- 评价反馈 -->
+		<div onclick="manualFeedback()" class=" body_feedback " data-href="https://wj.hikrobot.com/#/public-survey?id=64c8b90d80e02e9e88feca2f"></div>
+		
+	</body>
+</html>
