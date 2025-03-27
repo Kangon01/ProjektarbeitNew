@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.30"
+						"string" : "3.20"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "ProjektarbeitNew::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ProjektarbeitNew-Debug-4eb79209837026eaad74.json",
-					"name" : "ProjektarbeitNew",
+					"id" : "Projektarbeit1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Projektarbeit1-Debug-ea0470c01355e9f53a80.json",
+					"name" : "Projektarbeit1",
 					"projectIndex" : 0
 				}
 			]

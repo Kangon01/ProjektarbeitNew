@@ -1078,6 +1078,18 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_OpenCV",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding OpenCV"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[C:/Users/nschmitz/CLionProjects/ProjektarbeitNew/sdks/opencv/build][v4.11.0()]"
+		},
+		{
 			"name" : "ProjektarbeitNew_BINARY_DIR",
 			"properties" : 
 			[
