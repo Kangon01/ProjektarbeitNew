@@ -24,7 +24,7 @@ bool isCropMode = false;
 ImageProcessor iP;
 
 // =====================
-// WorkThread – Bildaufnahme und Vorverarbeitung
+// WorkThread – Live aufnahme
 // =====================
 static unsigned __stdcall WorkThread(void* pUser) {
     void* handle = pUser;
@@ -44,11 +44,6 @@ static unsigned __stdcall WorkThread(void* pUser) {
             }
             printf("Frame..\n");
 
-            const uchar currentMax = iP.calcMaxGW(image);
-            if (currentMax != 200) {
-                iP.calcSetExposure(currentMax, handle);
-                Sleep(30);
-            }
             // Passt die größe des Bildes auf 40 % an und speichert das Bild
             resize(image, image, Size(), 0.4, 0.4, INTER_AREA);
 
@@ -56,6 +51,7 @@ static unsigned __stdcall WorkThread(void* pUser) {
             static Rect2d roi(0,0, image.cols, image.rows);
             if (isCropMode) {
                 roi = iP.cropImage(image);
+                putchar('\n');
                 if (roi.width <= 0 || roi.height <= 0) {
                     fprintf(stderr, "Error: Invalid ROI returned!\n");
                     exit(EXIT_FAILURE);
@@ -64,6 +60,23 @@ static unsigned __stdcall WorkThread(void* pUser) {
             }
             iP.setLatestImage(image(roi));
 
+            // Berechne die Belichtungszeit
+            const uchar currentMax = iP.calcMaxGW(iP.getLatestImage());
+            if (currentMax != 200) {
+                printf("Calculating Exposure...");
+                iP.calcSetExposure(currentMax, handle);
+                Sleep(100);
+
+                constexpr float target = 200.0f;
+                constexpr float deadband = 2.0f;
+                const float error = target - currentMax;
+
+                if (fabs(error) < deadband) {
+                    printf("Exposure set! <err: %.2f>\n", error);
+                    Sleep(100);
+                    continue;
+                }
+            }
 
             // Erstellt eine Heatmap und speichert sie ab
             Mat heatMap = iP.generateHeatmap(iP.getLatestImage());

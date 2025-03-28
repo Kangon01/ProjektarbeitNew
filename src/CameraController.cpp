@@ -71,7 +71,7 @@ bool cc::setModes(const int mode, const bool isTriggerMode) const {
     string trigger;
     int strobeDuration;
     isTriggerMode ? trigger.assign("On") : trigger.assign("Off");
-    !isTriggerMode ? strobeDuration = 50000 : strobeDuration = 0;
+    !isTriggerMode ? strobeDuration = 0 : strobeDuration = 0;
 
     nRet = MV_CC_SetEnumValueByString(handle, "TriggerMode", "Off");
     if (MV_OK != nRet) {

@@ -71,32 +71,43 @@ uchar iP::calcMaxGW(const Mat &image) const {
 void iP::calcSetExposure(const uchar maxGW, void* handle) const {
     static float exposure = 0;
     if (exposure == 0) {
-        constexpr float currentExposure = 0;
-        const int nRet = MV_CC_SetFloatValue(handle, "ExposureTime", currentExposure);
-        if (nRet == MV_OK) {
-            exposure = currentExposure;
-        }
-        else {
-            exposure = 1000;
-        }
-    }
-    if (exposure < 1) exposure = 1;
-
-    if (maxGW < 200) {
-        exposure += 10;
-    }
-    else if (maxGW > 200) {
-        exposure -= 2;
+        constexpr float defaultExposure = 300.0f;
+        const int nRet = MV_CC_SetFloatValue(handle, "ExposureTime", defaultExposure);
+        exposure = (nRet == MV_OK) ? defaultExposure : 300.0f;
     }
 
-    printf("Aktuelle ExposureTime: %.2f (maxGW = %d)\n", exposure, maxGW);
+    constexpr float target = 200.0f;
+    const float error = target - maxGW;
 
+    constexpr float deadband = 1.0f;
+    if (fabs(error) < deadband) {
+        printf("Deadband aktiv: Kein Update (Fehler = %.2f)\n", error);
+        return;
+    }
+
+    constexpr float Kp = 1.2f;
+
+    exposure += error * Kp;
+
+    // Definiere gültige Grenzen in μs
+    constexpr float minExposure = 15.0f;
+    constexpr float maxExposure = 10e6;
+
+    if (exposure < minExposure) {
+        exposure = minExposure;
+        printf("Warnung: Exposure auf Minimalwert begrenzt (%f mikros), da berechneter Wert zu niedrig ist.\n", minExposure);
+    } else if (exposure > maxExposure) {
+        exposure = maxExposure;
+        printf("Warnung: Exposure auf Maximalwert begrenzt (%f mikros), da berechneter Wert zu hoch ist.\n", maxExposure);
+    }
+    printf("< exp: %.2f mikro/s: %d error: %.2f >\n", exposure, maxGW, error);
     const int nRet = MV_CC_SetFloatValue(handle, "ExposureTime", exposure);
     if (MV_OK != nRet) {
         fprintf(stderr, "Set ExposureTime failed!\n");
         exit(EXIT_FAILURE);
     }
 }
+
 void iP::calibrateExposure(void *handle, const ImageProcessor &iP) const {
     constexpr int maxAttempts = 100;
     int attempt = 0;
@@ -116,7 +127,7 @@ void iP::calibrateExposure(void *handle, const ImageProcessor &iP) const {
                 MV_CC_FreeImageBuffer(handle, &stImageInfo);
                 break;
             }
-            iP.calcSetExposure(currentMaxGW, handle);
+            calcSetExposure(currentMaxGW, handle);
 
             MV_CC_FreeImageBuffer(handle, &stImageInfo);
         }

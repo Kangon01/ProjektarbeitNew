@@ -30,11 +30,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c76c5e11-894e-444e-aced-1d88e4a29c47" name="Changes" comment="New Try">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/CameraController.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/CameraController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/ImageProcessor.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ImageProcessor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CameraController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/CameraController.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ImageProcessor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImageProcessor.cpp" afterDir="false" />
@@ -140,7 +136,7 @@
       <workItem from="1743143825366" duration="497000" />
       <workItem from="1743144346892" duration="304000" />
       <workItem from="1743144670249" duration="8873000" />
-      <workItem from="1743153647865" duration="3386000" />
+      <workItem from="1743153647865" duration="11881000" />
     </task>
     <task id="LOCAL-00001" summary="New Try">
       <option name="closed" value="true" />
