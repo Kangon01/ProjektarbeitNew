@@ -44,6 +44,11 @@ static unsigned __stdcall WorkThread(void* pUser) {
             }
             printf("Frame..\n");
 
+            const uchar currentMax = iP.calcMaxGW(image);
+            if (currentMax != 200) {
+                iP.calcSetExposure(currentMax, handle);
+                Sleep(30);
+            }
             // Passt die größe des Bildes auf 40 % an und speichert das Bild
             resize(image, image, Size(), 0.4, 0.4, INTER_AREA);
 
@@ -102,47 +107,95 @@ int main() {
     // =====================
     // Bildausgabe (Graubild / Heatmap)
     // =====================
-    try {
-        // Unterdrückt die Info-Logs
-        setLogLevel(utils::logging::LogLevel::LOG_LEVEL_ERROR);
-        thread worker(WorkThread, camera.getHandle());
-        printf("Work-Thread successfully started..\n");
+    if (isTriggerMode) {
+        iP.calibrateExposure(camera.getHandle(), iP);
 
-        // Warte, solang wie die Heatmap leer ist, um fehler zu vermeiden
-        int waited = 0;
-        while (iP.getHeatMap().empty()) {
-            Sleep(10);
-            waited += 10;
-        }
+        // Warten und Abrufen des Triggerbildes
+        MV_FRAME_OUT stImageInfo = { nullptr };
+        int ret = MV_CC_GetImageBuffer(camera.getHandle(), &stImageInfo, 1000);
+        if (ret == MV_OK) {
+            int width = stImageInfo.stFrameInfo.nWidth;
+            int height = stImageInfo.stFrameInfo.nHeight;
 
-
-        // Zeigt die Bilder an
-        while (!exitProg) {
-            static int hmg = 0;
-            static uchar meanGW = 0;
-            static uchar maxGW = 0;
-
-            Mat currentImage = iP.getLatestImage();
-            Mat currentHeatMap = iP.getHeatMap();
-
-            meanGW = mean(iP.getLatestImage())[0];
-            maxGW = iP.calcMaxGW(currentImage);
-            Mat valWindow = iP.valWindow(hmg, meanGW, maxGW);
-
-            camera.displayAll(currentImage, currentHeatMap, valWindow);
-            const int key = waitKey(1);
-            if (key == 27) { // ESC drücken zum Beenden
-                exitProg = true;
+            Mat triggerImage(height, width, CV_8UC1, stImageInfo.pBufAddr);
+            if (triggerImage.empty()) {
+                fprintf(stderr, "Error: Kein Triggerbild gefunden!\n");
+                exit(EXIT_FAILURE);
             }
+
+            if (isCropMode) {
+                Rect2d roi = iP.cropImage(triggerImage);
+                if (roi.width <= 0 || roi.height <= 0) {
+                    fprintf(stderr, "Error: Ungültige ROI!\n");
+                    exit(EXIT_FAILURE);
+                }
+                triggerImage = triggerImage(roi);
+            }
+
+            uchar meanGW = mean(triggerImage)[0];
+            uchar maxGW = iP.calcMaxGW(triggerImage);
+            int hmg = iP.calcHomogen(triggerImage);
+
+            Mat valWindow = iP.valWindow(hmg, meanGW, maxGW);
+            Mat triggerHeatMap = iP.generateHeatmap(triggerImage);
+            while (!exitProg) {
+                camera.displayAll(triggerImage, triggerHeatMap, valWindow);
+                const int key = waitKey(1);
+                if (key == 27) { // ESC drücken zum Beenden
+                    exitProg = true;
+                }
+            }
+            destroyAllWindows();
+            MV_CC_FreeImageBuffer(camera.getHandle(), &stImageInfo);
         }
-
-        worker.join();
-        destroyAllWindows();
+        else {
+            fprintf(stderr, "Error: Kein Bild im Triggermodus erhalten!\n");
+            exit(EXIT_FAILURE);
+        }
     }
-    catch (const system_error &e){
-        fprintf(stderr, "Error: Thread could not be generated: %s\n", e.what());
-    }
+    else {
+        try {
+            // Unterdrückt die Info-Logs
+            setLogLevel(utils::logging::LogLevel::LOG_LEVEL_ERROR);
+            thread worker(WorkThread, camera.getHandle());
+            printf("Work-Thread successfully started..\n");
 
+            // Warte, solang wie die Heatmap leer ist, um fehler zu vermeiden
+            int waited = 0;
+            while (iP.getHeatMap().empty()) {
+                Sleep(10);
+                waited += 10;
+            }
+
+            // Zeigt die Bilder an
+            while (!exitProg) {
+                static int hmg = 0;
+                static uchar meanGW = 0;
+                static uchar maxGW = 0;
+
+                Mat currentImage = iP.getLatestImage();
+                Mat currentHeatMap = iP.getHeatMap();
+
+                meanGW = mean(currentImage)[0];
+                maxGW = iP.calcMaxGW(currentImage);
+                hmg = iP.calcHomogen(currentImage);
+
+                Mat valWindow = iP.valWindow(hmg, meanGW, maxGW);
+
+                camera.displayAll(currentImage, currentHeatMap, valWindow);
+
+                const int key = waitKey(1);
+                if (key == 27) { // ESC drücken zum Beenden
+                    exitProg = true;
+                }
+            }
+            worker.join();
+            destroyAllWindows();
+        }
+        catch (const system_error &e){
+            fprintf(stderr, "Error: Thread could not be generated: %s\n", e.what());
+        }
+    }
     if (!camera.close()) {
         fprintf(stderr, "Error: Closing Camera failed!");
         exit(EXIT_FAILURE);

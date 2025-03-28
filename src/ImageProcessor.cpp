@@ -1,4 +1,12 @@
 #include "ImageProcessor.h"
+#include <MvCameraControl.h>
+#include "CameraController.h"
+
+#define WIN32_LEAN_AND_MEAN
+#define NOMINMAX
+#include <Windows.h>
+#undef byte
+#undef max();
 
 using namespace cv;
 using namespace std;
@@ -39,8 +47,6 @@ void iP::userInput() {
         cin >> input;
     } while (input != 'y' && input != 'n');
     isCropMode = (input == 'y');
-
-
 }
 
 double iP::calcHomogen(const Mat &image) const {
@@ -61,6 +67,65 @@ uchar iP::calcMaxGW(const Mat &image) const {
         }
     }
     return maxGW;
+}
+void iP::calcSetExposure(const uchar maxGW, void* handle) const {
+    static float exposure = 0;
+    if (exposure == 0) {
+        constexpr float currentExposure = 0;
+        const int nRet = MV_CC_SetFloatValue(handle, "ExposureTime", currentExposure);
+        if (nRet == MV_OK) {
+            exposure = currentExposure;
+        }
+        else {
+            exposure = 1000;
+        }
+    }
+    if (exposure < 1) exposure = 1;
+
+    if (maxGW < 200) {
+        exposure += 10;
+    }
+    else if (maxGW > 200) {
+        exposure -= 2;
+    }
+
+    printf("Aktuelle ExposureTime: %.2f (maxGW = %d)\n", exposure, maxGW);
+
+    const int nRet = MV_CC_SetFloatValue(handle, "ExposureTime", exposure);
+    if (MV_OK != nRet) {
+        fprintf(stderr, "Set ExposureTime failed!\n");
+        exit(EXIT_FAILURE);
+    }
+}
+void iP::calibrateExposure(void *handle, const ImageProcessor &iP) const {
+    constexpr int maxAttempts = 100;
+    int attempt = 0;
+    while (attempt < maxAttempts) {
+        MV_FRAME_OUT stImageInfo = {nullptr};
+        const int ret = MV_CC_GetImageBuffer(handle, &stImageInfo, 1000);
+        if (MV_OK == ret) {
+            const int width = stImageInfo.stFrameInfo.nWidth;
+            const int height = stImageInfo.stFrameInfo.nHeight;
+            Mat image(height, width, CV_8UC1, stImageInfo.pBufAddr);
+            if (image.empty()) {
+                fprintf(stderr, "Error: Kein Bild für calExp gefunden!\n");
+                exit(EXIT_FAILURE);
+            }
+            uchar currentMaxGW = iP.calcMaxGW(image);
+            if (currentMaxGW == 200) {
+                MV_CC_FreeImageBuffer(handle, &stImageInfo);
+                break;
+            }
+            iP.calcSetExposure(currentMaxGW, handle);
+
+            MV_CC_FreeImageBuffer(handle, &stImageInfo);
+        }
+        else {
+            fprintf(stderr, "Error: Kein Bild mit dem GW von 200 gefunden!");
+        }
+        ++attempt;
+        Sleep(50);
+    }
 }
 Mat iP::generateHeatmap(const Mat &latestImage) const {
     Scalar meanVal, stddevVal;
@@ -110,7 +175,7 @@ Mat iP::valWindow(const double hmg, const uchar meanGW, const uchar maxGW) const
         y += 30;
     }
 
-    Mat legende = imread("C:/Users/nschmitz/CLionProjects/Projektarbeit1/Legende.png");
+    Mat legende = imread("C:/Users/nschmitz/CLionProjects/Projektarbeit_1/Legende.png");
     if (legende.empty()) {
         printf("Legende not found\n");
         exit(EXIT_FAILURE);

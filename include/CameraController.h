@@ -1,7 +1,7 @@
 #pragma once
 #include "MvCameraControl.h"
 #include <string>
-
+#include <opencv2/opencv.hpp>
 #ifndef CAMERACONTROLLER_HPP
 #define CAMERACONTROLLER_HPP
 

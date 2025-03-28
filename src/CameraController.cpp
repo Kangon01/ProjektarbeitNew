@@ -1,12 +1,18 @@
-#include <cstdio>
+#define WIN32_LEAN_AND_MEAN
+#define NOMINMAX
 #include <Windows.h>
-#include <iostream>
+#undef byte
+
+#include <cstdio>
+#include <opencv2/opencv.hpp>
 #include "CameraController.h"
+
 // =====================
 // CameraController mit Managementfunktionen
 // =====================
 
 typedef CameraController cc;
+
 cc::CameraController(const string &currentIp, const string &netExport): handle(nullptr), currentIp(currentIp), netExport(netExport) {
 
     // Kamera- und Netzwerk-IP konfigurieren
@@ -63,7 +69,9 @@ bool cc::setModes(const int mode, const bool isTriggerMode) const {
 
     // Setzt den Triggermodus je nach Benutzereingabe auf "On" oder "Off"
     string trigger;
+    int strobeDuration;
     isTriggerMode ? trigger.assign("On") : trigger.assign("Off");
+    !isTriggerMode ? strobeDuration = 50000 : strobeDuration = 0;
 
     nRet = MV_CC_SetEnumValueByString(handle, "TriggerMode", "Off");
     if (MV_OK != nRet) {
@@ -88,20 +96,13 @@ bool cc::setModes(const int mode, const bool isTriggerMode) const {
         return false;
     }
 
-    //Beleuchtungszeit
-    nRet = MV_CC_SetFloatValue(handle, "ExposureTime", 300.00); // 300 bei Trigger / 100 bei Live
-    if (MV_OK != nRet) {
-        fprintf(stderr, "Set ExposureTime failed!\n");
-        return false;
-    }
-
     // Flash-Einstellungen
     nRet = MV_CC_SetBoolValue(handle, "StrobeEnable", true);
     if (MV_OK != nRet) {
         fprintf(stderr, "Set Strobe Enable failed!\n");
         return false;
     }
-    nRet = MV_CC_SetIntValueEx(handle, "StrobeLineDuration", 1000);
+    nRet = MV_CC_SetIntValueEx(handle, "StrobeLineDuration", strobeDuration);
     if (MV_OK != nRet) {
         fprintf(stderr, "Set Strobe Line Duration failed!\n");
         return false;

@@ -22,6 +22,8 @@ class ImageProcessor {
 
         [[nodiscard]] double calcHomogen(const cv::Mat &image) const;
         [[nodiscard]] uchar calcMaxGW(const cv::Mat &image) const;
+        void calcSetExposure(uchar maxGW, void* handle) const;
+        void calibrateExposure(void* handle, const ImageProcessor& iP) const;
         [[nodiscard]] cv::Mat generateHeatmap(const cv::Mat &latestImage) const;
         [[nodiscard]] cv::Mat valWindow(double hmg, uchar meanGW, uchar maxGW) const;
         [[nodiscard]] cv::Rect2d cropImage(cv::Mat const &image) const;
