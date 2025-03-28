@@ -129,29 +129,7 @@ int main() {
             maxGW = iP.calcMaxGW(currentImage);
             Mat valWindow = iP.valWindow(hmg, meanGW, maxGW);
 
-            if (!currentImage.empty()) {
-                hmg = iP.calcHomogen(currentImage);
-                imshow("Captured Image", currentImage);
-            }
-            else {
-                fprintf(stderr, "Error: No Image found to present!");
-                exit(EXIT_FAILURE);
-            }
-
-            if (!currentHeatMap.empty()) {
-                imshow("HeatMap", currentHeatMap);
-            }
-            else {
-                fprintf(stderr, "Error: No Heatmap found to present!");
-            }
-
-            if (!valWindow.empty()) {
-                imshow("Status:", valWindow);
-            }
-            else {
-                fprintf(stderr, "Error: No ValWindow found to present!");
-                exit(EXIT_FAILURE);
-            }
+            camera.displayAll(currentImage, currentHeatMap, valWindow);
             const int key = waitKey(1);
             if (key == 27) { // ESC drücken zum Beenden
                 exitProg = true;

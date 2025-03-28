@@ -14,6 +14,7 @@ class CameraController {
         [[nodiscard]] bool open();
         [[nodiscard]] bool setModes(int mode, bool isTriggerMode) const;
         [[nodiscard]] bool startGrabbing() const;
+        void displayAll(const cv::Mat &currentImage, const cv::Mat &currentHeatMap, const cv::Mat &valWindow) const;
         [[nodiscard]] bool close() const;
         [[nodiscard]] void* getHandle() const;
     private:

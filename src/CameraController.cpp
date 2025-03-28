@@ -127,6 +127,31 @@ bool cc::startGrabbing() const {
     printf("Start Grabbing successful!\n\n");
     return true;
 }
+void cc::displayAll(const cv::Mat &currentImage, const cv::Mat &currentHeatMap, const cv::Mat &valWindow) const {
+    if (!currentImage.empty()) {
+        imshow("Captured Image", currentImage);
+    }
+    else {
+        fprintf(stderr, "Error: No Image found to present!");
+        exit(EXIT_FAILURE);
+    }
+
+    if (!currentHeatMap.empty()) {
+        imshow("HeatMap", currentHeatMap);
+    }
+    else {
+        fprintf(stderr, "Error: No Heatmap found to present!");
+        exit(EXIT_FAILURE);
+    }
+
+    if (!valWindow.empty()) {
+        imshow("Status:", valWindow);
+    }
+    else {
+        fprintf(stderr, "Error: No ValWindow found to present!");
+        exit(EXIT_FAILURE);
+    }
+}
 bool cc::close() const {
     int nRet = MV_CC_StopGrabbing(handle);
     if (MV_OK != nRet)
